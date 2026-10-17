@@ -1,0 +1,20 @@
+from pathlib import Path
+exec((Path(__file__).parent/'检查合并页面.py').read_text(encoding='utf-8-sig').split('results=[]')[0])
+call('Page.addScriptToEvaluateOnNewDocument',{'source':"window.mapTextCount=0;const fill=CanvasRenderingContext2D.prototype.fillText;CanvasRenderingContext2D.prototype.fillText=function(...args){window.mapTextCount++;return fill.apply(this,args)}"})
+for width in [390,1366]:
+ size(width);nav('home/index');wait("document.querySelectorAll('.atlas-region-chip').length===34&&!document.querySelector('.atlas-loading')")
+ assert js('window.mapTextCount===0'), '地图中不再堆叠文字'
+ assert js('document.documentElement.scrollWidth<='+str(width))
+ js("document.querySelector('#atlas-chip-320000').click()")
+ wait("document.querySelector('.atlas-current').innerText.includes('江苏')&&document.querySelector('.atlas-current').innerText.includes('16人')")
+ js("document.querySelector('#atlas-chip-130000').click()")
+ wait("document.querySelector('.atlas-region').innerText==='河北省'&&document.querySelector('.atlas-current').innerText.includes('9人')")
+ assert js("document.querySelector('#atlas-chip-130000').classList.contains('active')")
+ js("document.querySelector('.atlas-tools uni-button').click()")
+ wait("document.querySelector('.atlas-legend').innerText.includes('135%')")
+ js("document.querySelectorAll('.atlas-tools uni-button')[2].click()")
+ wait("document.querySelector('.atlas-legend').innerText.includes('100%')")
+ js("document.querySelector('.atlas-stage').scrollIntoView({block:'center'})");time.sleep(.3);shot('清爽省份地图-'+str(width)+'.png')
+ js("document.querySelector('[data-open-province]').click()")
+ wait("location.hash.includes('code=130000')&&document.querySelectorAll('.registry-card').length===9")
+print('通过：双尺寸地图无密集文字、34省横向切换、河北9/江苏16信息卡、缩放复位、分省9人名单与页面无横向溢出。');ws.close()

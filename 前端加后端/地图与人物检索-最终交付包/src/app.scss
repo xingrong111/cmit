@@ -1,0 +1,31 @@
+@use '@/styles/compat.scss';
+@use '@/styles/variables.scss' as *;
+
+page {
+  min-height: 100%;
+  font-family: $color-font-body;
+  font-size: $font-size-md;
+  line-height: $line-height-normal;
+  color: $color-text-primary;
+  background: $color-bg-page;
+  box-sizing: border-box;
+}
+
+page,
+view,
+text,
+scroll-view,
+input,
+button {
+  box-sizing: border-box;
+}
+
+@media (min-width: 900px) {
+  page {
+    background:
+      linear-gradient(rgba(117, 99, 77, 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(117, 99, 77, 0.025) 1px, transparent 1px),
+      $color-bg-page;
+    background-size: 32px 32px;
+  }
+}

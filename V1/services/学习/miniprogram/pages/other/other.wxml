@@ -1,0 +1,6 @@
+<view class="page learning-page">
+  <view class="title">{{name}}</view>
+  <view class="aux">{{owner}}负责这一页。这里不放未接入的内容。</view>
+  <button class="secondary" bindtap="back">返回学习</button>
+</view>
+

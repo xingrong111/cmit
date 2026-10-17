@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-11T05:38:36.416Z",
+  "isolatedDirectory": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\yingji-rehearsal-YLi7C3",
+  "productionUnchanged": true,
+  "steps": [
+    {
+      "operation": "新进程HTTP验证",
+      "status": 200,
+      "summary": "2025年无锡博物馆名录列有该馆。2018年机构报道介绍老陆巷场所内设陆定一生平事迹陈列。 作为陆定一相关祖居和陈列场所；不据祖居名称推定出生地。"
+    },
+    {
+      "operation": "import --apply",
+      "result": "已备份并导入；重启后端生效。"
+    },
+    {
+      "operation": "新进程HTTP验证",
+      "status": 200,
+      "summary": "独立测试资料：仅用于导入、重启和回滚演练，不是真实历史内容。"
+    },
+    {
+      "operation": "备份哈希校验",
+      "passed": true
+    },
+    {
+      "operation": "import --apply",
+      "result": "已备份并导入；重启后端生效。"
+    },
+    {
+      "operation": "新进程HTTP验证",
+      "status": 200,
+      "summary": "2025年无锡博物馆名录列有该馆。2018年机构报道介绍老陆巷场所内设陆定一生平事迹陈列。 作为陆定一相关祖居和陈列场所；不据祖居名称推定出生地。"
+    }
+  ],
+  "passed": true
+}

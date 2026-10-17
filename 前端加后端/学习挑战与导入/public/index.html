@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>英迹 · 学习挑战</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <span class="seal" aria-hidden="true">英迹</span>
+      <div>
+        <p class="brand">山河英雄谱</p>
+        <p class="brand-sub">学习挑战 · 待核验</p>
+      </div>
+    </header>
+    <main id="view"></main>
+    <nav class="tabbar" aria-label="底部导航">
+      <button type="button" data-tab="mountain">山河</button>
+      <button type="button" data-tab="trace">足迹</button>
+      <button type="button" data-tab="learn" class="active">学习</button>
+      <button type="button" data-tab="me">我的</button>
+    </nav>
+    <p id="toast" class="toast" role="status"></p>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

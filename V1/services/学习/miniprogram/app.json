@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/learn/learn",
+    "pages/quiz/quiz",
+    "pages/result/result",
+    "pages/honors/honors",
+    "pages/other/other"
+  ],
+  "window": {
+    "navigationBarTitleText": "英迹",
+    "navigationBarBackgroundColor": "#FFF9EC",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FFF9EC"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

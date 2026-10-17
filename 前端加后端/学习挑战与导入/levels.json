@@ -1,0 +1,119 @@
+{
+  "version": "2026-10-12",
+  "question_bank": "英迹-五组150题题库审核包/五组题库总数据.json",
+  "question_status": "待核验",
+  "published": false,
+  "rule": "入门关只从该组15道入门题里抽5题，进阶关只从该组15道进阶题里抽8题。两组题库不混合。具体题目在一次答题开始时抽取，不把抽出的5题或8题写死在本文件。同一次答题不重复抽到同一题。答完本次抽出的全部题目即完成本关，不另设分数线。同一组须先答完入门关，才能开始进阶关。",
+  "levels": [
+    {
+      "id": "QQB-入门",
+      "person_name": "瞿秋白",
+      "group": "QQB",
+      "reading_person_id": "P009",
+      "difficulty": "入门",
+      "draw_count": 5,
+      "pool": ["QQB-001", "QQB-002", "QQB-003", "QQB-004", "QQB-005", "QQB-006", "QQB-007", "QQB-008", "QQB-009", "QQB-010", "QQB-011", "QQB-012", "QQB-013", "QQB-014", "QQB-015"],
+      "status": "待核验",
+      "published": false
+    },
+    {
+      "id": "QQB-进阶",
+      "person_name": "瞿秋白",
+      "group": "QQB",
+      "reading_person_id": "P009",
+      "difficulty": "进阶",
+      "draw_count": 8,
+      "pool": ["QQB-016", "QQB-017", "QQB-018", "QQB-019", "QQB-020", "QQB-021", "QQB-022", "QQB-023", "QQB-024", "QQB-025", "QQB-026", "QQB-027", "QQB-028", "QQB-029", "QQB-030"],
+      "status": "待核验",
+      "published": false
+    },
+    {
+      "id": "LYS-入门",
+      "person_name": "狼牙山五壮士",
+      "group": "LYS",
+      "reading_person_id": null,
+      "difficulty": "入门",
+      "draw_count": 5,
+      "pool": ["LYS-001", "LYS-002", "LYS-003", "LYS-004", "LYS-005", "LYS-006", "LYS-007", "LYS-008", "LYS-009", "LYS-010", "LYS-011", "LYS-012", "LYS-013", "LYS-014", "LYS-015"],
+      "status": "待核验",
+      "published": false
+    },
+    {
+      "id": "LYS-进阶",
+      "person_name": "狼牙山五壮士",
+      "group": "LYS",
+      "reading_person_id": null,
+      "difficulty": "进阶",
+      "draw_count": 8,
+      "pool": ["LYS-016", "LYS-017", "LYS-018", "LYS-019", "LYS-020", "LYS-021", "LYS-022", "LYS-023", "LYS-024", "LYS-025", "LYS-026", "LYS-027", "LYS-028", "LYS-029", "LYS-030"],
+      "status": "待核验",
+      "published": false
+    },
+    {
+      "id": "SZZ-入门",
+      "person_name": "宋振中",
+      "group": "SZZ",
+      "reading_person_id": "P004",
+      "difficulty": "入门",
+      "draw_count": 5,
+      "pool": ["SZZ-001", "SZZ-002", "SZZ-003", "SZZ-004", "SZZ-005", "SZZ-006", "SZZ-007", "SZZ-008", "SZZ-009", "SZZ-010", "SZZ-011", "SZZ-012", "SZZ-013", "SZZ-014", "SZZ-015"],
+      "status": "待核验",
+      "published": false
+    },
+    {
+      "id": "SZZ-进阶",
+      "person_name": "宋振中",
+      "group": "SZZ",
+      "reading_person_id": "P004",
+      "difficulty": "进阶",
+      "draw_count": 8,
+      "pool": ["SZZ-016", "SZZ-017", "SZZ-018", "SZZ-019", "SZZ-020", "SZZ-021", "SZZ-022", "SZZ-023", "SZZ-024", "SZZ-025", "SZZ-026", "SZZ-027", "SZZ-028", "SZZ-029", "SZZ-030"],
+      "status": "待核验",
+      "published": false
+    },
+    {
+      "id": "LDY-入门",
+      "person_name": "陆定一",
+      "group": "LDY",
+      "reading_person_id": "P014",
+      "difficulty": "入门",
+      "draw_count": 5,
+      "pool": ["LDY-001", "LDY-002", "LDY-003", "LDY-004", "LDY-005", "LDY-006", "LDY-007", "LDY-008", "LDY-009", "LDY-010", "LDY-011", "LDY-012", "LDY-013", "LDY-014", "LDY-015"],
+      "status": "待核验",
+      "published": false
+    },
+    {
+      "id": "LDY-进阶",
+      "person_name": "陆定一",
+      "group": "LDY",
+      "reading_person_id": "P014",
+      "difficulty": "进阶",
+      "draw_count": 8,
+      "pool": ["LDY-016", "LDY-017", "LDY-018", "LDY-019", "LDY-020", "LDY-021", "LDY-022", "LDY-023", "LDY-024", "LDY-025", "LDY-026", "LDY-027", "LDY-028", "LDY-029", "LDY-030"],
+      "status": "待核验",
+      "published": false
+    },
+    {
+      "id": "JZY-入门",
+      "person_name": "江竹筠",
+      "group": "JZY",
+      "reading_person_id": null,
+      "difficulty": "入门",
+      "draw_count": 5,
+      "pool": ["JZY-001", "JZY-002", "JZY-003", "JZY-004", "JZY-005", "JZY-006", "JZY-007", "JZY-008", "JZY-009", "JZY-010", "JZY-011", "JZY-012", "JZY-013", "JZY-014", "JZY-015"],
+      "status": "待核验",
+      "published": false
+    },
+    {
+      "id": "JZY-进阶",
+      "person_name": "江竹筠",
+      "group": "JZY",
+      "reading_person_id": null,
+      "difficulty": "进阶",
+      "draw_count": 8,
+      "pool": ["JZY-016", "JZY-017", "JZY-018", "JZY-019", "JZY-020", "JZY-021", "JZY-022", "JZY-023", "JZY-024", "JZY-025", "JZY-026", "JZY-027", "JZY-028", "JZY-029", "JZY-030"],
+      "status": "待核验",
+      "published": false
+    }
+  ]
+}

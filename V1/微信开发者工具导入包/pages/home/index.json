@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "山河有迹",
+  "usingComponents": {
+    "national-map": "../../components/山河地图",
+    "app-shell": "../../components/AppShell",
+    "person-card": "../../components/PersonCard",
+    "state-panel": "../../components/StatePanel"
+  }
+}

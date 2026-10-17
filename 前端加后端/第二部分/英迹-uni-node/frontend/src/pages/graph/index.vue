@@ -1,0 +1,8 @@
+<template><AppShell><StatePanel v-if="loading||error" :loading="loading" :error="error" @retry="load"/><template v-else-if="graph"><view class="detail-crumb"><button class="text-button" @tap="go('person',{id})">← {{personName}}档案</button><text>关系图谱</text></view><view class="page-heading"><text class="eyebrow">人物 · 组织 · 事件</text><text class="page-title">关联之间，皆有依据</text><text class="muted">拖动与缩放，看见已核关系；点击节点继续阅读，点击连线查看来源。</text></view><RelationGraph :graph="graph" @node="openNode" @source="sourceId=$event"/><view class="boundary-note"><text>只展示有已核事实支撑的确定关联。同年同地不自动构成人物关系。</text></view></template><SourceSheet :source-id="sourceId" @close="sourceId=''"/></AppShell></template>
+<script setup>
+import {ref} from 'vue';import {onLoad,onShareAppMessage} from '@dcloudio/uni-app';import AppShell from '../../components/AppShell.vue';import RelationGraph from '../../components/RelationGraph.vue';import StatePanel from '../../components/StatePanel.vue';import SourceSheet from '../../components/SourceSheet.vue';import {api} from '../../lib/api.js';import {go} from '../../lib/navigation.js'
+const graph=ref(null),personName=ref('人物'),loading=ref(true),error=ref(''),sourceId=ref('');let id='P009'
+async function load(){loading.value=true;error.value='';try{const [g,p]=await Promise.all([api('people/'+id+'/graph'),api('people/'+id)]);graph.value=g;personName.value=p.name}catch(e){error.value=e.message}finally{loading.value=false}}
+function openNode(n){if(n.event_id)go('event',{id:n.event_id});else if(n.person_id)go('person',{id:n.person_id});else uni.showToast({title:'关联对象的独立档案尚未收录，可查看连线依据',icon:'none'})}
+onLoad(options=>{id=options.id||'P009';load()});onShareAppMessage(()=>({title:personName.value+' · 关系图谱',path:'/pages/graph/index?id='+id}))
+</script>

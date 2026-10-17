@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "关系图谱",
+  "usingComponents": {
+    "app-shell": "../../components/AppShell",
+    "relation-graph": "../../components/RelationGraph",
+    "state-panel": "../../components/StatePanel",
+    "source-sheet": "../../components/SourceSheet"
+  }
+}

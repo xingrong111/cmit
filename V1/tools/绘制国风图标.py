@@ -1,0 +1,39 @@
+from pathlib import Path
+import json,html
+r=Path(__file__).resolve().parents[1];dest=r/'frontend/src/static/icons';dest.mkdir(exist_ok=True)
+# Original vector shapes; the reference screenshots supply mood, not traced artwork.
+shapes={
+'home':'<path d="M9 45 23 23l10 14 8-11 14 19Z" fill="{light}"/><path d="m23 23 5 18 5-4M41 26l-3 17 10 2" fill="{gold}"/><path d="M7 49q13-7 24 0t26-1" fill="none"/><path d="M34 37q-14 6-7 10t-5 8" fill="none" stroke="{red}"/><circle cx="47" cy="16" r="5" fill="{red}" stroke="none"/>',
+'people':'<path d="M14 12h32l5 5v37H14Z" fill="{light}"/><path d="M46 12v9h7" fill="{gold}"/><path d="M11 18h5m-5 10h5m-5 10h5m-5 10h5"/><circle cx="31" cy="29" r="7" fill="{paper}"/><path d="M20 46c1-12 21-12 22 0" fill="{gold}"/><path d="M23 51h16" stroke="{red}"/>',
+'pin':'<path d="m7 24 15-5 19 5 15-5v31l-15 5-19-5-15 5Z" fill="{light}"/><path d="M22 20v30m19-25v29" stroke="{gold}"/><path d="M30 49q-12-8-2-14" fill="none" stroke-dasharray="2 4"/><path d="M45 12c-7 0-12 5-12 11 0 8 12 18 12 18s12-10 12-18c0-6-5-11-12-11Z" fill="{red}" stroke="{red}"/><circle cx="45" cy="23" r="4" fill="{paper}" stroke="none"/>',
+'assistant':'<path d="M12 38v-9a17 17 0 0 1 34 0v9" fill="none" stroke="{gold}" stroke-width="5"/><circle cx="29" cy="30" r="12" fill="{light}"/><path d="M18 27c1-16 24-15 23 1-8-1-13-6-13-6s-3 4-10 5Z" fill="{gold}"/><path d="M12 53c0-15 34-15 34 0Z" fill="{gold}"/><path d="m28 44 4 8 4-8" fill="{paper}"/><rect x="39" y="8" width="18" height="15" rx="5" fill="{red}" stroke="{red}"/><path d="m42 22-3 5 10-5" fill="{red}" stroke="{red}"/><path d="M44 14h8m-8 4h5" stroke="{paper}" stroke-width="1.8"/>',
+'bookmark':'<circle cx="29" cy="29" r="21" fill="{light}"/><circle cx="28" cy="24" r="7" fill="{paper}"/><path d="M16 43c0-13 24-13 24 0" fill="{gold}"/><path d="M43 36h12v21l-6-4-6 4Z" fill="{red}" stroke="{red}"/>',
+'book':'<path d="M8 16q14-6 24 2 10-8 24-2v35q-14-6-24 2-10-8-24-2Z" fill="{gold}"/><path d="M12 12q11-3 20 4 9-7 20-4v35q-10-3-20 4-10-7-20-4Z" fill="{light}"/><path d="M32 16v35M17 22l9 2m-9 6 9 2m12-8 9-2m-9 10 9-2" fill="none"/><path d="M40 36h7v17l-3-2-4 2Z" fill="{red}" stroke="{red}"/>',
+'timeline':'<path d="M15 13h32v39H15Z" fill="{light}"/><path d="M15 13h32M15 52h32" stroke="{gold}" stroke-width="6"/><path d="M11 10v7m40-7v7M11 48v8m40-8v8"/><path d="M24 22v21" stroke="{red}"/><circle cx="24" cy="24" r="3" fill="{red}" stroke="none"/><circle cx="24" cy="34" r="3" fill="{gold}" stroke="none"/><path d="M32 24h9m-9 10h9m-9 9h6"/>',
+'graph':'<path d="M31 29 13 14m18 15 20-14M31 29 13 49m18-20 20 21" stroke="{gold}" stroke-width="3"/><circle cx="13" cy="13" r="7" fill="{light}"/><circle cx="51" cy="13" r="7" fill="{gold}"/><circle cx="13" cy="50" r="7" fill="{gold}"/><circle cx="51" cy="50" r="7" fill="{light}"/><circle cx="31" cy="30" r="12" fill="{red}" stroke="{red}"/><circle cx="31" cy="27" r="3" fill="{paper}" stroke="none"/><path d="M26 35q5-7 10 0" fill="{paper}" stroke="none"/>',
+'learning':'<path d="M13 20h36v30H13Z" fill="{light}"/><path d="M21 20v30m22-30v30" stroke="{gold}"/><path d="M10 53h42" stroke-width="4"/><path d="M26 11h25v19l-12-5-13 5Z" fill="{red}" stroke="{red}"/><path d="m33 18 4 4 7-7" fill="none" stroke="{paper}" stroke-width="3"/>',
+'medal':'<path d="m20 30-4 27 12-7 7 7 5-28" fill="{red}" stroke="{red}"/><circle cx="31" cy="25" r="18" fill="{gold}"/><circle cx="31" cy="25" r="13" fill="{light}"/><path d="m31 15 3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1Z" fill="{gold}" stroke="none"/>',
+'comment':'<path d="M9 13h46v31H30L18 54V44H9Z" fill="{light}"/><path d="M18 23h28m-28 9h19" stroke="{gold}" stroke-width="3"/><circle cx="47" cy="45" r="8" fill="{red}" stroke="{red}"/><circle cx="44" cy="45" r="1" fill="{paper}" stroke="none"/><circle cx="47" cy="45" r="1" fill="{paper}" stroke="none"/><circle cx="50" cy="45" r="1" fill="{paper}" stroke="none"/>',
+'account':'<rect x="9" y="15" width="46" height="36" rx="5" fill="{light}"/><circle cx="24" cy="29" r="6" fill="{gold}"/><path d="M15 43q9-12 18 0" fill="{gold}"/><path d="M39 27h9m-9 8h9m-9 8h6"/><path d="M19 11v8m26-8v8" stroke="{red}" stroke-width="4"/>',
+'route':'<path d="m8 18 16-5 17 5 15-5v37l-15 5-17-5-16 5Z" fill="{light}"/><path d="M24 14v35m17-30v35" stroke="{gold}"/><path d="M16 44q2-21 18-11t14-9" fill="none" stroke="{red}" stroke-dasharray="3 4"/><circle cx="16" cy="44" r="4" fill="{red}" stroke="none"/><path d="M47 7v16l-9-8Z" fill="{red}" stroke="{red}"/>',
+'museum':'<path d="m8 23 24-14 24 14Z" fill="{red}" stroke="{red}"/><path d="M11 26h42M8 53h48" stroke="{gold}" stroke-width="5"/><path d="M16 29h6v20h-6Zm13 0h6v20h-6Zm13 0h6v20h-6Z" fill="{light}"/><path d="M12 57h40" stroke-width="3"/>',
+'source':'<path d="M15 9h26l9 10v35H15Z" fill="{light}"/><path d="M41 9v12h10" fill="{gold}"/><path d="M23 27h18m-18 8h12m-12 8h9" stroke="{gold}"/><circle cx="44" cy="43" r="9" fill="{paper}" stroke="{red}"/><path d="m50 50 7 7" stroke="{red}" stroke-width="4"/>',
+'calendar':'<rect x="10" y="14" width="44" height="41" rx="5" fill="{light}"/><path d="M10 27h44"/><path d="M10 21v-4q0-3 3-3h38q3 0 3 3v7H10Z" fill="{gold}" stroke="none"/><path d="M21 9v11m22-11v11" stroke="{red}" stroke-width="4"/><path d="M20 35h5m9 0h5m-19 9h5m9 0h5" stroke-width="4"/>',
+'search':'<circle cx="27" cy="26" r="15" fill="{light}"/><circle cx="27" cy="26" r="10" fill="{paper}"/><path d="m39 38 14 14" stroke="{red}" stroke-width="6"/>',
+'edit':'<path d="m14 44-3 10 10-3 30-30-7-7Z" fill="{light}"/><path d="m38 20 7 7M15 44l7 7" stroke="{red}"/>',
+'copy':'<rect x="12" y="10" width="30" height="36" rx="4" fill="{gold}"/><rect x="23" y="20" width="29" height="35" rx="4" fill="{light}"/><path d="M30 31h15m-15 8h15m-15 8h10"/>',
+}
+def svg(name,active=False):
+ colors={'light':'#ead7b4' if active else '#f2e7d2','gold':'#bd955c' if active else '#c2a575','paper':'#fffaf1','red':'#982b28' if active else '#a66c44'}
+ shape=shapes[name].format(**colors)
+ return '<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><ellipse cx="32" cy="55" rx="24" ry="4" fill="#bd9a67" opacity=".12"/><g stroke="'+('#805a32' if active else '#997c52')+'" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round">'+shape+'</g></svg>'
+for name in shapes:(dest/(name+'.svg')).write_text(svg(name,True),encoding='utf-8')
+# Retain standard, high-contrast shapes for compact chat controls.
+for name,path in {'send':'<path d="M12 20V4m-6 6 6-6 6 6"/>','stop':'<rect x="6" y="6" width="12" height="12" rx="2"/>'}.items():
+ (dest/(name+'.svg')).write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fffaf1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+path+'</svg>',encoding='utf-8')
+out=r/'docs/国风图标';out.mkdir(exist_ok=True)
+(out/'图标清单.json').write_text(json.dumps({'style':'原创暖金国风图标，米白、淡金、朱红、墨绿；参考整体气质，不描摹截图素材。','icons':list(shapes),'compactControls':['send','stop']},ensure_ascii=False,indent=2),encoding='utf-8')
+labels=dict(zip(shapes,['山河首页','人物档案','历史足迹','小迹导览','我的阅读','阅读书卷','人生长卷','人物图谱','学习挑战','学习荣誉','交流评论','账户管理','文化路线','纪念场馆','资料来源','历史日期','姓名搜索','修改提问','复制回答']))
+cards=''.join('<article><img src="../../frontend/src/static/icons/'+name+'.svg"><b>'+html.escape(labels[name])+'</b></article>' for name in shapes)
+(out/'图标总览.html').write_text('<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>山河有迹 · 原创图标</title><style>body{margin:40px;background:#fbf5e9;color:#354d43;font:15px Microsoft YaHei}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:20px}article{display:flex;flex-direction:column;gap:14px;align-items:center;background:#fffaf1;border:1px solid #dfcbae;border-radius:18px;padding:24px}img{width:80px;height:80px}h1{font:30px SimSun;color:#982b28}</style><h1>山河有迹 · 暖金国风图标</h1><main>'+cards+'</main></html>',encoding='utf-8')
+print('已绘制',len(shapes),'款原创功能图标及2款高对比操作图标')

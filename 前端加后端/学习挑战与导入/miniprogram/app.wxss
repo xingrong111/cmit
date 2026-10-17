@@ -1,0 +1,31 @@
+page {
+  background: #FFF9EC;
+  color: #35291F;
+  font-size: 28rpx;
+  line-height: 1.7;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+.page { padding: 32rpx 32rpx 220rpx; }
+.eyebrow, .aux { color: #75634D; font-size: 24rpx; line-height: 1.7; }
+.eyebrow { letter-spacing: 4rpx; }
+.title { font-family: "STKaiti", "KaiTi", "SimSun", serif; font-size: 40rpx; font-weight: 500; line-height: 1.45; margin: 8rpx 0 16rpx; }
+.section { font-family: "STKaiti", "KaiTi", "SimSun", serif; font-size: 32rpx; font-weight: 500; line-height: 1.45; }
+.card { background: #FFFCF5; border: 1rpx solid #C7A166; border-radius: 20rpx; padding: 24rpx; margin-top: 24rpx; box-shadow: 0 8rpx 22rpx rgba(79, 57, 29, .08); }
+.tag { display: inline-block; border: 1rpx solid #C7A166; color: #75634D; font-size: 24rpx; line-height: 1.6; padding: 4rpx 12rpx; }
+.tag.earned { color: #2F724F; border-color: #2F724F; }
+button { width: 100%; padding: 0; margin-left: 0; margin-right: 0; }
+button::after { border: 0; }
+.primary, .secondary { min-height: 88rpx; line-height: 88rpx; margin-top: 16rpx; border-radius: 12rpx; font-size: 28rpx; }
+.primary { background: #9C3029; color: #FFF9EC; }
+.secondary { background: #FFFCF5; color: #9C3029; border: 1rpx solid #C7A166; }
+.primary[disabled] { opacity: .55; }
+.choice { display: block; text-align: left; min-height: 88rpx; margin-top: 16rpx; padding: 16rpx 24rpx; background: #FFFCF5; border: 1rpx solid #E4D4B8; border-radius: 20rpx; line-height: 1.7; }
+.choice.picked { border-color: #9C3029; }
+.choice.right { border-color: #2F724F; background: #F3F8F4; }
+.choice.wrong { border-color: #9C3029; background: #F9E8E3; }
+.feedback { margin-top: 24rpx; padding: 24rpx; background: #FFFCF5; border-left: 4rpx solid #C7A166; }
+.feedback.ok { border-left-color: #2F724F; }
+.feedback.bad { border-left-color: #9C3029; }
+.honor { padding: 24rpx 0; border-bottom: 1rpx solid #E4D4B8; }
+.honor-row { display: flex; justify-content: space-between; align-items: center; padding: 16rpx 0; }
+.state { padding: 80rpx 16rpx; text-align: center; }

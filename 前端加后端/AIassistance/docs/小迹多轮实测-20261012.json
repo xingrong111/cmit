@@ -1,0 +1,23 @@
+[
+  {
+    "question": "你好，请叫我小陈。",
+    "httpStatus": 200,
+    "mode": "model_chat",
+    "modelStatus": "available",
+    "answer": "你好，小陈！很高兴认识你。有什么想聊的，或者想了解路线、人物故事，都可以告诉我。"
+  },
+  {
+    "question": "你还记得我希望你怎么称呼我吗？",
+    "httpStatus": 200,
+    "mode": "model_chat",
+    "modelStatus": "available",
+    "answer": "当然记得，你希望我叫你小陈。有什么想聊的，随时说～"
+  },
+  {
+    "question": "谢谢，用一句话告诉我你能帮什么忙。",
+    "httpStatus": 200,
+    "mode": "model_chat",
+    "modelStatus": "available",
+    "answer": "我可以陪你聊天、解答一般知识问题，也能帮你了解历史人物故事和文化路线相关的小程序操作。"
+  }
+]

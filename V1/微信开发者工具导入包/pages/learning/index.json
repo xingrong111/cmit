@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "学习挑战",
+  "usingComponents": {
+    "app-shell": "../../components/AppShell"
+  }
+}

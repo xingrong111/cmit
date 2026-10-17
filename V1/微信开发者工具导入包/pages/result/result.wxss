@@ -1,0 +1,28 @@
+.score-head { display: flex; align-items: center; gap: 24rpx; }
+.score-ring { width: 144rpx; height: 144rpx; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex: none; }
+.score-hole { width: 104rpx; height: 104rpx; border-radius: 50%; background: #FFFCF5; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.score-pct { font-family: "STKaiti", "KaiTi", "SimSun", serif; font-size: 32rpx; line-height: 1.15; color: #35291F; }
+.score-side { flex: 1; min-width: 0; }
+.score-bar { display: flex; height: 16rpx; border-radius: 8rpx; overflow: hidden; background: #E4D4B8; }
+.score-bar .hit { background: #2F724F; height: 16rpx; }
+.score-bar .miss { background: #9C3029; height: 16rpx; }
+.score-counts { display: flex; margin-top: 16rpx; }
+.score-counts > view { flex: 1; text-align: center; }
+.score-figure { display: block; font-family: "STKaiti", "KaiTi", "SimSun", serif; font-size: 40rpx; line-height: 1.2; }
+.score-figure.hit { color: #2F724F; }
+.score-figure.miss { color: #9C3029; }
+.score-marks { display: flex; flex-wrap: wrap; gap: 8rpx; margin-top: 16rpx; }
+.mark { width: 64rpx; min-height: 72rpx; border: 1rpx solid #E4D4B8; border-radius: 12rpx; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 24rpx; line-height: 1.3; }
+.mark.hit { color: #2F724F; border-color: #2F724F; background: #F3F8F4; }
+.mark.miss { color: #9C3029; border-color: #9C3029; background: #F9E8E3; }
+.review-head { display: flex; align-items: center; gap: 16rpx; }
+.pill { flex: none; border: 1rpx solid #C7A166; border-radius: 40rpx; color: #75634D; font-size: 24rpx; line-height: 1.6; padding: 4rpx 16rpx; }
+.pill.earned { color: #2F724F; border-color: #2F724F; }
+.pill.miss { color: #9C3029; border-color: #9C3029; }
+.result-actions { display: flex; gap: 16rpx; }
+.result-actions .primary, .result-actions .secondary { flex: 1; width: auto; }
+.filters { display: flex; gap: 16rpx; margin-top: 24rpx; }
+.seg { flex: 1; min-height: 72rpx; line-height: 72rpx; text-align: center; border-radius: 40rpx; border: 1rpx solid #E4D4B8; background: #FFFCF5; color: #35291F; font-size: 28rpx; }
+.seg.on { background: #9C3029; color: #FFF9EC; border-color: #9C3029; }
+
+@import "../../统一视觉.wxss";

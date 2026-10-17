@@ -1,0 +1,15 @@
+from pathlib import Path
+exec((Path(__file__).parent/'检查合并页面.py').read_text(encoding='utf-8-sig').split('results=[]')[0])
+call('Page.addScriptToEvaluateOnNewDocument',{'source':"window.atlasTexts=[];const fill=CanvasRenderingContext2D.prototype.fillText;CanvasRenderingContext2D.prototype.fillText=function(text,x,y,...rest){window.atlasTexts.push({text:String(text),x,y});return fill.call(this,text,x,y,...rest)}"})
+for width in [390,1366]:
+ size(width);nav('home/index');wait("window.atlasTexts?.some(p=>p.text==='河北')&&!document.querySelector('.atlas-loading')")
+ assert js("window.atlasTexts.some((p,i,a)=>p.text==='河北'&&a[i+1]?.text==='9')")
+ js("document.querySelector('.atlas-stage').scrollIntoView({block:'center'})");time.sleep(.3);shot('河北地图修复-'+str(width)+'.png')
+ point=js("(()=>{const a=window.atlasTexts.filter(p=>p.text==='河北').at(-1),r=document.querySelector('canvas').getBoundingClientRect();return {x:r.left+a.x,y:r.top+a.y}})()")
+ call('Input.dispatchMouseEvent',{'type':'mousePressed',**point,'button':'left','clickCount':1});call('Input.dispatchMouseEvent',{'type':'mouseReleased',**point,'button':'left','clickCount':1})
+ wait("document.querySelector('.atlas-region').innerText==='河北省'")
+ js("document.querySelector('.atlas-selection .outline').click();[...document.querySelectorAll('.atlas-directory uni-button')].find(x=>x.innerText.includes('河北')).click()")
+ wait("document.querySelector('.atlas-region').innerText==='河北省'&&document.querySelector('.atlas-count').innerText.includes('9')")
+ js("document.querySelector('[data-open-province]').click()")
+ wait("location.hash.includes('code=130000')&&document.querySelectorAll('.registry-card').length===9")
+print('通过：手机及桌面Canvas均实际绘出“河北 9”，选省与9人名单跳转一致。');ws.close()

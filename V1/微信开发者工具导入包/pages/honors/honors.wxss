@@ -1,0 +1,20 @@
+.honor-profile { display: flex; align-items: center; gap: 16rpx; }
+.mark { width: 72rpx; height: 72rpx; flex: none; display: flex; align-items: center; justify-content: center; border: 1rpx solid #C7A166; border-radius: 50%; background: #FFF9EC; color: #9C3029; font-family: "STKaiti", "KaiTi", "SimSun", serif; font-size: 32rpx; }
+.ribbon { margin-left: auto; writing-mode: vertical-rl; letter-spacing: 4rpx; border: 1rpx solid #C7A166; color: #9C3029; font-family: "STKaiti", "KaiTi", "SimSun", serif; font-size: 24rpx; line-height: 1.4; padding: 12rpx 8rpx; background: #FFF9EC; }
+.honor-stats { display: flex; margin-top: 24rpx; padding-top: 16rpx; border-top: 1rpx solid #E4D4B8; }
+.honor-stats > view { flex: 1; }
+.honor-stats > view + view { border-left: 1rpx solid #E4D4B8; padding-left: 16rpx; }
+.honor-stat { font-family: "STKaiti", "KaiTi", "SimSun", serif; font-size: 32rpx; line-height: 1.35; }
+.meter { height: 8rpx; margin-top: 8rpx; background: #E4D4B8; border-radius: 8rpx; overflow: hidden; }
+.meter view { height: 8rpx; background: #9C3029; }
+.filters { display: flex; gap: 16rpx; margin-top: 24rpx; }
+.seg { flex: 1; min-height: 72rpx; line-height: 72rpx; text-align: center; border-radius: 40rpx; border: 1rpx solid #E4D4B8; background: #FFFCF5; color: #35291F; font-size: 28rpx; }
+.seg.on { background: #9C3029; color: #FFF9EC; border-color: #9C3029; }
+.section-head { display: flex; justify-content: space-between; align-items: center; min-height: 88rpx; margin-top: 16rpx; padding: 16rpx 0; border-bottom: 1rpx solid #E4D4B8; font-family: "STKaiti", "KaiTi", "SimSun", serif; font-size: 32rpx; }
+.honor-card { display: flex; align-items: center; gap: 16rpx; margin-top: 16rpx; padding: 24rpx; background: #FFFCF5; border: 1rpx solid #C7A166; border-radius: 20rpx; box-shadow: 0 8rpx 22rpx rgba(79, 57, 29, .08); }
+.copy { flex: 1; min-width: 0; }
+.honor-progress { flex: none; color: #75634D; font-size: 24rpx; }
+.pill { flex: none; border: 1rpx solid #C7A166; border-radius: 40rpx; color: #75634D; font-size: 24rpx; line-height: 1.6; padding: 4rpx 16rpx; }
+.pill.earned { color: #2F724F; border-color: #2F724F; }
+
+@import "../../统一视觉.wxss";

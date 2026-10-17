@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "事实与来源",
+  "usingComponents": {
+    "app-shell": "../../components/AppShell",
+    "state-panel": "../../components/StatePanel",
+    "source-sheet": "../../components/SourceSheet"
+  }
+}

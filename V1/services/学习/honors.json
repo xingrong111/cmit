@@ -1,0 +1,83 @@
+{
+  "version": "2026-10-12",
+  "question_status": "待核验",
+  "note": "称号只记录学习进度，不代表史料已核验，也不授予地图、图鉴、关系图谱或证书。同一名称按组各记一次。重复答完同一关不重复发放。打开页面不计。",
+  "completion": "答完本次抽出的全部题目即完成本关。入门关为5题，进阶关为8题。不设分数线。同一组的入门关和进阶关都答完，才算读完这一组；只答完进阶关不算。",
+  "groups": [
+    {
+      "id": "QQB",
+      "person_name": "瞿秋白",
+      "reading_person_id": "P009",
+      "beginner_level_id": "QQB-入门",
+      "advanced_level_id": "QQB-进阶"
+    },
+    {
+      "id": "LYS",
+      "person_name": "狼牙山五壮士",
+      "reading_person_id": null,
+      "beginner_level_id": "LYS-入门",
+      "advanced_level_id": "LYS-进阶"
+    },
+    {
+      "id": "SZZ",
+      "person_name": "宋振中",
+      "reading_person_id": "P004",
+      "beginner_level_id": "SZZ-入门",
+      "advanced_level_id": "SZZ-进阶"
+    },
+    {
+      "id": "LDY",
+      "person_name": "陆定一",
+      "reading_person_id": "P014",
+      "beginner_level_id": "LDY-入门",
+      "advanced_level_id": "LDY-进阶"
+    },
+    {
+      "id": "JZY",
+      "person_name": "江竹筠",
+      "reading_person_id": null,
+      "beginner_level_id": "JZY-入门",
+      "advanced_level_id": "JZY-进阶"
+    }
+  ],
+  "titles": [
+    {
+      "id": "H-GROUP-BEGINNER",
+      "name": "星火初学者",
+      "scope": "group",
+      "condition": "答完本组入门关",
+      "requires": "beginner_level_id",
+      "grant": "per_group"
+    },
+    {
+      "id": "H-GROUP-ADVANCED",
+      "name": "追光探寻者",
+      "scope": "group",
+      "condition": "答完本组进阶关",
+      "requires": "advanced_level_id",
+      "grant": "per_group",
+      "counts_as_completed_group": false
+    },
+    {
+      "id": "H-CROSS-2",
+      "name": "红色寻迹者",
+      "scope": "cross_group",
+      "condition": "任意2组的入门关和进阶关都答完",
+      "completed_groups": 2
+    },
+    {
+      "id": "H-CROSS-4",
+      "name": "星火传承者",
+      "scope": "cross_group",
+      "condition": "任意4组的入门关和进阶关都答完",
+      "completed_groups": 4
+    },
+    {
+      "id": "H-CROSS-5",
+      "name": "理想点灯人",
+      "scope": "cross_group",
+      "condition": "5组的入门关和进阶关都答完",
+      "completed_groups": 5
+    }
+  ]
+}

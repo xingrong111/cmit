@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "历史片段",
+  "usingComponents": {
+    "app-shell": "../../components/AppShell",
+    "state-panel": "../../components/StatePanel",
+    "source-sheet": "../../components/SourceSheet"
+  }
+}

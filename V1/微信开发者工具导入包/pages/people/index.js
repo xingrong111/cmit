@@ -1,0 +1,1 @@
+"use strict";const e=require("../../common/vendor.js");Math||s();const s=()=>"../../components/人物目录.js",t={__name:"index",setup:s=>(e.onShareAppMessage(()=>({title:"山河有迹 · 山河人物",path:"/pages/people/index"})),(e,s)=>({})),__runtimeHooks:2};wx.createPage(t);

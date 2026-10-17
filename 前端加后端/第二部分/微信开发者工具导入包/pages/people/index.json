@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "人物索引",
+  "usingComponents": {
+    "app-shell": "../../components/AppShell",
+    "person-card": "../../components/PersonCard",
+    "state-panel": "../../components/StatePanel"
+  }
+}

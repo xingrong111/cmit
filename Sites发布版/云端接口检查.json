@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "reading": true,
+  "account": true,
+  "moderation": true,
+  "ownership": true,
+  "learning": true,
+  "guide": true,
+  "liveProviderTest": false
+}

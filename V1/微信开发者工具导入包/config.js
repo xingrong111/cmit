@@ -1,0 +1,1 @@
+module.exports={apiBase:'http://127.0.0.1:3110/api/guide',teamPages:{person:'/pages/person/index',event:'/pages/event/index'}};

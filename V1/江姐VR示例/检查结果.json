@@ -1,0 +1,14 @@
+{
+  "widths": [
+    1366,
+    390
+  ],
+  "panoramaLoaded": true,
+  "dragRotate": true,
+  "zoom": true,
+  "hotspots": 4,
+  "quiz": true,
+  "overflow": false,
+  "deviceTest": false,
+  "headsetVR": false
+}

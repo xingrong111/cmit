@@ -1,0 +1,182 @@
+[
+  {
+    "path": "00-阅读与核对顺序.md",
+    "bytes": 1295,
+    "sha256": "918458e44d73ad8125293ed0bd8cf68484c108dd933457ad22e30b8dabd4604e"
+  },
+  {
+    "path": "核对入口.html",
+    "bytes": 4534,
+    "sha256": "c44397e3e33b2725cf524e72f0307ced477e80f438743c417c27ba73c3c0f34d"
+  },
+  {
+    "path": "01-逐地点档案/陆定一祖居陈列馆.md",
+    "bytes": 2125,
+    "sha256": "fb89d82b419c774151dadd03c90b4230f341efc74f47af3a1c310db7091e1f97"
+  },
+  {
+    "path": "01-逐地点档案/瞿秋白纪念馆.md",
+    "bytes": 2164,
+    "sha256": "952c7aeed45b93055b13254665e9763a9224cffcc636cf255c004e94c0f1512e"
+  },
+  {
+    "path": "01-逐地点档案/张闻天旧居.md",
+    "bytes": 2162,
+    "sha256": "0aa3865dbf821c27fc01665ebf62d1a8fb21b2bdc22b70cc2f31cc2874f94099"
+  },
+  {
+    "path": "01-逐地点档案/张太雷纪念馆.md",
+    "bytes": 2019,
+    "sha256": "a5699412621ebe6ea81f7a68ab1603ef9fc21a6f319464b62d8ed5b9c7c55930"
+  },
+  {
+    "path": "01-逐地点档案/秦邦宪故居.md",
+    "bytes": 2001,
+    "sha256": "6a6bd151a2823730ff71de1c6e4f3263da660a01661b73f5685e81c4889a2148"
+  },
+  {
+    "path": "02-本轮来源与证据/来源索引.json",
+    "bytes": 8880,
+    "sha256": "3e8c39ef5fc71dc0551ec108db9c981c0668e0737ce09f19a9fbd28f42e95703"
+  },
+  {
+    "path": "02-本轮来源与证据/来源索引.md",
+    "bytes": 7553,
+    "sha256": "ded35f4c91c2ec39b99e9ea80ecca7fa816cf18fded414fe8daf693ad0cfd791"
+  },
+  {
+    "path": "03-入口与开放核验/入口候选记录.json",
+    "bytes": 3061,
+    "sha256": "5432a691266da5c4318a0ac251c20229aae49ea559aabb45d5c43de679bef682"
+  },
+  {
+    "path": "03-入口与开放核验/逐项复核表.json",
+    "bytes": 9589,
+    "sha256": "4ac832438fc1d8f9cc59bb10c877fe588662307da283234f61523a7ee051cfd9"
+  },
+  {
+    "path": "03-入口与开放核验/逐项复核表.md",
+    "bytes": 4744,
+    "sha256": "66a0783c1ed2c8adfc8ce94b713395e5377f0772b6fe027abbc75a21c1f9a059"
+  },
+  {
+    "path": "03-入口与开放核验/入口实地记录模板.md",
+    "bytes": 881,
+    "sha256": "e041e78f5597cb3b333cf2ef5f5c2c04a1bfc3e48b5708b4c7905e32c1e6bcc5"
+  },
+  {
+    "path": "04-图片许可/IMG-OPEN-QBC.jpg",
+    "bytes": 2382609,
+    "sha256": "26b602a08310c16adfb345430f8df78b46b2cdcaa2d65f811046358e22c268dc"
+  },
+  {
+    "path": "04-图片许可/IMG-OPEN-QQB.jpg",
+    "bytes": 4445607,
+    "sha256": "a9b5994b5b67abd8168d8bedcf4bc4bef041d178285f0e5788faa0ae34daf6c9"
+  },
+  {
+    "path": "04-图片许可/开放许可图片记录.json",
+    "bytes": 6924,
+    "sha256": "0021e506a8b37cce05c0a2755a1543e21feebf5fba5b5c4b73eec7a5c939d7ad"
+  },
+  {
+    "path": "04-图片许可/图片使用与署名.md",
+    "bytes": 5997,
+    "sha256": "57dd159ab02b2b1108f6c77d3fc309dcb1bf7818a3337f87003c3b0f90a2acd5"
+  },
+  {
+    "path": "04-图片许可/不采用图片与缺口.md",
+    "bytes": 1234,
+    "sha256": "e457ebc1abedd525d7dc96eb8b91aec6f5d4a5b8bd552270dd2d57ee8ff5eaf3"
+  },
+  {
+    "path": "05-技术演练/导入重启回滚演练.json",
+    "bytes": 1272,
+    "sha256": "99a7e62223a2ed341b5858cd12135100a609ac796b8c919466e40eba0b39861c"
+  },
+  {
+    "path": "05-技术演练/缓存与回滚演练更新.md",
+    "bytes": 2106,
+    "sha256": "7b1582dd3178c7971a88232097f7ac9726e509b0991ec2a262af55e9198144b9"
+  },
+  {
+    "path": "06-既有资料参考/地点结构化资料.json",
+    "bytes": 21661,
+    "sha256": "046bf1977058729e0a715790953a90e3f9d34669fd63b27f2755ad3d4e671427"
+  },
+  {
+    "path": "06-既有资料参考/原始来源清单.md",
+    "bytes": 10037,
+    "sha256": "e14326eabaf6ba7498ddfaf8b94151b597a0c0f0cdad1bc0cb52988004a1da37"
+  },
+  {
+    "path": "06-既有资料参考/陆定一祖居陈列馆.md",
+    "bytes": 2678,
+    "sha256": "a56df016e947c1d3ed6bd19913748feaa7cfad07445cca2e28eacbf7f34084a1"
+  },
+  {
+    "path": "06-既有资料参考/瞿秋白纪念馆.md",
+    "bytes": 2741,
+    "sha256": "498a042558c59c7cae05af8ce0e669790ffc4e330c8c705eba7d8f84b8c0a9c1"
+  },
+  {
+    "path": "06-既有资料参考/张闻天旧居.md",
+    "bytes": 2780,
+    "sha256": "9cef8219b226777a4d15e07ced3c796106991374a284d52c6626210ae56abfdd"
+  },
+  {
+    "path": "06-既有资料参考/张太雷纪念馆.md",
+    "bytes": 2514,
+    "sha256": "4451ee2a51f72bf21a5cb7c7eeb3079b1f82e957c3e90fa4d4fafecaa7cea409"
+  },
+  {
+    "path": "06-既有资料参考/秦邦宪故居.md",
+    "bytes": 2729,
+    "sha256": "dc24f5a8eb58361ebf7322e807671365063bb4672970426f945db75f5b9c2ee4"
+  },
+  {
+    "path": "06-既有资料参考/核查与缺口表.md",
+    "bytes": 4829,
+    "sha256": "8e1e3353de6dcf2a6a9a7c839492f85308b9ae6074b42edcfeac1f3ab0ef18d7"
+  },
+  {
+    "path": "06-既有资料参考/图片候选与许可.json",
+    "bytes": 2905,
+    "sha256": "c56d24f0086bc290d065d18d69f39181ad3866a107b5d0d6224c7d926b6f2a17"
+  },
+  {
+    "path": "06-既有资料参考/图片候选与许可.md",
+    "bytes": 3350,
+    "sha256": "805a72a2e1e25dc385f56704ba9c4b56a0bf38585709c434e18f0fa6fe0363e2"
+  },
+  {
+    "path": "06-既有资料参考/资料总览.md",
+    "bytes": 2512,
+    "sha256": "74a6a48d09348d641cbc1ef43fbe74d0e38de8df9a78f4eff5429312818c5ed5"
+  },
+  {
+    "path": "06-既有资料参考/资料总览.html",
+    "bytes": 2836,
+    "sha256": "7eb2324fe5d7ca5cd398efe623385c5ff780dd1630204d33c91a23484bcf4e34"
+  },
+  {
+    "path": "06-既有资料参考/腾讯地图候选点.json",
+    "bytes": 3114,
+    "sha256": "cedebb0461b79739a156c75394755e505ad4e69dc773b3ec5eaa41157424d618"
+  },
+  {
+    "path": "06-既有资料参考/第二轮完善结果.md",
+    "bytes": 4114,
+    "sha256": "c3146a4cb2cc6847c05eec1d67994f1bf17c5873b6f8483facd71bd8369da01b"
+  },
+  {
+    "path": "06-既有资料参考/场馆核实与图片授权询问模板.md",
+    "bytes": 1625,
+    "sha256": "2dbdfb1d891b1c27d7e94f0a54ecca447a00ab32a06b252da749854e6ef97384"
+  },
+  {
+    "path": "06-既有资料参考/腾讯点位测试结果.md",
+    "bytes": 1246,
+    "sha256": "4ed2bf15002e4002898687f730f000509a0a2b1afd8800e3ca4c1ed79cd28aa9"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "httpStatus": 200,
+  "result": {
+    "placeId": "PLACE-WX-LDY",
+    "provider": "腾讯位置服务",
+    "generatedAt": "2026-10-12T01:13:06.055Z",
+    "items": [
+      {
+        "id": "4137342448922742816",
+        "name": "陆定一祖居陈列馆",
+        "address": "江苏省无锡市惠山区堰桥街道天一社区陆巷4号",
+        "coordinate": {
+          "latitude": 31.642796,
+          "longitude": 120.293782,
+          "type": "gcj02"
+        },
+        "category": "文化场馆:展览馆",
+        "telephone": "0510-83748119",
+        "entranceVerified": false
+      }
+    ],
+    "notice": "仅为地图POI候选，不证明游客入口、营业状态或历史关联。",
+    "cacheHit": false,
+    "coalesced": false
+  },
+  "checkedAt": "2026-10-12T01:13:06.057824+00:00"
+}

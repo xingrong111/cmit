@@ -1,0 +1,17 @@
+from pathlib import Path
+exec((Path(__file__).parent/'检查合并页面.py').read_text(encoding='utf-8-sig').split('results=[]')[0])
+for width in [390,1366]:
+ size(width);nav('home/index');wait("document.querySelector('.scope-metrics')?.innerText.includes('390')")
+ assert js('document.documentElement.scrollWidth<='+str(width))
+ shot('合并统计首页-'+str(width)+'.png')
+ nav('province/index?code=130000');wait("document.querySelectorAll('.registry-card').length===9")
+ for name in ['马宝玉','葛振林','胡德林','胡福才']:assert js('document.body.innerText.includes('+json.dumps(name)+')')
+ nav('province/index?code=unknown');wait("document.querySelectorAll('.registry-card').length===212")
+ assert js("document.body.innerText.includes('宋振中')")
+ nav('people/index');wait("document.querySelectorAll('.archive-name').length===390")
+ assert js('document.documentElement.scrollWidth<='+str(width))
+ shot('合并人物目录-'+str(width)+'.png')
+nav('province/index?code=320000');wait("document.querySelectorAll('.registry-card').length===16")
+js("[...document.querySelectorAll('.registry-card')].find(x=>x.innerText.includes('瞿秋白')).click()")
+wait("location.hash.includes('person/index?id=P009')&&document.querySelector('.person-shortcuts')")
+print('通过：390/1366布局、390总目录、河北9人含四壮士、地区待核212人、江苏档案跳转。');ws.close()

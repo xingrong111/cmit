@@ -1,0 +1,13 @@
+[
+  {
+    "placeId": "PLACE-WX-LDY",
+    "checkedAt": "2026-10-12T01:07:06.952050+00:00",
+    "httpStatus": 503,
+    "result": {
+      "error": {
+        "code": "MAP_QUOTA_EXCEEDED",
+        "message": "地图服务今日额度已用完。"
+      }
+    }
+  }
+]

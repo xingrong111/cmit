@@ -1,0 +1,1 @@
+<view class="state-panel"><view wx:if="{{a}}" class="state-lines"><view/><view/><view/></view><block wx:else><text class="state-title">{{b}}</text><text class="muted">{{c}}</text><button wx:if="{{d}}" class="primary" bindtap="{{e}}">重新读取</button></block></view>

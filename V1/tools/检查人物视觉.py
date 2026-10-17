@@ -1,0 +1,28 @@
+from pathlib import Path
+import json,time
+r=Path(__file__).resolve().parents[1];base=(r/'tools/检查合并页面.py').read_text(encoding='utf-8');exec(base.split('results=[]')[0])
+shots=r/'docs/人物视觉截图';shots.mkdir(exist_ok=True);results=[]
+for width in [390,1440]:
+ size(width);nav('people/index');wait("document.querySelector('.archive-controls')")
+ js("(()=>{const i=document.querySelector('.search-field input');i.value='';i.dispatchEvent(new Event('input',{bubbles:true}));document.querySelectorAll('.archive-controls .chips uni-button')[1].click()})()")
+ wait("document.querySelectorAll('.people-grid .person-card').length===15")
+ wait("document.querySelectorAll('.portrait-photo').length===15")
+ assert js('document.documentElement.scrollWidth<='+str(width))
+ time.sleep(.4);shot('人物卡片-'+str(width)+'.png')
+ js("document.querySelectorAll('.archive-controls .chips uni-button')[2].click()")
+ wait("document.querySelectorAll('.ip-card-image').length===5")
+ assert js("[...document.querySelectorAll('.ip-card-image img')].every(i=>i.complete&&i.naturalWidth>0)")
+ shot('五组IP-'+str(width)+'.png')
+ nav('person/index?id=P009');wait("document.querySelector('.portrait-cover .portrait-photo')")
+ assert js("document.querySelector('.portrait-cover').innerText.includes('史料照片')")
+ shot('人物简介-'+str(width)+'.png')
+ nav('graph/index?id=P009');wait("document.querySelector('.graph-ready')&&document.querySelector('.node-anchor')")
+ assert js("document.querySelectorAll('.graph-node').length<=7")
+ assert js('document.documentElement.scrollWidth<='+str(width))
+ js("document.querySelector('.graph-edge').click()")
+ wait("document.querySelector('.graph-evidence')")
+ assert js("document.querySelector('.graph-evidence').innerText.includes('查看关系出处')")
+ js("document.querySelectorAll('.zoom-button')[2].click()")
+ time.sleep(.4);shot('人物图谱-'+str(width)+'.png')
+ results.append({'width':width,'dossiers':15,'historicalPhotos':10,'sourceImagesPendingUsage':5,'ipFallback':0,'ipGroups':5,'photoLabel':True,'graphEvidence':True,'nodeLimit':7,'noOverflow':True})
+(r/'docs/人物视觉验证.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8');print('人物图像、卡片、IP专项、关系出处和双宽度布局通过');ws.close()

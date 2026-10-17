@@ -1,0 +1,6 @@
+<template><view class="app-shell"><view class="masthead"><view class="brand" @tap="go('home')"><text class="seal">迹</text><view><text class="brand-title">山河有迹</text><text class="brand-sub">循迹 · 读人 · 见史</text></view></view><view class="desktop-nav"><button v-for="item in links" :key="item.page" :class="{'nav-current':active===item.page}" @tap="go(item.page)"><image class="desktop-nav-icon" :src="'/static/icons/'+item.icon+'.png'" aria-hidden="true"/>{{item.title}}</button></view><text class="edition">山河有迹 · 合并预览</text></view><view class="shell-body"><slot/></view><view class="site-note"><text>山河为卷，史料为据</text><text>已核片段持续整理 · 图像为原创艺术化装饰</text></view></view></template>
+<script setup>
+import {ref} from 'vue';import {onShow} from '@dcloudio/uni-app';import {go} from '../lib/navigation.js'
+const active=ref(''),links=[{page:'home',icon:'home',title:'首页'},{page:'people',icon:'people',title:'人物'},{page:'timeline',icon:'timeline',title:'长卷'},{page:'radar',icon:'pin',title:'足迹'},{page:'assistant',icon:'assistant',title:'小迹'},{page:'learning',icon:'learning',title:'学习'},{page:'me',icon:'bookmark',title:'我的'}]
+onShow(()=>{active.value=getCurrentPages().slice(-1)[0]?.route?.split('/')[1]||''})
+</script>

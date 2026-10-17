@@ -1,0 +1,85 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/people/index",
+    "pages/timeline/index",
+    "pages/me/index",
+    "pages/person/index",
+    "pages/event/index",
+    "pages/graph/index",
+    "pages/sources/index",
+    "pages/radar/index",
+    "pages/assistant/index",
+    "pages/account/index",
+    "pages/discussion/index",
+    "pages/admin/index",
+    "pages/my-comments/index",
+    "pages/route/index",
+    "pages/place/index",
+    "pages/source/index",
+    "pages/privacy/index",
+    "pages/learning/index",
+    "pages/province/index",
+    "pages/registry/index",
+    "pages/statistics/index",
+    "pages/learn/learn",
+    "pages/quiz/quiz",
+    "pages/result/result",
+    "pages/honors/honors",
+    "pages/other/other"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "山河有迹",
+    "navigationBarBackgroundColor": "#FBF5E9",
+    "backgroundColor": "#FBF5E9"
+  },
+  "tabBar": {
+    "color": "#75604B",
+    "selectedColor": "#982B28",
+    "backgroundColor": "#FFFAF1",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "static/icons/home.png",
+        "selectedIconPath": "static/icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/people/index",
+        "text": "人物",
+        "iconPath": "static/icons/people.png",
+        "selectedIconPath": "static/icons/people-active.png"
+      },
+      {
+        "pagePath": "pages/radar/index",
+        "text": "足迹",
+        "iconPath": "static/icons/pin.png",
+        "selectedIconPath": "static/icons/pin-active.png"
+      },
+      {
+        "pagePath": "pages/assistant/index",
+        "text": "小迹",
+        "iconPath": "static/icons/assistant.png",
+        "selectedIconPath": "static/icons/assistant-active.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我的",
+        "iconPath": "static/icons/bookmark.png",
+        "selectedIconPath": "static/icons/bookmark-active.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于查询附近历史场所与步行路线，仅在你选择定位时使用"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

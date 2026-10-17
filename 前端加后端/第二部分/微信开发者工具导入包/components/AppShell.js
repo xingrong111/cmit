@@ -1,0 +1,1 @@
+"use strict";const e=require("../common/vendor.js"),o=require("../lib/navigation.js"),n={__name:"AppShell",setup:n=>(n,r)=>({a:e.o(n=>e.unref(o.go)("home"),"92"),b:e.o(n=>e.unref(o.go)("home"),"7e"),c:e.o(n=>e.unref(o.go)("people"),"b8"),d:e.o(n=>e.unref(o.go)("timeline"),"75"),e:e.o(n=>e.unref(o.go)("me"),"22")})};wx.createComponent(n);

@@ -1,0 +1,914 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [
+    {
+      "id": "SRC-QQB-XH2018",
+      "title": "中国共产党早期领导人之一——瞿秋白",
+      "institution": "新华社；记者邱冰清",
+      "publishedAt": "2018-09-27",
+      "accessedAt": "2026-10-10",
+      "url": "https://www.xinhuanet.com/politics/2018-09/27/c_1123489520.htm",
+      "finalUrl": "https://www.xinhuanet.com/politics/2018-09/27/c_1123489520.htm",
+      "position": "正文人物身份、求学采访段；八七会议段；瑞金段",
+      "excerpt": "中国共产党早期领导人之一",
+      "relation": "新华社原始电讯；国防部同稿转载不另算独立证据"
+    },
+    {
+      "id": "SRC-LDY-CPPCC",
+      "title": "陆定一（1906—1996）",
+      "institution": "全国政协",
+      "publishedAt": "未显示",
+      "accessedAt": "2026-10-10",
+      "url": "http://www.cppcc.gov.cn/2011/09/28/ARTI1317197350703237.shtml",
+      "finalUrl": "http://www.cppcc.gov.cn/2011/09/28/ARTI1317197350703237.shtml",
+      "position": "正文1926年毕业及1942年解放日报段",
+      "excerpt": "电机科",
+      "relation": "人物简介；未亲见原毕业证"
+    },
+    {
+      "id": "SRC-WX-MUSEUM2025",
+      "title": "无锡博物馆名录",
+      "institution": "无锡市文化广电和旅游局",
+      "publishedAt": "2025-07-25",
+      "accessedAt": "2026-10-10",
+      "url": "https://crtt.wuxi.gov.cn/doc/2025/07/25/4618630.shtml",
+      "finalUrl": "https://crtt.wuxi.gov.cn/doc/2025/07/25/4618630.shtml",
+      "position": "表格第21、24项；只支持名称和所列地址，不支持今天营业",
+      "excerpt": "陆定一祖居陈列馆",
+      "relation": "政府名录；不是导航入口和当日开放公告"
+    },
+    {
+      "id": "SRC-CZ-QQB2026",
+      "title": "瞿秋白纪念馆",
+      "institution": "常州市人民政府网站",
+      "publishedAt": "2026-04-07",
+      "accessedAt": "2026-10-10",
+      "url": "https://www.changzhou.gov.cn/ns_news/412621545869070",
+      "finalUrl": "https://www.changzhou.gov.cn/ns_news/412621545869070",
+      "position": "正文第一段地址；第二段故居与纪念馆、生平展",
+      "excerpt": "延陵西路188号",
+      "relation": "政府介绍；不据历史开放年份显示正在营业"
+    },
+    {
+      "id": "SRC-LYS-MOD2018",
+      "title": "抗日英雄狼牙山五壮士：宁死不屈 视死如归",
+      "institution": "国防部网站；来源新华社；记者赵鸿宇",
+      "publishedAt": "2018-12-30 10:37",
+      "accessedAt": "2026-10-10",
+      "url": "http://www.mod.gov.cn/2018gfbztlbmb/2018-12/30/content_4833259.htm",
+      "finalUrl": "http://www.mod.gov.cn/2018gfbztlbmb/2018-12/30/content_4833259.htm",
+      "position": "正文“完成任务撤离时”段；“马宝玉、胡德林、胡福才壮烈殉国”段",
+      "excerpt": "葛振林、宋学义",
+      "relation": "新华社石家庄12月30日电转载；未另取得新华社原始页面，不累计独立证据；战斗次日与宋学义逝世年份未采用"
+    },
+    {
+      "id": "SRC-SZZ-XH2024",
+      "title": "缅怀共和国年龄最小的革命烈士，牺牲时还未满9岁",
+      "institution": "新华社；记者周文冲；策划张桂林",
+      "publishedAt": "2024-09-30 15:38:46",
+      "accessedAt": "2026-10-10",
+      "url": "http://www.news.cn/20240930/fbe0a9eec2d646258b807ca6f0080bed/c.html",
+      "finalUrl": "http://www.news.cn/20240930/fbe0a9eec2d646258b807ca6f0080bed/c.html",
+      "position": "正文“小萝卜头宋振中生前照片”后父母段；“经多方争取”段",
+      "excerpt": "先后给“小萝卜头”当起了老师",
+      "relation": "新华社原始报道；出生地和关押排序未采用，不把三位老师写成同时授课"
+    },
+    {
+      "id": "SRC-JZY-XH2019",
+      "title": "江竹筠：共产党员的意志是钢铁",
+      "institution": "新华社；记者吴晓颖",
+      "publishedAt": "2019-05-29 14:26:57",
+      "accessedAt": "2026-10-10",
+      "url": "https://www.xinhuanet.com/politics/2019-05/29/c_1124557270.htm",
+      "finalUrl": "https://www.xinhuanet.com/politics/2019-05/29/c_1124557270.htm",
+      "position": "正文1939/1940年段、1944年段；1947年挺进报工作段",
+      "excerpt": "联络和组织发行工作",
+      "relation": "新华社成都5月29日电；未采用有不同记载的就义地点、现场引语、刑讯细节"
+    },
+    {
+      "id": "SRC-WX-ZWT-MUSEUM2016",
+      "title": "张闻天旧居",
+      "institution": "无锡博物院",
+      "publishedAt": "2016-12-07",
+      "accessedAt": "2026-10-11",
+      "url": "https://www.wxmuseum.cn/News/Details/11794b0d-0ea6-48b7-8991-19665dd19c8c",
+      "finalUrl": "https://www.wxmuseum.cn/News/Details/11794b0d-0ea6-48b7-8991-19665dd19c8c",
+      "position": "正文首段展陈说明及人物段末；只支持晚年居住关联，不证明今日营业",
+      "excerpt": "1975年8月25日",
+      "relation": "馆方专题页，历史服务字段不当作实时信息"
+    },
+    {
+      "id": "L-S01",
+      "title": "无锡博物馆名录",
+      "institution": "无锡市文化广电和旅游局",
+      "publishedAt": "2025-07-25",
+      "accessedAt": "2026-10-11",
+      "url": "https://crtt.wuxi.gov.cn/doc/2025/07/25/4618630.shtml",
+      "finalUrl": "https://crtt.wuxi.gov.cn/doc/2025/07/25/4618630.shtml",
+      "position": "表格第21、24项",
+      "excerpt": "老陆巷4号；汤巷45号",
+      "relation": "政府名录，不证明当前开放",
+      "accessStatus": "本轮重新打开正文；名录第21、24项已核对，不是当前营业证明"
+    },
+    {
+      "id": "L-S02",
+      "title": "瞿秋白纪念馆",
+      "institution": "常州市人民政府网站；搜索展示来源常州名人故居管理中心，打开版本来源栏为空",
+      "publishedAt": "2026-04-07",
+      "accessedAt": "2026-10-11",
+      "url": "https://www.changzhou.gov.cn/ns_news/412621545869070",
+      "finalUrl": "https://www.changzhou.gov.cn/ns_news/412621545869070",
+      "position": "正文第1、2段",
+      "excerpt": "延陵西路188号",
+      "relation": "政府景点介绍，展示来源栏存在版本差异"
+    },
+    {
+      "id": "L-S03",
+      "title": "关于瞿秋白纪念馆恢复开放的通知",
+      "institution": "常州市文化广电和旅游局；落款常州三杰纪念馆",
+      "publishedAt": "2024-12-05",
+      "accessedAt": "2026-10-12",
+      "url": "https://wglj.changzhou.gov.cn/html/wgxj/2024/EFABJFDB_1205/89504.html",
+      "finalUrl": "https://wglj.changzhou.gov.cn/html/wgxj/2024/EFABJFDB_1205/89504.html",
+      "position": "正文恢复开放及预约段",
+      "excerpt": "参观无需提前预约",
+      "relation": "2024年公告，不证明2026年当天营业",
+      "accessStatus": "2026-10-12重新打开正文并核对相关字段；不证明当日营业"
+    },
+    {
+      "id": "L-S04",
+      "title": "“好家风、好家训”探访陆定一故居",
+      "institution": "共青团无锡市委网站；页面来源栏为空",
+      "publishedAt": "2018-08-07",
+      "accessedAt": "2026-10-11",
+      "url": "https://thyouth.wuxi.gov.cn/doc/2018/08/07/1900426.shtml",
+      "finalUrl": "https://thyouth.wuxi.gov.cn/doc/2018/08/07/1900426.shtml",
+      "position": "正文第1、2段",
+      "excerpt": "陆定一同志生平事迹陈列",
+      "relation": "政府机构网站活动报道，出生地措辞未作独立定论"
+    },
+    {
+      "id": "L-S05",
+      "title": "张闻天旧居",
+      "institution": "无锡博物院",
+      "publishedAt": "2016-12-07",
+      "accessedAt": "2026-10-12",
+      "url": "https://www.wxmuseum.cn/News/Details/11794b0d-0ea6-48b7-8991-19665dd19c8c",
+      "finalUrl": "https://www.wxmuseum.cn/News/Details/11794b0d-0ea6-48b7-8991-19665dd19c8c",
+      "position": "场馆介绍段、1975年迁居段及开放信息/电话段",
+      "excerpt": "汤巷45号；0510-82758567",
+      "relation": "馆方专题页；旧开放字段需再次核实",
+      "accessStatus": "2026-10-12重新打开正文并核对相关字段；不证明当日营业"
+    },
+    {
+      "id": "L-S06",
+      "title": "张太雷纪念馆",
+      "institution": "中共常州市委组织部",
+      "publishedAt": "2026-03-30",
+      "accessedAt": "2026-10-12",
+      "url": "https://zg.changzhou.gov.cn/index.php?a=show&c=phone&catid=14578&id=59753",
+      "finalUrl": "https://zg.changzhou.gov.cn/index.php?a=show&c=phone&catid=14578&id=59753",
+      "position": "点位简介、特色项目、联系电话；排除页脚地址",
+      "excerpt": "和平中路子和里3号",
+      "relation": "官方教育点位介绍，不保证各项目随到随开",
+      "accessStatus": "2026-10-12重新打开正文并核对相关字段；不证明当日营业"
+    },
+    {
+      "id": "L-S07",
+      "title": "今天起，常州三杰纪念馆新面貌亮相",
+      "institution": "常州文明网；来源常州日报；郑雨露、常文广旅/文，朱臻/摄",
+      "publishedAt": "2021-04-29",
+      "accessedAt": "2026-10-11",
+      "url": "https://wenming.changzhou.gov.cn/html/wmw/2021/MKIQQIAP_0429/73406.html",
+      "finalUrl": "https://wenming.changzhou.gov.cn/html/wmw/2021/MKIQQIAP_0429/73406.html",
+      "position": "正文怀霜社段、图片图注及文末链接段",
+      "excerpt": "怀霜社作为参观起点",
+      "relation": "常州日报转载，非独立馆方服务公告"
+    },
+    {
+      "id": "L-S08",
+      "title": "红色基因与国学精粹的跨时空交响",
+      "institution": "无锡市梁溪区人民政府；来源崇安寺街道办事处",
+      "publishedAt": "2025-04-28",
+      "accessedAt": "2026-10-11",
+      "url": "https://www.wxlx.gov.cn/doc/2025/04/28/4554040.shtml",
+      "finalUrl": "https://www.wxlx.gov.cn/doc/2025/04/28/4554040.shtml",
+      "position": "第三站／红色传承段",
+      "excerpt": "崇宁路112号",
+      "relation": "政府街道活动报道，不据报道保证展品现仍在展"
+    },
+    {
+      "id": "L-S09",
+      "title": "寻访故里忆峥嵘，淬炼党性践初心——生命科学与健康工程学院赴秦邦宪故居开展党性教育实践活动",
+      "institution": "江南大学生命科学与健康工程学院；图文解明菁、陈董",
+      "publishedAt": "2026-04-23",
+      "accessedAt": "2026-10-11",
+      "url": "https://slshe.jiangnan.edu.cn/info/1090/7283.htm",
+      "finalUrl": "https://slshe.jiangnan.edu.cn/info/1090/7283.htm",
+      "position": "正文第2段（地址、青少年居所与展陈描述）；属高校活动报道",
+      "excerpt": "青少年时期的居所",
+      "relation": "高校活动报道，非馆方运营公告"
+    },
+    {
+      "id": "L-S10",
+      "title": "对市十六届人大五次会议第0109号建议的答复函",
+      "institution": "中共无锡市委宣传部网站",
+      "publishedAt": "2021-07-30",
+      "accessedAt": "2026-10-11",
+      "url": "https://xcb.wuxi.gov.cn/doc/2021/07/30/3420145.shtml",
+      "finalUrl": "https://xcb.wuxi.gov.cn/doc/2021/07/30/3420145.shtml",
+      "position": "正文含2020年11月陆定一祖居段",
+      "excerpt": "2020年11月",
+      "relation": "官方答复函，未证明为首次开放或不同阶段同一事件"
+    },
+    {
+      "id": "L-S11",
+      "title": "秦邦宪故居",
+      "institution": "无锡职业技术大学现网站；发布者魏艳，历史页面",
+      "publishedAt": "2014-11-21",
+      "accessedAt": "2026-10-11",
+      "url": "https://www.wxit.edu.cn/info/1571/168001.htm",
+      "finalUrl": "https://www.wxit.edu.cn/info/1571/168001.htm",
+      "position": "正文第2段，免费开放历史日期；正文第4段，生平事迹陈列",
+      "excerpt": "2005年5月9日",
+      "relation": "网页发表于2014-11-21，所记免费开放为2005-05-09；不证明当前门票政策"
+    },
+    {
+      "id": "L-S12",
+      "title": "〖陆定一祖居〗",
+      "institution": "无锡市惠山区人民政府办公室",
+      "publishedAt": "2024-02-28 13:58（独立核查报告及既有访问记录）",
+      "accessedAt": "2026-10-11",
+      "url": "https://www.huishan.gov.cn/doc/2024/02/28/4186233.shtml",
+      "finalUrl": "https://www.huishan.gov.cn/doc/2024/02/28/4186233.shtml",
+      "position": "正文场所介绍段；核查报告指出出生地和童年居住表述",
+      "excerpt": "位于堰桥街道天一社区老陆巷",
+      "relation": "2018年团市委页面措辞相近，转载关系待核；不是第二份独立出生证据",
+      "accessStatus": "独立核查报告已取得正文；助手本轮重开未取得正文"
+    },
+    {
+      "id": "MAP-20261012-PLACE-WX-LDY",
+      "title": "腾讯地点搜索：陆定一祖居陈列馆",
+      "institution": "腾讯位置服务WebService",
+      "publishedAt": "未显示；查询生成时间不是发布时间",
+      "accessedAt": "2026-10-12",
+      "url": "https://apis.map.qq.com/ws/place/v1/search/",
+      "finalUrl": "https://apis.map.qq.com/ws/place/v1/search/",
+      "position": "本地脱敏原始响应：五馆完整候选查询.json；placeId=PLACE-WX-LDY；POI ID=4137342448922742816",
+      "excerpt": "陆定一祖居陈列馆；江苏省无锡市惠山区堰桥街道天一社区陆巷4号",
+      "relation": "地图平台数据，不是馆方入口核验或当日营业公告；请求Key不保存"
+    },
+    {
+      "id": "MAP-20261012-PLACE-CZ-QQB",
+      "title": "腾讯地点搜索：瞿秋白纪念馆",
+      "institution": "腾讯位置服务WebService",
+      "publishedAt": "未显示；查询生成时间不是发布时间",
+      "accessedAt": "2026-10-12",
+      "url": "https://apis.map.qq.com/ws/place/v1/search/",
+      "finalUrl": "https://apis.map.qq.com/ws/place/v1/search/",
+      "position": "本地脱敏原始响应：五馆完整候选查询.json；placeId=PLACE-CZ-QQB；POI ID=12011788513647480776",
+      "excerpt": "瞿秋白纪念馆-入口；江苏省常州市钟楼区延陵西路188号瞿秋白纪念馆",
+      "relation": "地图平台数据，不是馆方入口核验或当日营业公告；请求Key不保存"
+    },
+    {
+      "id": "MAP-20261012-PLACE-WX-ZWT",
+      "title": "腾讯地点搜索：张闻天旧居",
+      "institution": "腾讯位置服务WebService",
+      "publishedAt": "未显示；查询生成时间不是发布时间",
+      "accessedAt": "2026-10-12",
+      "url": "https://apis.map.qq.com/ws/place/v1/search/",
+      "finalUrl": "https://apis.map.qq.com/ws/place/v1/search/",
+      "position": "本地脱敏原始响应：五馆完整候选查询.json；placeId=PLACE-WX-ZWT；POI ID=2736985590322399065",
+      "excerpt": "张闻天旧居-南门；江苏省无锡市梁溪区崇安寺街道汤巷45号张闻天旧居",
+      "relation": "地图平台数据，不是馆方入口核验或当日营业公告；请求Key不保存"
+    },
+    {
+      "id": "MAP-20261012-PLACE-CZ-ZTL",
+      "title": "腾讯地点搜索：张太雷纪念馆",
+      "institution": "腾讯位置服务WebService",
+      "publishedAt": "未显示；查询生成时间不是发布时间",
+      "accessedAt": "2026-10-12",
+      "url": "https://apis.map.qq.com/ws/place/v1/search/",
+      "finalUrl": "https://apis.map.qq.com/ws/place/v1/search/",
+      "position": "本地脱敏原始响应：五馆完整候选查询.json；placeId=PLACE-CZ-ZTL；POI ID=11553372901480303381",
+      "excerpt": "张太雷纪念馆-入口；江苏省常州市天宁区茶山街道凉路子和里3号张太雷纪念馆",
+      "relation": "地图平台数据，不是馆方入口核验或当日营业公告；请求Key不保存"
+    },
+    {
+      "id": "MAP-20261012-PLACE-WX-QBC",
+      "title": "腾讯地点搜索：秦邦宪故居",
+      "institution": "腾讯位置服务WebService",
+      "publishedAt": "未显示；查询生成时间不是发布时间",
+      "accessedAt": "2026-10-12",
+      "url": "https://apis.map.qq.com/ws/place/v1/search/",
+      "finalUrl": "https://apis.map.qq.com/ws/place/v1/search/",
+      "position": "本地脱敏原始响应：五馆完整候选查询.json；placeId=PLACE-WX-QBC；POI ID=2633374187958482247",
+      "excerpt": "秦邦宪旧居；江苏省无锡市梁溪区崇宁路112号",
+      "relation": "地图平台数据，不是馆方入口核验或当日营业公告；请求Key不保存"
+    }
+  ],
+  "facts": [
+    {
+      "id": "FACT-QQB-IDENTITY",
+      "personId": "IP-QC",
+      "eventIds": [],
+      "text": "瞿秋白是中国共产党早期领导人之一，也是理论家和宣传家。",
+      "keywords": [
+        "瞿秋白",
+        "身份",
+        "是谁"
+      ],
+      "sourceIds": [
+        "SRC-QQB-XH2018"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false,
+      "personName": "瞿秋白"
+    },
+    {
+      "id": "FACT-QQB-STUDY",
+      "personId": "IP-QC",
+      "eventIds": [],
+      "text": "新华社介绍记载，瞿秋白1917年考入北京俄文专修馆，1920年以《晨报》特约记者身份赴苏俄采访。",
+      "keywords": [
+        "瞿秋白",
+        "求学",
+        "俄文",
+        "采访",
+        "记者"
+      ],
+      "sourceIds": [
+        "SRC-QQB-XH2018"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false,
+      "personName": "瞿秋白"
+    },
+    {
+      "id": "FACT-QQB-87",
+      "personId": "IP-QC",
+      "eventIds": [],
+      "text": "新华社介绍记载，瞿秋白1927年8月主持召开八七会议，会后主持党中央工作。",
+      "keywords": [
+        "瞿秋白",
+        "八七会议",
+        "会议"
+      ],
+      "sourceIds": [
+        "SRC-QQB-XH2018"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false,
+      "personName": "瞿秋白"
+    },
+    {
+      "id": "FACT-QQB-MUSEUM",
+      "personId": "IP-QC",
+      "eventIds": [],
+      "text": "常州市政府介绍：瞿秋白纪念馆由故居和纪念馆两部分组成，馆内设有瞿秋白生平展。",
+      "keywords": [
+        "瞿秋白",
+        "纪念馆",
+        "故居"
+      ],
+      "sourceIds": [
+        "SRC-CZ-QQB2026"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false,
+      "personName": "瞿秋白"
+    },
+    {
+      "id": "FACT-LDY-STUDY",
+      "personId": "IP-LDY",
+      "eventIds": [],
+      "text": "全国政协人物简介使用“上海交通大学电机科”记述陆定一1926年的毕业经历。这是该简介采用的校名，不用于认证1926年的正式校牌。",
+      "keywords": [
+        "陆定一",
+        "专业",
+        "电机",
+        "毕业"
+      ],
+      "sourceIds": [
+        "SRC-LDY-CPPCC"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false,
+      "personName": "陆定一"
+    },
+    {
+      "id": "FACT-LDY-MUSEUM",
+      "personId": "IP-LDY",
+      "eventIds": [],
+      "text": "无锡市文旅局2025年博物馆名录列出陆定一祖居陈列馆，馆舍地址为惠山区堰桥街道天一社区老陆巷4号。",
+      "keywords": [
+        "陆定一",
+        "祖居",
+        "无锡",
+        "陈列馆"
+      ],
+      "sourceIds": [
+        "SRC-WX-MUSEUM2025"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false,
+      "personName": "陆定一"
+    },
+    {
+      "id": "FACT-LYS-MEMBERS",
+      "personId": "IP-LYS",
+      "personName": "狼牙山五壮士",
+      "eventIds": [],
+      "text": "国防部网站转载的新华社报道列出的五位成员为马宝玉、葛振林、宋学义、胡德林、胡福才。狼牙山五壮士是一组团体，不另增加一个自然人。",
+      "keywords": [
+        "狼牙山五壮士",
+        "成员",
+        "姓名",
+        "马宝玉",
+        "葛振林",
+        "宋学义",
+        "胡德林",
+        "胡福才"
+      ],
+      "sourceIds": [
+        "SRC-LYS-MOD2018"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false
+    },
+    {
+      "id": "FACT-LYS-RESULT",
+      "personId": "IP-LYS",
+      "personName": "狼牙山五壮士",
+      "eventIds": [],
+      "text": "该报道记载，马宝玉、胡德林、胡福才牺牲；葛振林、宋学义幸存。不能写成五人结局相同。",
+      "keywords": [
+        "狼牙山五壮士",
+        "结局",
+        "幸存",
+        "牺牲",
+        "葛振林",
+        "宋学义"
+      ],
+      "sourceIds": [
+        "SRC-LYS-MOD2018"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false
+    },
+    {
+      "id": "FACT-SZZ-IDENTITY",
+      "personId": "IP-SZZ",
+      "personName": "宋振中",
+      "eventIds": [],
+      "text": "“小萝卜头”是宋振中的称呼。新华社报道记载其父母为宋绮云、徐林侠，二人均为中共党员。",
+      "keywords": [
+        "宋振中",
+        "小萝卜头",
+        "父母",
+        "称呼",
+        "身份"
+      ],
+      "sourceIds": [
+        "SRC-SZZ-XH2024"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false
+    },
+    {
+      "id": "FACT-SZZ-TEACHERS",
+      "personId": "IP-SZZ",
+      "personName": "宋振中",
+      "eventIds": [],
+      "text": "新华社报道记载，罗世文、车耀先、黄显声先后给“小萝卜头”宋振中当老师；这里的“先后”不表示三人同时授课。",
+      "keywords": [
+        "宋振中",
+        "小萝卜头",
+        "学习",
+        "老师",
+        "黄显声",
+        "罗世文",
+        "车耀先"
+      ],
+      "sourceIds": [
+        "SRC-SZZ-XH2024"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false
+    },
+    {
+      "id": "FACT-JZY-STUDY",
+      "personId": "IP-JZY",
+      "personName": "江竹筠",
+      "eventIds": [],
+      "text": "新华社报道记载，江竹筠1939年加入中国共产党，1940年秋进入中华职业学校学习；1944年考入四川大学，以普通学生身份开展党的工作。",
+      "keywords": [
+        "江竹筠",
+        "江姐",
+        "求学",
+        "四川大学",
+        "入党",
+        "职业学校"
+      ],
+      "sourceIds": [
+        "SRC-JZY-XH2019"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false
+    },
+    {
+      "id": "FACT-JZY-WORK",
+      "personId": "IP-JZY",
+      "personName": "江竹筠",
+      "eventIds": [],
+      "text": "新华社报道记载，江竹筠在1947年承担中共重庆市委地下刊物《挺进报》的联络和组织发行工作。",
+      "keywords": [
+        "江竹筠",
+        "江姐",
+        "挺进报",
+        "发行",
+        "工作"
+      ],
+      "sourceIds": [
+        "SRC-JZY-XH2019"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false
+    }
+  ],
+  "places": [
+    {
+      "id": "PLACE-WX-LDY",
+      "name": "陆定一祖居陈列馆",
+      "city": "无锡市",
+      "type": "故居",
+      "address": "无锡市惠山区堰桥街道天一社区老陆巷4号",
+      "summary": "2025年无锡博物馆名录列有该馆。2018年机构报道介绍老陆巷场所内设陆定一生平事迹陈列。 作为陆定一相关祖居和陈列场所；不据祖居名称推定出生地。",
+      "visitFocus": [
+        "对照人物资料了解求学、宣传和文化工作经历。",
+        "阅读展板时区分祖居介绍与个人生平事实。"
+      ],
+      "personIds": [
+        "IP-LDY"
+      ],
+      "relatedPeople": [
+        {
+          "id": "IP-LDY",
+          "name": "陆定一"
+        }
+      ],
+      "sourceIds": [
+        "L-S01",
+        "L-S04",
+        "L-S10",
+        "L-S12",
+        "MAP-20261012-PLACE-WX-LDY"
+      ],
+      "coordinate": null,
+      "opening": null,
+      "reviewStatus": "source_checked",
+      "published": false,
+      "serviceRecord": "2025年名录免费开放字段为“是”；本轮未取得当前开放时段、预约办法及场馆咨询电话。",
+      "ticketRecord": "名录记免费开放；当前政策需确认",
+      "historicalScope": "场所关联可用于人物学习，建馆开放是现代信息；不据此新增1919—1949事件节点；2018年团市委与2024年惠山区页面均有老陆巷出生地表述，措辞相近、转载关系未厘清，不算两份独立证明；不据此直接确定精确出生地点",
+      "imageStatus": "图片待授权；当前采用主题装饰",
+      "visitorInfo": {
+        "checkedAt": "2026-10-12",
+        "contacts": [],
+        "admission": {
+          "text": "2025年博物馆名录免费开放字段为“是”；不是当前票价确认。",
+          "recordDate": "2025-07-25",
+          "sourceIds": [
+            "L-S01"
+          ]
+        }
+      },
+      "mapCandidate": {
+        "id": "4137342448922742816",
+        "name": "陆定一祖居陈列馆",
+        "address": "江苏省无锡市惠山区堰桥街道天一社区陆巷4号",
+        "coordinate": {
+          "latitude": 31.642796,
+          "longitude": 120.293782,
+          "type": "gcj02"
+        },
+        "category": "文化场馆:展览馆",
+        "telephone": "0510-83748119",
+        "entranceVerified": false,
+        "sourceId": "MAP-20261012-PLACE-WX-LDY",
+        "queriedAt": "2026-10-12T01:13:06.055Z",
+        "displayApproved": true,
+        "reviewStatus": "candidate",
+        "comparisonNote": "官方名录为老陆巷4号，腾讯为陆巷4号；本点是场馆POI，没有游客入口属性。",
+        "scope": "资料试读地图候选展示；未核验游客入口",
+        "nearbyNavigationApproved": true,
+        "nearbyNavigationScope": "venue_area",
+        "nearbyNavigationApprovedAt": "2026-10-12"
+      }
+    },
+    {
+      "id": "PLACE-CZ-QQB",
+      "name": "瞿秋白纪念馆",
+      "city": "常州市",
+      "type": "纪念馆",
+      "address": "常州市延陵西路188号",
+      "summary": "官方介绍记载由故居和纪念馆两部分组成，馆内设瞿秋白生平展。 纪念瞿秋白的专题场馆；当代展陈不是1925年现场原件。",
+      "visitFocus": [
+        "按展览了解求学、革命工作与文化贡献，再核对人物来源。",
+        "比较故居空间、实物与艺术表现各自能支持什么。"
+      ],
+      "personIds": [
+        "IP-QC"
+      ],
+      "relatedPeople": [
+        {
+          "id": "IP-QC",
+          "name": "瞿秋白"
+        }
+      ],
+      "sourceIds": [
+        "L-S02",
+        "L-S03",
+        "L-S07",
+        "MAP-20261012-PLACE-CZ-QQB"
+      ],
+      "coordinate": null,
+      "opening": null,
+      "reviewStatus": "source_checked",
+      "published": false,
+      "serviceRecord": "2024-12-05通知：周二至周日9:00—17:00，周一闭馆（法定节假日除外）；参观无需提前预约，团队讲解提前预约。仅作为旧公告资料，2026-10-11状态未知。",
+      "ticketRecord": "本轮未取得当前票价公告；不由无需预约推定免费",
+      "historicalScope": "人物资料可聚焦1919—1949，纪念馆成立和游客中心建设属现代服务信息",
+      "imageStatus": "瞿秋白故居2017年外观照片：摄影许可CC BY-SA 4.0，作者Cangminzho；图注与门牌已再次目验。资料试读展示，不批准当前入口或整馆发布。",
+      "visitorInfo": {
+        "checkedAt": "2026-10-12",
+        "contacts": [
+          {
+            "label": "团队讲解预约电话",
+            "number": "0519-86636909",
+            "recordDate": "2024-12-05",
+            "sourceIds": [
+              "L-S03"
+            ]
+          }
+        ],
+        "hours": {
+          "text": "2024年恢复开放通知记周二至周日9:00—17:00，周一闭馆（法定节假日除外）。",
+          "recordDate": "2024-12-05",
+          "sourceIds": [
+            "L-S03"
+          ]
+        },
+        "reservation": {
+          "text": "同一通知记普通参观无需提前预约；团队讲解需提前预约。",
+          "recordDate": "2024-12-05",
+          "sourceIds": [
+            "L-S03"
+          ]
+        }
+      },
+      "photo": {
+        "id": "VENUE-QQB-2017",
+        "url": "/media/venues/qqb-2017.jpg",
+        "caption": "瞿秋白故居外观资料照片（2017年拍摄），不证明当前游客入口。",
+        "author": "Cangminzho",
+        "capturedAt": "2017-04-07",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceURL": "https://commons.wikimedia.org/wiki/File:瞿秋白故居_入口.jpg",
+        "changes": "原图未修改；页面仅等比例缩放展示。",
+        "checkedAt": "2026-10-12",
+        "status": "source_checked",
+        "credit": "Cangminzho · 2017-04-07 · CC BY-SA 4.0"
+      },
+      "mapCandidate": {
+        "id": "12011788513647480776",
+        "name": "瞿秋白纪念馆-入口",
+        "address": "江苏省常州市钟楼区延陵西路188号瞿秋白纪念馆",
+        "coordinate": {
+          "latitude": 31.780708,
+          "longitude": 119.952141,
+          "type": "gcj02"
+        },
+        "category": "室内及附属设施:通行设施类:外部门",
+        "telephone": "",
+        "entranceVerified": false,
+        "sourceId": "MAP-20261012-PLACE-CZ-QQB",
+        "queriedAt": "2026-10-12T01:15:57.586Z",
+        "displayApproved": true,
+        "reviewStatus": "candidate",
+        "comparisonNote": "选取地址为188号的入口候选；102号馆区点、188号故居、190-1号游客中心分别保留，不能合并成一个入口。",
+        "scope": "资料试读地图候选展示；未核验游客入口",
+        "nearbyNavigationApproved": true,
+        "nearbyNavigationScope": "venue_area",
+        "nearbyNavigationApprovedAt": "2026-10-12"
+      }
+    },
+    {
+      "id": "PLACE-WX-ZWT",
+      "name": "张闻天旧居",
+      "city": "无锡市",
+      "type": "故居",
+      "address": "无锡市汤巷45号",
+      "summary": "馆方专题页介绍旧居内设张闻天生平图片展，并记有卧室兼书房复原陈列。 馆方记载1975年迁居无锡；不是1919—1949年本人在此居住的证据。",
+      "visitFocus": [
+        "可从展览了解人物革命时期经历，注明无锡晚年居住发生于1949年后。",
+        "辨认历史照片、实物和复原陈列的不同证据性质。"
+      ],
+      "personIds": [],
+      "relatedPeople": [],
+      "sourceIds": [
+        "L-S01",
+        "L-S05",
+        "MAP-20261012-PLACE-WX-ZWT"
+      ],
+      "coordinate": null,
+      "opening": null,
+      "reviewStatus": "source_checked",
+      "published": false,
+      "historicalScope": "标注“人物纪念与学习场所／1949年后居住关联”；不纳入革命时期事件发生地统计",
+      "serviceRecord": "2016年馆方页记周二至周日9:00—17:00，16:00后停止入场，周一闭馆（国家法定节假日除外）；当前停止入场时刻及预约需再次核实。",
+      "ticketRecord": "2025年名录记免费开放；当前政策需确认",
+      "imageStatus": "图片待授权；当前采用主题装饰",
+      "visitorInfo": {
+        "checkedAt": "2026-10-12",
+        "contacts": [
+          {
+            "label": "馆方专题页所列电话",
+            "number": "0510-82758567",
+            "recordDate": "2016-12-07",
+            "sourceIds": [
+              "L-S05"
+            ]
+          }
+        ],
+        "hours": {
+          "text": "2016年馆方页记周二至周日9:00—17:00，16:00后停止入场；周一闭馆（国家法定节假日除外）。",
+          "recordDate": "2016-12-07",
+          "sourceIds": [
+            "L-S05"
+          ]
+        },
+        "admission": {
+          "text": "2025年博物馆名录免费开放字段为“是”；不是当前票价确认。",
+          "recordDate": "2025-07-25",
+          "sourceIds": [
+            "L-S01"
+          ]
+        }
+      },
+      "mapCandidate": {
+        "id": "2736985590322399065",
+        "name": "张闻天旧居-南门",
+        "address": "江苏省无锡市梁溪区崇安寺街道汤巷45号张闻天旧居",
+        "coordinate": {
+          "latitude": 31.569332,
+          "longitude": 120.297825,
+          "type": "gcj02"
+        },
+        "category": "室内及附属设施:通行设施类:门/出入口",
+        "telephone": "",
+        "entranceVerified": false,
+        "sourceId": "MAP-20261012-PLACE-WX-ZWT",
+        "queriedAt": "2026-10-12T01:15:58.839Z",
+        "displayApproved": true,
+        "reviewStatus": "candidate",
+        "comparisonNote": "南门候选与馆方汤巷45号一致，但尚未确认游客当前从南门通行。",
+        "scope": "资料试读地图候选展示；未核验游客入口",
+        "nearbyNavigationApproved": true,
+        "nearbyNavigationScope": "venue_area",
+        "nearbyNavigationApprovedAt": "2026-10-12"
+      }
+    },
+    {
+      "id": "PLACE-CZ-ZTL",
+      "personIds": [],
+      "relatedPeople": [],
+      "name": "张太雷纪念馆",
+      "city": "常州市",
+      "type": "纪念馆",
+      "address": "常州市和平中路子和里3号",
+      "summary": "2026年官方点位介绍列有张太雷故居、生平事迹展以及教育活动项目。 张太雷相关故居与纪念展陈；剧游、皮影戏及情景党课是现代文化表达，不作现场史料。",
+      "visitFocus": [
+        "了解人物生平及与革命事件的联系，具体结论以人物来源为准。",
+        "将故居、生平展与现代剧游、情景课程分开理解。"
+      ],
+      "sourceIds": [
+        "L-S06",
+        "L-S07",
+        "MAP-20261012-PLACE-CZ-ZTL"
+      ],
+      "coordinate": null,
+      "opening": null,
+      "reviewStatus": "source_checked",
+      "published": false,
+      "serviceRecord": "2021年报道记周二至周日9:00—16:00、周一闭馆及团队电话预约；目前是否沿用未确认。",
+      "ticketRecord": "当前票价未取得直接依据",
+      "historicalScope": "相关历史学习地点；现代课程和展陈不进入人物1919—1949时间线",
+      "imageStatus": "图片待授权；当前采用主题装饰",
+      "visitorInfo": {
+        "checkedAt": "2026-10-12",
+        "contacts": [
+          {
+            "label": "官方教育点位所列联系电话",
+            "number": "0519-88873919",
+            "recordDate": "2026-03-30",
+            "sourceIds": [
+              "L-S06"
+            ]
+          }
+        ],
+        "hours": {
+          "text": "2021年报道记周二至周日9:00—16:00、周一闭馆；未确认目前是否沿用。",
+          "recordDate": "2021-04-29",
+          "sourceIds": [
+            "L-S07"
+          ]
+        }
+      },
+      "mapCandidate": {
+        "id": "11553372901480303381",
+        "name": "张太雷纪念馆-入口",
+        "address": "江苏省常州市天宁区茶山街道凉路子和里3号张太雷纪念馆",
+        "coordinate": {
+          "latitude": 31.764878,
+          "longitude": 119.961936,
+          "type": "gcj02"
+        },
+        "category": "室内及附属设施:通行设施类:外部门",
+        "telephone": "",
+        "entranceVerified": false,
+        "sourceId": "MAP-20261012-PLACE-CZ-ZTL",
+        "queriedAt": "2026-10-12T01:16:00.143Z",
+        "displayApproved": true,
+        "reviewStatus": "candidate",
+        "comparisonNote": "官方为和平中路子和里3号，平台为凉路子和里3号；道路写法待核，不能改写官方地址。",
+        "scope": "资料试读地图候选展示；未核验游客入口",
+        "nearbyNavigationApproved": true,
+        "nearbyNavigationScope": "venue_area",
+        "nearbyNavigationApprovedAt": "2026-10-12"
+      }
+    },
+    {
+      "id": "PLACE-WX-QBC",
+      "personIds": [],
+      "relatedPeople": [],
+      "name": "秦邦宪故居",
+      "city": "无锡市",
+      "type": "故居",
+      "address": "无锡市崇宁路112号",
+      "summary": "2025年区政府报道与2026年高校活动报道均指向崇宁路112号；高校报道介绍其为秦邦宪青少年时期居所并以生平事迹为展陈主线。 青少年时期居所的记载支持人物关联；本轮不裁定精确入住结束年份。",
+      "visitFocus": [
+        "围绕早年学习、革命历程与新闻工作阅读展陈。",
+        "对照文字说明，区分照片、文献、雕塑与复原场景。"
+      ],
+      "sourceIds": [
+        "L-S08",
+        "L-S09",
+        "L-S11",
+        "MAP-20261012-PLACE-WX-QBC"
+      ],
+      "coordinate": null,
+      "opening": null,
+      "reviewStatus": "source_checked",
+      "published": false,
+      "serviceRecord": "本轮未取得当前馆方开放、预约、门票和咨询电话的直接公告；不采用旅游平台即时营业标签。",
+      "ticketRecord": "2014-11-21高校页面记载2005年5月9日免费开放；这是历史开放记录，当前政策未知",
+      "historicalScope": "人物相关居所和学习场馆；精确历史居住区间待其他人物资料核验",
+      "imageStatus": "图片待授权；当前采用主题装饰",
+      "visitorInfo": {
+        "checkedAt": "2026-10-12",
+        "contacts": [],
+        "admission": {
+          "text": "2014年高校页面记载2005年5月9日免费开放；当前政策未知。",
+          "recordDate": "2014-11-21",
+          "sourceIds": [
+            "L-S11"
+          ]
+        }
+      },
+      "mapCandidate": {
+        "id": "2633374187958482247",
+        "name": "秦邦宪旧居",
+        "address": "江苏省无锡市梁溪区崇宁路112号",
+        "coordinate": {
+          "latitude": 31.574531,
+          "longitude": 120.301796,
+          "type": "gcj02"
+        },
+        "category": "旅游景点:纪念馆",
+        "telephone": "0510-82733995",
+        "entranceVerified": false,
+        "sourceId": "MAP-20261012-PLACE-WX-QBC",
+        "queriedAt": "2026-10-12T01:16:01.395Z",
+        "displayApproved": true,
+        "reviewStatus": "candidate",
+        "comparisonNote": "选取崇宁路112号的主体场馆POI；碑刻、庐关、管理处及商店不作为游客入口。",
+        "scope": "资料试读地图候选展示；未核验游客入口",
+        "nearbyNavigationApproved": true,
+        "nearbyNavigationScope": "venue_area",
+        "nearbyNavigationApprovedAt": "2026-10-12"
+      }
+    }
+  ]
+}

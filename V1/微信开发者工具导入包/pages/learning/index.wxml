@@ -1,0 +1,1 @@
+<app-shell u-s="{{['d']}}" u-i="6ae9eace-0" bind:__l="__l"><view class="module-frame"><text>原生学习页由组装脚本接入</text></view></app-shell>

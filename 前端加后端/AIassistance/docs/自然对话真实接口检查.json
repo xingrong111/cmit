@@ -1,0 +1,20 @@
+[
+  {
+    "question": "你叫什么名字？",
+    "answer": "我叫小英，是“英迹·山河英雄谱”的AI导览助手，可以陪你聊天，帮助使用小程序、了解历史资料和探索文化地点。\n当前模型调用受限，这次使用的是基础身份回答。",
+    "mode": "chat_fallback",
+    "modelStatus": "unavailable"
+  },
+  {
+    "question": "你记得我让你怎么称呼我吗？",
+    "answer": "当前大模型返回调用限制，请稍后重试；你的问题不是资料库中“没有资料”的问题。",
+    "mode": "chat_fallback",
+    "modelStatus": "unavailable"
+  },
+  {
+    "question": "我今天学习有点累，怎么调整一下？",
+    "answer": "累了就先停下来休息一下吧！可以喝杯茶，或者去户外走走，呼吸一下新鲜空气。给自己放个小假，调整好状态再继续，加油！",
+    "mode": "model_chat",
+    "modelStatus": "available"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "山河长卷",
+  "usingComponents": {
+    "app-shell": "../../components/AppShell",
+    "state-panel": "../../components/StatePanel"
+  }
+}

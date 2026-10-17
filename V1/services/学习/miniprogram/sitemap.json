@@ -1,0 +1,4 @@
+{
+  "desc": "学习挑战预览",
+  "rules": [{ "action": "allow", "page": "*" }]
+}

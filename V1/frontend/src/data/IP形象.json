@@ -1,0 +1,52 @@
+{
+  "QQB": {
+    "group": "QQB",
+    "name": "瞿秋白",
+    "personId": "P009",
+    "src": "/static/人物形象/瞿秋白.png",
+    "kind": "artwork",
+    "caption": "瞿秋白 · 艺术化IP形象",
+    "sourceFile": "IP形象\\瞿秋白-IP程序素材包\\01_程序素材\\头像.png",
+    "note": "团队提供的AI辅助设计素材，非历史照片、非真实容貌或服饰复原。人物与时期识别以史料正文为准。"
+  },
+  "SZZ": {
+    "group": "SZZ",
+    "name": "宋振中",
+    "personId": "P004",
+    "src": "/static/人物形象/宋振中.png",
+    "kind": "artwork",
+    "caption": "宋振中 · 艺术化IP形象",
+    "sourceFile": "IP形象\\宋振中-IP程序素材包\\01_程序素材\\头像.png",
+    "note": "团队提供的AI辅助设计素材，非历史照片、非真实容貌或服饰复原。人物与时期识别以史料正文为准。"
+  },
+  "LDY": {
+    "group": "LDY",
+    "name": "陆定一",
+    "personId": "P014",
+    "src": "/static/人物形象/陆定一.png",
+    "kind": "artwork",
+    "caption": "陆定一 · 艺术化IP形象",
+    "sourceFile": "IP形象\\陆定一\\陆_头像.png",
+    "note": "团队提供的AI辅助设计素材，非历史照片、非真实容貌或服饰复原。人物与时期识别以史料正文为准。"
+  },
+  "JZY": {
+    "group": "JZY",
+    "name": "江竹筠",
+    "personId": null,
+    "src": "/static/人物形象/江竹筠.png",
+    "kind": "artwork",
+    "caption": "江竹筠 · 艺术化IP形象",
+    "sourceFile": "IP形象\\江姐v2\\江v2_头像.png",
+    "note": "团队提供的AI辅助设计素材，非历史照片、非真实容貌或服饰复原。人物与时期识别以史料正文为准。"
+  },
+  "LYS": {
+    "group": "LYS",
+    "name": "狼牙山五壮士",
+    "personId": null,
+    "src": "/static/人物形象/狼牙山五壮士.png",
+    "kind": "artwork",
+    "caption": "狼牙山五壮士 · 艺术化IP形象",
+    "sourceFile": "IP形象\\狼牙山五壮士\\团体设计-20261016-724a65125cca\\狼牙山五壮士-三维动漫团体.png",
+    "note": "团队提供的AI辅助设计素材，非历史照片、非真实容貌或服饰复原。人物与时期识别以史料正文为准。"
+  }
+}

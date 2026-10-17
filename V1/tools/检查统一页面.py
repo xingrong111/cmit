@@ -1,0 +1,60 @@
+import urllib.request,json,websocket,time,base64
+from pathlib import Path
+root=Path(__file__).resolve().parents[1]
+info=json.load(urllib.request.urlopen(urllib.request.Request('http://127.0.0.1:9227/json/new?about:blank',method='PUT'),timeout=10))
+ws=websocket.create_connection(info['webSocketDebuggerUrl'],suppress_origin=True,timeout=30);seq=0
+def call(m,p={}):
+ global seq
+ seq+=1;ws.send(json.dumps({'id':seq,'method':m,'params':p}))
+ while True:
+  x=json.loads(ws.recv())
+  if x.get('id')==seq:return x.get('result',{})
+def js(s):return call('Runtime.evaluate',{'expression':s,'returnByValue':True}).get('result',{}).get('value')
+def wait(s):
+ for _ in range(100):
+  if js(s):return
+  time.sleep(.2)
+ raise AssertionError(s)
+def nav(url):call('Page.navigate',{'url':url});time.sleep(.6)
+def shot(name):
+ time.sleep(.4)
+ d=root/'docs/页面截图';d.mkdir(exist_ok=True)
+ (d/name).write_bytes(base64.b64decode(call('Page.captureScreenshot',{})['data']))
+call('Emulation.setDeviceMetricsOverride',{'width':390,'height':900,'deviceScaleFactor':1,'mobile':True})
+nav('http://127.0.0.1:3110/?visualcheck=1#/pages/learning/index?group=SZZ')
+wait("!!document.querySelector('iframe')?.contentDocument?.querySelector('.stage-card')")
+js("localStorage.removeItem('yingji_token');sessionStorage.removeItem('yingji:attempt')")
+call('Page.reload',{});time.sleep(.8)
+wait("document.querySelector('iframe')?.contentDocument?.querySelectorAll('.stage-card').length===2")
+assert js("document.querySelector('iframe').contentDocument.body.innerText.includes('宋振中 · 主题挑战')")
+assert js("!!document.querySelector('iframe').contentDocument.querySelector('.stage-card button:disabled')")
+assert js("document.querySelector('iframe').contentDocument.querySelectorAll('.stage-card .aux')[0].innerText.includes('5')&&document.querySelector('iframe').contentDocument.querySelectorAll('.stage-card .aux')[1].innerText.includes('8')")
+assert js("document.documentElement.scrollWidth<=390&&document.querySelector('iframe').contentDocument.documentElement.scrollWidth<=390")
+shot('主题挑战-手机.png')
+js("document.querySelector('iframe').contentDocument.querySelector('[data-learning-all]').click()")
+wait("document.querySelector('iframe')?.contentDocument?.querySelectorAll('.person-card').length===5")
+js("document.querySelector('iframe').contentDocument.querySelector('[data-learning-back]').click()")
+wait("location.hash.includes('/pages/people/index')")
+nav('http://127.0.0.1:3110/?visualcheck=2#/pages/person/index?id=P004')
+wait("!!document.querySelector('.person-shortcuts')")
+assert js("document.querySelectorAll('.person-shortcuts uni-button').length===4")
+shot('人物快捷入口-手机.png')
+nav('http://127.0.0.1:3110/web/#radar')
+wait("!!document.querySelector('[data-web-toggle-places]')")
+js("document.querySelector('[data-web-toggle-places]').click()")
+assert js("document.querySelector('.web-place-column').classList.contains('places-folded')")
+js("document.querySelector('[data-web-toggle-places]').click()")
+assert js("!document.querySelector('.web-place-column').classList.contains('places-folded')")
+shot('足迹面板-手机.png')
+nav('http://127.0.0.1:3110/web/?archiveId=P004&name=宋振中#assistant')
+wait("!!document.querySelector('.context-chip')")
+assert js("document.querySelector('.context-chip').innerText.includes('宋振中')")
+js("document.querySelector('[data-web-clear-context]').click()")
+wait("!document.querySelector('.context-chip')")
+call('Emulation.setDeviceMetricsOverride',{'width':1200,'height':900,'deviceScaleFactor':1,'mobile':False})
+nav('http://127.0.0.1:3110/?visualcheck=3#/pages/learning/index?group=SZZ')
+wait("document.querySelector('iframe')?.contentDocument?.querySelectorAll('.stage-card').length===2")
+assert js("document.documentElement.scrollWidth<=1200&&document.querySelector('iframe').getBoundingClientRect().width>900")
+shot('主题挑战-网页.png')
+(root/'docs/统一页面检查.json').write_text(json.dumps({'twoStageCards':True,'advancedLocked':True,'allFiveGroups':True,'backFallback':True,'personShortcuts':True,'xiaojContextAndDismiss':True,'mobileNoOverflow':True,'desktopNoOverflow':True,'desktopFrameUsesFullWidth':True,'mobileMapPanelToggle':True,'deviceTest':False},indent=2),encoding='utf-8')
+print('统一页面检查通过');ws.close()

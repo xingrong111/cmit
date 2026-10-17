@@ -1,0 +1,158 @@
+[
+  {
+    "check": "原创导览员图像加载且AI标识可见",
+    "passed": true
+  },
+  {
+    "check": "暂停动效停止角色动画",
+    "passed": true
+  },
+  {
+    "check": "资料试读状态明确",
+    "passed": true
+  },
+  {
+    "check": "六栏导航与独立目录可用",
+    "passed": true
+  },
+  {
+    "check": "模块目录实际展开",
+    "passed": true
+  },
+  {
+    "check": "五组人物选择可用",
+    "passed": true
+  },
+  {
+    "check": "人物选择只在史料问答场景显示",
+    "passed": true
+  },
+  {
+    "check": "文化探索场景不强制人物选择",
+    "passed": true
+  },
+  {
+    "check": "小迹与偏好选择器可见",
+    "passed": true
+  },
+  {
+    "check": "偏好选择真实进入导览且返回结构化卡片",
+    "passed": true
+  },
+  {
+    "check": "回答和提问有复制及修改操作",
+    "passed": true
+  },
+  {
+    "check": "修改提问恢复原文到输入框",
+    "passed": true
+  },
+  {
+    "check": "消息头像与纯图标操作",
+    "passed": true
+  },
+  {
+    "check": "开始对话后欢迎形象收起",
+    "passed": true
+  },
+  {
+    "check": "问答读到实际后端与原始出处",
+    "passed": true
+  },
+  {
+    "check": "操作导览给出入口",
+    "passed": true
+  },
+  {
+    "check": "路线导览给出真实地点和可操作入口",
+    "passed": true
+  },
+  {
+    "check": "助手地点卡可操作且待核入口明确",
+    "passed": true
+  },
+  {
+    "check": "连续追问保留城市并更新时间偏好",
+    "passed": true
+  },
+  {
+    "check": "新导览清除本次需求和对话",
+    "passed": true
+  },
+  {
+    "check": "城市资料不是伪造GPS",
+    "passed": true
+  },
+  {
+    "check": "地图列表切换与选中地点样式",
+    "passed": true
+  },
+  {
+    "check": "地图底图资源加载成功",
+    "passed": true
+  },
+  {
+    "check": "主题地图读取真实地点名称并标明示意",
+    "passed": true
+  },
+  {
+    "check": "地图缩放实际改变图层",
+    "passed": true
+  },
+  {
+    "check": "示意图支持拖动",
+    "passed": true
+  },
+  {
+    "check": "加入路线实际修改选择",
+    "passed": true
+  },
+  {
+    "check": "场馆出处与开放未知明确",
+    "passed": true
+  },
+  {
+    "check": "详情主操作固定且证据说明可折叠",
+    "passed": true
+  },
+  {
+    "check": "路线保留用户选择",
+    "passed": true
+  },
+  {
+    "check": "路线页区分编排和导航核验状态",
+    "passed": true
+  },
+  {
+    "check": "未核路径不估算步行和总时长",
+    "passed": true
+  },
+  {
+    "check": "自定停留预算生效并保存到本机",
+    "passed": true
+  },
+  {
+    "check": "路线地图随所选站点展示且标为顺序示意",
+    "passed": true
+  },
+  {
+    "check": "路线计划可复制且不伪造到访",
+    "passed": true
+  },
+  {
+    "check": "移除路线地点生效",
+    "passed": true
+  },
+  {
+    "check": "切换城市避免错配",
+    "passed": true
+  },
+  {
+    "check": "移动页面无横向溢出",
+    "passed": true
+  },
+  {
+    "check": "无浏览器运行异常",
+    "passed": true
+  }
+]

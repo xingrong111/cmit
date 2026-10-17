@@ -1,0 +1,1 @@
+Page({onLoad(o){const group=/^(QQB|LYS|SZZ|LDY|JZY)$/.test(o.group||'')?o.group:'';wx.redirectTo({url:'/pages/learn/learn'+(group?'?group='+group:'')})}});

@@ -1,0 +1,180 @@
+{
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "山河有迹"
+      }
+    },
+    {
+      "path": "pages/people/index",
+      "style": {
+        "navigationBarTitleText": "人物索引"
+      }
+    },
+    {
+      "path": "pages/timeline/index",
+      "style": {
+        "navigationBarTitleText": "山河长卷"
+      }
+    },
+    {
+      "path": "pages/me/index",
+      "style": {
+        "navigationBarTitleText": "我的阅读"
+      }
+    },
+    {
+      "path": "pages/person/index",
+      "style": {
+        "navigationBarTitleText": "人物档案"
+      }
+    },
+    {
+      "path": "pages/event/index",
+      "style": {
+        "navigationBarTitleText": "历史片段"
+      }
+    },
+    {
+      "path": "pages/graph/index",
+      "style": {
+        "navigationBarTitleText": "关系图谱"
+      }
+    },
+    {
+      "path": "pages/sources/index",
+      "style": {
+        "navigationBarTitleText": "事实与来源"
+      }
+    },
+    {
+      "path": "pages/radar/index",
+      "style": {
+        "navigationBarTitleText": "历史足迹"
+      }
+    },
+    {
+      "path": "pages/assistant/index",
+      "style": {
+        "navigationBarTitleText": "小迹导览"
+      }
+    },
+    {
+      "path": "pages/account/index",
+      "style": {
+        "navigationBarTitleText": "账户"
+      }
+    },
+    {
+      "path": "pages/discussion/index",
+      "style": {
+        "navigationBarTitleText": "学习讨论"
+      }
+    },
+    {
+      "path": "pages/admin/index",
+      "style": {
+        "navigationBarTitleText": "审核管理"
+      }
+    },
+    {
+      "path": "pages/my-comments/index",
+      "style": {
+        "navigationBarTitleText": "我的评论"
+      }
+    },
+    {
+      "path": "pages/route/index",
+      "style": {
+        "navigationBarTitleText": "文化路线"
+      }
+    },
+    {
+      "path": "pages/place/index",
+      "style": {
+        "navigationBarTitleText": "场馆"
+      }
+    },
+    {
+      "path": "pages/source/index",
+      "style": {
+        "navigationBarTitleText": "资料依据"
+      }
+    },
+    {
+      "path": "pages/privacy/index",
+      "style": {
+        "navigationBarTitleText": "位置隐私"
+      }
+    },
+    {
+      "path": "pages/learning/index",
+      "style": {
+        "navigationBarTitleText": "学习挑战"
+      }
+    },
+    {
+      "path": "pages/province/index",
+      "style": {
+        "navigationBarTitleText": "分省人物名单"
+      }
+    },
+    {
+      "path": "pages/registry/index",
+      "style": {
+        "navigationBarTitleText": "人物资料条目"
+      }
+    },
+    {
+      "path": "pages/statistics/index",
+      "style": {
+        "navigationBarTitleText": "收录说明"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "山河有迹",
+    "navigationBarBackgroundColor": "#FBF5E9",
+    "backgroundColor": "#FBF5E9"
+  },
+  "tabBar": {
+    "color": "#75604B",
+    "selectedColor": "#982B28",
+    "backgroundColor": "#FFFAF1",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "static/icons/home.png",
+        "selectedIconPath": "static/icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/people/index",
+        "text": "人物",
+        "iconPath": "static/icons/people.png",
+        "selectedIconPath": "static/icons/people-active.png"
+      },
+      {
+        "pagePath": "pages/radar/index",
+        "text": "足迹",
+        "iconPath": "static/icons/pin.png",
+        "selectedIconPath": "static/icons/pin-active.png"
+      },
+      {
+        "pagePath": "pages/assistant/index",
+        "text": "小迹",
+        "iconPath": "static/icons/assistant.png",
+        "selectedIconPath": "static/icons/assistant-active.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我的",
+        "iconPath": "static/icons/bookmark.png",
+        "selectedIconPath": "static/icons/bookmark-active.png"
+      }
+    ]
+  }
+}
