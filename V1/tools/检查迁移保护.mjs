@@ -1,0 +1,11 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import {spawnSync} from 'node:child_process';import {DatabaseSync} from 'node:sqlite';import assert from 'node:assert/strict';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..'),tmp=path.join(root,'tmp','迁移保护检查');
+for(const dir of ['scripts','node_modules/drizzle-kit','drizzle/meta'])fs.mkdirSync(path.join(tmp,dir),{recursive:true});
+fs.copyFileSync(path.join(root,'Sites发布版/scripts/生成迁移.mjs'),path.join(tmp,'scripts/生成迁移.mjs'));
+fs.writeFileSync(path.join(tmp,'node_modules/drizzle-kit/bin.cjs'),'console.log("测试：迁移已生成")');
+fs.writeFileSync(path.join(tmp,'drizzle/0000_test.sql'),'CREATE TABLE `app_state` (`key` text PRIMARY KEY NOT NULL, `value` text NOT NULL, `version` integer DEFAULT 1 NOT NULL);');
+fs.writeFileSync(path.join(tmp,'drizzle/meta/_journal.json'),JSON.stringify({version:'7',dialect:'sqlite',entries:[{idx:0,version:'6',when:Date.now(),tag:'0000_test',breakpoints:true}]}));
+let run=spawnSync(process.execPath,[path.join(tmp,'scripts/生成迁移.mjs')],{encoding:'utf8'});assert.equal(run.status,0,run.stderr);
+const file=path.join(tmp,'drizzle/0000_shanhe_initial.sql'),sql=fs.readFileSync(file,'utf8');assert(sql.includes('CREATE TABLE IF NOT EXISTS `app_state`'));
+const db=new DatabaseSync(':memory:');db.exec('CREATE TABLE app_state(key TEXT PRIMARY KEY,value TEXT NOT NULL,version INTEGER NOT NULL DEFAULT 1)');db.prepare('INSERT INTO app_state VALUES(?,?,?)').run('comment:test','保留已有评论',3);db.exec(sql);assert.equal(db.prepare('SELECT value FROM app_state').get().value,'保留已有评论');assert.equal(db.prepare('SELECT version FROM app_state').get().version,3);
+run=spawnSync(process.execPath,[path.join(tmp,'scripts/生成迁移.mjs')],{encoding:'utf8'});assert.equal(run.status,0,run.stderr);assert.equal(fs.readFileSync(file,'utf8'),sql);db.close();console.log('通过：初始迁移名称稳定、重复执行幂等，已有记录与版本号保留。');
