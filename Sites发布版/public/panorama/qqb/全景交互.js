@@ -1,0 +1,32 @@
+import * as THREE from './three.module.js';
+const $=s=>document.querySelector(s),stage=$('#stage');let renderer,scene,camera,sphere,texture,observer,animation,last=0,active=true,ready=false,disposed=false;let yaw=0,pitch=0,fov=90,targetYaw=0,targetPitch=0;const pointers=new Map();let down=null,pinch=0,manual=false,parentExpanded=false;
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function notify(){if(parent!==window)parent.postMessage({type:'shanhe-panorama-ready',scene:'QQB',ready},location.origin)}
+function loading(text){$('#loading').textContent=text;$('#loading').hidden=false}
+function resize(){if(!renderer||disposed)return;const w=Math.max(1,stage.clientWidth),h=Math.max(1,stage.clientHeight);renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix()}
+function zoom(delta){fov=THREE.MathUtils.clamp(fov+delta,42,105);if(camera){camera.fov=fov;camera.updateProjectionMatrix()}$('#fov').textContent=`视野 ${Math.round(fov)}°`}
+function direction(){const y=THREE.MathUtils.degToRad(yaw),p=THREE.MathUtils.degToRad(pitch);return new THREE.Vector3(Math.sin(y)*Math.cos(p),Math.sin(p),-Math.cos(y)*Math.cos(p))}
+function interacted(){manual=true;$('#hint').classList.add('dismissed')}
+function reset(){targetYaw=yaw+((0-yaw+540)%360)-180;targetPitch=0;zoom(90-fov);manual=false;$('#hint').classList.remove('dismissed')}
+function fullLabel(){const full=!!document.fullscreenElement||parentExpanded;$('#fullscreen').setAttribute('aria-label',full?'退出全屏':'全屏查看');$('#fullscreen').title=full?'退出全屏':'全屏查看'}
+$('#zoom-in').onclick=()=>{zoom(-8);interacted()};$('#zoom-out').onclick=()=>{zoom(8);interacted()};$('#reset').onclick=reset;
+$('#fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else if(document.documentElement.requestFullscreen)await document.documentElement.requestFullscreen();else throw new Error('unsupported')}catch{if(parent!==window){parentExpanded=!parentExpanded;parent.postMessage({type:'shanhe-panorama-fullscreen',scene:'QQB',expanded:parentExpanded},location.origin)}else{$('#hint').textContent='当前浏览器不支持全屏，可横屏环视。';$('#hint').classList.remove('dismissed')}}fullLabel()};document.addEventListener('fullscreenchange',()=>{fullLabel();resize()});
+window.addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==parent)return;if(e.data?.type==='shanhe-panorama-expanded'){parentExpanded=!!e.data.expanded;fullLabel();resize()}});
+function release(e){pointers.delete(e.pointerId);if(pointers.size===1){const p=[...pointers.values()][0];down={...p,yaw:targetYaw,pitch:targetPitch}}else down=null}
+try{
+ renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'low-power'});renderer.setPixelRatio(Math.min(devicePixelRatio,1.8));renderer.outputColorSpace=THREE.SRGBColorSpace;stage.append(renderer.domElement);renderer.domElement.tabIndex=0;renderer.domElement.setAttribute('aria-label','360度全景：拖动或方向键环视，滚轮、双指或加减按钮缩放');
+ scene=new THREE.Scene();scene.background=new THREE.Color('#302b22');camera=new THREE.PerspectiveCamera(fov,1,.1,100);resize();
+ new THREE.TextureLoader().load('./书房全景.png',t=>{if(disposed){t.dispose();return}texture=t;t.colorSpace=THREE.SRGBColorSpace;const geo=new THREE.SphereGeometry(30,80,48);geo.scale(-1,1,1);sphere=new THREE.Mesh(geo,new THREE.MeshBasicMaterial({map:t}));sphere.rotation.y=-Math.PI/2;scene.add(sphere);ready=true;$('#loading').hidden=true;window.panoramaReady=true;notify()},undefined,()=>{loading('图片加载失败，可打开原图或重新尝试。');$('#fallback').hidden=false;notify()});
+ const canvas=renderer.domElement;
+ canvas.addEventListener('pointerdown',e=>{canvas.focus({preventScroll:true});canvas.setPointerCapture(e.pointerId);pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});down={x:e.clientX,y:e.clientY,yaw:targetYaw,pitch:targetPitch};if(pointers.size===2){const a=[...pointers.values()];pinch=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y)}interacted()});
+ canvas.addEventListener('pointermove',e=>{if(!pointers.has(e.pointerId))return;pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});if(pointers.size>=2){const a=[...pointers.values()],d=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y);zoom((pinch-d)*.08);pinch=d;return}if(down){targetYaw=down.yaw-(e.clientX-down.x)*.15;targetPitch=THREE.MathUtils.clamp(down.pitch+(e.clientY-down.y)*.15,-70,70)}});
+ canvas.addEventListener('pointerup',release);canvas.addEventListener('pointercancel',release);canvas.addEventListener('lostpointercapture',release);
+ canvas.addEventListener('wheel',e=>{e.preventDefault();zoom(e.deltaY*.025);interacted()},{passive:false});
+ canvas.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','+','-','Home','Escape'].includes(e.key))return;e.preventDefault();interacted();if(e.key==='ArrowLeft')targetYaw-=8;if(e.key==='ArrowRight')targetYaw+=8;if(e.key==='ArrowUp')targetPitch=Math.min(70,targetPitch+8);if(e.key==='ArrowDown')targetPitch=Math.max(-70,targetPitch-8);if(e.key==='+')zoom(-5);if(e.key==='-')zoom(5);if(e.key==='Home')reset();if(e.key==='Escape'&&parentExpanded){parentExpanded=false;parent.postMessage({type:'shanhe-panorama-fullscreen',scene:'QQB',expanded:false},location.origin)}});
+ canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();ready=false;window.panoramaReady=false;loading('图形显示中断，请重新尝试。');$('#fallback').hidden=false;notify()});
+ observer=new ResizeObserver(resize);observer.observe(stage);window.addEventListener('resize',resize);document.addEventListener('visibilitychange',()=>{active=!document.hidden});
+ const visibleObserver=new IntersectionObserver(entries=>{active=!document.hidden&&entries[0].isIntersecting},{threshold:0});visibleObserver.observe(stage);
+ function frame(time){animation=requestAnimationFrame(frame);if(disposed||!active)return;const dt=Math.min((time-last)/1000,.05);last=time;const k=reduced?1:1-Math.exp(-dt*14);yaw+=(targetYaw-yaw)*k;pitch+=(targetPitch-pitch)*k;camera.lookAt(direction());renderer.render(scene,camera);window.panoramaState={yaw,pitch,fov,ready,manual};}animation=requestAnimationFrame(frame);
+ window.addEventListener('pagehide',()=>{disposed=true;cancelAnimationFrame(animation);observer?.disconnect();visibleObserver.disconnect();sphere?.geometry.dispose();sphere?.material.dispose();texture?.dispose();renderer?.dispose()},{once:true});
+}catch(e){console.warn('全景渲染未初始化');loading('当前设备暂不支持三维全景，已显示静态场景。');$('#fallback').hidden=false;$('#zoom-in').disabled=$('#zoom-out').disabled=$('#reset').disabled=true;window.panoramaReady=false;notify()}
+$('#retry').onclick=()=>location.reload();

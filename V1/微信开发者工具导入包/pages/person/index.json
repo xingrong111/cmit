@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "人物档案",
   "usingComponents": {
+    "person-panorama": "../../components/PersonPanorama",
     "person-portrait": "../../components/PersonPortrait",
     "app-shell": "../../components/AppShell",
     "state-panel": "../../components/StatePanel",

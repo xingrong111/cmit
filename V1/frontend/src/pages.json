@@ -131,6 +131,12 @@
       "style": {
         "navigationBarTitleText": "收录说明"
       }
+    },
+    {
+      "path": "pages/panorama/index",
+      "style": {
+        "navigationBarTitleText": "瞿秋白 · 360°全景"
+      }
     }
   ],
   "globalStyle": {

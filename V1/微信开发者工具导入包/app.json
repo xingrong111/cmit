@@ -22,6 +22,7 @@
     "pages/province/index",
     "pages/registry/index",
     "pages/statistics/index",
+    "pages/panorama/index",
     "pages/learn/learn",
     "pages/quiz/quiz",
     "pages/result/result",

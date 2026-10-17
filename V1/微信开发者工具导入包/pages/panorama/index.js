@@ -1,0 +1,1 @@
+"use strict";const e=require("../../common/vendor.js"),t={__name:"index",setup(t){const n=e.ref("https://shanhe-youji-20261017.bushystar3.chatgpt.site/panorama/qqb/场景.html");function a(){e.index.showModal({title:"全景网页未能打开",content:"请检查网络，并在微信小程序后台配置全景网站的HTTPS业务域名。",showCancel:!1})}return(t,o)=>({a:n.value,b:e.o(a,"be")})}};wx.createPage(t);
