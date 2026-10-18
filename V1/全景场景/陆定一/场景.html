@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>陆定一 · 延安新闻编辑部360°全景｜山河有迹</title>
+  <link rel="stylesheet" href="全景样式.css">
+</head>
+<body>
+<main id="panorama" aria-label="陆定一延安新闻编辑部主题360度全景">
+  <div id="stage"></div><div class="shade"></div>
+  <header><div><span class="eyebrow">山河有迹 · 沉浸阅读</span><h1>陆定一<span>360°全景</span></h1></div><span class="scene-label">延安新闻编辑部</span></header>
+  <nav class="viewpoints" aria-label="六个预设视角">
+    <button data-yaw="-90" data-pitch="0">资料架</button>
+    <button data-yaw="0" data-pitch="0" class="active">编辑桌</button>
+    <button data-yaw="90" data-pitch="0">地图墙</button>
+    <button data-yaw="180" data-pitch="0">接缝处</button>
+    <button data-yaw="0" data-pitch="55">顶部</button>
+    <button data-yaw="0" data-pitch="-50">底部</button>
+  </nav>
+  <div class="controls" aria-label="全景控制">
+    <button id="zoom-in" aria-label="放大视角" title="放大视角">＋</button>
+    <button id="zoom-out" aria-label="缩小视角" title="缩小视角">−</button>
+    <button id="reset" aria-label="复位到编辑桌" title="复位到编辑桌">↺</button>
+    <button id="miniapp" aria-label="打开小程序入口" title="打开小程序入口">小程序</button>
+    <button id="fullscreen" aria-label="全屏查看" title="全屏查看"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9V4h5m6 0h5v5M4 15v5h5m6 0h5v-5"/></svg></button>
+  </div>
+  <div id="loading" role="status">正在准备六视角全景画面……</div>
+  <div class="interaction-hint" id="hint">拖动环视 · 滚轮或双指缩放</div>
+  <footer><span>原创艺术化场景 · 非历史现场复原</span><span id="fov">视野 90°</span></footer>
+  <div id="fallback" hidden><p>当前设备未能开启三维全景渲染，可查看原图。</p><a href="陆定一全景.jpg" target="_blank" rel="noopener">打开全景原图 ↗</a><button id="retry">重新尝试</button></div>
+</main>
+<dialog id="miniapp-dialog" style="max-width:320px;padding:24px;border:1px solid #bd9a67;border-radius:10px;background:#fbf5e9;color:#354d43"><h2>小程序全景入口</h2><p>在山河有迹小程序中打开「人物 → 陆定一」，点击「进入360°全景」即可环视。</p><p>小程序全景页面：<code>/pages/panorama/index?scene=ldy</code></p><p>网页版不能直接唤起尚未配置的微信小程序。</p><button id="miniapp-close" style="padding:8px 18px">关闭</button></dialog>
+<script type="module" src="全景交互.js?v=20261018"></script>
+</body>
+</html>
