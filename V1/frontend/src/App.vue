@@ -15,4 +15,7 @@ export default {onLaunch(){
 @import './styles/时间长卷.css';
 @import './styles/个人与学习.css';
 @import './styles/使用引导.css';
+@import './styles/山河三页.css';
+@import './styles/随页山水.css';
+@import './static/b-theme.css';
 </style>

@@ -38,4 +38,5 @@
 **/output/
 **/outputs/
 **/audit.json
+.playwright-cli/
 **/chat-history.json

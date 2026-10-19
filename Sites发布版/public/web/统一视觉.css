@@ -281,3 +281,98 @@ html::-webkit-scrollbar,body::-webkit-scrollbar,#screen::-webkit-scrollbar,.web-
 .web-shell[data-page=assistant] .web-empty-chat .assistant-starts button:hover{background:#fffdf5;border-color:#bd9a67}
 @media(max-width:720px){.web-shell[data-page=assistant] .web-chat-panel .web-empty-chat{padding:28px 18px!important}.web-shell[data-page=assistant] .web-empty-chat .web-empty-seal{width:50px;height:50px;font-size:29px;margin-bottom:16px}.web-shell[data-page=assistant] .web-empty-chat h3{font-size:25px}.web-shell[data-page=assistant] .web-empty-chat .eyebrow{font-size:9px}.web-shell[data-page=assistant] .web-empty-chat p{font-size:11px;margin-bottom:22px}.web-shell[data-page=assistant] .web-empty-chat .assistant-starts{width:100%;max-width:310px;gap:8px}.web-shell[data-page=assistant] .web-empty-chat .assistant-starts button{font-size:11px;min-height:39px;padding:9px 12px}}
 @media(prefers-reduced-motion:reduce){.web-shell[data-page=assistant] .web-empty-chat .assistant-starts button{transition:none}}
+
+/* 仅足迹页。背景淡化，地图、场馆与操作优先。 */
+.web-shell[data-page=radar]{--paper:#fcf9f2;--card:#fffdf8;--ink:#142722;--red:#aa272b;--red-dark:#862126;--green:#29483c;--gold:#b18b52;--line:#e5d5bb;--muted:#736e62;background:var(--paper);padding:0 36px 18px!important;max-width:1460px;margin:0 auto;overflow:visible;--ink-art-opacity:.38}
+
+.web-shell[data-page=radar] #screen{padding:0;overflow:visible}
+.web-shell[data-page=radar] .hero{position:relative;isolation:isolate;margin:0 -36px 16px;padding:36px 42px!important;min-height:216px;border:0;border-radius:0;background:#fcf9f2;box-shadow:none;overflow:hidden}
+.web-shell[data-page=radar] .reference-radar-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:var(--ink-art-opacity);z-index:-2;pointer-events:none}
+.web-shell[data-page=radar] .hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#fcf9f2f0 3%,#fcf9f28c 44%,transparent 80%);z-index:-1;pointer-events:none}
+.web-shell[data-page=radar] .hero:after{display:none}
+.web-shell[data-page=radar] .hero h2{font:800 46px/1.5 'Noto Serif SC','STSong','SimSun',serif;letter-spacing:.05em;color:var(--ink);position:relative;margin:6px 0 12px;padding:0;gap:0;display:block}
+.web-shell[data-page=radar] .hero p{font-size:18px;color:#3c4941;letter-spacing:.05em;margin:0;position:relative;max-width:760px}
+.web-shell[data-page=radar] .hero .eyebrow{display:none}
+
+.web-shell[data-page=radar] .radar-toolbar{border:1px solid var(--line);border-radius:8px;background:#fffdf8;padding:14px 18px;margin:0 0 18px;display:flex;flex-wrap:wrap;gap:12px 18px;box-shadow:none}
+.web-shell[data-page=radar] .radar-toolbar>.row{order:2;margin:0 0 0 auto;gap:14px;width:auto;flex:none}
+.web-shell[data-page=radar] .radar-toolbar>.row>.small{display:none}
+.web-shell[data-page=radar] .radar-toolbar>.actions{order:1;display:flex;gap:12px;flex:1;flex-wrap:wrap;margin:0}
+.web-shell[data-page=radar] .radar-toolbar>.actions select{order:-1;background:#fffdf8;border:1px solid var(--line);color:var(--ink);min-width:156px;min-height:44px;border-radius:6px;padding:8px 14px;font-size:15px}
+.web-shell[data-page=radar] .radar-toolbar>.chips{order:3;margin:0;gap:10px;flex:1;display:flex;align-items:center;flex-wrap:wrap}
+.web-shell[data-page=radar] .radar-toolbar>.hint{order:4;font-size:11px;color:#90774c;flex:1 1 50%;margin:0;padding:9px 0!important;background:transparent;border:0;line-height:1.7;align-self:center;text-align:right}
+.web-shell[data-page=radar] button,.web-shell[data-page=radar] select{font-family:'PingFang SC','Microsoft YaHei',sans-serif}
+.web-shell[data-page=radar] .primary{background:linear-gradient(115deg,#b42c30,#a32328);border:1px solid var(--red);color:#fffdf8;border-radius:6px;min-height:44px}
+.web-shell[data-page=radar] .ghost{background:#fffdf8;border:1px solid var(--gold);color:var(--red);border-radius:6px;min-height:44px}
+.web-shell[data-page=radar] .radar-toolbar .chip{min-height:42px!important;padding:8px 20px!important;border:1px solid var(--line);border-radius:6px;background:#faf6eb;color:var(--ink);font-size:13px}
+.web-shell[data-page=radar] .radar-toolbar .chip.active{background:var(--green);border-color:var(--green);color:#fffdf8}
+.web-shell[data-page=radar] .web-radar-layout{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(340px,1fr);gap:18px;align-items:start;margin-bottom:0}
+.web-shell[data-page=radar] .web-radar-layout.list-only{grid-template-columns:1fr}
+.web-shell[data-page=radar] .web-map-column{min-width:0;position:sticky;top:18px}
+.web-shell[data-page=radar] .theme-map-card{border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:none;background:var(--card)}
+.web-shell[data-page=radar] .ink-map-heading{padding:14px 20px;background:#fffdf8;border-color:var(--line)}
+.web-shell[data-page=radar] .ink-map-heading small{display:none}
+.web-shell[data-page=radar] .ink-map-heading h3{font:700 23px/1.5 'STSong','SimSun',serif;color:var(--ink);margin:0}
+.web-shell[data-page=radar] .ink-map-seal{color:var(--gold);border-color:var(--gold);background:transparent}
+.web-shell[data-page=radar] .theme-map-viewport,.web-shell[data-page=radar] .live-map-canvas{height:440px!important}
+.web-shell[data-page=radar] .map-caption{border-color:var(--line);font-size:11px;background:#fffdf8}
+.web-shell[data-page=radar] .web-place-column{border:0;background:transparent;border-radius:0;padding:0!important;min-width:0}
+.web-shell[data-page=radar] .web-column-title{padding:0 0 10px!important}
+.web-shell[data-page=radar] .web-column-title .eyebrow,.web-shell[data-page=radar] .web-column-title p{display:none}
+.web-shell[data-page=radar] .web-column-title h3{font:700 20px/1.4 'STSong','SimSun',serif;margin:0;color:var(--ink)}
+.web-shell[data-page=radar] #places{display:flex;flex-direction:column;gap:12px}
+.web-shell[data-page=radar] #places article.card{position:relative;margin:0;border:1px solid var(--line);border-radius:8px;background:var(--card);padding:18px 18px 14px;box-shadow:0 3px 12px #4e3b1b04;min-height:160px;display:grid;grid-template-columns:minmax(0,1fr) 100px;gap:8px 12px;align-items:start}
+.web-shell[data-page=radar] #places article.selected-place{border-color:var(--red);box-shadow:inset 0 0 0 1px #aa272b18}
+.web-shell[data-page=radar] #places .place-head{grid-column:1;grid-row:1;gap:14px;margin:0;display:flex;align-items:flex-start;min-width:0}
+.web-shell[data-page=radar] #places .number{background:var(--red);color:#fffdf8;border-radius:7px;width:42px;min-width:42px;height:44px;display:flex;align-items:center;justify-content:center;font:700 23px/1 Georgia,serif;box-shadow:none}
+.web-shell[data-page=radar] #places .place-title{font:700 21px/1.45 'STSong','SimSun',serif;letter-spacing:.03em;color:var(--ink);margin-bottom:5px}
+.web-shell[data-page=radar] #places .tag{font-size:11px;border-radius:3px;background:#efeddf;color:#5a6558;padding:2px 9px}
+.web-shell[data-page=radar] #places .place-head .muted{font-size:11px;line-height:1.7;margin:6px 0 0;color:var(--muted)}
+.web-shell[data-page=radar] #places article.card>.small{grid-column:1;grid-row:2;margin:0;color:var(--muted);font-size:10px}
+.web-shell[data-page=radar] #places .venue-card-photo{grid-column:2;grid-row:1/3;margin:0;width:100px;background:#f4efe4;border:1px solid #e5d5bb80;border-radius:4px}
+.web-shell[data-page=radar] #places .venue-card-photo img{height:72px!important;width:100%;object-fit:cover!important}
+.web-shell[data-page=radar] #places .venue-card-photo figcaption{font-size:8px;line-height:1.5;padding:4px;overflow-wrap:anywhere;color:#8d7b5e}
+.web-shell[data-page=radar] #places .actions{grid-column:1/-1;grid-row:3;display:flex;justify-content:flex-end;gap:10px;margin:3px 0 0;flex-wrap:wrap}
+.web-shell[data-page=radar] #places .actions button{flex:0 1 145px;min-height:38px;padding:7px 16px;font-size:13px;line-height:1.5}
+.web-shell[data-page=radar] #places .actions .added{background:#edf1e8;color:var(--green);border:1px solid #bcc7b4;border-radius:5px}
+.web-shell[data-page=radar] .radar-journey{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:26px 0;margin-top:20px;border-top:1px solid #e5d5bb88;isolation:isolate}
+.web-shell[data-page=radar] .radar-journey:before{content:'';position:absolute;inset:0;z-index:-1;opacity:.1;background:url('/static/山河卷首.webp') center 70%/cover;pointer-events:none}
+.web-shell[data-page=radar] .radar-journey button{display:flex;gap:16px;align-items:center;text-align:left;background:transparent;border:0;padding:0;min-height:58px;color:var(--ink)}
+.web-shell[data-page=radar] .radar-journey-symbol{width:50px;height:50px;flex-shrink:0;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font:26px 'STSong','SimSun',serif;color:var(--gold);background:#fffdf8}
+.web-shell[data-page=radar] .radar-journey strong{font:700 20px/1.5 'STSong','SimSun',serif;display:block}
+.web-shell[data-page=radar] .radar-journey small{font-size:12px;color:var(--muted);display:block;margin-top:5px}
+.web-shell[data-page=radar] .radar-journey i{font-style:normal;font-size:28px;color:var(--red);margin-left:auto}
+@media(max-width:1050px){.web-shell[data-page=radar] .web-radar-layout{grid-template-columns:minmax(0,1.4fr) minmax(320px,1fr)}.web-shell[data-page=radar] .hero h2{font-size:38px}.web-shell[data-page=radar] .radar-toolbar>.row{margin-left:0}.web-shell[data-page=radar] .radar-journey{gap:16px}}
+@media(max-width:750px){.web-shell[data-page=radar]{padding:0 18px 18px!important}.web-shell[data-page=radar] .hero{margin:0 -18px 16px;padding:30px 24px!important;min-height:215px}.web-shell[data-page=radar] .reference-radar-art{opacity:.28;object-position:65% center}.web-shell[data-page=radar] .hero h2{font-size:34px;max-width:90%;line-height:1.5}.web-shell[data-page=radar] .hero p{font-size:15px;max-width:90%}.web-shell[data-page=radar] .radar-toolbar{padding:12px;gap:10px}.web-shell[data-page=radar] .radar-toolbar>.actions{gap:8px;flex-basis:100%}.web-shell[data-page=radar] .radar-toolbar>.actions button,.web-shell[data-page=radar] .radar-toolbar>.actions select{min-height:44px!important;font-size:12px!important;padding:8px 10px!important}.web-shell[data-page=radar] .radar-toolbar>.hint{text-align:left;flex-basis:100%;font-size:11px}.web-shell[data-page=radar] .radar-toolbar .chip{min-height:44px!important;font-size:12px;padding:8px 14px!important}.web-shell[data-page=radar] .web-radar-layout{display:flex;flex-direction:column;gap:16px}.web-shell[data-page=radar] .web-map-column{position:static;width:100%}.web-shell[data-page=radar] .theme-map-viewport,.web-shell[data-page=radar] .live-map-canvas{height:300px!important}.web-shell[data-page=radar] .web-place-column{width:100%}.web-shell[data-page=radar] .web-place-column:before{display:none}.web-shell[data-page=radar] .web-column-title h3{font-size:22px}.web-shell[data-page=radar] .radar-journey{gap:12px;padding:22px 0}.web-shell[data-page=radar] .radar-journey button{flex-direction:column;text-align:center;gap:8px}.web-shell[data-page=radar] .radar-journey-symbol{width:42px;height:42px;font-size:24px}.web-shell[data-page=radar] .radar-journey strong{font-size:18px}.web-shell[data-page=radar] .radar-journey small{font-size:11px}.web-shell[data-page=radar] .radar-journey i{display:none}.web-shell[data-page=radar] #places .actions button{min-height:44px}.web-shell[data-page=radar] #places .place-title{font-size:20px}}
+@media(prefers-reduced-motion:reduce){.web-shell[data-page=radar] *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* 兼容原导览中更高优先级的工具区与地图槽位规则。 */
+.web-shell[data-page=radar] .hero h2{font-size:46px!important;line-height:1.45!important}
+.web-shell[data-page=radar] .hero p{margin-left:0!important;font-size:18px!important}
+.web-shell[data-page=radar] .radar-toolbar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 20px}
+.web-shell[data-page=radar] .radar-toolbar>.actions{grid-column:1;grid-row:1;width:auto;max-width:none;flex:none;align-items:center;justify-content:flex-start}
+.web-shell[data-page=radar] .radar-toolbar>.row{grid-column:2;grid-row:1;margin:0;justify-content:flex-end}
+.web-shell[data-page=radar] .radar-toolbar>.chips{grid-column:1;grid-row:2;justify-content:flex-start;background:transparent;padding:0;display:flex;max-width:none;width:auto;flex:none}
+.web-shell[data-page=radar] .radar-toolbar>.hint{grid-column:2;grid-row:2;max-width:540px;padding:0!important;flex:none}
+.web-shell[data-page=radar] #theme-map-slot{display:block!important;width:100%;min-width:0}
+.web-shell[data-page=radar] #places article.card{border-radius:8px!important}
+.web-shell[data-page=radar] #places article.card:before{display:none}
+.web-shell[data-page=radar] #places .actions .primary{background:var(--red)!important;border-color:var(--red)!important;color:#fffdf8}
+.web-shell[data-page=radar] .radar-toolbar>.actions .primary{background:var(--red)!important;border-color:var(--red)!important}
+.web-shell[data-page=radar] .radar-toolbar>.chips{margin-left:0!important;justify-self:start}
+.web-shell[data-page=radar] .hero h2 span{display:inline}
+@media(max-width:750px){.web-shell[data-page=radar] .hero h2 span{display:block}}
+@media(max-width:1050px){.web-shell[data-page=radar] .hero h2{font-size:38px!important}.web-shell[data-page=radar] .radar-toolbar>.hint{max-width:360px}}
+@media(max-width:750px){.web-shell[data-page=radar] .hero h2{font-size:32px!important}.web-shell[data-page=radar] .hero p{font-size:15px!important}.web-shell[data-page=radar] .radar-toolbar{grid-template-columns:1fr}.web-shell[data-page=radar] .radar-toolbar>.actions{grid-column:1;grid-row:1}.web-shell[data-page=radar] .radar-toolbar>.row{grid-column:1;grid-row:2;justify-content:flex-start}.web-shell[data-page=radar] .radar-toolbar>.chips{grid-column:1;grid-row:3}.web-shell[data-page=radar] .radar-toolbar>.hint{grid-column:1;grid-row:4;max-width:none;text-align:left}}
+
+.web-shell[data-page=radar] .web-subhead{display:flex;padding:12px 0;margin:0;border-bottom:1px solid var(--line);gap:16px;flex-wrap:wrap}
+.web-shell[data-page=radar] .motion-toggle{z-index:2;min-height:44px;padding:8px 12px}
+
+.web-shell[data-page=radar] .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#fcf9f2ee,#fcf9f244),url("/static/山河卷首.webp") center/cover;opacity:.38;z-index:-1;pointer-events:none}
+
+/* B版仅覆盖装饰层；现有真实地图、示意地图及全部操作不变。 */
+html[data-appearance=b] .web-shell[data-page=radar]{position:relative;isolation:isolate;background:#fcf9f2}
+html[data-appearance=b] .web-shell[data-page=radar]:before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:url('/static/山河卷首.webp') center 72px/100% auto repeat-y;opacity:.10}
+html[data-appearance=b] .web-shell[data-page=radar] .hero:before{display:none}
+html[data-appearance=b] .web-shell[data-page=radar] .hero{background:transparent}
+html[data-appearance=b] .web-shell[data-page=radar] .radar-toolbar,html[data-appearance=b] .web-shell[data-page=radar] #places article.card{background:#fffdf8f5}
+@media(max-width:650px){html[data-appearance=b] .web-shell[data-page=radar]:before{background-size:auto 440px;opacity:.08}}

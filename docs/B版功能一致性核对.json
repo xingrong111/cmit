@@ -1,0 +1,897 @@
+{
+  "baseline": "5691586",
+  "checked": 178,
+  "failures": [],
+  "checks": [
+    {
+      "file": "V1/frontend/src/App.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/components/AppShell.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/components/IPScenePanel.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/components/PersonCard.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/components/PersonPanorama.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/components/PersonPortrait.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/components/RelationGraph.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/components/SourceSheet.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/components/StatePanel.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/components/人物目录.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/components/山河地图.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/components/首次导览.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/components/首页轮播.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/IP专项资料.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/IP形象.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/中国省界.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/人物关联.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/人物统计摘要.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/人物肖像.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/使用指南.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/全国收录.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/合并人物目录.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/本轮人物补充.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/省份归属补证.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/省份目录.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/省界编码.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/研究目录.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/详细档案索引.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/data/部署配置.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/lib/api.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/lib/learning.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/lib/navigation.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/lib/reading.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/lib/storage.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/lib/全国收录.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/lib/地图几何.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/lib/地图标签.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/lib/阅读标题.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/lib/首次使用引导.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/main.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/manifest.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/account/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/admin/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/assistant/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/discussion/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/event/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/graph/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/guide/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/home/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/ip/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/learning/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/me/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/my-comments/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/panorama/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/people/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/person/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/place/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/privacy/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/province/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/radar/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/registry/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/route/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/source/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/sources/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/statistics/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/story-sources/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/story/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/pages/timeline/index.vue",
+      "kind": "original Vue script",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/story/剧情控制.mjs",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/story/剧情配置.mjs",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/story/小程序配音.mjs",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/frontend/src/story/小程序配音.test.mjs",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/public/app.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/public/index.html",
+      "kind": "HTML unchanged apart from visual asset tags",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/server.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/topics.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/微信小程序版/app.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/微信小程序版/app.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/微信小程序版/pages/account/index.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/微信小程序版/pages/account/index.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/微信小程序版/pages/admin/index.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/微信小程序版/pages/admin/index.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/微信小程序版/pages/discussion/index.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/微信小程序版/pages/discussion/index.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/微信小程序版/pages/my-comments/index.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/微信小程序版/pages/my-comments/index.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/微信小程序版/project.config.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/微信小程序版/utils/api.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/account/微信小程序版/utils/账户存储.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/preview/app.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/preview/index.html",
+      "kind": "HTML unchanged apart from visual asset tags",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/preview/live-map.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/preview/交互检查.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/data/content.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/package.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/scripts/check-poi-status.mjs",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/scripts/manage-data.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/scripts/rehearse-import.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/scripts/validate-data.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/src/assistant.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/src/conversation.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/src/domain.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/src/guide.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/src/map-cache.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/src/poi.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/src/preferences.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/src/presentation.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/src/routes.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/src/server.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/src/venue.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/src/定位.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/test/conversation.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/test/deepseek.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/test/experience.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/test/guide.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/test/management-cache.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/test/miniprogram.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/test/module.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/test/poi-coalescing.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/test/presentation.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/test/venue.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/server/test/定位.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/web/app.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/web/index.html",
+      "kind": "HTML unchanged apart from visual asset tags",
+      "matches": true
+    },
+    {
+      "file": "V1/services/guide/web/关联配置.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/reading/data/content.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/reading/data/图谱补充索引.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/reading/package-lock.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/reading/package.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/reading/src/content.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/reading/src/server.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/reading/src/人物图谱.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/reading/tests/api.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/reading/tests/人物图谱.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/reading/tests/来源撤下.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/honors.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/import-check.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/import-template.example.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/import-template.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/learn.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/levels.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/manage.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/app.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/app.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/components/tab-bar/tab-bar.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/components/tab-bar/tab-bar.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/pages/honors/honors.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/pages/honors/honors.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/pages/learn/learn.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/pages/learn/learn.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/pages/other/other.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/pages/other/other.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/pages/quiz/quiz.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/pages/quiz/quiz.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/pages/result/result.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/pages/result/result.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/pages/reward/reward.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/pages/reward/reward.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/project.config.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/sitemap.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/utils/api.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/utils/人物卡片素材.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/miniprogram/utils/称号徽章.json",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/public/app.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/public/import.html",
+      "kind": "HTML unchanged apart from visual asset tags",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/public/import.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/public/index.html",
+      "kind": "HTML unchanged apart from visual asset tags",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/public/manage.html",
+      "kind": "HTML unchanged apart from visual asset tags",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/public/manage.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/public/人物卡片素材.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/server.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/tests/import-check.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/tests/learn.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/tests/manage.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/tests/成长称号.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/tests/荣誉获得页.test.js",
+      "kind": "original functional file",
+      "matches": true
+    },
+    {
+      "file": "V1/services/学习/题库.json",
+      "kind": "original functional file",
+      "matches": true
+    }
+  ]
+}

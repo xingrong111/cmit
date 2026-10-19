@@ -1,0 +1,107 @@
+/* B版全站视觉层。只定义颜色、背景、字体与边框；不改变显示、事件或滚动容器。 */
+html[data-appearance=b]{--b-paper:#fcf9f2;--b-card:#fffdf8;--b-ink:#172d27;--b-red:#a72c28;--b-green:#354f43;--b-gold:#b18b52;--b-line:#e5d7c1;--b-muted:#726e63;--b-art:url('/static/山河卷首.webp');--b-serif:'Noto Serif SC','Source Han Serif SC','STSong','SimSun',serif;--b-sans:'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif}
+html[data-appearance=b] body{background:var(--b-paper);color:var(--b-ink);font-family:var(--b-sans);-webkit-font-smoothing:antialiased}
+html[data-appearance=b] .app-shell,
+html[data-appearance=b] .phone.web-shell,
+html[data-appearance=b] .app{--paper:var(--b-paper);--card:var(--b-card);--ink:var(--b-ink);--red:var(--b-red);--green:var(--b-green);--gold:var(--b-gold);--line:var(--b-line);--muted:var(--b-muted);--wash:#f3eee3;--serif:var(--b-serif);--sans:var(--b-sans);position:relative;isolation:isolate;background-color:var(--b-paper);color:var(--b-ink);font-family:var(--b-sans)}
+html[data-appearance=b] .app-shell:before,
+html[data-appearance=b] .phone.web-shell:before,
+html[data-appearance=b] .app:before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:var(--b-art);background-position:center 72px;background-size:100% auto;background-repeat:repeat-y;background-attachment:scroll;opacity:.10}
+/* 首页背景为默认；我的、小迹、长卷沿用我的原有青绿山水。 */
+html[data-appearance=b] .reference-me,
+html[data-appearance=b] .reference-timeline,
+html[data-appearance=b] .reference-assistant,
+html[data-appearance=b] .phone.web-shell[data-page=assistant]{--b-art:url('/static/青绿山水.jpg')}
+html[data-appearance=b] .reference-me:before,
+html[data-appearance=b] .reference-timeline:before,
+html[data-appearance=b] .reference-assistant:before,
+html[data-appearance=b] .phone.web-shell[data-page=assistant]:before{background-position:70% 110px;opacity:.09}
+/* 标题为宋体，正文为易读的黑体；不覆盖原有字号偏好。 */
+html[data-appearance=b] h1,
+html[data-appearance=b] h2,
+html[data-appearance=b] h3,
+html[data-appearance=b] .serif,
+html[data-appearance=b] .brand-title,
+html[data-appearance=b] .page-title,
+html[data-appearance=b] .section-title,
+html[data-appearance=b] .block-title,
+html[data-appearance=b] .hero-title,
+html[data-appearance=b] .slide-title,
+html[data-appearance=b] .person-card-name,
+html[data-appearance=b] .person-cover-name,
+html[data-appearance=b] .chronicle-name,
+html[data-appearance=b] .chronicle-event-title,
+html[data-appearance=b] .registry-name,
+html[data-appearance=b] .source-title,
+html[data-appearance=b] .place-title,
+html[data-appearance=b] .learning-person-heading,
+html[data-appearance=b] .teaser-title,
+html[data-appearance=b] .banner-title{font-family:var(--b-serif)!important;letter-spacing:.04em}
+html[data-appearance=b] .page-title,
+html[data-appearance=b] .section-title,
+html[data-appearance=b] .block-title,
+html[data-appearance=b] .person-card-name,
+html[data-appearance=b] .chronicle-name{color:var(--b-ink);font-weight:700}
+html[data-appearance=b] button,
+html[data-appearance=b] input,
+html[data-appearance=b] textarea,
+html[data-appearance=b] select,
+html[data-appearance=b] uni-button,
+html[data-appearance=b] uni-input{font-family:var(--b-sans)}
+html[data-appearance=b] .reading-body,
+html[data-appearance=b] .answer-paragraph,
+html[data-appearance=b] .chronicle-summary{line-height:1.95}
+/* 背景退到内容后方；不降低人物照片、地图、图谱或文字的不透明度。 */
+html[data-appearance=b] .page-heading,
+html[data-appearance=b] .hero,
+html[data-appearance=b] .learning-cover,
+html[data-appearance=b] .my-cover{background:transparent;border-color:var(--b-line);box-shadow:none}
+html[data-appearance=b] .page-heading:before,
+html[data-appearance=b] .hero:before,
+html[data-appearance=b] .atlas-top:before{background-image:none;opacity:0;pointer-events:none}
+html[data-appearance=b] .my-cover-art{opacity:.10}
+html[data-appearance=b] .slide-landscape,
+html[data-appearance=b] .hero-landscape{opacity:.16}
+html[data-appearance=b] .card,
+html[data-appearance=b] .fact-card,
+html[data-appearance=b] .source-card,
+html[data-appearance=b] .preference-card,
+html[data-appearance=b] .person-card,
+html[data-appearance=b] .chronicle-card,
+html[data-appearance=b] .chronicle-person,
+html[data-appearance=b] .account-overview,
+html[data-appearance=b] .account-menu button,
+html[data-appearance=b] .registry-card,
+html[data-appearance=b] .badge-album-card,
+html[data-appearance=b] .badge-album-cover,
+html[data-appearance=b] .stage-card,
+html[data-appearance=b] .honor-card{background-color:#fffdf8f5;border-color:var(--b-line);border-radius:8px;box-shadow:0 3px 15px #48391f05}
+html[data-appearance=b] .web-chat-panel,
+html[data-appearance=b] .composer,
+html[data-appearance=b] .choice:not(.picked):not(.right):not(.wrong),
+html[data-appearance=b] .question-card,
+html[data-appearance=b] .atlas-stage,
+html[data-appearance=b] .atlas-selection,
+html[data-appearance=b] .theme-map-card,
+html[data-appearance=b] .map-card{background-color:var(--b-card);border-color:var(--b-line)}
+html[data-appearance=b] .atlas-canvas,
+html[data-appearance=b] .live-map-canvas,
+html[data-appearance=b] .portrait-photo{opacity:1;filter:none}
+html[data-appearance=b] .masthead,
+html[data-appearance=b] .topbar,
+html[data-appearance=b] .web-masthead{background:#fffdf9f2;border-color:var(--b-line)}
+html[data-appearance=b] .primary{background-color:var(--b-red);border-color:var(--b-red)}
+html[data-appearance=b] .outline,
+html[data-appearance=b] .secondary{background-color:var(--b-card);border-color:var(--b-gold);color:var(--b-red)}
+html[data-appearance=b] .longroll-banner .banner-title{color:#fffaf1}
+html[data-appearance=b] .longroll-banner{background:linear-gradient(115deg,#263f35,#3d594b)}
+/* 嵌入模块原有局部标题样式优先级较高，统一字体但保留其字号。 */
+html[data-appearance=b] body .phone.web-shell #screen h1,
+html[data-appearance=b] body .phone.web-shell #screen h2,
+html[data-appearance=b] body .phone.web-shell #screen h3,
+html[data-appearance=b] body .app #view h1,
+html[data-appearance=b] body .app #view h2,
+html[data-appearance=b] body .app #view h3{font-family:var(--b-serif)!important}
+@media(max-width:650px){html[data-appearance=b] .app-shell:before,html[data-appearance=b] .phone.web-shell:before,html[data-appearance=b] .app:before{background-size:auto 440px;opacity:.08}html[data-appearance=b] .page-title{letter-spacing:.02em}html[data-appearance=b] .my-cover-art{opacity:.07}}
+
+@media(max-width:650px){html[data-appearance=b] .reference-me:before,html[data-appearance=b] .reference-timeline:before,html[data-appearance=b] .reference-assistant:before,html[data-appearance=b] .phone.web-shell[data-page=assistant]:before{opacity:.08}}
