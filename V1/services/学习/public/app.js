@@ -255,7 +255,7 @@ function openBadgeSpotlight(art,mode,returnFocus){
  document.querySelector('.badge-spotlight')?.remove();
  const dialog=document.createElement('dialog');dialog.className=`badge-spotlight ${mode==='preview'?'badge-spotlight-preview':'badge-spotlight-earned'}`;
  dialog.setAttribute('aria-label',mode==='preview'?`${art.name}徽章大图`:`${mode==='new'?'恭喜获得':'已经获得'}${art.name}徽章`);
- dialog.innerHTML=`<div class="badge-spotlight-stage" tabindex="-1">${mode==='preview'?'':`<div class="badge-spotlight-heading">${mode==='new'?'恭喜获得':'已经获得'}</div><div class="badge-spotlight-sparks" aria-hidden="true"></div>`}<img src="${escape(art.badge)}" alt="${escape(art.name)}徽章">${mode==='preview'?'':`<div class="badge-spotlight-name">${escape(art.name)}</div><p>${escape(art.condition)}</p>`}</div>`;
+ dialog.innerHTML=`<div class="badge-spotlight-stage" tabindex="-1">${mode==='preview'?'':`<div class="badge-spotlight-heading">${mode==='new'?'恭喜获得':'已经获得'}</div>`}<div class="badge-spotlight-art">${mode==='preview'?'':'<div class="badge-spotlight-sparks" aria-hidden="true"></div>'}<img src="${escape(art.badge)}" alt="${escape(art.name)}徽章"></div>${mode==='preview'?'':`<div class="badge-spotlight-name">${escape(art.name)}</div><p>${escape(art.condition)}</p>`}</div>`;
  document.body.append(dialog);dialog.addEventListener('close',()=>{dialog.remove();if(returnFocus?.isConnected)returnFocus.focus();});
  dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
  dialog.showModal();dialog.querySelector('.badge-spotlight-stage').focus({preventScroll:true});
