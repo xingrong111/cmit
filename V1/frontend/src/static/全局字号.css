@@ -12,3 +12,20 @@
 @media(max-width:720px){.global-large h1,.global-large .page-title,.global-large .hero-title{font-size:30px!important}.global-large h2,.global-large .section-title{font-size:25px!important}.global-large .learning-two-steps{gap:5px}.global-large .step-connector{flex-basis:8px}.global-large .desktop-nav button{font-size:15px!important}.global-large .venue-action-bar button{font-size:15px!important}.global-large .scenario-grid{flex-wrap:wrap}.global-large .scenario{min-width:95px!important}.global-large .my-reading-stats>view{gap:4px}}
 
 .global-large .reward-scene h2{font-size:40px!important}.global-large .badge-album-cover h2{font-size:34px!important}.global-large .badge-album-card h3{font-size:25px!important}
+
+/* uni-app 的 <text> 会渲染为 uni-text；此前仅命中 p/li，导致首页、人物、长卷等字号不变。 */
+.global-large .shell-body uni-text,.global-large .shell-body .card-bio,.global-large .shell-body .chronicle-summary,.global-large .shell-body .inspector-copy,.global-large .shell-body .inspector-evidence>uni-text,.global-large .shell-body .quick-subtitle,.global-large .shell-body .story-note{font-size:18px!important;line-height:1.8!important;white-space:normal!important;overflow-wrap:anywhere}
+.global-large .shell-body .small,.global-large .shell-body .fine,.global-large .shell-body .aux,.global-large .shell-body .muted,.global-large .shell-body .eyebrow,.global-large .shell-body .meta,.global-large .shell-body .tag,.global-large .shell-body .name-date,.global-large .shell-body .name-origin,.global-large .shell-body .portrait-credit,.global-large .shell-body .inspector-footnote{font-size:14px!important;line-height:1.7!important}
+.global-large .shell-body .page-title,.global-large .shell-body .hero-title,.global-large .shell-body .person-cover-name{font-size:36px!important;line-height:1.5!important}
+.global-large .shell-body .section-title,.global-large .shell-body .person-card-name,.global-large .shell-body .chronicle-event-title,.global-large .shell-body .inspector-name,.global-large .shell-body .place-title{font-size:27px!important;line-height:1.55!important}
+.global-large .shell-body .registry-name,.global-large .shell-body .quick-title,.global-large .shell-body .chronicle-name{font-size:22px!important;line-height:1.55!important}
+.global-large .shell-body .card-bio,.global-large .shell-body .chronicle-summary{height:auto!important;min-height:0!important;-webkit-line-clamp:unset!important;display:block!important}
+.global-large .shell-body .person-card,.global-large .shell-body .name-record,.global-large .shell-body .quick-row,.global-large .shell-body .section-head{min-height:0;flex-wrap:wrap}
+.global-large .shell-body .person-card-body,.global-large .shell-body .name-record-copy{min-width:0}
+/* 嵌入的账户页标题须随字幕自然增高，不能保持固定 60px。 */
+.global-large .topbar{height:auto!important;min-height:70px;padding-top:12px!important;padding-bottom:12px!important;align-items:flex-start!important}
+.global-large .topbar>div{min-width:0;flex:1}
+.global-large .topbar h1{font-size:25px!important;line-height:1.4!important;margin:0!important}
+.global-large .topbar small{font-size:15px!important;line-height:1.6!important;white-space:normal!important;overflow-wrap:anywhere}
+.global-large .topbar+.content{padding-top:20px!important}
+@media(max-width:650px){.global-large .shell-body .page-title,.global-large .shell-body .hero-title{font-size:30px!important}.global-large .shell-body .section-title,.global-large .shell-body .person-card-name{font-size:25px!important}}
