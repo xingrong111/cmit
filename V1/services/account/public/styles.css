@@ -8,6 +8,18 @@
 /* 英迹统一视觉基础 */
 :root,page,.app-shell{--paper:#FBF5E9;--card:#FFFAF1;--ink:#35281D;--red:#982B28;--red-dark:#762321;--green:#354D43;--gold:#BD9A67;--muted:#75604B;--line:#DDD0B8;--wash:#F1E7D5;--radius:12px;--serif:"Noto Serif SC","STSong","SimSun",serif;--sans:"PingFang SC","Microsoft YaHei",sans-serif}
 .primary,.secondary,.outline,.danger{border-radius:8px;min-height:44px;transition:background .18s,transform .18s,opacity .18s}
+/* 成员4：审核台保持操作反馈清楚，窄屏按钮可换行而不遮挡记录。 */
+.admin-nav button{min-height:48px;font-size:15px;font-weight:600}
+#adminList .tabs{padding:4px 0 12px;border-bottom:1px solid var(--line)}
+#adminList .list-item{padding:20px 0}
+#adminList .list-head{align-items:flex-start;gap:12px}
+#adminList .list-head>div{min-width:0;flex:1}
+#adminList .topic,#adminList .comment-content{overflow-wrap:anywhere}
+#adminList .list-item .button-row{position:static;display:flex;flex-wrap:wrap;margin-top:12px;padding:0;background:transparent}
+#adminList .list-item .button-row button{flex:1 1 150px;min-height:44px;white-space:normal;line-height:1.4}
+#audit-log summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--red);font-weight:600}
+#audit-log .meta{padding:8px 0;border-top:1px solid var(--line)}
+@media(max-width:480px){.metric-grid{gap:8px}.metric{padding:12px}.metric b{font-size:27px}#adminList .list-head{flex-wrap:wrap}#adminList .status{margin-left:0}}
 .card,.fact-card,.source-card,.preference-card,.hero,.person-card,.q-bank{border-radius:12px}
 button:focus-visible,a:focus-visible{outline:2px solid var(--red);outline-offset:3px}
 button:disabled{cursor:default;opacity:.5}
