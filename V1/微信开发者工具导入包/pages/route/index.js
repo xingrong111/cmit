@@ -1,6 +1,6 @@
 const itinerary=require('../../utils/itinerary');
 const api = require('../../utils/api'); const location = require('../../utils/location');
-Page({
+Page({__returnPrevious(){const fallback=()=>wx.switchTab({url:'/pages/radar/index'});if(getCurrentPages().length>1)wx.navigateBack({delta:1,fail:fallback});else fallback();},
  data: { pendingOrigin:null,overviewMarkers:[],overviewPoints:[], mapZoom:1,mapPoints:[{left:20,top:23},{left:59,top:23},{left:58,top:73},{left:21,top:73}],motionOff:false, stayOptions:['15分钟','30分钟','45分钟','60分钟'],stays:{},budgetIndex:0,budgets:['不限时间','1小时','2小时','半天（4小时）'],budgetValues:[0,60,120,240],visitMinutes:0,walkMinutes:null,totalMinutes:null,overBudget:false, places: [], busy: false, error: '', route: null, polylines: [], markers: [], pendingCount:0, stage:'尚未选择地点', ready:false, originLabel: '尚未选择当前位置', latitude: 0, longitude: 0 },
  onShow() { try{const v=wx.getStorageSync(require('../../utils/账户存储').key('yingji-stay-v1'));if(v&&typeof v==='object')this.setData({stays:v});const b=wx.getStorageSync(require('../../utils/账户存储').key('yingji-budget-v1'));if(Number.isInteger(b)&&b>=0&&b<4)this.setData({budgetIndex:b});}catch(e){}  try{wx.setStorageSync(require('../../utils/账户存储').key('yingji-route-v1'),getApp().globalData.routeIds);}catch(e){} this.loadStops(); },
  zoomMap(e) {const v=e.currentTarget.dataset.zoom;this.setData({mapZoom:v==='reset'?1:Math.max(1,Math.min(1.6,this.data.mapZoom+(v==='in'?.2:-.2)))});},

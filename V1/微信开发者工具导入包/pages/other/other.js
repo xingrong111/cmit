@@ -1,4 +1,4 @@
-Page({
+Page({__returnPrevious(){const fallback=()=>wx.switchTab({url:'/pages/people/index'});if(getCurrentPages().length>1)wx.navigateBack({delta:1,fail:fallback});else fallback();},
   data: { name: '', owner: '', tab: 'mountain' },
   onLoad(query) {
     const name = query.name || '山河';

@@ -1,0 +1,155 @@
+/* ui.css —— 阅读界面组件（成员3交付）
+   配色遵循静态交互版标准：米白纸色、淡金细边、克制阴影；姓名朱红/墨绿。 */
+
+:root {
+  --rui-paper: #f9f4e8;      /* 米白纸色 */
+  --rui-ink: #33291f;        /* 正文墨色 */
+  --rui-gold: #c9a25e;       /* 淡金 */
+  --rui-gold-soft: #e6d3ac;  /* 淡金细边 */
+  --rui-red: #a8402f;        /* 朱红（姓名强调） */
+  --rui-green: #3c6b51;      /* 墨绿（姓名强调/旁白） */
+  --rui-dim: #8a7f6e;
+  --rui-shadow: 0 8px 24px rgba(40, 30, 15, .18);
+}
+
+/* hidden 属性优先：防止组件自身的 display 覆盖导致弹层/气泡常驻挡住整页 */
+[hidden] { display: none !important; }
+
+#rui-root { position: fixed; inset: 0; pointer-events: none; z-index: 20; font: 15px/1.65 system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; }
+#rui-root button { font: inherit; cursor: pointer; }
+#rui-root :focus-visible { outline: 2px solid var(--rui-gold); outline-offset: 2px; }
+
+/* ---------- 人物气泡 ---------- */
+.rui-bubble {
+  position: fixed; max-width: min(300px, 62vw);
+  background: var(--rui-paper); color: var(--rui-ink);
+  border: 1px solid var(--rui-gold-soft); border-radius: 12px;
+  box-shadow: var(--rui-shadow); padding: 10px 14px 12px;
+  pointer-events: auto;
+}
+.rui-bubble-head { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; margin-bottom: 3px; }
+.rui-bubble-name { font-size: 12.5px; font-weight: 700; letter-spacing: .04em; }
+.rui-bubble-name.is-red { color: var(--rui-red); }
+.rui-bubble-name.is-green { color: var(--rui-green); }
+.rui-bubble-progress { font-size: 11.5px; color: var(--rui-dim); font-variant-numeric: tabular-nums; }
+.rui-bubble-text { max-height: 40vh; overflow-y: auto; overscroll-behavior: contain; }
+.rui-bubble-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 10px; }
+.rui-mini { padding: 6px 10px; font-size: 12.5px; border-radius: 8px; background: transparent; border-color: rgba(51, 41, 31, .22); color: var(--rui-ink); }
+.rui-mini:hover { border-color: var(--rui-gold); }
+.rui-pill { padding: 7px 18px; border-radius: 99px; font-size: 13px; }
+.rui-tail {
+  position: absolute; bottom: -6px; width: 12px; height: 12px;
+  background: var(--rui-paper);
+  border-right: 1px solid var(--rui-gold-soft); border-bottom: 1px solid var(--rui-gold-soft);
+  transform: rotate(45deg); margin-left: -6px;
+}
+.rui-tail--top { bottom: auto; top: -6px; border: 0; border-left: 1px solid var(--rui-gold-soft); border-top: 1px solid var(--rui-gold-soft); }
+/* 侧放：尾尖在气泡左/右缘水平指向人物（气泡优先放在头部侧方以避开面部） */
+.rui-tail--left, .rui-tail--right { bottom: auto; margin-left: 0; }
+.rui-tail--left { left: -6px; border: 0; border-bottom: 1px solid var(--rui-gold-soft); border-left: 1px solid var(--rui-gold-soft); }
+.rui-tail--right { left: auto; right: -6px; border: 0; border-top: 1px solid var(--rui-gold-soft); border-right: 1px solid var(--rui-gold-soft); }
+/* 尾尖指向的人物头部小圆点（position:fixed，坐标由 reposition 设定） */
+.rui-tail-dot {
+  position: fixed; width: 9px; height: 9px; border-radius: 50%;
+  background: var(--rui-gold); box-shadow: 0 0 0 4px rgba(201, 162, 94, .28);
+  transform: translate(-50%, -50%); pointer-events: none;
+}
+
+/* ---------- 旁白：独立阅读框，不指向人物 ---------- */
+.rui-narration {
+  position: fixed; left: 50%; bottom: 92px; transform: translateX(-50%);
+  max-width: min(620px, 88vw);
+  background: var(--rui-paper); color: var(--rui-ink);
+  border: 1px solid var(--rui-gold-soft); border-left: 3px solid var(--rui-green);
+  border-radius: 8px; box-shadow: var(--rui-shadow);
+  padding: 10px 16px; text-align: left;
+}
+
+/* ---------- 选项 ---------- */
+.rui-choices {
+  position: fixed; left: 50%; bottom: 92px; transform: translateX(-50%);
+  width: min(360px, 90vw);
+  background: var(--rui-paper); border: 1px solid var(--rui-gold-soft);
+  border-radius: 12px; box-shadow: var(--rui-shadow); padding: 12px 14px;
+  pointer-events: auto;
+}
+.rui-choices-title { margin: 0 0 8px; font-size: 13.5px; color: var(--rui-dim); }
+.rui-choices-list { display: grid; gap: 8px; }
+.rui-choice {
+  padding: 10px 14px; text-align: left; border-radius: 9px;
+  background: transparent; border: 1px solid var(--rui-gold-soft); color: var(--rui-ink);
+}
+.rui-choice:hover { border-color: var(--rui-gold); background: rgba(201, 162, 94, .1); }
+
+/* ---------- 回到发言人物 ---------- */
+.rui-back {
+  position: fixed; left: 50%; bottom: 150px; transform: translateX(-50%);
+  padding: 9px 18px; border-radius: 99px;
+  background: var(--rui-paper); color: var(--rui-green);
+  border: 1px solid var(--rui-gold-soft); box-shadow: var(--rui-shadow);
+  pointer-events: auto;
+}
+
+/* ---------- 操作栏：两行结构（第一行阅读推进，第二行辅助功能） ---------- */
+.rui-bar {
+  position: fixed; left: 50%; bottom: 14px; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 7px;
+  width: max-content; max-width: 96vw;
+  padding: 8px 10px; border-radius: 14px;
+  background: rgba(30, 25, 18, .58); backdrop-filter:none;
+  border: 1px solid rgba(230, 211, 172, .22);
+  pointer-events: auto;
+}
+.rui-bar-row { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; max-width: 100%; }
+.rui-btn { border-radius: 9px; padding: 9px 16px; border: 1px solid transparent; }
+.rui-ghost { background: transparent; border-color: rgba(249, 244, 232, .28); color: #f3ecdd; }
+.rui-ghost:hover { border-color: var(--rui-gold-soft); }
+.rui-primary { background: var(--rui-gold); color: #2a2317; font-weight: 700; border-color: var(--rui-gold); }
+.rui-primary:hover { filter: brightness(1.06); }
+.rui-aux { padding: 5px 12px; font-size: 12.5px; border-radius: 8px; color: rgba(243, 236, 221, .82); }
+.rui-progress { color: rgba(243, 236, 221, .75); font-size: 12.5px; margin: 0 4px; min-width: 1em; }
+
+/* ---------- 轻提示条：一次性提示（首次拖动、首次对白说明） ---------- */
+.rui-hint {
+  position: fixed; left: 50%; top: 64px; transform: translateX(-50%);
+  max-width: 86vw; padding: 8px 16px; border-radius: 99px;
+  background: var(--rui-paper); color: var(--rui-ink);
+  border: 1px solid var(--rui-gold-soft); box-shadow: var(--rui-shadow);
+  font-size: 13px; pointer-events: none; z-index: 40;
+}
+
+/* ---------- 弹层 ---------- */
+.rui-overlay {
+  position: fixed; inset: 0; background: rgba(22, 17, 10, .52);
+  display: grid; place-items: center; padding: 20px; z-index: 50; pointer-events: auto;
+}
+.rui-dialog {
+  width: min(420px, 92vw); max-height: 80vh; overflow-y: auto;
+  background: var(--rui-paper); color: var(--rui-ink);
+  border: 1px solid var(--rui-gold-soft); border-radius: 14px;
+  box-shadow: var(--rui-shadow); padding: 18px 20px;
+}
+.rui-dialog-title { margin: 0 0 8px; font-size: 17px; color: var(--rui-green); }
+.rui-dialog-body { font-size: 14.5px; }
+.rui-dialog-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 16px; }
+
+/* ---------- 手机紧凑模式：系统窄屏 或 body.rui-force-compact ---------- */
+@media (max-width: 640px) {
+  /* 窄屏下气泡仍锚定在人物旁（max-width 72vw 自动收窄）；
+     底部卡片形态只保留给"强制手机紧凑框"开关，供真机验证 */
+  .rui-bubble-text { max-height: 26vh; }
+  .rui-narration, .rui-choices { bottom: 150px; max-width: none; width: auto; left: 12px; right: 12px; transform: none; }
+  .rui-back { bottom: 210px; }
+  .rui-btn { padding: 10px 14px; }
+}
+body.rui-force-compact {
+  .rui-bubble { left: 12px !important; right: 12px; top: auto !important; bottom: 150px; max-width: none; }
+  .rui-tail, .rui-tail-dot { display: none; }
+  .rui-bubble-text { max-height: 26vh; }
+  .rui-narration, .rui-choices { bottom: 150px; max-width: none; width: auto; left: 12px; right: 12px; transform: none; }
+  .rui-back { bottom: 210px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #rui-root * { transition: none !important; animation: none !important; }
+}

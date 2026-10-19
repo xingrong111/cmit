@@ -1,4 +1,8 @@
 const tabs=['home','people','radar','assistant','me']
+export function backOr(page='home'){
+ if(getCurrentPages().length>1)uni.navigateBack({delta:1,fail:()=>go(page)})
+ else go(page)
+}
 export function go(page,params={}){
  const query=Object.entries(params).filter(([,v])=>v!=null).map(([k,v])=>k+'='+encodeURIComponent(v)).join('&')
  if(page==='timeline')uni.setStorageSync('yingji:timeline-person',{person_id:params.person_id||''})

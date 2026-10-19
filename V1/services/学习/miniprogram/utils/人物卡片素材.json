@@ -1,0 +1,37 @@
+{
+  "QQB": {
+    "src": "/static/人物照片/瞿秋白.jpg",
+    "caption": "瞿秋白历史照片",
+    "label": "历史人物资料图",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Qu_Qiubai.JPG",
+    "credit": "逐文件页面标注Public domain / PD-China；保留来源地域限制，非权利人授权书，非全球使用保证。"
+  },
+  "LYS": {
+    "src": "/static/人物形象/狼牙山五壮士.png",
+    "caption": "狼牙山五壮士 · 艺术化IP形象",
+    "label": "团体IP · 艺术化形象",
+    "sourceURL": "",
+    "credit": "团队提供的AI辅助设计素材，非历史照片、非真实容貌或服饰复原。人物与时期识别以史料正文为准。"
+  },
+  "SZZ": {
+    "src": "/static/人物照片/宋振中.jpg",
+    "caption": "宋振中生前照片；不能作为8岁容貌依据",
+    "label": "历史人物资料图",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Song_Zhenzhong.jpeg",
+    "credit": "逐文件页面标注Public domain / PD-China；保留来源地域限制，非权利人授权书，非全球使用保证。"
+  },
+  "LDY": {
+    "src": "/static/人物照片/陆定一.jpg",
+    "caption": "陆定一历史照片",
+    "label": "历史人物资料图",
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Lu_Dingyi.jpg",
+    "credit": "逐文件页面标注Public domain / PD-China；保留来源地域限制，非权利人授权书，非全球使用保证。"
+  },
+  "JZY": {
+    "src": "/static/人物形象/江竹筠.png",
+    "caption": "江竹筠 · 艺术化IP形象",
+    "label": "艺术化IP形象",
+    "sourceURL": "",
+    "credit": "团队提供的AI辅助设计素材，非历史照片、非真实容貌或服饰复原。人物与时期识别以史料正文为准。"
+  }
+}

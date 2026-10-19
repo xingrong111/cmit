@@ -4,7 +4,8 @@
     "pages/quiz/quiz",
     "pages/result/result",
     "pages/honors/honors",
-    "pages/other/other"
+    "pages/other/other",
+    "pages/reward/reward"
   ],
   "window": {
     "navigationBarTitleText": "英迹",

@@ -1,3 +1,4 @@
+<view class="{{__globalLarge ? 'global-large' : ''}}"><view class="explicit-return"><button bindtap="__returnPrevious">‹ 返回上一页</button></view>
 <view class="page learning-page">
   <view wx:if="{{loading}}" class="aux">正在读取结果。</view>
   <view wx:elif="{{error}}" class="state">
@@ -58,9 +59,10 @@
       <button class="primary" bindtap="nextLevel">下一关 · {{attempt.next_level.person_name}} · {{attempt.next_level.difficulty}}</button>
     </view>
     <button wx:else class="secondary" bindtap="again">再答一次</button>
-    <button class="{{attempt.next_level ? 'secondary' : 'primary'}}" bindtap="openHonors">查看学习称号</button>
+    <button wx:if="{{earned.length}}" class="secondary" bindtap="openReward">查看本次荣誉</button><button class="{{attempt.next_level ? 'secondary' : 'primary'}}" bindtap="openHonors">查看学习称号</button>
     <button class="secondary" bindtap="hall">返回学习挑战</button>
     <view class="aux">学习讨论由账户模块接入，这里不展示评论。</view>
   </block>
 <button wx:if="{{attempt.person_name === '瞿秋白' || attempt.person_name === '宋振中' || attempt.person_name === '陆定一'}}" class="secondary" bindtap="readArchive">回顾人物史料</button><button class="secondary" bindtap="explorePlaces">探索关联场馆</button></view>
 
+</view>

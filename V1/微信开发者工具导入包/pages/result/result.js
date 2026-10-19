@@ -1,6 +1,8 @@
+const badgeRecords=require('../../utils/称号徽章.json');
 const { learnerId, request } = require('../../utils/learning-api.js');
 
-Page({
+Page({__returnPrevious(){const fallback=()=>wx.switchTab({url:'/pages/people/index'});if(getCurrentPages().length>1)wx.navigateBack({delta:1,fail:fallback});else fallback();},
+ openReward(){if(!this.data.earned?.length)return;const key='yingji:reward-seen:'+this.attemptId;wx.setStorageSync(key,true);wx.navigateTo({url:'/pages/reward/reward?id='+encodeURIComponent(this.attemptId),fail:()=>wx.removeStorageSync(key)});},
   readArchive(){const id=Object.fromEntries(require('../../utils/人物关联.json').filter(x=>x.readingId).map(x=>[x.name,x.readingId]))[this.data.attempt&&this.data.attempt.person_name];if(id)wx.navigateTo({url:'/pages/person/index?id='+id});else wx.showToast({title:'人物档案持续整理中',icon:'none'});},
   explorePlaces(){const id=Object.fromEntries(require('../../utils/人物关联.json').filter(x=>x.readingId).map(x=>[x.name,x.readingId]))[this.data.attempt&&this.data.attempt.person_name];if(id){wx.setStorageSync('yingji:radar-person',id);wx.switchTab({url:'/pages/radar/index'});}else wx.switchTab({url:'/pages/radar/index'});},
   data: { loading: true, error: '', attempt: null, earned: [], earnedText: '', reviewMode: '', visible: [] },
@@ -16,7 +18,7 @@ Page({
         wx.redirectTo({ url: `/pages/quiz/quiz?id=${attempt.id}` });
         return;
       }
-      const earned = wx.getStorageSync(`yingji:earned:${attempt.id}`) || [];
+      const earned = (wx.getStorageSync(`yingji:earned:${attempt.id}`)||[]).filter(x=>badgeRecords[x.title_id]);
       const score = attempt.score;
       const optionText = option => option.key === option.text ? option.key : `${option.key}　${option.text}`;
       const reviews = attempt.questions.map((question, index) => {
@@ -55,6 +57,7 @@ Page({
         marks,
         barLabel: `答对 ${score.correct} 题，答错 ${score.wrong} 题`
       });
+      if(earned.length&&!wx.getStorageSync('yingji:reward-seen:'+attempt.id))this.openReward();
     } catch (error) {
       this.setData({ loading: false, error: error.message });
     }

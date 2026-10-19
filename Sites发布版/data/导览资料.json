@@ -604,6 +604,22 @@
         "nearbyNavigationApproved": true,
         "nearbyNavigationScope": "venue_area",
         "nearbyNavigationApprovedAt": "2026-10-12"
+      },
+      "photo": {
+        "id": "PHOTO-LDY-2020",
+        "url": "/media/venues/ldy-2020.jpg",
+        "caption": "陆定一祖居门额资料照片，出自2020年开放报道，不证明当前入口或营业状态。",
+        "author": "敖翔、吴镇界（报道统一摄影署名，未逐图细分）",
+        "capturedAt": "未显示单图拍摄日期",
+        "license": "转载许可未确认",
+        "licenseURL": null,
+        "sourceURL": "https://www.sohu.com/a/435356261_120054268",
+        "originalFileURL": "https://p7.itc.cn/q_70/images03/20201130/8a9f9699f20648f08bd4d8a9da1f48a8.jpeg",
+        "changes": "页面等比例居中裁切；未改色、未修饰；点击可查看完整图片。",
+        "checkedAt": "2026-10-18",
+        "status": "permission_pending",
+        "published": false,
+        "credit": "素材：堰桥街道宣传办 · 摄影：敖翔、吴镇界（报道署名） · 转载许可未确认"
       }
     },
     {
@@ -676,7 +692,7 @@
         "license": "CC BY-SA 4.0",
         "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
         "sourceURL": "https://commons.wikimedia.org/wiki/File:瞿秋白故居_入口.jpg",
-        "changes": "原图未修改；页面仅等比例缩放展示。",
+        "changes": "采用来源照片或其预览图；页面等比例放大并居中裁切以填充框；未改色、未修饰。点击可查看完整图片，裁切展示沿用原图许可。",
         "checkedAt": "2026-10-12",
         "status": "source_checked",
         "credit": "Cangminzho · 2017-04-07 · CC BY-SA 4.0"
@@ -778,6 +794,23 @@
         "nearbyNavigationApproved": true,
         "nearbyNavigationScope": "venue_area",
         "nearbyNavigationApprovedAt": "2026-10-12"
+      },
+      "photo": {
+        "id": "PHOTO-PLACE-WX-ZWT",
+        "url": "/media/venues/zwt-2011.jpg",
+        "caption": "张闻天无锡旧居西南侧资料照片（2011年），不是1919—1949年居住场景。",
+        "author": "猫猫的日记本",
+        "capturedAt": "2011-11-13",
+        "license": "CC BY-SA 3.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceURL": "https://commons.wikimedia.org/wiki/File:Former_Residence_of_Zhang_Wentian_in_Wuxi_01_2011-11.JPG",
+        "originalFileURL": "https://upload.wikimedia.org/wikipedia/commons/5/54/Former_Residence_of_Zhang_Wentian_in_Wuxi_01_2011-11.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "downloadURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Former_Residence_of_Zhang_Wentian_in_Wuxi_01_2011-11.JPG/960px-Former_Residence_of_Zhang_Wentian_in_Wuxi_01_2011-11.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20130804024649",
+        "changes": "采用来源照片或其预览图；页面等比例放大并居中裁切以填充框；未改色、未修饰。点击可查看完整图片，裁切展示沿用原图许可。",
+        "checkedAt": "2026-10-18",
+        "status": "source_checked",
+        "published": false,
+        "credit": "猫猫的日记本 · 2011-11-13 · CC BY-SA 3.0"
       }
     },
     {
@@ -847,6 +880,23 @@
         "nearbyNavigationApproved": true,
         "nearbyNavigationScope": "venue_area",
         "nearbyNavigationApprovedAt": "2026-10-12"
+      },
+      "photo": {
+        "id": "PHOTO-PLACE-CZ-ZTL",
+        "url": "/media/venues/ztl-2012.jpg",
+        "caption": "张太雷旧居大门资料照片（2012年），不证明当前开放状态或游客入口。",
+        "author": "猫猫的日记本",
+        "capturedAt": "2012-04-12",
+        "license": "CC BY-SA 3.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceURL": "https://commons.wikimedia.org/wiki/File:Former_Residence_of_Zhang_Tailei_01_2012-04.JPG",
+        "originalFileURL": "https://upload.wikimedia.org/wikipedia/commons/4/43/Former_Residence_of_Zhang_Tailei_01_2012-04.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "downloadURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Former_Residence_of_Zhang_Tailei_01_2012-04.JPG/500px-Former_Residence_of_Zhang_Tailei_01_2012-04.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20130423135441",
+        "changes": "采用来源照片或其预览图；页面等比例放大并居中裁切以填充框；未改色、未修饰。点击可查看完整图片，裁切展示沿用原图许可。",
+        "checkedAt": "2026-10-18",
+        "status": "source_checked",
+        "published": false,
+        "credit": "猫猫的日记本 · 2012-04-12 · CC BY-SA 3.0"
       }
     },
     {
@@ -908,6 +958,23 @@
         "nearbyNavigationApproved": true,
         "nearbyNavigationScope": "venue_area",
         "nearbyNavigationApprovedAt": "2026-10-12"
+      },
+      "photo": {
+        "id": "PHOTO-PLACE-WX-QBC",
+        "url": "/media/venues/qbc-2011.jpg",
+        "caption": "秦邦宪故居导览牌资料照片（2011年），不是场馆建筑全景。",
+        "author": "猫猫的日记本",
+        "capturedAt": "2011-11-13",
+        "license": "CC BY-SA 3.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceURL": "https://commons.wikimedia.org/wiki/File:Former_Residence_of_Qin_Bangxian_01_2011-11.JPG",
+        "originalFileURL": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Former_Residence_of_Qin_Bangxian_01_2011-11.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "downloadURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Former_Residence_of_Qin_Bangxian_01_2011-11.JPG/960px-Former_Residence_of_Qin_Bangxian_01_2011-11.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20130728084757",
+        "changes": "采用来源照片或其预览图；页面等比例放大并居中裁切以填充框；未改色、未修饰。点击可查看完整图片，裁切展示沿用原图许可。",
+        "checkedAt": "2026-10-18",
+        "status": "source_checked",
+        "published": false,
+        "credit": "猫猫的日记本 · 2011-11-13 · CC BY-SA 3.0"
       }
     }
   ]

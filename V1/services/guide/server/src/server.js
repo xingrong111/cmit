@@ -87,11 +87,11 @@ export function createApp({ data, config = envConfig(), fetcher = fetch, maxRequ
         if (!place) fail(404, 'PLACE_NOT_FOUND', '地点不存在或资料尚未发布。');
         return send(200, publicPlace(place, sources,undefined,config.publicMode));
       }
-      if(method==='GET'&&u.pathname==='/media/venues/qqb-2017.jpg'){
-        const place=data.places.find(p=>p.id==='PLACE-CZ-QQB'&&visible(p,config.publicMode));
+      if(method==='GET'&&/^\/media\/venues\/(qqb-2017|qbc-2011|zwt-2011|ztl-2012|ldy-2020)\.jpg$/.test(u.pathname)){
+        const place=data.places.find(p=>p.photo?.url===u.pathname&&visible(p,config.publicMode));
         if(!place||!publicPlace(place,sources,undefined,config.publicMode).photo)fail(404,'NOT_FOUND','图片尚未获准展示。');
         res.writeHead(200,{'Content-Type':'image/jpeg','Cache-Control':'private, max-age=3600','X-Content-Type-Options':'nosniff'});
-        return res.end(fs.readFileSync(path.join(here,'../../media/venues/qqb-2017.jpg')));
+        return res.end(fs.readFileSync(path.join(here,'../../media/venues',path.basename(u.pathname))));
       }
       const previewFiles = { '/': 'index.html', '/preview/': 'index.html', '/preview/app.js': 'app.js', '/preview/style.css': 'style.css','/preview/live-map.js':'live-map.js', '/preview/assets/ai-guide-xiaoying-v1.png':'assets/ai-guide-xiaoying-v1.png', '/preview/assets/ai-guide-xiaoying-v1.webp':'assets/ai-guide-xiaoying-v1.webp' };
       const webFiles = { '/web': 'index.html', '/web/': 'index.html', '/web/index.html': 'index.html', '/web/app.js': 'app.js', '/web/style.css': 'style.css', '/web/landscape.svg': 'landscape.svg' };

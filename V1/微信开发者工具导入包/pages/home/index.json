@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "山河有迹",
   "usingComponents": {
+    "home-carousel": "../../components/首页轮播",
     "national-map": "../../components/山河地图",
     "app-shell": "../../components/AppShell",
     "person-card": "../../components/PersonCard",

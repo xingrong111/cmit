@@ -87,9 +87,11 @@ function createLearning(options = {}) {
     for (const title of honors.titles.filter(item => item.scope === 'cross_group')) {
       if (completedGroups >= title.completed_groups) grants.push({ title_id: title.id, group_id: null, name: title.name });
     }
+    const beginnerGroups=honors.groups.filter(group=>done.has(group.beginner_level_id)).length;
+    for(const title of honors.titles.filter(item=>item.scope==='milestone')){if((title.beginner_groups!=null?beginnerGroups>=title.beginner_groups:completedGroups>=title.completed_groups))grants.push({title_id:title.id,group_id:null,name:title.name});}
     return { grants, completedGroups };
   };
-  const syncTitles = learner => {
+  const syncTitles = (learner,previouslyEligible=new Set()) => {
     const { grants } = desiredTitles(learner);
     const owned = new Set(learner.titles.map(grantKey));
     const earned = [];
@@ -97,7 +99,7 @@ function createLearning(options = {}) {
       if (owned.has(grantKey(title))) continue;
       const row = { ...title, earned_at: new Date().toISOString() };
       learner.titles.push(row);
-      earned.push(row);
+      if(!previouslyEligible.has(grantKey(title)))earned.push(row);
     }
     return earned;
   };
@@ -105,7 +107,8 @@ function createLearning(options = {}) {
     const learner = learnerIdValue && store.learners[learnerIdValue] ? store.learners[learnerIdValue] : { completions: [], titles: [] };
     const done = completedLevels(learner);
     const completedGroups = honors.groups.filter(group => done.has(group.beginner_level_id) && done.has(group.advanced_level_id)).length;
-    const owned = new Set(learner.titles.map(grantKey));
+    const owned = new Set([...learner.titles.map(grantKey),...desiredTitles(learner).grants.map(grantKey)]);
+    const beginnerGroups=honors.groups.filter(group=>done.has(group.beginner_level_id)).length;
     return {
       question_status: '待核验',
       completed_groups: completedGroups,
@@ -122,7 +125,7 @@ function createLearning(options = {}) {
         }
         return {
           id: title.id, name: title.name, scope: title.scope, condition: title.condition,
-          progress: `${Math.min(completedGroups, title.completed_groups)}/${title.completed_groups}`,
+          progress: title.beginner_groups!=null?`${Math.min(beginnerGroups,title.beginner_groups)}/${title.beginner_groups}`:`${Math.min(completedGroups, title.completed_groups)}/${title.completed_groups}`,
           state: owned.has(`${title.id}:`) ? '已获得' : '可解锁'
         };
       })
@@ -235,10 +238,11 @@ function createLearning(options = {}) {
       if (attempt.answers.length === attempt.question_ids.length) {
         attempt.finished_at = new Date().toISOString();
         const learner = learnerOf(attempt.learner_id);
+        const previouslyEligible=new Set(desiredTitles(learner).grants.map(grantKey));
         if (!learner.completions.some(item => item.attempt_id === attempt.id)) {
           learner.completions.push({ level_id: attempt.level_id, attempt_id: attempt.id, finished_at: attempt.finished_at });
         }
-        earned = syncTitles(learner);
+        earned = syncTitles(learner,previouslyEligible);
       }
       await persist();
       return { status: 200, body: { ...publicAttempt(attempt), feedback: feedbackOf(question, choice, urlOf(question)), titles_earned: earned } };

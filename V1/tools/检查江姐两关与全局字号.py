@@ -1,0 +1,27 @@
+from pathlib import Path
+exec((Path(__file__).parent/'检查合并页面.py').read_text(encoding='utf-8-sig').split('results=[]')[0].replace('9227','9228'))
+size(390);nav('me/index');call('Page.reload');time.sleep(1);wait("document.querySelector('.my-space')")
+wasLarge=js("document.documentElement.classList.contains('global-large')")
+def choose(label):
+ js("[...document.querySelectorAll('.preference-card uni-button')].find(b=>b.textContent==='"+label+"').click()")
+ time.sleep(.2)
+try:
+ choose('标准字号');normal=js("parseFloat(getComputedStyle(document.querySelector('.my-cover .muted')).fontSize)")
+ choose('大字号');wait("document.documentElement.classList.contains('global-large')")
+ large=js("parseFloat(getComputedStyle(document.querySelector('.my-cover .muted')).fontSize)");assert large>normal;print('我的字号',normal,large)
+ nav('learning/index');call('Page.reload');time.sleep(1)
+ wait("document.querySelector('iframe')?.contentDocument?.querySelector('[data-learning-group=JZY]')")
+ wait("document.querySelector('iframe').contentDocument.documentElement.classList.contains('global-large')")
+ assert js("parseFloat(document.querySelector('iframe').contentWindow.getComputedStyle(document.querySelector('iframe').contentDocument.querySelector('.learning-step strong')).fontSize)>=18")
+ js("document.querySelector('iframe').contentDocument.querySelector('[data-learning-group=JZY]').click()")
+ wait("document.querySelector('iframe')?.contentDocument?.querySelectorAll('.stage-card').length===2")
+ assert js("document.querySelector('iframe').contentDocument.querySelectorAll('.stage-card button')[1].disabled")
+ assert js("document.querySelector('iframe').contentDocument.querySelector('.learning-cover').textContent.includes('江竹筠')")
+ shot('江姐两关与大字号.png')
+ nav('assistant/index');time.sleep(1);wait("document.querySelector('iframe')?.contentDocument?.querySelector('#question')")
+ wait("document.querySelector('iframe').contentDocument.documentElement.classList.contains('global-large')")
+ assert js("parseFloat(document.querySelector('iframe').contentWindow.getComputedStyle(document.querySelector('iframe').contentDocument.querySelector('#question')).fontSize)>=18")
+ nav('person/index?id=P009');time.sleep(1);wait("document.documentElement.classList.contains('global-large')")
+ print('通过：江姐两关与进阶锁定、全局字号跨我的/学习/小迹/人物、刷新保持。未修改学习记录。')
+finally:
+ nav('me/index');time.sleep(.5);wait("document.querySelector('.preference-card')");choose('大字号' if wasLarge else '标准字号');ws.close()

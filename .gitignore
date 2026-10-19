@@ -5,9 +5,6 @@
 **/.vinext/
 **/.wrangler/
 **/.sites-runtime/
-**/browser-profile/
-**/playwright-profile/
-**/edge-profile/
 **/__pycache__/
 **/.git/
 **/coverage/
@@ -34,3 +31,10 @@
 **/*.log
 **/预览日志.txt
 **/预览错误.txt
+
+# 浏览器个人资料和本机测试缓存不可发布
+**/browser-profile/
+**/playwright-profile/
+**/edge-profile/
+**/.agents/
+**/.codex/

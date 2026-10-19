@@ -1,0 +1,27 @@
+from pathlib import Path
+import json
+exec((Path(__file__).parent/'检查合并页面.py').read_text(encoding='utf-8-sig').split('results=[]')[0].replace('9227','9228'))
+fixture={'id':'UI-REWARD-DEMO','finished':True,'person_name':'界面演练','difficulty':'入门','score':{'accuracy':100,'correct':1,'wrong':0,'total':1},'questions':[{'id':'demo-q','type':'判断题','stem':'界面演练题，不写入真实学习记录','options':[{'key':'正确','text':'正确'},{'key':'错误','text':'错误'}],'feedback':{'correct':True,'choice':'正确','correct_answer':'正确','explanation':'仅用于页面检查','source_id':'DEMO','evidence':'演练资料'}}],'next_level':None}
+def inside(code):return js('document.querySelector("iframe").contentWindow.eval('+json.dumps(code,ensure_ascii=False)+')')
+for width in [1440,390]:
+ size(width);nav('learning/index');call('Page.reload');time.sleep(1)
+ wait("document.querySelector('iframe')?.contentDocument?.querySelector('#open-honors')")
+ inside("document.querySelector('#open-honors').click()")
+ wait("document.querySelector('iframe')?.contentDocument?.querySelectorAll('.badge-album-card').length===5")
+ wait("[...document.querySelector('iframe').contentDocument.querySelectorAll('.badge-album-card>img')].every(i=>i.complete&&i.naturalWidth>0)")
+ assert inside('document.documentElement.scrollWidth<=innerWidth')
+ shot('学习徽章册-'+str(width)+'.png')
+ inside('window.__rewardBackup={earned:sessionStorage.getItem("yingji:earned-attempt")};attempt='+json.dumps(fixture,ensure_ascii=False)+';earned=[{title_id:"H-PATH-1",name:"星火初学者"},{title_id:"H-PATH-2",name:"追光探寻者"}];sessionStorage.setItem("yingji:earned-attempt",attempt.id);localStorage.removeItem(rewardSeenKey());showResult();')
+ assert inside('screen==="reward"')
+ assert inside('document.querySelector(".reward-scene h2").textContent==="追光探寻者"')
+ assert inside('document.querySelectorAll(".reward-additional>div").length===2')
+ inside('document.querySelector("[data-reward-skip]").click()')
+ assert inside('document.querySelector(".reward-scene").classList.contains("motion-stopped")')
+ assert inside('document.documentElement.scrollWidth<=innerWidth')
+ shot('新荣誉获得页-演练-'+str(width)+'.png')
+ inside('document.querySelector("[data-reward-result]").click();showResult();')
+ assert inside('screen==="result"&&!pendingReward()')
+ inside('localStorage.removeItem(rewardSeenKey());earned=[];showResult();')
+ assert inside('screen==="result"&&!pendingReward()')
+ inside('if(window.__rewardBackup.earned===null)sessionStorage.removeItem("yingji:earned-attempt");else sessionStorage.setItem("yingji:earned-attempt",window.__rewardBackup.earned);showLearn();')
+print('通过：五枚徽章图片、双尺寸徽章册、首次获得自动展示、多枚取最高、跳过动画、返回结果、重复/无新称号不自动展示。演练未写入学习账户。');ws.close()

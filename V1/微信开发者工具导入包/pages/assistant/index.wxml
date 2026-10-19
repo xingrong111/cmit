@@ -1,6 +1,6 @@
-
+<view class="{{__globalLarge ? 'global-large' : ''}}">
 <view class="page {{messages.length ? 'has-conversation' : ''}} {{motionOff ? 'motion-off' : ''}} assistant-page">
- <view class="hero"><button class="motion-toggle" bindtap="toggleMotion">{{motionOff ? '开启动效' : '暂停动效'}}</button><view class="eyebrow">使用指导 · 地点探索 · 史料问答</view><view class="title">小迹导览</view><view class="subtitle">了解怎么用、去哪里、怎么安排文化路线</view></view>
+ <view class="hero"><image class="module-landscape" src="/static/青绿山水.jpg" mode="aspectFill"/><button class="motion-toggle" bindtap="toggleMotion">{{motionOff ? '开启动效' : '暂停动效'}}</button><view class="eyebrow">使用指导 · 地点探索 · 史料问答</view><view class="title">小迹导览</view><view class="subtitle">了解怎么用、去哪里、怎么安排文化路线</view></view>
  
  <view class="guide-welcome" wx:if="!messages.length"><view class="guide-halo"></view><image class="guide-character" mode="aspectFit" src="/assets/ai-guide-xiaoying-v1.webp"/><view class="guide-copy"><view class="guide-kicker">原创AI导览员</view><view class="heading">小迹陪你循迹</view><view class="guide-intro">陪你读懂人物故事，<view>发现身边的历史足迹。</view></view><view class="guide-skills"><text>使用指导</text><text>史料问答</text><text>文化探索</text></view><view class="guide-disclosure">AI生成形象 · 非历史人物</view></view></view>
  <view class="fine evidence-badge">{{label}}</view><view class="hint row"><text>{{preferenceLabel || '告诉我城市、时间和步行偏好'}}</text><button class="ghost" bindtap="resetGuide" disabled="{{busy}}">新导览</button></view>
@@ -24,3 +24,4 @@
  <button wx:if="showLatest" class="ghost" bindtap="latest">查看最新回答 ↓</button><view class="fine">近期会话会随提问发送给模型服务，服务器不持久保存聊天记录。请勿填写私人敏感信息。</view>
 </view>
 <view class="composer" style="{{keyboardHeight > 0 ? 'bottom:' + keyboardHeight + 'px;' : ''}}"><textarea auto-height adjust-position="{{false}}" class="input" value="{{question}}" bindinput="input" maxlength="500" confirm-type="send" bindconfirm="send" placeholder="想了解什么，或计划去哪里？"/><button wx:if="busy" class="primary send-icon" aria-label="停止回答" bindtap="stop"><view class="chat-icon chat-icon-stop"></view></button><button wx:else class="primary send-icon" aria-label="发送提问" disabled="{{!question}}" bindtap="send"><view class="chat-icon chat-icon-send"></view></button></view>
+</view>

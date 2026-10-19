@@ -1,5 +1,5 @@
 const api = require('../../utils/api');
-Page({
+Page({__returnPrevious(){const fallback=()=>wx.switchTab({url:'/pages/radar/index'});if(getCurrentPages().length>1)wx.navigateBack({delta:1,fail:fallback});else fallback();},
  data: { motionOff:false, evidenceOpen:false, checklistOpen:false,photoFailed:false, place: null, busy: true, error: '', added: false },
  onLoad(o) { this.id = o.id; this.load(); },
  onShow() { if (this.id) this.setData({ added: getApp().globalData.routeIds.includes(this.id) }); },
@@ -7,7 +7,7 @@ Page({
  onUnload() { this.destroyed = true; if (this.pending) this.pending.abort(); },
  async load() {
   if(this.pending)this.pending.abort();const generation=this.generation=(this.generation||0)+1;this.setData({ busy: true, error: '' }); this.pending = api.request('/api/places/' + encodeURIComponent(this.id || ''));
-  try { const place = await this.pending.promise; if(place.photo)place.photo.displayURL=api.assetURL(place.photo.url); if (!this.destroyed && generation===this.generation) this.setData({ place }); }
+  try { const place = await this.pending.promise; if(place.photo)place.photo.displayURL=api.assetURL(place.photo.url);if(place.visitorService)place.visitorService.entries=place.visitorService.entries.filter(e=>e.status!=='unknown'&&e.sourceIds?.length); if (!this.destroyed && generation===this.generation) this.setData({ place }); }
   catch (e) { if (!this.destroyed && generation===this.generation) this.setData({ error: e.message }); }
   finally { if (!this.destroyed && generation===this.generation) this.setData({ busy: false }); }
  },

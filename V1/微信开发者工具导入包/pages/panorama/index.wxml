@@ -1,1 +1,1 @@
-<web-view src="{{a}}" binderror="{{b}}"/>
+<web-view wx:if="{{a}}" src="{{b}}" binderror="{{c}}"/><view wx:else style="padding:24px;line-height:1.9"><text>全景网页版暂未配置发布地址，可先体验完整文字与配音故事。</text><button bindtap="{{d}}">阅读针线里的黎明</button></view>

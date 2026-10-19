@@ -34,7 +34,7 @@ node --dns-result-order=ipv4first --env-file-if-exists=.env src/server.js
 
 顶部“专题首页／人物索引／山河长卷／我的阅读”沿用成员2结构，当前提示待团队接入，不假装已经合并其他成员内容；模块内三项导航可正常切换。
 
-landscape.svg为本次绘制的原创装饰性山水，不是真实地形或场馆复原。
+landscape.svg使用用户提供的青绿山水参考图，作为装饰背景，不是真实地形或场馆复原。
 
 ## 本轮验证
 

@@ -1,0 +1,42 @@
+{
+  "H-PATH-1": {
+    "id": "H-PATH-1",
+    "name": "星火初学者",
+    "scope": "milestone",
+    "condition": "完成任意1组入门挑战",
+    "beginner_groups": 1,
+    "badge": "/static/称号徽章/H-PATH-1.png"
+  },
+  "H-PATH-2": {
+    "id": "H-PATH-2",
+    "name": "追光探寻者",
+    "scope": "milestone",
+    "condition": "完整完成任意1组的入门与进阶",
+    "completed_groups": 1,
+    "badge": "/static/称号徽章/H-PATH-2.png"
+  },
+  "H-PATH-3": {
+    "id": "H-PATH-3",
+    "name": "山河寻迹者",
+    "scope": "milestone",
+    "condition": "完整完成任意2组的入门与进阶",
+    "completed_groups": 2,
+    "badge": "/static/称号徽章/H-PATH-3.png"
+  },
+  "H-PATH-4": {
+    "id": "H-PATH-4",
+    "name": "薪火传习者",
+    "scope": "milestone",
+    "condition": "完整完成任意4组的入门与进阶",
+    "completed_groups": 4,
+    "badge": "/static/称号徽章/H-PATH-4.png"
+  },
+  "H-PATH-5": {
+    "id": "H-PATH-5",
+    "name": "山河知音",
+    "scope": "milestone",
+    "condition": "完整完成全部5组的入门与进阶",
+    "completed_groups": 5,
+    "badge": "/static/称号徽章/H-PATH-5.png"
+  }
+}

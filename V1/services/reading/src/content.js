@@ -1,3 +1,4 @@
+import {buildRelationAtlas} from './人物图谱.js';
 import { DatabaseSync } from 'node:sqlite';
 import { readFileSync, mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
@@ -55,25 +56,9 @@ export function createContent({ dbPath = defaultDbPath, seedPath = defaultSeedPa
     const all = events(pid);
     return { ...(pid ? { person_id: pid } : {}), items, total: filtered.length, stages: STAGES, undated_count: publicFacts(pid).filter(f => f.review_status === 'verified' && !all.some(e => e.fact_ids.includes(f.id))).length, note: '按明确年份排序；片段不等于完整生平' };
   }
-  function graph(pid) {
-    const p = person(pid);
-    if (!p) return null;
-    const nodes = [{ id: pid, name: p.name, kind: p.kind, person_id: pid }];
-    const edges = [];
-    const valid = new Set(p.facts.filter(f => f.review_status === 'verified').map(f => f.id));
-    for (const r of rows('relations')) {
-      if (r.from_id !== pid || !published(r) || r.review_status !== 'verified' || !valid.has(r.fact_id) || !source(r.source_id)) continue;
-      const target = byId('people', r.to_id);
-      // Unpublished person records must not leak through graph labels.
-      if (target && !published(target)) continue;
-      nodes.push({ id: r.to_id, name: r.target_name, kind: target ? target.kind : 'entity', person_id: target?.id ?? null });
-      edges.push(r);
-    }
-    for (const e of p.events) {
-      nodes.push({ id: e.id, name: e.title, kind: 'event', event_id: e.id });
-      edges.push({ id: 'EDGE-' + e.id, from_id: pid, to_id: e.id, type: e.date_text + ' · 相关事迹', fact_id: e.fact_ids[0], source_id: e.source_ids[0], boundary: '事实片段关联，不推断其他参与者' });
-    }
-    return { nodes: [...new Map(nodes.map(n => [n.id, n])).values()], edges, excluded_note: '未核或存在争议的关系不进入确定图谱' };
+  function graph(pid,focus) {
+    return buildRelationAtlas({people:rows('people'),facts:rows('facts'),sources:rows('sources'),relations:rows('relations'),events:rows('events')},pid,focus);
   }
+
   return { db, initialize, rows, byId, people, publicFacts, source, events, meta, person, timeline, graph, close: () => db.close() };
 }

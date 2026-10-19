@@ -51,7 +51,7 @@ export function createApp({ content = createContent(), allowedOrigins, productio
     const p = content.person(req.params.id);
     result(res, p ? { items: [...new Set(p.facts.map(f => f.source_id))].sort().map(content.source) } : null);
   });
-  app.get('/api/people/:id/graph', validate({}), (req, res) => result(res, content.graph(req.params.id)));
+  app.get('/api/people/:id/graph', validate({focus:id}), (req, res) => result(res, content.graph(req.params.id,req.query.focus)));
   app.get('/api/events/:id', validate({}), (req, res) => {
     const e = content.events().find(e => e.id === req.params.id);
     result(res, e ? { ...e, facts: content.publicFacts().filter(f => e.fact_ids.includes(f.id)), sources: e.source_ids.map(content.source) } : null);

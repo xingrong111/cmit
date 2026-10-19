@@ -8,6 +8,8 @@ for dest in [web/'源码',mini/'源码']:
  shutil.copytree(r/'frontend',dest,dirs_exist_ok=True,ignore=ignore)
 shutil.copytree(r/'frontend/dist/build/h5',web/'页面',dirs_exist_ok=True)
 shutil.copytree(r/'微信开发者工具导入包',mini/'微信开发者工具导入包',dirs_exist_ok=True)
+import subprocess,sys
+subprocess.run([sys.executable,str(r/"tools/压缩小程序徽章.py"),str(mini/"微信开发者工具导入包")],check=True)
 # The embedded web UI sources are delivered separately; backend/data stay shared.
 for name,src in [('账户评论',r/'services/account/public'),('小迹与足迹',r/'services/guide/web'),('导览公共页面',r/'services/guide/preview'),('学习挑战',r/'services/学习/public')]:
  shutil.copytree(src,web/'模块页面'/name,dirs_exist_ok=True)

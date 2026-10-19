@@ -42,3 +42,7 @@ test('待复核照片只用于试读，正式模式不能随场馆状态自动�
 test('附近步行路线以明确批准的地图点为终点，保留来源且不写成入口',async()=>{
  const p=data.places[0];const result=await walking({origin:{latitude:31.64,longitude:120.29,type:'gcj02'},placeIds:[p.id]},data,{publicMode:false,mapKey:'MOCK'},undefined,async url=>{assert.equal(new URL(url).searchParams.get('to'),p.mapCandidate.coordinate.latitude+','+p.mapCandidate.coordinate.longitude);return {ok:true,json:async()=>({status:0,result:{routes:[{distance:400,duration:6,polyline:[31.64,120.29,2796,3782],steps:[]}]}})};});assert.equal(result.destinationScope,'venue_area');assert.equal(result.legs[0].sourceId,p.mapCandidate.sourceId);assert(result.notice.includes('实际游客入口'));assert.equal(p.coordinate,null);
 });
+test('祖居未授权参考照片仅内部展示，不能通过发布标记绕过许可校验',()=>{
+ const p=data.places.find(p=>p.id==='PLACE-WX-LDY');assert.equal(publicPlace(p,sources).photo.status,'permission_pending');assert.equal(publicPlace(p,sources,undefined,true).photo,null);
+ const invalid=structuredClone(data);const f=invalid.places.find(p=>p.id==='PLACE-WX-LDY').photo;f.status='verified';f.published=true;assert(validateData(invalid).some(e=>e.includes('照片来源或许可记录无效')));
+});

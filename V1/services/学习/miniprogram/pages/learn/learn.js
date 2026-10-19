@@ -1,3 +1,4 @@
+const cardPortraits=require('../../utils/人物卡片素材.json');
 const { learnerId, request } = require('../../utils/api.js');
 
 function presentGroups(items) {
@@ -16,7 +17,7 @@ function presentGroups(items) {
     const both = Boolean(beginner && beginner.completed && advanced && advanced.completed);
     const row = {
       personId:group.personId, group:beginner&&beginner.group, name: group.name,
-      mark: group.name.slice(0, 1),
+      mark: group.name.slice(0, 1), photo:cardPortraits[beginner&&beginner.group]||null, beginnerDone:!!(beginner&&beginner.completed),advancedDone:!!(advanced&&advanced.completed), entryCount:beginner?beginner.draw_count:5,advancedCount:advanced?advanced.draw_count:8,
       archive: group.personId ? `已接入人物档案，可结合史料学习。` : '本组人物档案持续整理中。',
       both,
       status: '待挑战',
@@ -42,13 +43,15 @@ function presentGroups(items) {
       row.earned = true;
       row.reviewId = beginner.id;
       row.reviewLabel = '复习入门';
-      row.reviewAdvancedId = advanced.id;
+      row.primaryId=advanced.id;row.primaryLabel='复习进阶';
     }
     return row;
   });
 }
 
 Page({
+ openGroup(e){this.focusGroup=e.currentTarget.dataset.group;this.setData({filter:'all'});this.paint();wx.pageScrollTo({scrollTop:0,duration:0});},
+ showPhotoSource(e){const g=this.data.visible.find(x=>x.name===e.currentTarget.dataset.name);if(g&&g.photo)wx.showModal({title:'图注与来源',content:g.photo.caption+'\n'+g.photo.credit+(g.photo.sourceURL?'\n'+g.photo.sourceURL:''),showCancel:false});},
   onLoad(o){this.focusGroup=/^(QQB|LYS|SZZ|LDY|JZY)$/.test(o.group||'')?o.group:'';},
   allChallenges(){this.focusGroup='';this.setData({filter:'all'});this.paint();},
   back(){if(getCurrentPages().length>1)wx.navigateBack();else wx.switchTab({url:'/pages/people/index'});},

@@ -4,7 +4,7 @@ function labelOf(option) {
   return option.key === option.text ? option.key : `${option.key}　${option.text}`;
 }
 
-Page({
+Page({__returnPrevious(){const fallback=()=>wx.switchTab({url:'/pages/people/index'});if(getCurrentPages().length>1)wx.navigateBack({delta:1,fail:fallback});else fallback();},
   readArchive(){const id=Object.fromEntries(require('../../utils/人物关联.json').filter(x=>x.readingId).map(x=>[x.name,x.readingId]))[this.data.attempt&&this.data.attempt.person_name];if(id)wx.navigateTo({url:'/pages/person/index?id='+id});else wx.showToast({title:'人物档案持续整理中',icon:'none'});},
   explorePlaces(){const id=Object.fromEntries(require('../../utils/人物关联.json').filter(x=>x.readingId).map(x=>[x.name,x.readingId]))[this.data.attempt&&this.data.attempt.person_name];if(id){wx.setStorageSync('yingji:radar-person',id);wx.switchTab({url:'/pages/radar/index'});}else wx.switchTab({url:'/pages/radar/index'});},
   data: { loading: true, error: '', attempt: null, question: null, picked: '', feedback: null, busy: false },

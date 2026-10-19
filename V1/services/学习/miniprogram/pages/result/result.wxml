@@ -58,7 +58,7 @@
       <button class="primary" bindtap="nextLevel">下一关 · {{attempt.next_level.person_name}} · {{attempt.next_level.difficulty}}</button>
     </view>
     <button wx:else class="secondary" bindtap="again">再答一次</button>
-    <button class="{{attempt.next_level ? 'secondary' : 'primary'}}" bindtap="openHonors">查看学习称号</button>
+    <button wx:if="{{earned.length}}" class="secondary" bindtap="openReward">查看本次荣誉</button><button class="{{attempt.next_level ? 'secondary' : 'primary'}}" bindtap="openHonors">查看学习称号</button>
     <button class="secondary" bindtap="hall">返回学习挑战</button>
     <view class="aux">学习讨论由账户模块接入，这里不展示评论。</view>
   </block>

@@ -23,10 +23,14 @@
     "pages/registry/index",
     "pages/statistics/index",
     "pages/panorama/index",
+    "pages/ip/index",
+    "pages/story/index",
+    "pages/story-sources/index",
     "pages/learn/learn",
     "pages/quiz/quiz",
     "pages/result/result",
     "pages/honors/honors",
+    "pages/reward/reward",
     "pages/other/other"
   ],
   "window": {
@@ -74,6 +78,50 @@
     ]
   },
   "usingComponents": {},
+  "subPackages": [
+    {
+      "root": "voice-act0",
+      "name": "voice-act0",
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "root": "voice-act1",
+      "name": "voice-act1",
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "root": "voice-act2",
+      "name": "voice-act2",
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "root": "voice-act3",
+      "name": "voice-act3",
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "root": "voice-act4",
+      "name": "voice-act4",
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "root": "voice-act5",
+      "name": "voice-act5",
+      "pages": [
+        "index"
+      ]
+    }
+  ],
   "permission": {
     "scope.userLocation": {
       "desc": "用于查询附近历史场所与步行路线，仅在你选择定位时使用"

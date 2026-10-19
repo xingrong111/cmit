@@ -7,7 +7,7 @@ Page({
  onUnload() { this.destroyed = true; if (this.pending) this.pending.abort(); },
  async load() {
   if(this.pending)this.pending.abort();const generation=this.generation=(this.generation||0)+1;this.setData({ busy: true, error: '' }); this.pending = api.request('/api/places/' + encodeURIComponent(this.id || ''));
-  try { const place = await this.pending.promise; if(place.photo)place.photo.displayURL=api.assetURL(place.photo.url); if (!this.destroyed && generation===this.generation) this.setData({ place }); }
+  try { const place = await this.pending.promise; if(place.photo)place.photo.displayURL=api.assetURL(place.photo.url);if(place.visitorService)place.visitorService.entries=place.visitorService.entries.filter(e=>e.status!=='unknown'&&e.sourceIds?.length); if (!this.destroyed && generation===this.generation) this.setData({ place }); }
   catch (e) { if (!this.destroyed && generation===this.generation) this.setData({ error: e.message }); }
   finally { if (!this.destroyed && generation===this.generation) this.setData({ busy: false }); }
  },

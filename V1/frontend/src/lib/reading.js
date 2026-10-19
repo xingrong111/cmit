@@ -1,7 +1,7 @@
 import {accountKey} from './storage.js';
 const KEY='yingji:reading-v1'
 export function prefs(){return uni.getStorageSync(accountKey('yingji:prefs'))||{size:'normal'}}
-export function setSize(size){uni.setStorageSync(accountKey('yingji:prefs'),{size})}
+export function setSize(size){uni.setStorageSync(accountKey('yingji:prefs'),{size});uni.$emit('yingji:font-size',size)}
 export function history(){return uni.getStorageSync(accountKey(KEY))||[]}
 export function remember(kind,id,title){const row={kind,id,title,at:Date.now()};uni.setStorageSync(accountKey(KEY),[row,...history().filter(x=>!(x.kind===kind&&x.id===id))].slice(0,20))}
 export function bookmarks(){return uni.getStorageSync(accountKey('yingji:bookmarks-v1'))||[]}

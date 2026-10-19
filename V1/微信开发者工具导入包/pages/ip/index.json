@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "IP人物专题",
+  "usingComponents": {
+    "app-shell": "../../components/AppShell",
+    "person-panorama": "../../components/PersonPanorama",
+    "i-p-scene-panel": "../../components/IPScenePanel",
+    "state-panel": "../../components/StatePanel",
+    "source-sheet": "../../components/SourceSheet"
+  }
+}

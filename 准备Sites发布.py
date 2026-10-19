@@ -6,7 +6,7 @@ dump=lambda p,x:p.write_text(json.dumps(x,ensure_ascii=False,separators=(',',':'
 pub=site/'public';pub.mkdir(exist_ok=True);lib=site/'lib/项目';lib.mkdir(exist_ok=True);data=site/'data';data.mkdir(exist_ok=True)
 shutil.copytree(v/'frontend/dist/build/h5',pub,dirs_exist_ok=True)
 html=(pub/'index.html').read_text(encoding='utf-8')
-html=html.replace('</body>','<a href="/vr/场景预览.html" style="position:fixed;left:14px;bottom:94px;z-index:9999;padding:9px 13px;border:1px solid #bd9a67;background:#fbf5e9ed;color:#982b28;border-radius:24px;font:12px sans-serif;text-decoration:none;box-shadow:0 3px 18px #0001">江姐全景 ↗</a></body>')
+html=html.replace('</body>','<a href="/vr/互动故事.html" style="position:fixed;left:14px;bottom:94px;z-index:9999;padding:9px 13px;border:1px solid #bd9a67;background:#fbf5e9ed;color:#982b28;border-radius:24px;font:12px sans-serif;text-decoration:none;box-shadow:0 3px 18px #0001">江姐互动故事 ↗</a></body>')
 dump(data/'首页HTML.json',html);(pub/'index.html').unlink()
 for src,dst in [(v/'services/account/public',pub/'modules/account'),(v/'services/学习/public',pub/'modules/learning'),(v/'services/guide/web',pub/'web'),(v/'services/guide/preview',pub/'preview'),(v/'services/guide/media',pub/'media')]:
  if src.exists():shutil.copytree(src,dst,dirs_exist_ok=True,ignore=shutil.ignore_patterns('browser-profile','playwright-profile','edge-profile','.env','.env.*','*.log'))

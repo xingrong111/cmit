@@ -137,6 +137,24 @@
       "style": {
         "navigationBarTitleText": "瞿秋白 · 360°全景"
       }
+    },
+    {
+      "path": "pages/ip/index",
+      "style": {
+        "navigationBarTitleText": "IP人物专题"
+      }
+    },
+    {
+      "path": "pages/story/index",
+      "style": {
+        "navigationBarTitleText": "针线里的黎明"
+      }
+    },
+    {
+      "path": "pages/story-sources/index",
+      "style": {
+        "navigationBarTitleText": "内容与来源说明"
+      }
     }
   ],
   "globalStyle": {

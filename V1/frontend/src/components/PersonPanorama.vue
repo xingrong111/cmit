@@ -1,23 +1,19 @@
 <template><view class="person-panorama" :class="{'panorama-expanded':expanded}">
 <!-- #ifdef H5 -->
-<iframe ref="frame" class="person-panorama-frame" :src="sceneUrl" :title="name+'360度可交互全景'" allow="fullscreen" allowfullscreen="true" loading="eager"></iframe>
+<iframe ref="frame" class="person-panorama-frame" :src="sceneUrl" :title="sceneName+'360度可交互全景'" allow="fullscreen" allowfullscreen="true" loading="eager"></iframe>
 <button v-if="expanded" class="panorama-exit" @tap="setExpanded(false)">退出全屏 ×</button>
 <!-- #endif -->
 <!-- #ifndef H5 -->
-<image class="panorama-mobile-poster" src="/static/landscape.svg" mode="aspectFill"/><view class="panorama-mobile-copy"><text class="eyebrow">沉浸阅读 · 360°全景</text><text class="panorama-mobile-name">{{name}}</text><text class="small">{{config.description}}，可拖动环视、缩放与全屏。</text><button class="primary" @tap="openPanorama">进入360°全景 ↗</button></view>
+<image class="panorama-mobile-poster" src="/static/青绿山水.jpg" mode="aspectFill"/><view class="panorama-mobile-copy"><text class="eyebrow">沉浸阅读 · 360°全景</text><text class="panorama-mobile-name">{{sceneName}}</text><text class="small">艺术化场景，可拖动环视、缩放与全屏。</text><button class="primary" @tap="openPanorama">进入360°全景 ↗</button></view>
 <!-- #endif -->
-<button class="panorama-archive" @tap="showPortrait=true"><image :src="portraitSrc" mode="aspectFill"/><view><text>{{name}} · 人物档案</text><text class="panorama-archive-hint">史料照片 / IP形象 ↗</text></view></button>
-<view v-if="showPortrait" class="panorama-portrait-mask" @tap.self="showPortrait=false"><view class="panorama-portrait-dialog"><view class="panorama-dialog-top"><text>人物图像</text><button @tap="showPortrait=false" aria-label="关闭人物图像">×</button></view><PersonPortrait :person-id="personId" :name="name" variant="cover"/></view></view>
+<button v-if="!sceneOnly" class="panorama-archive" @tap="showPortrait=true"><image :src="portraitSrc" mode="aspectFill"/><view><text>{{sceneName}} · 人物档案</text><text class="panorama-archive-hint">史料照片 / IP形象 ↗</text></view></button>
+<view v-if="showPortrait" class="panorama-portrait-mask" @tap.self="showPortrait=false"><view class="panorama-portrait-dialog"><view class="panorama-dialog-top"><text>人物图像</text><button @tap="showPortrait=false" aria-label="关闭人物图像">×</button></view><PersonPortrait :person-id="portraitId" :name="sceneName" variant="cover"/></view></view>
 </view></template>
 <script setup>
 import {ref,computed,onMounted,onBeforeUnmount} from 'vue';import PersonPortrait from './PersonPortrait.vue';import portraits from '../data/人物肖像.json';
-const props=defineProps({personId:{type:String,default:'P009'}});
-const config=computed(()=>props.personId==='P014'?{name:'陆定一',slug:'ldy',scene:'LDY',description:'延安新闻编辑部艺术化场景'}:{name:'瞿秋白',slug:'qqb',scene:'QQB',description:'书房艺术化场景'});
-const name=computed(()=>config.value.name);
-const sceneUrl=computed(()=>`/panorama/${config.value.slug}/场景.html`);
-const portraitSrc=computed(()=>portraits[props.personId]?.src||'/static/landscape.svg');
-const showPortrait=ref(false),expanded=ref(false),frame=ref(null);let previousOverflow='';
-function openPanorama(){uni.navigateTo({url:`/pages/panorama/index?scene=${config.value.slug}`})}
+const props=defineProps({sceneOnly:Boolean,group:{type:String,default:'QQB'}});const sceneUrl=computed(()=>props.group==='LDY'?'/panorama/ldy/场景.html':'/panorama/qqb/场景.html?scene='+props.group),sceneName=computed(()=>({QQB:'瞿秋白',LYS:'狼牙山五壮士',SZZ:'宋振中',LDY:'陆定一'}[props.group]||'瞿秋白'));
+const portraitId=computed(()=>({QQB:'P009',SZZ:'P004',LDY:'P014'}[props.group]||'P009')),portraitSrc=computed(()=>portraits[portraitId.value]?.src||'/static/青绿山水.jpg'),showPortrait=ref(false),expanded=ref(false),frame=ref(null);let previousOverflow='';
+function openPanorama(){uni.navigateTo({url:'/pages/panorama/index?scene='+props.group})}
 function setExpanded(value){expanded.value=value;
 // #ifdef H5
 if(value){previousOverflow=document.body.style.overflow;document.body.style.overflow='hidden'}else document.body.style.overflow=previousOverflow;
@@ -25,7 +21,7 @@ frame.value?.contentWindow?.postMessage({type:'shanhe-panorama-expanded',expande
 // #endif
 }
 // #ifdef H5
-function message(e){if(e.origin!==location.origin||e.source!==frame.value?.contentWindow)return;if(e.data?.type==='shanhe-panorama-fullscreen'&&e.data.scene===config.value.scene)setExpanded(!!e.data.expanded)}
+function message(e){if(e.origin!==location.origin||e.source!==frame.value?.contentWindow)return;if(e.data?.type==='shanhe-panorama-fullscreen'&&e.data.scene===props.group)setExpanded(!!e.data.expanded)}
 function key(e){if(e.key==='Escape'){if(expanded.value)setExpanded(false);showPortrait.value=false}}
 onMounted(()=>{window.addEventListener('message',message);window.addEventListener('keydown',key)});onBeforeUnmount(()=>{window.removeEventListener('message',message);window.removeEventListener('keydown',key);if(expanded.value)document.body.style.overflow=previousOverflow})
 // #endif

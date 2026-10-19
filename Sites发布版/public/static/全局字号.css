@@ -1,0 +1,14 @@
+/* 全站阅读字号：布局尺寸不缩放，保留标题层级。 */
+.global-large{--reading-font-size:18px}
+.global-large p,.global-large li,.global-large input,.global-large textarea,.global-large button,.global-large uni-button,.global-large uni-input,.global-large .reading-body,.global-large .message,.global-large .answer-paragraph,.global-large .choice,.global-large .name-origin,.global-large .registry-name,.global-large .row-title{font-size:18px!important;line-height:1.85!important}
+.global-large .small,.global-large .fine,.global-large .aux,.global-large .muted,.global-large .tag,.global-large .pill,.global-large .eyebrow,.global-large .reply-status,.global-large .step-note,.global-large .learning-step small,.global-large small,.global-large figcaption,.global-large .boundary-note{font-size:14px!important;line-height:1.85!important}
+.global-large h1,.global-large .page-title,.global-large .hero-title,.global-large .person-cover-name{font-size:36px!important;line-height:1.6!important}
+.global-large h2,.global-large .section-title,.global-large .block-title,.global-large .place-title,.global-large .person-card-name,.global-large .learning-person-heading h2{font-size:28px!important;line-height:1.65!important}
+.global-large h3,.global-large .learning-step strong,.global-large .registry-name{font-size:20px!important;line-height:1.7!important}
+.global-large .desktop-nav button,.global-large .page-return button,.global-large .chips button,.global-large .hall-filters button{font-size:16px!important;line-height:1.65!important}
+.global-large .person-actions,.global-large .learning-next-actions,.global-large .actions,.global-large .desktop-nav{flex-wrap:wrap!important}
+.global-large .learning-person-cover{min-height:155px}.global-large .learning-step{flex-wrap:wrap}.global-large .learning-step strong{white-space:normal}.global-large .scenario{min-height:70px!important}.global-large .scenario strong{font-size:17px!important;white-space:normal!important}.global-large .scenario small{font-size:13px!important}.global-large .guide-conversation>.user{padding-right:42px!important}.global-large .guide-conversation>.user .icon-button{line-height:1!important}
+.global-large .my-space .preference-card .preference-sample{font-size:23px!important}
+@media(max-width:720px){.global-large h1,.global-large .page-title,.global-large .hero-title{font-size:30px!important}.global-large h2,.global-large .section-title{font-size:25px!important}.global-large .learning-two-steps{gap:5px}.global-large .step-connector{flex-basis:8px}.global-large .desktop-nav button{font-size:15px!important}.global-large .venue-action-bar button{font-size:15px!important}.global-large .scenario-grid{flex-wrap:wrap}.global-large .scenario{min-width:95px!important}.global-large .my-reading-stats>view{gap:4px}}
+
+.global-large .reward-scene h2{font-size:40px!important}.global-large .badge-album-cover h2{font-size:34px!important}.global-large .badge-album-card h3{font-size:25px!important}

@@ -92,7 +92,10 @@ export function validateData(data) {
       }
       for(const c of record.visitorInfo.contacts||[])if(!/^0\d{2,3}-\d{7,8}$/.test(c.number)||!c.label||!c.sourceIds?.length||c.sourceIds.some(id=>!sources.has(id)||!record.sourceIds.includes(id)))errors.push(`场馆联系电话依据无效：${record.id}`);
     }
-    if(record.photo&&(!safeSource({url:record.photo.sourceURL})||!safeSource({url:record.photo.licenseURL})||record.photo.license!=='CC BY-SA 4.0'||!record.photo.author||!record.photo.caption||!record.photo.changes||record.photo.url!=='/media/venues/qqb-2017.jpg'||(record.photo.published&&record.photo.status!=='verified')))errors.push(`照片来源或许可记录无效：${record.id}`);
+    if(record.photo){const f=record.photo;const pending=f.status==='permission_pending'&&f.url==='/media/venues/ldy-2020.jpg'&&f.license==='转载许可未确认'&&f.licenseURL===null&&f.published===false;
+      const licensed=safeSource({url:f.licenseURL})&&['CC BY-SA 4.0','CC BY-SA 3.0'].includes(f.license)&&/^\/media\/venues\/(qqb-2017|qbc-2011|zwt-2011|ztl-2012)\.jpg$/.test(f.url);
+      if(!safeSource({url:f.sourceURL})||!f.author||!f.caption||!f.changes||(!pending&&!licensed)||(f.published&&f.status!=='verified'))errors.push(`照片来源或许可记录无效：${record.id}`);
+    }
     if(record.mapCandidate){const m=record.mapCandidate;if(m.nearbyNavigationApproved===true&&(m.nearbyNavigationScope!=='venue_area'||!/^\d{4}-\d{2}-\d{2}$/.test(m.nearbyNavigationApprovedAt||'')))errors.push(`附近导航范围或日期无效：${record.id}`);try{coordinate(m.coordinate);}catch{errors.push(`候选坐标无效：${record.id}`);}if(!m.id||!m.name||!m.address||!m.sourceId||!record.sourceIds.includes(m.sourceId)||!sources.has(m.sourceId)||m.entranceVerified!==false)errors.push(`地图候选依据无效：${record.id}`);}
   }
   return errors;

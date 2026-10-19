@@ -1,4 +1,4 @@
-
+<view class="{{__globalLarge ? 'global-large' : ''}}">
 <view class="page {{motionOff ? 'motion-off' : ''}} safe-bottom radar-page">
  <button wx:if="{{archiveOnly}}" class="ghost" bindtap="clearArchive">查看全部场馆</button><view class="hero"><button class="motion-toggle" bindtap="toggleMotion">{{motionOff ? '开启动效' : '暂停动效'}}</button><view class="eyebrow">让历史与此刻相遇</view><view class="module-title-row"><image class="module-feature-icon" src="/static/icons/pin.png"/><view class="title">历史足迹雷达</view></view><view class="subtitle">附近有什么 · 怎么去 · 到了看什么</view></view>
  
@@ -17,4 +17,5 @@
  <button wx:if="{{viewMode==='map' &amp;&amp; items.length}}" class="ghost gap" bindtap="toggleList" aria-expanded="{{listExpanded}}">{{listExpanded?'收起':'展开'}}地点列表（{{items.length}}）</button><view wx:if="{{viewMode==='list' || listExpanded}}"><view wx:for="{{items}}" wx:key="id" class="card {{selectedId === item.id ? 'selected-place' : ''}}" data-id="{{item.id}}" bindtap="select"><view class="row"><view class="heading">{{item.name}}</view><text class="label">{{item.type}}</text></view><view class="muted gap">{{item.address}}</view><view class="gap">{{item.summary}}</view><view class="row gap"><text class="fine">{{item.distanceLabel}}</text><button class="ghost" data-id="{{item.id}}" catchtap="place">查看地点 ›</button></view></view>
  </view>
  <button class="primary gap" bindtap="route">我的文化路线</button>
+</view>
 </view>

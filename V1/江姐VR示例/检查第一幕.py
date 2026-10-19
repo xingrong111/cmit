@@ -1,0 +1,43 @@
+from pathlib import Path
+import json
+root=Path(__file__).parent
+exec((root.parent/'tools/检查合并页面.py').read_text(encoding='utf-8-sig').split('results=[]')[0])
+checks=[]
+for width in [1366,390]:
+ size(width);call('Page.navigate',{'url':'http://127.0.0.1:3155/第一幕.html'})
+ wait('window.sceneReady===true')
+ js("localStorage.removeItem('江姐第一幕进度');document.querySelector('#enter').click()")
+ wait("window.storyState?.phase==='explore'")
+ js("document.querySelector('.hotspot').click()")
+ wait("window.storyState?.index===0")
+ wait("document.querySelector('#dialogue').dataset.speaker==='年轻狱友'")
+ wait("document.querySelector('#bubble-tail').getAttribute('d')?.startsWith('M ')")
+ assert js('document.documentElement.scrollWidth<=innerWidth')
+ time.sleep(1);shot('江姐第一幕-'+str(width)+'.png')
+ js("document.querySelector('#next').click()")
+ wait('window.storyState.index===1')
+ wait("document.querySelector('#dialogue').dataset.speaker==='江姐'")
+ js("document.querySelector('#previous').click()")
+ wait('window.storyState.index===0')
+ for _ in range(3):js("document.querySelector('#next').click()")
+ call('Page.reload');wait('window.sceneReady===true')
+ js("document.querySelector('#enter').click()")
+ wait('window.storyState.index===3')
+ for _ in range(5):js("document.querySelector('#next').click()")
+ wait("window.storyState.phase==='complete'")
+ js("document.querySelector('#replay').click()")
+ wait('window.storyState.index===0')
+ js("document.querySelector('#zoomIn').click()")
+ wait('window.sceneState.fov===67')
+ js("document.querySelector('#reset').click()")
+ wait('window.sceneState.fov===75')
+ time.sleep(.5);before=js('window.sceneState.yaw')
+ x=width*.5
+ for kind,px in [('mousePressed',x),('mouseMoved',x+70),('mouseReleased',x+70)]:call('Input.dispatchMouseEvent',{'type':kind,'x':px,'y':380,'button':'left','buttons':1 if kind!='mouseReleased' else 0,'clickCount':1})
+ time.sleep(.6);assert abs(js('window.sceneState.yaw')-before)>2
+ rect=js("(()=>{let r=document.querySelector('#fullscreen').getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2}})()")
+ for kind in ['mousePressed','mouseReleased']:call('Input.dispatchMouseEvent',{'type':kind,**rect,'button':'left','clickCount':1})
+ wait('!!document.fullscreenElement');js('document.exitFullscreen()')
+ checks.append({'width':width,'dialogue':True,'resume':True,'drag':True,'zoom':True,'fullscreen':True})
+(root/'第一幕检查结果.json').write_text(json.dumps(checks,ensure_ascii=False,indent=2),encoding='utf-8')
+print('第一幕检查通过：双尺寸、八段对白、前后切换、重播、进度恢复、环视、缩放、全屏。');ws.close()
