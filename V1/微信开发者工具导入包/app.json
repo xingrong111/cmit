@@ -26,6 +26,7 @@
     "pages/ip/index",
     "pages/story/index",
     "pages/story-sources/index",
+    "pages/guide/index",
     "pages/learn/learn",
     "pages/quiz/quiz",
     "pages/result/result",

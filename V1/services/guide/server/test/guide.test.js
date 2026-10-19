@@ -38,7 +38,7 @@ test('虚构地点ID降级，不将模型内容当成路线或开放信息',asyn
  assert.equal(result.mode,'guidance_fallback');assert(!result.answer.includes('FICTION'));assert(result.answer.includes('出发前核实'));
 });
 test('使用指导自动分流；公开模式不推荐未发布场馆',async()=>{
- const result=await answer({question:'这个小程序怎么使用？'},data,{...config,modelKey:''});assert.equal(result.mode,'help');assert(result.answer.includes('当前独立模块'));
+ const result=await answer({question:'这个小程序怎么使用？'},data,{...config,modelKey:''});assert.equal(result.mode,'help');assert(result.answer.includes('使用指南'));assert(!result.answer.includes('尚未接入'));assert(result.answer.includes('时间长卷'));
  const publicResult=await answer({question:'无锡路线',mode:'guide'},data,{...config,modelKey:'',publicMode:true});assert.equal(publicResult.placeIds.length,0);
 });
 test('导览请求取消不继续输出降级回答',async()=>{

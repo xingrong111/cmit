@@ -75,3 +75,7 @@ report={'附件人数':len(incoming),'字段更新人数':len(patches),'采用�
 dump(out/'更新摘要.json',report)
 (out/'更新说明.md').write_text('# 地域资料合并说明\n\n'+json.dumps(report,ensure_ascii=False,indent=2)+'\n\n## 审核边界\n附件明确记载全部待独立复核；本次完成编号、姓名、字段含义与证据对应核对，并抽查原网页，不称85人均已完成独立原件审核。附件中的历史阶段报告不作为最终值覆盖最新回填表。三名身份不明确者不回填；弱来源、异名身份与相互矛盾的地域仍保留候选。未载字段保持空缺，不以出生地、祖籍或活动地归为籍贯。原名录资格和时间审核状态不提升为已通过。\n\n前端删除内部工作流提示，保留未载字段、日期另载、图片使用依据等事实边界。完整附件、旧值、候选和证据保存在本目录。\n\n重新生成源目录时，在统一人物统计.py之后运行合并地域核读包.py；脚本使用本次快照与原附件生成，不重复新增人物。',encoding='utf-8')
 print(json.dumps(report,ensure_ascii=False))
+
+# 后续补证在历史批次合并之后重放，防止重新生成时退回旧数据。
+import subprocess,sys
+if (r/'data/地域补证.json').exists():subprocess.run([sys.executable,str(r/'tools/更新地域数据.py')],check=True)

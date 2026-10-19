@@ -32,9 +32,10 @@
 **/预览日志.txt
 **/预览错误.txt
 
-# 浏览器个人资料和本机测试缓存不可发布
-**/browser-profile/
-**/playwright-profile/
-**/edge-profile/
-**/.agents/
-**/.codex/
+**/*profile*/
+**/*浏览器*/
+**/tmp/
+**/output/
+**/outputs/
+**/audit.json
+**/chat-history.json

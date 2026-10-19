@@ -11,7 +11,7 @@ items=[]
 for i in range(1,6):
  name=f'H-PATH-{i}.png';src=source/name
  if not src.exists():continue
- im=Image.open(src).convert('RGBA');im.thumbnail((144,144),Image.Resampling.LANCZOS)
+ im=Image.open(src).convert('RGBA');im.thumbnail((128,128),Image.Resampling.LANCZOS)
  im.quantize(colors=96,method=Image.Quantize.FASTOCTREE,dither=Image.Dither.NONE).save(assets/name,optimize=True)
  items.append({'name':name,'sourceBytes':src.stat().st_size,'miniBytes':(assets/name).stat().st_size})
 # Source-only backup images are not runtime assets. Keep every source backup intact.
@@ -22,3 +22,9 @@ if '-原版' not in runtime and '-\\u539f\\u7248' not in runtime:
   if old.exists():old.unlink()
 (root/'docs/小程序徽章体积.json').write_text(json.dumps({'target':str(target),'sourcePreserved':True,'items':items},ensure_ascii=False,indent=2),encoding='utf-8')
 print('微信徽章副本已优化，高清源图保留：',sum(x['miniBytes'] for x in items),'字节')
+
+# 小程序展示副本适配屏幕；保留网页与源素材的高清版本。
+guideSource=root/'services/guide/miniprogram/assets/ai-guide-xiaoying-v1.webp'
+guideTarget=target/'assets/ai-guide-xiaoying-v1.webp'
+if guideSource.exists() and guideTarget.exists():
+ im=Image.open(guideSource).convert('RGBA');im.thumbnail((640,960),Image.Resampling.LANCZOS);im.save(guideTarget,'WEBP',quality=82,method=6)

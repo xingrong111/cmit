@@ -155,6 +155,12 @@
       "style": {
         "navigationBarTitleText": "内容与来源说明"
       }
+    },
+    {
+      "path": "pages/guide/index",
+      "style": {
+        "navigationBarTitleText": "使用指南"
+      }
     }
   ],
   "globalStyle": {

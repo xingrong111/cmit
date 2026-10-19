@@ -54,3 +54,8 @@ next-env.d.ts
 /.codex/
 /outputs/
 /work/
+
+# 本机浏览器与检查输出
+**/browser-profile/
+**/playwright-profile/
+**/edge-profile/
