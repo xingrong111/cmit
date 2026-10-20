@@ -1,0 +1,119 @@
+@use '@/styles/variables.scss' as *;
+
+.page {
+  min-height: 100vh;
+  padding: $spacing-lg $page-padding calc(144rpx + env(safe-area-inset-bottom));
+  background: $color-bg-page;
+}
+
+.header {
+  margin-bottom: $spacing-md;
+}
+
+.kicker {
+  display: block;
+  color: $color-text-secondary;
+  font-size: $font-size-sm;
+  letter-spacing: 4rpx;
+}
+
+.title {
+  display: block;
+  margin-top: $spacing-xs;
+  color: $color-text-primary;
+  font-family: $color-font-title;
+  font-size: $font-size-xxl;
+  font-weight: $font-weight-semibold;
+}
+
+.subtitle,
+.body,
+.updated,
+.statusText {
+  display: block;
+  color: $color-text-secondary;
+  font-size: $font-size-md;
+  line-height: $line-height-normal;
+}
+
+.subtitle {
+  margin-top: $spacing-xs;
+  font-size: $font-size-sm;
+}
+
+.body {
+  color: $color-text-primary;
+}
+
+.body + .body {
+  margin-top: $spacing-sm;
+}
+
+.updated {
+  margin-top: $spacing-sm;
+  color: $color-text-tertiary;
+  font-size: $font-size-sm;
+}
+
+.rule {
+  display: flex;
+  align-items: flex-start;
+  gap: $spacing-sm;
+  margin-top: $spacing-sm;
+}
+
+.rule:first-child {
+  margin-top: 0;
+}
+
+.dot {
+  flex: 0 0 auto;
+  color: $color-primary;
+  font-size: $font-size-lg;
+  line-height: $line-height-normal;
+}
+
+.statusLine {
+  display: flex;
+  align-items: flex-start;
+  gap: $spacing-sm;
+  margin-top: $spacing-sm;
+}
+
+.statusLine:first-child {
+  margin-top: 0;
+}
+
+.badge,
+.badgePending {
+  flex: 0 0 auto;
+  padding: $spacing-xs $spacing-sm;
+  border: 1rpx solid $color-divider;
+  border-radius: $radius-sm;
+  background: $color-bg-page;
+  color: $color-text-primary;
+  font-size: $font-size-sm;
+}
+
+.badgePending {
+  color: $color-warning;
+  border-color: $color-accent;
+}
+
+.statusText {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (min-width: 900px) {
+  .page {
+    width: min(960px, calc(100% - 64px));
+    margin: 0 auto;
+    padding: 112px 0 56px;
+    background: transparent;
+  }
+
+  .header { margin-bottom: 24px; }
+  .title { font-size: 32px; }
+  .rule { margin-top: 12px; }
+}

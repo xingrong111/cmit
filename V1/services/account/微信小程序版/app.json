@@ -1,0 +1,4 @@
+{
+  "pages": ["pages/account/index", "pages/discussion/index", "pages/my-comments/index", "pages/admin/index"],
+  "window": {"navigationBarBackgroundColor":"#FFF9EC","navigationBarTextStyle":"black","navigationBarTitleText":"英迹·山河英雄谱","backgroundColor":"#FFF9EC","backgroundTextStyle":"dark"}
+}

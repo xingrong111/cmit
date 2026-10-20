@@ -1,0 +1,10 @@
+{
+  "httpStatus": 502,
+  "result": {
+    "error": {
+      "code": "INVALID_POI",
+      "message": "地图候选结果无效。"
+    }
+  },
+  "checkedAt": "2026-10-12T01:12:27.623722+00:00"
+}

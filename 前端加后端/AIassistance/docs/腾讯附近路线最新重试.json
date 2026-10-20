@@ -1,0 +1,8 @@
+{
+  "testedAt": "2026-10-12T10:30:48.711Z",
+  "httpStatus": 503,
+  "error": {
+    "code": "MAP_QUOTA_EXCEEDED",
+    "message": "地图服务今日额度已用完，可先保存参观顺序，额度恢复后再规划。"
+  }
+}

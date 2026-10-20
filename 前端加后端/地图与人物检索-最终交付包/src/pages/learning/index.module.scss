@@ -1,0 +1,4 @@
+@use '../../styles/variables.scss' as *;
+.page { min-height: 100vh; padding: $spacing-lg $page-padding calc(144rpx + env(safe-area-inset-bottom)); background: $color-bg-page; }
+.title { display: block; margin-bottom: $spacing-md; color: $color-text-primary; font-family: $color-font-title; font-size: $font-size-xxl; }
+@media (min-width: 900px) { .page { width: min(1180px, calc(100% - 64px)); margin: 0 auto; padding: 112px 0 56px; }.title { font-size: 32px; margin-bottom: 24px; } }

@@ -1,0 +1,51 @@
+@use '../../styles/variables.scss' as *;
+
+.button {
+  @include button-reset;
+  width: 100%;
+  min-height: $button-height-md;
+  padding: 0 $spacing-md;
+  border: 1rpx solid transparent;
+  border-radius: $radius-button;
+  font-family: $color-font-body;
+  font-size: $font-size-md;
+  font-weight: 600;
+  transition: opacity $transition-fast, transform $transition-fast;
+
+  &:active:not([disabled]) {
+    transform: scale(.985);
+  }
+
+  &[disabled] {
+    opacity: .48;
+  }
+}
+
+.primary {
+  color: $color-text-white;
+  background: $color-primary;
+}
+
+.secondary {
+  color: $color-primary;
+  background: $color-bg-card;
+  border-color: $color-accent;
+}
+
+.danger {
+  color: $color-text-white;
+  background: $color-error;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button { transition: none; }
+}
+
+@media (min-width: 900px) {
+  .button {
+    min-height: 44px;
+    padding: 0 20px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+}

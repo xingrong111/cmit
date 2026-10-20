@@ -1,0 +1,212 @@
+[
+  {
+    "path": "00-阅读与核对顺序.md",
+    "sha256": "918458e44d73ad8125293ed0bd8cf68484c108dd933457ad22e30b8dabd4604e",
+    "bytes": 1295
+  },
+  {
+    "path": "01-逐地点档案/张太雷纪念馆.md",
+    "sha256": "a5699412621ebe6ea81f7a68ab1603ef9fc21a6f319464b62d8ed5b9c7c55930",
+    "bytes": 2019
+  },
+  {
+    "path": "01-逐地点档案/张闻天旧居.md",
+    "sha256": "0aa3865dbf821c27fc01665ebf62d1a8fb21b2bdc22b70cc2f31cc2874f94099",
+    "bytes": 2162
+  },
+  {
+    "path": "01-逐地点档案/瞿秋白纪念馆.md",
+    "sha256": "952c7aeed45b93055b13254665e9763a9224cffcc636cf255c004e94c0f1512e",
+    "bytes": 2164
+  },
+  {
+    "path": "01-逐地点档案/秦邦宪故居.md",
+    "sha256": "6fe89fda5383f250876591810074b16ca8c0e646912d9e26387975428d52de6f",
+    "bytes": 2334
+  },
+  {
+    "path": "01-逐地点档案/陆定一祖居陈列馆.md",
+    "sha256": "1be150fe2dcc4ae1b7198df95a27ace005517479bcfd958229a00d2c7f6b8459",
+    "bytes": 2270
+  },
+  {
+    "path": "02-本轮来源与证据/来源索引.json",
+    "sha256": "f27c788048029b9fc7ac5a2da1bc374f0717a81788ca07fa4284e10975f26819",
+    "bytes": 12593
+  },
+  {
+    "path": "02-本轮来源与证据/来源索引.md",
+    "sha256": "092479759c26c4b10fba5e9eb5ae77d37cbf0b244795d99049bdb1162bda1eda",
+    "bytes": 10071
+  },
+  {
+    "path": "03-入口与开放核验/入口候选记录.json",
+    "sha256": "5432a691266da5c4318a0ac251c20229aae49ea559aabb45d5c43de679bef682",
+    "bytes": 3061
+  },
+  {
+    "path": "03-入口与开放核验/入口实地记录模板.md",
+    "sha256": "e041e78f5597cb3b333cf2ef5f5c2c04a1bfc3e48b5708b4c7905e32c1e6bcc5",
+    "bytes": 881
+  },
+  {
+    "path": "03-入口与开放核验/逐项复核表.json",
+    "sha256": "fce26a94640eaa974b6c8bec6a39d843b26a6bbf3e0f0d69a170364984e26972",
+    "bytes": 9729
+  },
+  {
+    "path": "03-入口与开放核验/逐项复核表.md",
+    "sha256": "87021be29ad7732e2642ad5c19f541e8021313890e8bd6c62152d4add71fda2f",
+    "bytes": 4884
+  },
+  {
+    "path": "03-入口与独立核对/入口补查与接口结果-第二轮.md",
+    "sha256": "6781372446d1d0053cd0e973084ba7d08912975a8dc80422d35ceacab2054839",
+    "bytes": 3034
+  },
+  {
+    "path": "03-入口与独立核对/腾讯查询统一记录.json",
+    "sha256": "77334f53606e7455fac8b77173504f4e4d9bd3a4e79726f5a8f04cef45dfa82f",
+    "bytes": 4653
+  },
+  {
+    "path": "03-入口与独立核对/腾讯查询统一记录.md",
+    "sha256": "03f2a07bda01cf8b83a002e539c8d3a90a9208982a28346a8fbe51d56aaaee15",
+    "bytes": 914
+  },
+  {
+    "path": "04-图片许可/IMG-OPEN-QBC.jpg",
+    "sha256": "26b602a08310c16adfb345430f8df78b46b2cdcaa2d65f811046358e22c268dc",
+    "bytes": 2382609
+  },
+  {
+    "path": "04-图片许可/IMG-OPEN-QQB.jpg",
+    "sha256": "a9b5994b5b67abd8168d8bedcf4bc4bef041d178285f0e5788faa0ae34daf6c9",
+    "bytes": 4445607
+  },
+  {
+    "path": "04-图片许可/不采用图片与缺口.md",
+    "sha256": "e457ebc1abedd525d7dc96eb8b91aec6f5d4a5b8bd552270dd2d57ee8ff5eaf3",
+    "bytes": 1234
+  },
+  {
+    "path": "04-图片许可/图片使用与署名.md",
+    "sha256": "57dd159ab02b2b1108f6c77d3fc309dcb1bf7818a3337f87003c3b0f90a2acd5",
+    "bytes": 5997
+  },
+  {
+    "path": "04-图片许可/开放许可图片记录.json",
+    "sha256": "0021e506a8b37cce05c0a2755a1543e21feebf5fba5b5c4b73eec7a5c939d7ad",
+    "bytes": 6924
+  },
+  {
+    "path": "05-技术演练/导入重启回滚演练.json",
+    "sha256": "99a7e62223a2ed341b5858cd12135100a609ac796b8c919466e40eba0b39861c",
+    "bytes": 1272
+  },
+  {
+    "path": "05-技术演练/缓存与回滚演练更新.md",
+    "sha256": "7b1582dd3178c7971a88232097f7ac9726e509b0991ec2a262af55e9198144b9",
+    "bytes": 2106
+  },
+  {
+    "path": "06-既有资料参考/原始来源清单.md",
+    "sha256": "e14326eabaf6ba7498ddfaf8b94151b597a0c0f0cdad1bc0cb52988004a1da37",
+    "bytes": 10037
+  },
+  {
+    "path": "06-既有资料参考/图片候选与许可.json",
+    "sha256": "c56d24f0086bc290d065d18d69f39181ad3866a107b5d0d6224c7d926b6f2a17",
+    "bytes": 2905
+  },
+  {
+    "path": "06-既有资料参考/图片候选与许可.md",
+    "sha256": "805a72a2e1e25dc385f56704ba9c4b56a0bf38585709c434e18f0fa6fe0363e2",
+    "bytes": 3350
+  },
+  {
+    "path": "06-既有资料参考/地点结构化资料.json",
+    "sha256": "79510863927548beda50e9641a3b5113d0f13d4f413c4ff4f46ad166318d83a7",
+    "bytes": 21921
+  },
+  {
+    "path": "06-既有资料参考/场馆核实与图片授权询问模板.md",
+    "sha256": "a733cd49800a2ce7b3a2a2e49be52316f0e768fc2cebfcf9a14c674c1f6c749c",
+    "bytes": 1641
+  },
+  {
+    "path": "06-既有资料参考/张太雷纪念馆.md",
+    "sha256": "4451ee2a51f72bf21a5cb7c7eeb3079b1f82e957c3e90fa4d4fafecaa7cea409",
+    "bytes": 2514
+  },
+  {
+    "path": "06-既有资料参考/张闻天旧居.md",
+    "sha256": "9cef8219b226777a4d15e07ced3c796106991374a284d52c6626210ae56abfdd",
+    "bytes": 2780
+  },
+  {
+    "path": "06-既有资料参考/核查与缺口表.md",
+    "sha256": "ac50dbe88831b350500e8dc4accb94683f3b9d262cd7ce2d6bd6da0afa5a657b",
+    "bytes": 5096
+  },
+  {
+    "path": "06-既有资料参考/瞿秋白纪念馆.md",
+    "sha256": "498a042558c59c7cae05af8ce0e669790ffc4e330c8c705eba7d8f84b8c0a9c1",
+    "bytes": 2741
+  },
+  {
+    "path": "06-既有资料参考/秦邦宪故居.md",
+    "sha256": "f1e424fe2245f99c0b67d24ef7aa53f40607b259a50034b47d434428093872dd",
+    "bytes": 2771
+  },
+  {
+    "path": "06-既有资料参考/第二轮完善结果.md",
+    "sha256": "5b6799e8cb17545aeade77be6506a03e66956410f02d300551b134cd92f90142",
+    "bytes": 4273
+  },
+  {
+    "path": "06-既有资料参考/腾讯地图候选点.json",
+    "sha256": "cedebb0461b79739a156c75394755e505ad4e69dc773b3ec5eaa41157424d618",
+    "bytes": 3114
+  },
+  {
+    "path": "06-既有资料参考/腾讯点位测试结果.md",
+    "sha256": "4ed2bf15002e4002898687f730f000509a0a2b1afd8800e3ca4c1ed79cd28aa9",
+    "bytes": 1246
+  },
+  {
+    "path": "06-既有资料参考/资料总览.html",
+    "sha256": "7eb2324fe5d7ca5cd398efe623385c5ff780dd1630204d33c91a23484bcf4e34",
+    "bytes": 2836
+  },
+  {
+    "path": "06-既有资料参考/资料总览.md",
+    "sha256": "74a6a48d09348d641cbc1ef43fbe74d0e38de8df9a78f4eff5429312818c5ed5",
+    "bytes": 2512
+  },
+  {
+    "path": "06-既有资料参考/陆定一祖居陈列馆.md",
+    "sha256": "a56df016e947c1d3ed6bd19913748feaa7cfad07445cca2e28eacbf7f34084a1",
+    "bytes": 2678
+  },
+  {
+    "path": "07-运行资料/content-v2.json",
+    "sha256": "4a2bd76fb93769d5043b1f4a179b3e7c6aa4dbda848203b181d5c439ad123679",
+    "bytes": 26393
+  },
+  {
+    "path": "修订说明.md",
+    "sha256": "a8a329aa9ee008ab46d87a5cb18a68d573fe1e8c0d8b97cdd10a3bbbeaba9698",
+    "bytes": 1612
+  },
+  {
+    "path": "核对入口.html",
+    "sha256": "75fb601176d6450c67a26bf0a9e3a8d5ff31e62af22440203179e39ac0486c67",
+    "bytes": 4821
+  },
+  {
+    "path": "用户提供的独立核查问题.md",
+    "sha256": "1e0499d58ab5a7d7e8921f2022723b5968241738d8012fd88ed062c7f8c342b5",
+    "bytes": 7436
+  }
+]

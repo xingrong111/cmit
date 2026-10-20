@@ -1,0 +1,76 @@
+@forward './theme.scss';
+@use './theme.scss' as *;
+
+$screen-width: 750rpx;
+$page-padding: 32rpx;
+$page-spacing: 24rpx;
+$max-content-width: 686rpx;
+
+$spacing-xs: 8rpx;
+$spacing-sm: 16rpx;
+$spacing-md: 24rpx;
+$spacing-lg: 32rpx;
+$spacing-xl: 48rpx;
+
+$radius-xs: 4rpx;
+$radius-sm: 8rpx;
+$radius-md: 12rpx;
+$radius-lg: 16rpx;
+$radius-xl: 20rpx;
+$radius-button: 20rpx;
+$radius-round: 999rpx;
+
+$button-height-sm: 88rpx;
+$button-height-md: 88rpx;
+$button-height-lg: 96rpx;
+
+$shadow-card: 0 4rpx 18rpx rgba(65, 42, 23, 0.07);
+$shadow-card-hover: 0 8rpx 24rpx rgba(65, 42, 23, 0.1);
+$shadow-float: 0 6rpx 20rpx rgba(65, 42, 23, 0.1);
+$shadow-popup: 0 12rpx 36rpx rgba(65, 42, 23, 0.14);
+
+$font-size-xs: 22rpx;
+$font-size-sm: 24rpx;
+$font-size-md: 28rpx;
+$font-size-lg: 32rpx;
+$font-size-xl: 36rpx;
+$font-size-xxl: 40rpx;
+$font-size-display: 56rpx;
+
+$line-height-tight: 1.35;
+$line-height-normal: 1.7;
+$line-height-loose: 1.8;
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$transition-fast: 0.15s ease;
+$transition-base: 0.22s ease;
+$transition-slow: 0.32s ease;
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin button-reset {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  line-height: normal;
+  white-space: nowrap;
+
+  &::after { border: none; }
+}

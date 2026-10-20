@@ -1,0 +1,16 @@
+.scene-label { top: 88px; bottom: auto; }
+.chapter-nav { top: 85px; right: 28px; transform: none; display: flex; }
+.chapter { width: auto; min-width: 88px; }
+.reading-card { width: min(380px, calc(100vw - 64px)); padding: 17px 20px; }
+.card-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.card-heading h2 { font-size: 22px; }
+.card-heading .eyebrow { margin-bottom: 3px; }
+.card-toggle { flex: none; padding: 7px 10px; border: 1px solid var(--gold); border-radius: 8px; background: var(--card); color: var(--red); cursor: pointer; }
+.reading-card.is-collapsed #card-detail { display: none; }
+.reading-card #card-detail>p { color: var(--muted); font-size: 14px; line-height: 1.7; }
+@media (max-width: 720px) {
+  .scene-label { top: 150px; left: 18px; }
+  .chapter-nav { top: 73px; right: 12px; left: 12px; justify-content: space-between; gap: 4px; }
+  .chapter { min-width: 0; flex: 1; padding: 8px 5px; text-align: center; }
+  .reading-card { width: calc(100vw - 32px); }
+}

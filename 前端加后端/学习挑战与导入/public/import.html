@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>英迹 · 资料导入预览</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <span class="seal" aria-hidden="true">英迹</span>
+      <div>
+        <p class="brand">山河英雄谱</p>
+        <p class="brand-sub">资料导入预览 · 待核验</p>
+      </div>
+    </header>
+    <main class="desk">
+      <p class="eyebrow">待核验</p>
+      <h1>资料导入预览</h1>
+      <p class="aux">待接入成员3的管理员工作台。检查新增、重复、冲突和格式错误。确认后只存草稿，不发布。题库草稿在 <a href="/manage.html">题库与关卡</a>。</p>
+      <label class="field">选择填好的 JSON<input id="file" type="file" accept="application/json,.json"></label>
+      <label class="field">或粘贴内容<textarea id="text" placeholder="把 import-template.json 的内容粘贴到这里"></textarea></label>
+      <button class="primary" id="check" type="button">检查这份文件</button>
+      <section id="result"></section>
+    </main>
+  </div>
+  <script src="/import.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "description": "英迹·山河英雄谱｜账户、评论与管理员审核",
+  "compileType": "miniprogram",
+  "libVersion": "3.8.10",
+  "appid": "touristappid",
+  "projectname": "yingji-account-review",
+  "setting": { "es6": true, "minified": false, "urlCheck": false, "postcss": true }
+}

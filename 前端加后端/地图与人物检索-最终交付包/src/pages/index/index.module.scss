@@ -1,0 +1,106 @@
+@use '../../styles/variables.scss' as *;
+
+.page {
+  position: relative;
+  min-height: 100vh;
+  padding: $spacing-lg $page-padding calc(144rpx + env(safe-area-inset-bottom));
+  overflow: hidden;
+  background: $color-bg-page;
+}
+
+.pageBackdrop,
+.pageWash {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.pageBackdrop { opacity: 0.94; filter: saturate(1.2) contrast(1.08); }
+.pageWash { background: linear-gradient(180deg, rgba(255, 249, 236, 0.08), rgba(255, 249, 236, 0.16)); }
+.content { position: relative; z-index: 1; }
+
+.hero { padding: $spacing-md 0 $spacing-lg; text-align: center; }
+.hero::after { content: ''; display: block; width: 112rpx; height: 2rpx; margin: $spacing-md auto 0; background: linear-gradient(90deg, transparent, $color-accent, transparent); }
+.title { display: block; color: $color-text-primary; font-family: $color-font-title; font-size: $font-size-display; font-weight: $font-weight-semibold; line-height: $line-height-tight; }
+.subtitle { display: block; margin-top: $spacing-sm; color: $color-primary; font-family: $color-font-title; font-size: $font-size-lg; letter-spacing: 4rpx; }
+.heroNote { display: block; margin-top: $spacing-xs; color: $color-text-secondary; font-size: $font-size-sm; }
+
+.mapSection { position: relative; margin: 0 (-$page-padding) $spacing-md; padding: 0 $page-padding $spacing-lg; }
+.mapIntro { position: relative; z-index: 3; text-align: center; }
+.description { display: block; color: $color-text-secondary; font-size: $font-size-md; line-height: $line-height-normal; }
+.legend { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: $spacing-sm; margin-top: $spacing-sm; color: $color-text-secondary; font-size: $font-size-sm; }
+.goldDot,
+.redDot { display: inline-block; width: 16rpx; height: 16rpx; margin-right: -$spacing-xs; border-radius: 50%; }
+.goldDot { background: $color-accent; border: 1rpx solid $color-primary; }
+.redDot { background: $color-primary; }
+
+.mapStage {
+  position: relative;
+  height: 680rpx;
+  margin: $spacing-xs (-$page-padding) 0;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 8% 82%, rgba(71, 72, 58, .14) 0 9%, transparent 30%),
+    radial-gradient(ellipse at 94% 20%, rgba(173, 127, 83, .10) 0 12%, transparent 35%),
+    linear-gradient(180deg, rgba(255, 251, 240, .04), rgba(214, 180, 119, .07));
+}
+.mapStage::before,
+.mapStage::after { content: ''; position: absolute; z-index: 1; right: -8%; left: -8%; height: 120rpx; pointer-events: none; }
+.mapStage::before {
+  top: -16rpx;
+  background: radial-gradient(ellipse at 16% 100%, rgba(70, 73, 60, .12) 0 14%, transparent 42%), radial-gradient(ellipse at 72% 100%, rgba(124, 110, 83, .08) 0 16%, transparent 46%);
+  filter: blur(8rpx);
+}
+.mapStage::after {
+  bottom: -22rpx;
+  background: radial-gradient(ellipse at 24% 0, rgba(65, 70, 58, .13) 0 17%, transparent 46%), radial-gradient(ellipse at 86% 0, rgba(139, 108, 74, .09) 0 15%, transparent 44%);
+  filter: blur(8rpx);
+}
+.mapViewport { position: absolute; z-index: 2; inset: 20rpx 0 20rpx; overflow: hidden; touch-action: none; }
+.mapViewport svg { display: block; width: 100%; height: 100%; }
+.mapCanvas { width: 100%; height: 100%; }
+.southSea { position: absolute; z-index: 3; right: 24rpx; bottom: 28rpx; display: flex; flex-direction: column; align-items: center; gap: 5rpx; padding: 12rpx 10rpx; border: 1rpx solid rgba(156, 48, 41, .62); border-radius: 4rpx; background: rgba(255, 249, 236, .72); box-shadow: 0 4rpx 12rpx rgba(90, 57, 30, .12); color: $color-primary-dark; font-size: $font-size-xs; writing-mode: vertical-rl; }
+.islandLine,
+.islandLineShort { width: 2rpx; height: 24rpx; background: $color-primary; transform: rotate(18deg); }
+.islandLineShort { height: 14rpx; margin-left: 10rpx; }
+.scopeNote { display: block; margin-top: -$spacing-xs; color: $color-text-secondary; font-size: $font-size-xs; line-height: $line-height-normal; text-align: center; }
+
+.tooltip { position: absolute; z-index: 4; min-width: 180rpx; padding: 18rpx 22rpx 16rpx; pointer-events: none; border: 1rpx solid rgba(156, 48, 41, .24); border-radius: 16rpx; background: rgba(255, 252, 245, .96); box-shadow: 0 12rpx 28rpx rgba(92, 54, 30, .18), 0 2rpx 6rpx rgba(92, 54, 30, .1); color: $color-primary-dark; font-family: $color-font-title; font-size: $font-size-md; font-weight: $font-weight-semibold; line-height: 1.25; white-space: nowrap; }
+.tooltip::before { content: ''; position: absolute; top: -10rpx; left: 22rpx; width: 18rpx; height: 18rpx; border-top: 1rpx solid rgba(156, 48, 41, .24); border-left: 1rpx solid rgba(156, 48, 41, .24); background: rgba(255, 252, 245, .96); transform: rotate(45deg); }
+.tooltipCount { position: relative; display: block; margin-top: 8rpx; padding-top: 8rpx; border-top: 1rpx solid rgba(156, 48, 41, .16); color: $color-primary; font-family: $color-font-body; font-size: $font-size-sm; font-weight: $font-weight-semibold; }
+.controls { display: flex; gap: $spacing-sm; margin-top: $spacing-md; }
+.controls > * { flex: 1; min-width: 0; }
+.controlInner { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4rpx; line-height: 1; }
+.controlIcon { color: $color-primary; font-size: 36rpx; font-weight: $font-weight-semibold; }
+.controlText { color: $color-text-primary; font-size: $font-size-sm; }
+.hint { display: block; margin-top: $spacing-sm; color: $color-text-secondary; font-size: $font-size-sm; line-height: $line-height-normal; text-align: center; }
+
+.provinceCard { margin-top: $spacing-md; padding: $spacing-md; border: 1rpx solid $color-divider; border-radius: $radius-xl; background: rgba(255, 252, 245, .82); box-shadow: $shadow-card; }
+.provinceHeading { display: flex; align-items: center; justify-content: space-between; gap: $spacing-sm; margin-bottom: $spacing-sm; }
+.provinceName { color: $color-primary; font-family: $color-font-title; font-size: $font-size-lg; }
+.count { color: $color-text-secondary; font-size: $font-size-sm; }
+
+.quickEntries { display: flex; gap: $spacing-sm; margin-top: $spacing-lg; }
+.quickEntry { flex: 1; min-width: 0; min-height: 112rpx; padding: $spacing-md $spacing-sm; border: 1rpx solid rgba(156, 48, 41, .65); border-radius: $radius-md; background: rgba(255, 252, 245, .82); box-shadow: $shadow-card; text-align: center; }
+.quickEntry:active { background: rgba(240, 222, 187, .88); }
+.entryTitle { display: block; color: $color-primary-dark; font-family: $color-font-title; font-size: $font-size-lg; font-weight: $font-weight-medium; }
+.entryText { display: block; margin-top: $spacing-xs; color: $color-text-secondary; font-size: $font-size-xs; line-height: $line-height-tight; }
+
+@media (min-width: 900px) {
+  .page { width: min(1180px, calc(100% - 64px)); margin: 0 auto; padding: 112px 0 56px; }
+  .hero { padding: 24px 0 32px; }
+  .title { font-size: 46px; }
+  .subtitle { font-size: 22px; }
+  .heroNote, .legend, .hint, .count, .tooltip { font-size: 14px; }
+  .description { font-size: 16px; }
+  .mapSection { margin-right: 0; margin-left: 0; padding-right: 0; padding-left: 0; }
+  .mapStage { height: 460px; margin-right: 0; margin-left: 0; }
+  .mapViewport { inset: 20px 24px; }
+  .controls { max-width: 440px; gap: 16px; margin-top: 20px; }
+  .provinceName, .entryTitle { font-size: 22px; }
+  .quickEntries { max-width: 720px; margin-right: auto; margin-left: auto; }
+}
+
+@media (prefers-reduced-motion: reduce) { .mapViewport svg { transition: none; } }

@@ -1,0 +1,41 @@
+# 依赖与构建缓存
+**/node_modules/
+**/dist/
+**/.next/
+**/.vinext/
+**/.wrangler/
+**/.sites-runtime/
+**/__pycache__/
+**/.git/
+**/coverage/
+# 密钥与本机环境
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.template
+!**/.env.sample
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/project.private.config.json
+# 运行数据，不作为公共项目资料提交
+**/account/data.json
+**/账户评论审核/data.json
+**/账户评论/data.json
+**/progress.json
+**/sessions.json
+**/users.json
+**/*.sqlite*
+**/*.db
+**/*.log
+**/预览日志.txt
+**/预览错误.txt
+
+**/*profile*/
+**/*浏览器*/
+**/tmp/
+**/output/
+**/outputs/
+**/audit.json
+**/chat-history.json

@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/people/index",
+    "pages/timeline/index",
+    "pages/me/index",
+    "pages/person/index",
+    "pages/event/index",
+    "pages/graph/index",
+    "pages/sources/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "英迹",
+    "navigationBarBackgroundColor": "#FBF5E9",
+    "backgroundColor": "#FBF5E9"
+  },
+  "tabBar": {
+    "color": "#75604B",
+    "selectedColor": "#982B28",
+    "backgroundColor": "#FFFAF1",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "static/icons/home.png",
+        "selectedIconPath": "static/icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/people/index",
+        "text": "人物",
+        "iconPath": "static/icons/people.png",
+        "selectedIconPath": "static/icons/people-active.png"
+      },
+      {
+        "pagePath": "pages/timeline/index",
+        "text": "长卷",
+        "iconPath": "static/icons/timeline.png",
+        "selectedIconPath": "static/icons/timeline-active.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我的",
+        "iconPath": "static/icons/bookmark.png",
+        "selectedIconPath": "static/icons/bookmark-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

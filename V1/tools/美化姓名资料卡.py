@@ -1,0 +1,6 @@
+from pathlib import Path
+p=Path(__file__).resolve().parents[1]/'frontend/src/components/人物目录.vue';s=p.read_text(encoding='utf-8')
+old='''<button v-for="p in section.items" :key="p.id" class="archive-name" @tap="open(p)"><view><text class="registry-name">{{p.name}}</text><text class="small">{{p.birthText ? p.birthText : '出生日期未载'}} · {{p.memberships.join(' / ')}}</text></view><text :class="['archive-badge',{available:detailFor(p)}]">{{detailFor(p)?'详细档案 ↗':'姓名资料 ↗'}}</text></button>'''
+new='''<button v-for="p in section.items" :key="p.id" :class="['archive-name','name-record',{ 'has-dossier':Boolean(detailFor(p)) }]" :aria-label="'查看'+p.name+'资料'" @tap="open(p)"><text class="name-monogram" aria-hidden="true">{{p.name.slice(0,1)}}</text><view class="name-record-copy"><view class="name-record-title"><text class="registry-name">{{p.name}}</text><text v-if="detailFor(p)" class="dossier-mark">详细档案</text></view><text class="name-date">出生 <text>{{p.birthText||'未载'}}</text></text><text class="name-origin">{{p.originText||'籍贯未载'}}</text></view><text class="name-record-arrow" aria-hidden="true">↗</text></button>'''
+assert old in s,'姓名卡片结构已变化，请检查后再执行'
+p.write_text(s.replace(old,new),encoding='utf-8')

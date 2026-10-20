@@ -1,0 +1,139 @@
+@use '../../styles/variables.scss' as *;
+
+.input,
+.select {
+  width: 100%;
+  min-height: $button-height-md;
+  padding: 0 $spacing-md;
+  box-sizing: border-box;
+  border: 1rpx solid $color-divider;
+  border-radius: $radius-xl;
+  background: $color-bg-page;
+  color: $color-text-primary;
+  font-family: $color-font-body;
+  font-size: $font-size-md;
+}
+
+.input {
+  height: $button-height-md;
+}
+
+.placeholder {
+  color: $color-text-tertiary;
+  text-align: center;
+}
+
+.searchBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: $button-height-md;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1rpx solid rgba(156, 48, 41, .35);
+  border-radius: $radius-xl;
+  background: $color-bg-card;
+  box-shadow: 0 2rpx 8rpx rgba(109, 31, 26, .06);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.searchBox:focus-within {
+  border-color: $color-primary;
+  box-shadow: 0 0 0 4rpx rgba(156, 48, 41, .12);
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 26rpx;
+  width: 30rpx;
+  height: 30rpx;
+  transform: translateY(-50%);
+}
+
+.searchGlass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20rpx;
+  height: 20rpx;
+  border: 3rpx solid $color-primary;
+  border-radius: 50%;
+}
+
+.searchHandle {
+  position: absolute;
+  right: 2rpx;
+  bottom: 2rpx;
+  width: 12rpx;
+  height: 3rpx;
+  background: $color-primary;
+  border-radius: 2rpx;
+  transform: rotate(45deg);
+  transform-origin: right center;
+}
+
+.searchInput {
+  width: 100%;
+  height: $button-height-md;
+  margin: 0;
+  padding: 0 72rpx;
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+  background: transparent;
+  color: $color-text-primary;
+  font-family: $color-font-body;
+  font-size: $font-size-lg;
+  line-height: $button-height-md;
+  transform: translateY(12rpx);
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selectText {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: $spacing-xs;
+}
+
+.label {
+  flex: 0 0 auto;
+  color: $color-text-secondary;
+  font-size: $font-size-sm;
+}
+
+.value {
+  @include text-ellipsis;
+  color: $color-primary;
+}
+
+.chevron {
+  flex: 0 0 auto;
+  width: 12rpx;
+  height: 12rpx;
+  margin: -6rpx 4rpx 0 $spacing-xs;
+  border-right: 2rpx solid $color-text-secondary;
+  border-bottom: 2rpx solid $color-text-secondary;
+  transform: rotate(45deg);
+}
+
+@media (min-width: 900px) {
+  .input,
+  .select {
+    min-height: 44px;
+    padding: 0 16px;
+    border-width: 1px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+
+  .input { height: 44px; }
+  .label { font-size: 13px; }
+}

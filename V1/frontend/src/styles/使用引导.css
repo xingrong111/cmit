@@ -1,0 +1,38 @@
+/* 使用指南页：轻量、可扫读；新手任务卡与页面小提示的样式在各自组件内 */
+.qs-cover{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding:28px 32px;margin:0 0 8px;background:linear-gradient(115deg,#eee9d7,#fbf5e9);border:1px solid #e0d3b7;border-radius:16px}
+.qs-cover-copy{display:flex;flex-direction:column;gap:8px;min-width:0}
+.qs-cover .page-title{font-size:30px;line-height:1.5;margin:0}
+.qs-cover .muted{display:block;font-size:13px;line-height:1.8}
+.qs-cover-progress{display:flex;flex-direction:column;align-items:flex-end;gap:2px;flex-shrink:0}
+.qs-count{font:34px/1.2 STSong,SimSun,serif;color:#982b28}
+.qs-count-total{font-size:16px;color:#8a755b}
+.qs-steps{display:flex;flex-direction:column;gap:10px}
+.qs-step{display:flex;align-items:center;gap:14px;padding:14px 18px;background:#fffaf2;border:1px solid #e6d9c0;border-radius:12px}
+.qs-step.next{border-color:#d6bf94;background:#fffdf6}
+.qs-no{width:30px;height:30px;flex-shrink:0;border-radius:50%;background:#ece6d3;color:#58705a;font-size:13px;line-height:30px;text-align:center}
+.qs-step.done .qs-no{background:#61775d;color:#fffaf1}
+.qs-step-copy{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.qs-step-title{font:19px/1.5 STSong,SimSun,serif;color:#354d43}
+.qs-step-text{font-size:13px;line-height:1.7;color:#6d5b45}
+.qs-step-go{margin:0;flex-shrink:0;min-height:36px;padding:6px 14px;font-size:13px;line-height:1.5;border-radius:8px;color:#6d5b45;background:#f4edde;border:1px solid #e4d6bd}
+.qs-step-go.primary{background:#982b28;border-color:#982b28;color:#fffaf1}
+.qs-step-go:after,.qs-path-go:after{border:0}
+.qs-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.qs-path{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:16px 18px;background:#fffaf2;border:1px solid #e6d9c0;border-radius:12px}
+.qs-path>image{width:34px;height:34px}
+.qs-path-copy{flex:1;display:flex;flex-direction:column;gap:4px}
+.qs-path-title{font:18px/1.5 STSong,SimSun,serif;color:#354d43}
+.qs-path-text{font-size:13px;line-height:1.7;color:#6d5b45}
+.qs-path-go{margin:0;min-height:34px;padding:5px 0;font-size:13px;line-height:1.5;color:#982b28;background:transparent;border:0}
+.qs-story{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:14px 2px 0;font-size:13px;color:#6d5b45}
+.qs-story .text-button{margin:0}
+.qs-faq{border:1px solid #e6d9c0;border-radius:12px;overflow:hidden;background:#fffaf2}
+.qs-faq-item+.qs-faq-item{border-top:1px solid #ece1cd}
+.qs-faq-item>button{display:flex;justify-content:space-between;align-items:center;gap:18px;width:100%;margin:0;padding:15px 20px;border:0;border-radius:0;background:transparent;color:#354d43;font-size:15px;text-align:left;line-height:1.7}
+.qs-faq-item>button:after{border:0}
+.qs-faq-item>button>text:last-child{font-size:18px;color:#a78b5c;flex-shrink:0}
+.qs-faq-answer{display:block;padding:0 20px 16px;font-size:13px;line-height:1.9;color:#6d5b45}
+.qs-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin:28px 0 12px;padding:18px 0;border-top:1px solid #e0d3b7}
+.qs-bottom-actions{display:flex;gap:10px;flex-wrap:wrap}
+.qs-bottom-actions>button{margin:0;min-height:38px;padding:7px 14px;font-size:13px;line-height:1.5}
+@media(max-width:700px){.qs-cover{padding:20px 18px;align-items:flex-start;flex-direction:column;gap:12px;border-radius:14px}.qs-cover .page-title{font-size:23px}.qs-cover-progress{flex-direction:row;align-items:baseline;gap:8px}.qs-count{font-size:26px}.qs-step{flex-wrap:wrap;padding:12px 14px;gap:10px}.qs-step-copy{flex-basis:calc(100% - 50px)}.qs-step-go{margin-left:44px}.qs-paths{grid-template-columns:minmax(0,1fr)}.qs-path{display:grid;grid-template-columns:34px minmax(0,1fr);align-items:center;gap:6px 12px}.qs-path-go{grid-column:2;justify-self:start}.qs-faq-item>button{padding:14px;font-size:14px}.qs-faq-answer{padding:0 14px 14px}}

@@ -1,0 +1,107 @@
+[
+  {
+    "placeId": "PLACE-WX-LDY",
+    "name": "陆定一祖居陈列馆",
+    "status": "待核验",
+    "checkedAt": "2026-10-11",
+    "addressSources": [
+      "L-S01",
+      "L-S04",
+      "L-S10"
+    ],
+    "candidate": [
+      {
+        "id": "4137342448922742816",
+        "title": "陆定一祖居陈列馆",
+        "address": "江苏省无锡市惠山区堰桥街道天一社区陆巷4号",
+        "location": {
+          "lat": 31.642796,
+          "lng": 120.293782
+        },
+        "category": "文化场馆:展览馆",
+        "tel": "0510-83748119"
+      }
+    ],
+    "missing": [
+      "当前游客入口图或可定位的实地记录",
+      "候选坐标与游客入口的对应依据",
+      "核验人及证据记录"
+    ],
+    "navigationApproved": false,
+    "reason": "只有场馆地址／POI或旧游客中心线索；没有准确游客入口依据"
+  },
+  {
+    "placeId": "PLACE-CZ-QQB",
+    "name": "瞿秋白纪念馆",
+    "status": "待核验",
+    "checkedAt": "2026-10-11",
+    "addressSources": [
+      "L-S02",
+      "L-S03",
+      "L-S07"
+    ],
+    "candidate": [],
+    "missing": [
+      "当前游客入口图或可定位的实地记录",
+      "候选坐标与游客入口的对应依据",
+      "核验人及证据记录"
+    ],
+    "navigationApproved": false,
+    "reason": "只有场馆地址／POI或旧游客中心线索；没有准确游客入口依据"
+  },
+  {
+    "placeId": "PLACE-WX-ZWT",
+    "name": "张闻天旧居",
+    "status": "待核验",
+    "checkedAt": "2026-10-11",
+    "addressSources": [
+      "L-S01",
+      "L-S05"
+    ],
+    "candidate": [],
+    "missing": [
+      "当前游客入口图或可定位的实地记录",
+      "候选坐标与游客入口的对应依据",
+      "核验人及证据记录"
+    ],
+    "navigationApproved": false,
+    "reason": "只有场馆地址／POI或旧游客中心线索；没有准确游客入口依据"
+  },
+  {
+    "placeId": "PLACE-CZ-ZTL",
+    "name": "张太雷纪念馆",
+    "status": "待核验",
+    "checkedAt": "2026-10-11",
+    "addressSources": [
+      "L-S06",
+      "L-S07"
+    ],
+    "candidate": [],
+    "missing": [
+      "当前游客入口图或可定位的实地记录",
+      "候选坐标与游客入口的对应依据",
+      "核验人及证据记录"
+    ],
+    "navigationApproved": false,
+    "reason": "只有场馆地址／POI或旧游客中心线索；没有准确游客入口依据"
+  },
+  {
+    "placeId": "PLACE-WX-QBC",
+    "name": "秦邦宪故居",
+    "status": "待核验",
+    "checkedAt": "2026-10-11",
+    "addressSources": [
+      "L-S08",
+      "L-S09",
+      "L-S11"
+    ],
+    "candidate": [],
+    "missing": [
+      "当前游客入口图或可定位的实地记录",
+      "候选坐标与游客入口的对应依据",
+      "核验人及证据记录"
+    ],
+    "navigationApproved": false,
+    "reason": "只有场馆地址／POI或旧游客中心线索；没有准确游客入口依据"
+  }
+]

@@ -1,0 +1,2 @@
+<template><view class="state-panel"><view v-if="loading" class="state-lines"><view/><view/><view/></view><template v-else><text class="state-title">{{error?'暂时无法展开':title}}</text><text class="muted">{{error||message}}</text><button v-if="error" class="primary" @tap="$emit('retry')">重新读取</button></template></view></template>
+<script setup>defineProps({loading:Boolean,error:String,title:{default:'资料整理中'},message:{default:'现有材料仍在补充，稍后再来看看。'}});defineEmits(['retry'])</script>

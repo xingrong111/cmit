@@ -1,0 +1,709 @@
+// 成员1正式执行稿48句，静态操作适配；网页与小程序唯一配置源。
+export const story = {
+  "id": "dawn-in-stitches",
+  "version": "static-v2-member4-20261019",
+  "startId": "N00-01",
+  "notice": "本作品以“绣红旗”的文学意象进行艺术化创作，非历史现场复原或小说原文摘录。江姐为文学化形象，两位狱友为虚构角色；对白不代表历史人物原话，不作为历史题库答案。",
+  "speakers": {
+    "NARRATOR": "旁白",
+    "JJ": "江姐",
+    "YOUNG": "年轻狱友",
+    "ELDER": "年长狱友"
+  },
+  "links": {
+    "archive": {
+      "page": "registry",
+      "params": {
+        "id": "IP-JZY-1"
+      }
+    },
+    "learning": {
+      "page": "learning",
+      "params": {
+        "group": "JZY"
+      }
+    },
+    "sources": {
+      "page": "story-sources",
+      "params": {}
+    }
+  },
+  "nodes": [
+    {
+      "id": "N00-01",
+      "act": 0,
+      "sceneId": "SC00",
+      "type": "narration",
+      "speakerId": "NARRATOR",
+      "anchorId": "NARRATOR",
+      "text": "在这个故事里，窗外还没有迎来黎明。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N00-02"
+    },
+    {
+      "id": "N00-02",
+      "act": 0,
+      "sceneId": "SC00",
+      "type": "narration",
+      "speakerId": "NARRATOR",
+      "anchorId": "NARRATOR",
+      "text": "三个人围坐在一起。她们能握住的东西很少，但仍愿意为共同盼望的未来，做些什么。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N00-03"
+    },
+    {
+      "id": "N00-03",
+      "act": 0,
+      "sceneId": "SC00",
+      "type": "narration",
+      "speakerId": "NARRATOR",
+      "anchorId": "NARRATOR",
+      "text": "请环顾四周，从窗边的微光开始。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "G00-WINDOW"
+    },
+    {
+      "id": "N01-01",
+      "act": 1,
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "江姐，你看，窗边有一点光。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N01-02"
+    },
+    {
+      "id": "N01-02",
+      "act": 1,
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "speakerId": "JJ",
+      "anchorId": "JJ",
+      "text": "我看见了。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N01-03"
+    },
+    {
+      "id": "N01-03",
+      "act": 1,
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "我有时候会想，外面的日子，现在是什么样子。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N01-04"
+    },
+    {
+      "id": "N01-04",
+      "act": 1,
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "speakerId": "ELDER",
+      "anchorId": "ELDER",
+      "text": "也许有人正赶着回家，也许有人在等一封信。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N01-05"
+    },
+    {
+      "id": "N01-05",
+      "act": 1,
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "speakerId": "JJ",
+      "anchorId": "JJ",
+      "text": "我也会想。想那些平常的日子，想人们能够安心地生活。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N01-06"
+    },
+    {
+      "id": "N01-06",
+      "act": 1,
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "真想亲眼看看。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N01-07"
+    },
+    {
+      "id": "N01-07",
+      "act": 1,
+      "sceneId": "SC01",
+      "type": "dialogue",
+      "speakerId": "JJ",
+      "anchorId": "JJ",
+      "text": "那就把这份盼望留住。我们可以一起，为它做一点事。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N01-08"
+    },
+    {
+      "id": "N01-08",
+      "act": 1,
+      "sceneId": "SC01",
+      "type": "narration",
+      "speakerId": "NARRATOR",
+      "anchorId": "NARRATOR",
+      "text": "她们说起未来，也说起普通人的生活。那些看似平常的愿望，在这里显得格外珍贵。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "G01-END"
+    },
+    {
+      "id": "N02-01",
+      "act": 2,
+      "sceneId": "SC02-EMPTY",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "可是，我们现在能做什么呢？",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N02-02"
+    },
+    {
+      "id": "N02-02",
+      "act": 2,
+      "sceneId": "SC02-TEXT",
+      "type": "dialogue",
+      "speakerId": "ELDER",
+      "anchorId": "ELDER",
+      "text": "我们可以一起，把这块红布做成一面旗。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N02-03"
+    },
+    {
+      "id": "N02-03",
+      "act": 2,
+      "sceneId": "SC02-TEXT",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "我怕自己做不好。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N02-04"
+    },
+    {
+      "id": "N02-04",
+      "act": 2,
+      "sceneId": "SC02-TEXT",
+      "type": "dialogue",
+      "speakerId": "JJ",
+      "anchorId": "JJ",
+      "text": "一个人不熟练，就由另一个人帮一把。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N02-05"
+    },
+    {
+      "id": "N02-05",
+      "act": 2,
+      "sceneId": "SC02-TEXT",
+      "type": "dialogue",
+      "speakerId": "ELDER",
+      "anchorId": "ELDER",
+      "text": "你来扶住这里，我把这边理平。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N02-06"
+    },
+    {
+      "id": "N02-06",
+      "act": 2,
+      "sceneId": "SC02-TEXT",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "好。那我也来。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N02-07"
+    },
+    {
+      "id": "N02-07",
+      "act": 2,
+      "sceneId": "SC02-TEXT",
+      "type": "dialogue",
+      "speakerId": "JJ",
+      "anchorId": "JJ",
+      "text": "我们一起。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "C02"
+    },
+    {
+      "id": "N02-A01",
+      "act": 2,
+      "sceneId": "SC02-TEXT",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "为什么看着它，就觉得心里亮了一点？",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N02-A02"
+    },
+    {
+      "id": "N02-A02",
+      "act": 2,
+      "sceneId": "SC02-TEXT",
+      "type": "dialogue",
+      "speakerId": "JJ",
+      "anchorId": "JJ",
+      "text": "因为我们把共同的盼望，放在了这里。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N02-A03"
+    },
+    {
+      "id": "N02-A03",
+      "act": 2,
+      "sceneId": "SC02-TEXT",
+      "type": "narration",
+      "speakerId": "NARRATOR",
+      "anchorId": "NARRATOR",
+      "text": "在本作中，红旗承载着人物对未来的期待，也是连接她们的共同意象。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N02-08"
+    },
+    {
+      "id": "N02-B01",
+      "act": 2,
+      "sceneId": "SC02-TEXT",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "这样扶着，可以吗？",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N02-B02"
+    },
+    {
+      "id": "N02-B02",
+      "act": 2,
+      "sceneId": "SC02-TEXT",
+      "type": "dialogue",
+      "speakerId": "ELDER",
+      "anchorId": "ELDER",
+      "text": "先把布角扶稳。事情不用一次做完，我们一步一步来。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N02-B03"
+    },
+    {
+      "id": "N02-B03",
+      "act": 2,
+      "sceneId": "SC02-TEXT",
+      "type": "dialogue",
+      "speakerId": "JJ",
+      "anchorId": "JJ",
+      "text": "每个人出一点力，就能一起往前走。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N02-08"
+    },
+    {
+      "id": "N02-08",
+      "act": 2,
+      "sceneId": "SC02-TEXT",
+      "type": "narration",
+      "speakerId": "NARRATOR",
+      "anchorId": "NARRATOR",
+      "text": "一块布被慢慢展开，三个人也找到了共同的事情。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "G02-END"
+    },
+    {
+      "id": "N03-01",
+      "act": 3,
+      "sceneId": "SC03-TEXT",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "这里有一道折痕。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N03-02"
+    },
+    {
+      "id": "N03-02",
+      "act": 3,
+      "sceneId": "SC03-TEXT",
+      "type": "dialogue",
+      "speakerId": "ELDER",
+      "anchorId": "ELDER",
+      "text": "先理平，再慢慢做。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N03-03"
+    },
+    {
+      "id": "N03-03",
+      "act": 3,
+      "sceneId": "SC03-TEXT",
+      "type": "dialogue",
+      "speakerId": "JJ",
+      "anchorId": "JJ",
+      "text": "不着急。把眼前这一小段做好。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N03-04"
+    },
+    {
+      "id": "N03-04",
+      "act": 3,
+      "sceneId": "SC03-FLAT",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "这样就稳多了。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N03-05"
+    },
+    {
+      "id": "N03-05",
+      "act": 3,
+      "sceneId": "SC03-FLAT",
+      "type": "dialogue",
+      "speakerId": "ELDER",
+      "anchorId": "ELDER",
+      "text": "对，就是这样。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N03-06"
+    },
+    {
+      "id": "N03-06",
+      "act": 3,
+      "sceneId": "SC03-FLAT",
+      "type": "narration",
+      "speakerId": "NARRATOR",
+      "anchorId": "NARRATOR",
+      "text": "她们没有催促彼此。一个细小的动作，也能成为互相支持的开始。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "G03-END"
+    },
+    {
+      "id": "N04-01",
+      "act": 4,
+      "sceneId": "SC04",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "我还是有一点紧张。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N04-02"
+    },
+    {
+      "id": "N04-02",
+      "act": 4,
+      "sceneId": "SC04",
+      "type": "dialogue",
+      "speakerId": "ELDER",
+      "anchorId": "ELDER",
+      "text": "我扶着，你慢慢来。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N04-03"
+    },
+    {
+      "id": "N04-03",
+      "act": 4,
+      "sceneId": "SC04",
+      "type": "dialogue",
+      "speakerId": "JJ",
+      "anchorId": "JJ",
+      "text": "不用和别人比快。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N04-04"
+    },
+    {
+      "id": "N04-04",
+      "act": 4,
+      "sceneId": "SC04",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "那我先做好这一针。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N04-05"
+    },
+    {
+      "id": "N04-05",
+      "act": 4,
+      "sceneId": "SC04",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "好了，这里接上了。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N04-06"
+    },
+    {
+      "id": "N04-06",
+      "act": 4,
+      "sceneId": "SC04",
+      "type": "dialogue",
+      "speakerId": "ELDER",
+      "anchorId": "ELDER",
+      "text": "看，我们已经往前做了一段。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N04-07"
+    },
+    {
+      "id": "N04-07",
+      "act": 4,
+      "sceneId": "SC04",
+      "type": "dialogue",
+      "speakerId": "JJ",
+      "anchorId": "JJ",
+      "text": "接下来，再一起把它完成。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N04-08"
+    },
+    {
+      "id": "N04-08",
+      "act": 4,
+      "sceneId": "SC04",
+      "type": "narration",
+      "speakerId": "NARRATOR",
+      "anchorId": "NARRATOR",
+      "text": "手里的事情一点点向前。陪伴，也让等待有了可以握住的形状。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "G04-END"
+    },
+    {
+      "id": "N05-00",
+      "act": 5,
+      "sceneId": "SC05-PROCESS",
+      "type": "narration",
+      "speakerId": "NARRATOR",
+      "anchorId": "NARRATOR",
+      "text": "她们继续配合，把手里的事情一点点做下去。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N05-01"
+    },
+    {
+      "id": "N05-01",
+      "act": 5,
+      "sceneId": "SC05-COMPLETE",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "原来，刚才那些小小的动作，真的能连在一起。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N05-02"
+    },
+    {
+      "id": "N05-02",
+      "act": 5,
+      "sceneId": "SC05-COMPLETE",
+      "type": "dialogue",
+      "speakerId": "ELDER",
+      "anchorId": "ELDER",
+      "text": "因为不是一个人在做。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N05-03"
+    },
+    {
+      "id": "N05-03",
+      "act": 5,
+      "sceneId": "SC05-COMPLETE",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "我想，以后再看到它，我会记得今天。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N05-04"
+    },
+    {
+      "id": "N05-04",
+      "act": 5,
+      "sceneId": "SC05-COMPLETE",
+      "type": "dialogue",
+      "speakerId": "JJ",
+      "anchorId": "JJ",
+      "text": "我也会记得，大家一起努力的样子。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N05-05"
+    },
+    {
+      "id": "N05-05",
+      "act": 5,
+      "sceneId": "SC05-COMPLETE",
+      "type": "dialogue",
+      "speakerId": "YOUNG",
+      "anchorId": "YOUNG",
+      "text": "也会记得，我们盼望的那些日子。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N05-06"
+    },
+    {
+      "id": "N05-06",
+      "act": 5,
+      "sceneId": "SC05-COMPLETE",
+      "type": "dialogue",
+      "speakerId": "JJ",
+      "anchorId": "JJ",
+      "text": "是的。那些能够安心生活、读书、团聚的日子。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N05-07"
+    },
+    {
+      "id": "N05-07",
+      "act": 5,
+      "sceneId": "SC05-COMPLETE",
+      "type": "narration",
+      "speakerId": "NARRATOR",
+      "anchorId": "NARRATOR",
+      "text": "在这个故事里，一针一线连接起的，是三个人共同的希望。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "N05-08"
+    },
+    {
+      "id": "N05-08",
+      "act": 5,
+      "sceneId": "SC05-COMPLETE",
+      "type": "narration",
+      "speakerId": "NARRATOR",
+      "anchorId": "NARRATOR",
+      "text": "今天，我们回望这样的文学表达，也应继续走近它背后的真实人物与历史。",
+      "hotspots": [],
+      "choices": [],
+      "nextId": "E05"
+    },
+    {
+      "id": "G00-WINDOW",
+      "act": 0,
+      "sceneId": "SC00",
+      "type": "hotspot",
+      "text": "循着窗边的微光，开启交谈。",
+      "hotspots": [
+        "H01"
+      ],
+      "choices": [],
+      "triggerHotspotId": "H01",
+      "nextId": "N01-01",
+      "actionLabel": "窗边微光"
+    },
+    {
+      "id": "G01-END",
+      "act": 1,
+      "sceneId": "SC01",
+      "type": "hotspot",
+      "text": "走近她们",
+      "hotspots": [
+        "H02"
+      ],
+      "choices": [],
+      "triggerHotspotId": "H02",
+      "nextId": "N02-01",
+      "actionLabel": "走近她们"
+    },
+    {
+      "id": "C02",
+      "act": 2,
+      "sceneId": "SC02-TEXT",
+      "type": "choice",
+      "text": "你想先了解什么？",
+      "hotspots": [],
+      "choices": [
+        {
+          "id": "A",
+          "text": "为什么选择红旗？",
+          "nextId": "N02-A01"
+        },
+        {
+          "id": "B",
+          "text": "我能怎样帮忙？",
+          "nextId": "N02-B01"
+        }
+      ]
+    },
+    {
+      "id": "G02-END",
+      "act": 2,
+      "sceneId": "SC02-TEXT",
+      "type": "hotspot",
+      "text": "看看红布",
+      "hotspots": [
+        "H03"
+      ],
+      "choices": [],
+      "triggerHotspotId": "H03",
+      "nextId": "N03-01",
+      "actionLabel": "看看红布"
+    },
+    {
+      "id": "G03-END",
+      "act": 3,
+      "sceneId": "SC03-FLAT",
+      "type": "hotspot",
+      "text": "继续制作",
+      "hotspots": [
+        "H04"
+      ],
+      "choices": [],
+      "triggerHotspotId": "H04",
+      "nextId": "N04-01",
+      "actionLabel": "继续制作"
+    },
+    {
+      "id": "G04-END",
+      "act": 4,
+      "sceneId": "SC04",
+      "type": "hotspot",
+      "text": "一起完成",
+      "hotspots": [
+        "H05"
+      ],
+      "choices": [],
+      "triggerHotspotId": "H05",
+      "nextId": "N05-00",
+      "actionLabel": "一起完成"
+    },
+    {
+      "id": "E05",
+      "act": 5,
+      "sceneId": "SC05-COMPLETE",
+      "type": "ending",
+      "text": "把希望，留在心里。以上为原创文学叙事的结尾回顾。背景保留在制作过程，不代表画面中已有完成旗帜。你可以回顾故事，或继续了解真实人物与历史。",
+      "hotspots": [],
+      "choices": []
+    }
+  ],
+  "visualVersion": "panorama-acts123-v1-20261019"
+};

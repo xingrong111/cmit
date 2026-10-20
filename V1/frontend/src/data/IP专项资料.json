@@ -1,0 +1,119 @@
+{
+  "JZY": {
+    "facts": [
+      {
+        "id": "FACT-JZY-STUDY",
+        "personId": "IP-JZY",
+        "personName": "江竹筠",
+        "eventIds": [],
+        "text": "新华社报道记载，江竹筠1939年加入中国共产党，1940年秋进入中华职业学校学习；1944年考入四川大学，以普通学生身份开展党的工作。",
+        "keywords": [
+          "江竹筠",
+          "江姐",
+          "求学",
+          "四川大学",
+          "入党",
+          "职业学校"
+        ],
+        "sourceIds": [
+          "SRC-JZY-XH2019"
+        ],
+        "reviewStatus": "source_checked",
+        "published": false
+      },
+      {
+        "id": "FACT-JZY-WORK",
+        "personId": "IP-JZY",
+        "personName": "江竹筠",
+        "eventIds": [],
+        "text": "新华社报道记载，江竹筠在1947年承担中共重庆市委地下刊物《挺进报》的联络和组织发行工作。",
+        "keywords": [
+          "江竹筠",
+          "江姐",
+          "挺进报",
+          "发行",
+          "工作"
+        ],
+        "sourceIds": [
+          "SRC-JZY-XH2019"
+        ],
+        "reviewStatus": "source_checked",
+        "published": false
+      }
+    ],
+    "sources": [
+      {
+        "id": "SRC-JZY-XH2019",
+        "title": "江竹筠：共产党员的意志是钢铁",
+        "institution": "新华社；记者吴晓颖",
+        "publishedAt": "2019-05-29 14:26:57",
+        "accessedAt": "2026-10-10",
+        "url": "https://www.xinhuanet.com/politics/2019-05/29/c_1124557270.htm",
+        "finalUrl": "https://www.xinhuanet.com/politics/2019-05/29/c_1124557270.htm",
+        "position": "正文1939/1940年段、1944年段；1947年挺进报工作段",
+        "excerpt": "联络和组织发行工作",
+        "relation": "新华社成都5月29日电；未采用有不同记载的就义地点、现场引语、刑讯细节"
+      }
+    ]
+  },
+  "LYS": {
+    "facts": [
+      {
+        "id": "FACT-LYS-MEMBERS",
+        "personId": "IP-LYS",
+        "personName": "狼牙山五壮士",
+        "eventIds": [],
+        "text": "国防部网站转载的新华社报道列出的五位成员为马宝玉、葛振林、宋学义、胡德林、胡福才。狼牙山五壮士是一组团体，不另增加一个自然人。",
+        "keywords": [
+          "狼牙山五壮士",
+          "成员",
+          "姓名",
+          "马宝玉",
+          "葛振林",
+          "宋学义",
+          "胡德林",
+          "胡福才"
+        ],
+        "sourceIds": [
+          "SRC-LYS-MOD2018"
+        ],
+        "reviewStatus": "source_checked",
+        "published": false
+      },
+      {
+        "id": "FACT-LYS-RESULT",
+        "personId": "IP-LYS",
+        "personName": "狼牙山五壮士",
+        "eventIds": [],
+        "text": "该报道记载，马宝玉、胡德林、胡福才牺牲；葛振林、宋学义幸存。不能写成五人结局相同。",
+        "keywords": [
+          "狼牙山五壮士",
+          "结局",
+          "幸存",
+          "牺牲",
+          "葛振林",
+          "宋学义"
+        ],
+        "sourceIds": [
+          "SRC-LYS-MOD2018"
+        ],
+        "reviewStatus": "source_checked",
+        "published": false
+      }
+    ],
+    "sources": [
+      {
+        "id": "SRC-LYS-MOD2018",
+        "title": "抗日英雄狼牙山五壮士：宁死不屈 视死如归",
+        "institution": "国防部网站；来源新华社；记者赵鸿宇",
+        "publishedAt": "2018-12-30 10:37",
+        "accessedAt": "2026-10-10",
+        "url": "http://www.mod.gov.cn/2018gfbztlbmb/2018-12/30/content_4833259.htm",
+        "finalUrl": "http://www.mod.gov.cn/2018gfbztlbmb/2018-12/30/content_4833259.htm",
+        "position": "正文“完成任务撤离时”段；“马宝玉、胡德林、胡福才壮烈殉国”段",
+        "excerpt": "葛振林、宋学义",
+        "relation": "新华社石家庄12月30日电转载；未另取得新华社原始页面，不累计独立证据；战斗次日与宋学义逝世年份未采用"
+      }
+    ]
+  }
+}

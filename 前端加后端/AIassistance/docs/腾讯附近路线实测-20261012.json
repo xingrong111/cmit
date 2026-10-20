@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-12",
+  "httpStatus": 503,
+  "places": [
+    {
+      "id": "PLACE-WX-LDY",
+      "routeReady": true,
+      "entranceReady": false,
+      "opening": "unknown"
+    },
+    {
+      "id": "PLACE-CZ-QQB",
+      "routeReady": true,
+      "entranceReady": false,
+      "opening": "unknown"
+    },
+    {
+      "id": "PLACE-WX-ZWT",
+      "routeReady": true,
+      "entranceReady": false,
+      "opening": "unknown"
+    },
+    {
+      "id": "PLACE-CZ-ZTL",
+      "routeReady": true,
+      "entranceReady": false,
+      "opening": "unknown"
+    },
+    {
+      "id": "PLACE-WX-QBC",
+      "routeReady": true,
+      "entranceReady": false,
+      "opening": "unknown"
+    }
+  ],
+  "route": {
+    "error": {
+      "code": "MAP_QUOTA_EXCEEDED",
+      "message": "地图服务今日额度已用完，可先保存参观顺序，额度恢复后再规划。"
+    }
+  }
+}

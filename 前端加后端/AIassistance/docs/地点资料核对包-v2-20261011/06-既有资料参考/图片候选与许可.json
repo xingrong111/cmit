@@ -1,0 +1,72 @@
+[
+  {
+    "id": "IMG-QBC-01",
+    "place": "秦邦宪故居",
+    "page": "https://www.wxit.edu.cn/info/1571/168001.htm",
+    "caption": "秦邦宪故居（文末图片图注）",
+    "asset": "https://www.wxit.edu.cn/__local/A/9A/19/C159241E413583EA0C61458DF20_25952BD8_367E5.jpg?e=.jpg",
+    "status": "网页图注明确；本轮图像请求超时，未做视觉识别",
+    "author": "未显示",
+    "permission": "待授权"
+  },
+  {
+    "id": "IMG-QBC-02",
+    "place": "秦邦宪故居",
+    "page": "https://www.wxit.edu.cn/info/1571/168001.htm",
+    "caption": "秦邦宪生平事迹陈列",
+    "asset": "https://www.wxit.edu.cn/__local/D/DE/F1/70255804E3691E14AD9B73E05AC_1F965D69_6C0F5.jpg?e=.jpg",
+    "status": "本轮图像请求超时，未做视觉识别",
+    "author": "未显示",
+    "permission": "待授权"
+  },
+  {
+    "id": "IMG-QBC-03",
+    "place": "秦邦宪故居",
+    "page": "https://slshe.jiangnan.edu.cn/info/1090/7283.htm",
+    "caption": "活动合影",
+    "asset": "https://slshe.jiangnan.edu.cn/__local/2/20/D2/0863EE02F4C32AB31BB71E7A69F_11CAEFD5_1E2FD.jpg",
+    "status": "本轮图像请求超时；合影不是人物生前照片，包含当代人员肖像",
+    "author": "页面图文解明菁、陈董；不自动认定单张摄影权利归属",
+    "permission": "待授权"
+  },
+  {
+    "id": "IMG-L-S02",
+    "place": "瞿秋白纪念馆",
+    "page": "https://www.changzhou.gov.cn/ns_news/412621545869070",
+    "caption": "正文插图无具体图注，需查看原图识别；不据文件名判定拍摄年份",
+    "asset": null,
+    "status": "候选页面已找到；图片识别待核验",
+    "author": "未显示",
+    "permission": "待授权"
+  },
+  {
+    "id": "IMG-L-S04",
+    "place": "陆定一祖居陈列馆",
+    "page": "https://thyouth.wuxi.gov.cn/doc/2018/08/07/1900426.shtml",
+    "caption": "活动报道附图无具体图注，不能作为历史人物照片",
+    "asset": null,
+    "status": "候选页面已找到；图片识别待核验",
+    "author": "未显示",
+    "permission": "待授权"
+  },
+  {
+    "id": "IMG-L-S05",
+    "place": "张闻天旧居",
+    "page": "https://www.wxmuseum.cn/News/Details/11794b0d-0ea6-48b7-8991-19665dd19c8c",
+    "caption": "正文有三张图片链接，未完成单张识别；页面记录布局不保证当前布局",
+    "asset": null,
+    "status": "候选页面已找到；图片识别待核验",
+    "author": "未显示",
+    "permission": "待授权"
+  },
+  {
+    "id": "IMG-L-S06",
+    "place": "张太雷纪念馆",
+    "page": "https://zg.changzhou.gov.cn/index.php?a=show&c=phone&catid=14578&id=59753",
+    "caption": "点位简介有插图，未逐张识别",
+    "asset": null,
+    "status": "候选页面已找到；图片识别待核验",
+    "author": "未显示",
+    "permission": "待授权"
+  }
+]

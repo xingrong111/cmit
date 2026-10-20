@@ -1,0 +1,66 @@
+<view class="page">
+  <view wx:if="{{loading}}" class="aux">正在读取结果。</view>
+  <view wx:elif="{{error}}" class="state">
+    <view class="section">请求失败</view>
+    <view class="aux">{{error}}</view>
+    <button class="primary" bindtap="load">重新读取</button>
+  </view>
+  <block wx:else>
+    <view class="eyebrow">待核验</view>
+    <view class="title">这一关答完了</view>
+    <view class="card score">
+      <view class="section">本次作答</view>
+      <view class="score-head">
+        <view class="score-ring" style="background: conic-gradient(#2F724F {{attempt.score.accuracy}}%, #E4D4B8 0);">
+          <view class="score-hole"><text class="score-pct">{{attempt.score.accuracy}}%</text><text class="aux">正确率</text></view>
+        </view>
+        <view class="score-side">
+          <view class="score-bar" aria-label="{{barLabel}}">
+            <view wx:if="{{attempt.score.correct}}" class="hit" style="flex: {{attempt.score.correct}};"></view>
+            <view wx:if="{{attempt.score.wrong}}" class="miss" style="flex: {{attempt.score.wrong}};"></view>
+          </view>
+          <view class="score-counts">
+            <view><text class="score-figure hit">{{attempt.score.correct}}</text><text class="aux">答对</text></view>
+            <view><text class="score-figure miss">{{attempt.score.wrong}}</text><text class="aux">答错</text></view>
+            <view><text class="score-figure">{{attempt.score.total}}</text><text class="aux">本题</text></view>
+          </view>
+        </view>
+      </view>
+      <view class="score-marks">
+        <view wx:for="{{marks}}" wx:key="n" class="mark {{item.kind}}"><text>{{item.n}}</text><text>{{item.label}}</text></view>
+      </view>
+      <view class="aux">{{attempt.person_name}} · {{attempt.difficulty}} · 待核验。分数只说明这次作答，答完即通关，不表示题目已经核验。</view>
+    </view>
+    <view wx:if="{{earned.length}}" class="card">
+      <view class="aux">新获得的学习称号</view>
+      <view class="section">{{earnedText}}</view>
+    </view>
+    <view class="filters">
+      <view class="seg {{reviewMode === 'wrong' ? 'on' : ''}}" data-mode="wrong" bindtap="setReview">{{reviewMode === 'wrong' ? '收起错题' : '查看我的错题'}} {{attempt.score.wrong}}</view>
+      <view class="seg {{reviewMode === 'all' ? 'on' : ''}}" data-mode="all" bindtap="setReview">{{reviewMode === 'all' ? '收起题目' : '查看本次题目'}} {{attempt.score.total}}</view>
+    </view>
+    <view wx:if="{{reviewMode === 'wrong' && !visible.length}}" class="aux">这次没有错题。</view>
+    <view class="card review" wx:for="{{visible}}" wx:key="id">
+      <view class="review-head">
+        <text class="pill {{item.correct ? 'earned' : 'miss'}}">{{item.correct ? '答对' : '答错'}}</text>
+        <text class="tag">{{item.type}}</text>
+      </view>
+      <view class="section">{{item.n}}. {{item.stem}}</view>
+      <view wx:for="{{item.options}}" wx:for-item="option" wx:key="key" class="choice {{option.kind}}">{{option.label}}</view>
+      <view>{{item.summary}}</view>
+      <view class="aux">解析</view>
+      <view>{{item.explanation}}</view>
+      <view class="aux">来源 {{item.source_id}} · {{item.evidence}} · 待核验</view>
+      <button wx:if="{{item.source_url}}" class="secondary" data-url="{{item.source_url}}" bindtap="copySource">查看来源</button>
+    </view>
+    <view wx:if="{{attempt.next_level}}" class="result-actions">
+      <button class="secondary" bindtap="again">再答一次</button>
+      <button class="primary" bindtap="nextLevel">下一关 · {{attempt.next_level.person_name}} · {{attempt.next_level.difficulty}}</button>
+    </view>
+    <button wx:else class="secondary" bindtap="again">再答一次</button>
+    <button class="{{attempt.next_level ? 'secondary' : 'primary'}}" bindtap="openHonors">查看学习称号</button>
+    <button class="secondary" bindtap="hall">返回学习挑战</button>
+    <view class="aux">学习讨论由账户模块接入，这里不展示评论。</view>
+  </block>
+</view>
+<tab-bar current="learn"></tab-bar>

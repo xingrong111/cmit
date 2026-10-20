@@ -1,0 +1,83 @@
+{
+  "_example": true,
+  "people": [],
+  "sources": [
+    {
+      "id": "P009-S-901",
+      "person_id": "P009",
+      "title": "本行只示范字段，不是史料",
+      "original_url": "https://example.com/source",
+      "final_url": "https://example.com/source",
+      "boundary": "只说明字段怎么填，不支持任何历史结论"
+    }
+  ],
+  "facts": [
+    {
+      "id": "P009-F-901",
+      "person_id": "P009",
+      "source_id": "P009-S-901",
+      "text": "本行只示范字段，不是史料",
+      "review_status": "draft",
+      "publication_status": "draft",
+      "boundary": "不能当作已核验事实",
+      "unique_answer": "否"
+    }
+  ],
+  "events": [
+    {
+      "id": "EV-P009-F-901",
+      "person_id": "P009",
+      "title": "示范事件",
+      "fact_ids": ["P009-F-901"],
+      "source_ids": ["P009-S-901"],
+      "review_status": "draft",
+      "publication_status": "draft"
+    }
+  ],
+  "relations": [
+    {
+      "id": "P009-R-901",
+      "from_id": "P009",
+      "to_id": null,
+      "target_name": "示范对象",
+      "type": "示范关系",
+      "fact_id": "P009-F-901",
+      "source_id": "P009-S-901",
+      "boundary": "不能当作已核验关系",
+      "review_status": "draft",
+      "publication_status": "draft"
+    }
+  ],
+  "places": [
+    {
+      "id": "PLACE-DRAFT-DEMO",
+      "name": "示范地点",
+      "personIds": [],
+      "sourceIds": [],
+      "coordinate": null,
+      "opening": null,
+      "reviewStatus": "draft",
+      "published": false
+    }
+  ],
+  "questions": [
+    {
+      "题目ID": "QQB-901",
+      "涉及人物": "瞿秋白",
+      "题型": "判断题",
+      "难度": "入门",
+      "题干": "本行只示范字段，不是史料。",
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": "",
+      "正确答案": "正确",
+      "解析": "示例不作为事实。",
+      "来源ID": "QQB-S99",
+      "证据位置": "示范位置",
+      "状态": "待核验",
+      "reading_person_id": "P009",
+      "reading_fact_id": null
+    }
+  ]
+}

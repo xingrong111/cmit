@@ -1,0 +1,46 @@
+<view class="{{__globalLarge ? 'global-large' : ''}}"><view class="explicit-return"><button bindtap="__returnPrevious">‹ 返回上一页</button></view>
+<view class="page learning-page">
+  <view wx:if="{{loading}}" class="aux">正在读取关卡。</view>
+  <view wx:elif="{{error}}" class="state">
+    <view class="section">请求失败</view>
+    <view class="aux">{{error}}</view>
+    <button class="primary" bindtap="load">重新读取</button>
+  </view>
+  <block wx:else>
+    <view class="learning-cover"><image class="module-landscape" src="/static/青绿山水.jpg" mode="aspectFill"/><view class="eyebrow">山河有迹 · 学习与探索</view><view class="learning-cover-title">循人物故事，读时代篇章</view><view class="learning-cover-note">读档案 · 做挑战 · 看依据</view></view>
+    <view class="row"><button class="secondary" bindtap="back">返回</button><button class="secondary" bindtap="allChallenges">全部挑战</button></view><view class="title">{{focusName ? focusName + ' · 主题挑战' : '学习挑战'}}</view>
+    <view class="learning-topic">循人物故事，理解历史。每组先完成入门5题，再解锁进阶8题；答完即完成，不设分数线。题目待独立核验。</view>
+    <button wx:if="{{continueId}}" class="secondary" bindtap="resume">继续上次答题</button>
+    <view class="card">
+      <view class="section">挑战进度</view>
+      <view class="progress-split">
+        <view>
+          <view class="aux">入门</view>
+          <view class="honor-stat">{{beginnerDone}} / {{total}} <text class="aux">已完成</text></view>
+          <view class="meter"><view style="width: {{beginnerPercent}}%;"></view></view>
+        </view>
+        <view>
+          <view class="aux">进阶</view>
+          <view class="honor-stat">{{advancedDone}} / {{total}} <text class="aux">已完成</text></view>
+          <view class="meter"><view style="width: {{advancedPercent}}%;"></view></view>
+        </view>
+      </view>
+    </view>
+    <view class="learning-path"><text>01 阅读人物</text><text>02 入门 · 5题</text><text>03 进阶 · 8题</text></view><view class="section-head"><text>人物主题</text></view>
+    <view class="filters">
+      <view class="seg {{filter === 'all' ? 'on' : ''}}" data-filter="all" bindtap="setFilter">全部</view>
+      <view class="seg {{filter === 'open' ? 'on' : ''}}" data-filter="open" bindtap="setFilter">待挑战</view>
+      <view class="seg {{filter === 'done' ? 'on' : ''}}" data-filter="done" bindtap="setFilter">已完成</view>
+    </view>
+    <view wx:if="{{focusName ? !stages.length : !visible.length}}" class="aux">这一栏还没有关卡。</view>
+    <view wx:if="{{focusName}}" class="card stage-card" wx:for="{{stages}}" wx:key="id"><view class="section">{{item.difficulty}}挑战</view><view class="aux">随机抽取 {{item.draw_count}} 题 · 答完即完成</view><button class="primary" disabled="{{item.locked}}" data-id="{{item.id}}" bindtap="begin">{{item.locked ? '尚未解锁' : item.completed ? '再次练习' : '开始挑战'}}</button></view><view wx:if="{{!focusName}}" class="card person-card" wx:for="{{visible}}" wx:key="name">
+      <view class="learning-person-cover"><view class="learning-portrait-wrap"><image wx:if="{{item.photo}}" class="learning-card-portrait" src="{{item.photo.src}}" mode="{{item.group==='LYS'?'aspectFit':'aspectFill'}}"/><text class="learning-image-kind">{{item.photo.label}}</text></view><view class="copy"><view class="eyebrow">人物主题学习</view><view class="section">{{item.name}}</view><view class="aux">{{item.group==='LYS'?'一个团体 · 五位成员':'循人物经历，理解时代'}}</view></view></view>
+      <button class="learning-photo-source" data-name="{{item.name}}" bindtap="showPhotoSource">图注与来源</button>
+      <view class="learning-two-steps"><view class="learning-step {{item.beginnerDone?'is-done':'is-current'}}"><text class="step-dot">{{item.beginnerDone?'✓':'1'}}</text><view><view>入门 · {{item.entryCount}}题</view><view class="step-note">{{item.beginnerDone?'已完成':'待挑战'}}</view></view></view><view class="step-connector"></view><view class="learning-step {{item.advancedDone?'is-done':item.beginnerDone?'is-current':'is-locked'}}"><text class="step-dot">{{item.advancedDone?'✓':'2'}}</text><view><view>进阶 · {{item.advancedCount}}题</view><view class="step-note">{{item.advancedDone?'已完成':item.beginnerDone?'已解锁':'完成入门后解锁'}}</view></view></view></view>
+      <view class="person-actions"><button wx:if="{{item.personId}}" class="card-reading-link" data-id="{{item.personId}}" bindtap="readPerson">阅读档案 ↗</button><button wx:else class="card-reading-link" data-group="{{item.group}}" bindtap="openGroup">查看两关 ↗</button><view class="learning-next-actions"><button wx:if="{{item.reviewId}}" class="secondary" data-id="{{item.reviewId}}" bindtap="begin">{{item.reviewLabel}}</button><button wx:if="{{item.primaryId}}" class="primary" data-id="{{item.primaryId}}" bindtap="begin">{{item.primaryLabel}}</button></view></view>
+    </view>
+    <button class="secondary" bindtap="openHonors">查看学习称号</button>
+  </block>
+</view>
+
+</view>

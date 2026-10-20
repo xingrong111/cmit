@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-10-12T01:21:49.689Z",
+  "errors": [],
+  "places": [
+    {
+      "id": "PLACE-WX-LDY",
+      "name": "陆定一祖居陈列馆",
+      "sourceIds": [
+        "L-S01",
+        "L-S04",
+        "L-S10",
+        "L-S12",
+        "MAP-20261012-PLACE-WX-LDY"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false,
+      "entrance": "待核验",
+      "opening": "未知",
+      "imageStatus": "图片待授权；当前采用主题装饰"
+    },
+    {
+      "id": "PLACE-CZ-QQB",
+      "name": "瞿秋白纪念馆",
+      "sourceIds": [
+        "L-S02",
+        "L-S03",
+        "L-S07",
+        "MAP-20261012-PLACE-CZ-QQB"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false,
+      "entrance": "待核验",
+      "opening": "未知",
+      "imageStatus": "瞿秋白故居2017年外观照片：摄影许可CC BY-SA 4.0，作者Cangminzho；图注与门牌已再次目验。资料试读展示，不批准当前入口或整馆发布。"
+    },
+    {
+      "id": "PLACE-WX-ZWT",
+      "name": "张闻天旧居",
+      "sourceIds": [
+        "L-S01",
+        "L-S05",
+        "MAP-20261012-PLACE-WX-ZWT"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false,
+      "entrance": "待核验",
+      "opening": "未知",
+      "imageStatus": "图片待授权；当前采用主题装饰"
+    },
+    {
+      "id": "PLACE-CZ-ZTL",
+      "name": "张太雷纪念馆",
+      "sourceIds": [
+        "L-S06",
+        "L-S07",
+        "MAP-20261012-PLACE-CZ-ZTL"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false,
+      "entrance": "待核验",
+      "opening": "未知",
+      "imageStatus": "图片待授权；当前采用主题装饰"
+    },
+    {
+      "id": "PLACE-WX-QBC",
+      "name": "秦邦宪故居",
+      "sourceIds": [
+        "L-S08",
+        "L-S09",
+        "L-S11",
+        "MAP-20261012-PLACE-WX-QBC"
+      ],
+      "reviewStatus": "source_checked",
+      "published": false,
+      "entrance": "待核验",
+      "opening": "未知",
+      "imageStatus": "图片待授权；当前采用主题装饰"
+    }
+  ]
+}

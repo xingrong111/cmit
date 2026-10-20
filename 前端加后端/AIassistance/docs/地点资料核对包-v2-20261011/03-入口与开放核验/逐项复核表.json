@@ -1,0 +1,310 @@
+[
+  {
+    "recordId": "CHK-001",
+    "placeId": "PLACE-WX-LDY",
+    "field": "地点身份",
+    "problem": "禁止混同城中县前街故居与惠山祖居；2018参观／2020正式开放不合并成首次开放；2018年团市委与2024年惠山区页面均有老陆巷出生地表述，措辞相近、转载关系未厘清，不算两份独立证明；不据此直接确定精确出生地点。",
+    "evidenceSourceIds": [
+      "R05",
+      "R06",
+      "R07",
+      "R10"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待核验",
+    "publicBlock": "阻止混用地址和错误历史关联",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-002",
+    "placeId": "PLACE-WX-LDY",
+    "field": "游客入口",
+    "problem": "尚无精确入口对应证据",
+    "evidenceSourceIds": [
+      "R05",
+      "R06",
+      "R07",
+      "R10"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待核验",
+    "publicBlock": "阻止真实导航",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-003",
+    "placeId": "PLACE-WX-LDY",
+    "field": "当前开放",
+    "problem": "历史记录不保证2026-10-11状态",
+    "evidenceSourceIds": [
+      "R05",
+      "R06",
+      "R07",
+      "R10"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待核验",
+    "publicBlock": "阻止标记为当前已开放",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-004",
+    "placeId": "PLACE-WX-LDY",
+    "field": "图片",
+    "problem": "官方候选未见明确开放许可",
+    "evidenceSourceIds": [
+      "R05",
+      "R06",
+      "R07",
+      "R10"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待授权",
+    "publicBlock": "阻止使用未授权官方图片",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-005",
+    "placeId": "PLACE-CZ-QQB",
+    "field": "地点身份",
+    "problem": "东侧怀霜社为2021年参观起点线索；旧9—16点与2024通知9—17点有日期先后；普通参观与团队讲解预约分别记录。",
+    "evidenceSourceIds": [
+      "R01",
+      "R02",
+      "R08"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待核验",
+    "publicBlock": "阻止混用地址和错误历史关联",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-006",
+    "placeId": "PLACE-CZ-QQB",
+    "field": "游客入口",
+    "problem": "尚无精确入口对应证据",
+    "evidenceSourceIds": [
+      "R01",
+      "R02",
+      "R08"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待核验",
+    "publicBlock": "阻止真实导航",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-007",
+    "placeId": "PLACE-CZ-QQB",
+    "field": "当前开放",
+    "problem": "历史记录不保证2026-10-11状态",
+    "evidenceSourceIds": [
+      "R01",
+      "R02",
+      "R08"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待核验",
+    "publicBlock": "阻止标记为当前已开放",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-008",
+    "placeId": "PLACE-CZ-QQB",
+    "field": "图片",
+    "problem": "官方候选未见明确开放许可",
+    "evidenceSourceIds": [
+      "R01",
+      "R02",
+      "R08"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待授权",
+    "publicBlock": "阻止使用未授权官方图片",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-009",
+    "placeId": "PLACE-WX-ZWT",
+    "field": "地点身份",
+    "problem": "无锡旧居属1975年晚年关联，不能展示为1919—1949年居住地点；当前开放、停入场时间尚未刷新。",
+    "evidenceSourceIds": [
+      "R09",
+      "R10"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待核验",
+    "publicBlock": "阻止混用地址和错误历史关联",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-010",
+    "placeId": "PLACE-WX-ZWT",
+    "field": "游客入口",
+    "problem": "尚无精确入口对应证据",
+    "evidenceSourceIds": [
+      "R09",
+      "R10"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待核验",
+    "publicBlock": "阻止真实导航",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-011",
+    "placeId": "PLACE-WX-ZWT",
+    "field": "当前开放",
+    "problem": "历史记录不保证2026-10-11状态",
+    "evidenceSourceIds": [
+      "R09",
+      "R10"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待核验",
+    "publicBlock": "阻止标记为当前已开放",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-012",
+    "placeId": "PLACE-WX-ZWT",
+    "field": "图片",
+    "problem": "官方候选未见明确开放许可",
+    "evidenceSourceIds": [
+      "R09",
+      "R10"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待授权",
+    "publicBlock": "阻止使用未授权官方图片",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-013",
+    "placeId": "PLACE-CZ-ZTL",
+    "field": "地点身份",
+    "problem": "正文子和里3号是场馆；页脚龙城大道是机构地址；现代剧游不能当史实。",
+    "evidenceSourceIds": [
+      "R03",
+      "R08"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待核验",
+    "publicBlock": "阻止混用地址和错误历史关联",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-014",
+    "placeId": "PLACE-CZ-ZTL",
+    "field": "游客入口",
+    "problem": "尚无精确入口对应证据",
+    "evidenceSourceIds": [
+      "R03",
+      "R08"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待核验",
+    "publicBlock": "阻止真实导航",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-015",
+    "placeId": "PLACE-CZ-ZTL",
+    "field": "当前开放",
+    "problem": "历史记录不保证2026-10-11状态",
+    "evidenceSourceIds": [
+      "R03",
+      "R08"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待核验",
+    "publicBlock": "阻止标记为当前已开放",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-016",
+    "placeId": "PLACE-CZ-ZTL",
+    "field": "图片",
+    "problem": "官方候选未见明确开放许可",
+    "evidenceSourceIds": [
+      "R03",
+      "R08"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待授权",
+    "publicBlock": "阻止使用未授权官方图片",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-017",
+    "placeId": "PLACE-WX-QBC",
+    "field": "地点身份",
+    "problem": "2025年活动参观只证明当次活动报道；不推导当前面向所有游客开放。",
+    "evidenceSourceIds": [
+      "R04"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待核验",
+    "publicBlock": "阻止混用地址和错误历史关联",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-018",
+    "placeId": "PLACE-WX-QBC",
+    "field": "游客入口",
+    "problem": "尚无精确入口对应证据",
+    "evidenceSourceIds": [
+      "R04"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待核验",
+    "publicBlock": "阻止真实导航",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-019",
+    "placeId": "PLACE-WX-QBC",
+    "field": "当前开放",
+    "problem": "历史记录不保证2026-10-11状态",
+    "evidenceSourceIds": [
+      "R04"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待核验",
+    "publicBlock": "阻止标记为当前已开放",
+    "reviewer": "",
+    "reviewedAt": ""
+  },
+  {
+    "recordId": "CHK-020",
+    "placeId": "PLACE-WX-QBC",
+    "field": "图片",
+    "problem": "官方候选未见明确开放许可",
+    "evidenceSourceIds": [
+      "R04"
+    ],
+    "suggestion": "按原始正文核对；补新官方通知或真实核验记录；无依据保持未知",
+    "status": "待授权",
+    "publicBlock": "阻止使用未授权官方图片",
+    "reviewer": "",
+    "reviewedAt": ""
+  }
+]

@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-11",
+  "note": "未记录请求时分秒，不补造精确先后；不同访问结果可以不同，但不得指向同一文件声称相反内容",
+  "batches": [
+    {
+      "id": "MAP-BATCH-RAW-01",
+      "basis": "腾讯地图候选点.json原始存盘结果",
+      "records": [
+        {
+          "placeId": "PLACE-WX-LDY",
+          "name": "陆定一祖居陈列馆",
+          "checkedAt": "2026-10-11",
+          "provider": "腾讯位置WebService地点搜索",
+          "coordinateStatus": "地图候选POI，非已核验游客入口",
+          "request": "https://apis.map.qq.com/ws/place/v1/search（密钥已省略）",
+          "keyword": "陆定一祖居陈列馆",
+          "region": "无锡市",
+          "candidates": [
+            {
+              "id": "4137342448922742816",
+              "title": "陆定一祖居陈列馆",
+              "address": "江苏省无锡市惠山区堰桥街道天一社区陆巷4号",
+              "location": {
+                "lat": 31.642796,
+                "lng": 120.293782
+              },
+              "category": "文化场馆:展览馆",
+              "tel": "0510-83748119"
+            }
+          ],
+          "httpStatus": 200,
+          "providerStatus": 0,
+          "providerMessage": "Success",
+          "transport": "Node原生fetch，IPv4优先"
+        },
+        {
+          "placeId": "PLACE-CZ-QQB",
+          "name": "瞿秋白纪念馆",
+          "checkedAt": "2026-10-11",
+          "provider": "腾讯位置WebService地点搜索",
+          "coordinateStatus": "地图候选POI，非已核验游客入口",
+          "request": "https://apis.map.qq.com/ws/place/v1/search（密钥已省略）",
+          "keyword": "瞿秋白纪念馆",
+          "region": "常州市",
+          "candidates": [],
+          "httpStatus": 200,
+          "providerStatus": 121,
+          "providerMessage": "此key每日调用量已达到上限",
+          "transport": "Node原生fetch，IPv4优先"
+        },
+        {
+          "placeId": "PLACE-WX-ZWT",
+          "name": "张闻天旧居",
+          "checkedAt": "2026-10-11",
+          "provider": "腾讯位置WebService地点搜索",
+          "coordinateStatus": "地图候选POI，非已核验游客入口",
+          "request": "https://apis.map.qq.com/ws/place/v1/search（密钥已省略）",
+          "keyword": "张闻天旧居",
+          "region": "无锡市",
+          "candidates": [],
+          "httpStatus": 200,
+          "providerStatus": 121,
+          "providerMessage": "此key每日调用量已达到上限",
+          "transport": "Node原生fetch，IPv4优先"
+        },
+        {
+          "placeId": "PLACE-CZ-ZTL",
+          "name": "张太雷纪念馆",
+          "checkedAt": "2026-10-11",
+          "provider": "腾讯位置WebService地点搜索",
+          "coordinateStatus": "地图候选POI，非已核验游客入口",
+          "request": "https://apis.map.qq.com/ws/place/v1/search（密钥已省略）",
+          "keyword": "张太雷纪念馆",
+          "region": "常州市",
+          "candidates": [],
+          "httpStatus": 200,
+          "providerStatus": 121,
+          "providerMessage": "此key每日调用量已达到上限",
+          "transport": "Node原生fetch，IPv4优先"
+        },
+        {
+          "placeId": "PLACE-WX-QBC",
+          "name": "秦邦宪故居",
+          "checkedAt": "2026-10-11",
+          "provider": "腾讯位置WebService地点搜索",
+          "coordinateStatus": "地图候选POI，非已核验游客入口",
+          "request": "https://apis.map.qq.com/ws/place/v1/search（密钥已省略）",
+          "keyword": "秦邦宪故居",
+          "region": "无锡市",
+          "candidates": [],
+          "httpStatus": 200,
+          "providerStatus": 121,
+          "providerMessage": "此key每日调用量已达到上限",
+          "transport": "Node原生fetch，IPv4优先"
+        }
+      ],
+      "entranceApproved": false
+    },
+    {
+      "id": "MAP-BATCH-NARRATIVE-02",
+      "basis": "03入口补查第二轮文字记录",
+      "providerStatus": 121,
+      "newCandidates": false,
+      "rawResponsePresent": false,
+      "status": "仅过程文字记录，不能替代原始响应"
+    },
+    {
+      "id": "MAP-OLD-112",
+      "basis": "旧第二轮完善结果.md的112/IP叙述",
+      "providerStatus": 112,
+      "rawResponsePresent": false,
+      "status": "没有找到能匹配该叙述的独立原始响应；不能用来描述当前候选JSON；待核验"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "testedAt": "2026-10-12T09:46:33.784Z",
+  "originNotice": "测试起点，不代表用户实际位置",
+  "results": [
+    {
+      "name": "无锡单站：秦邦宪故居附近",
+      "httpStatus": 503,
+      "error": {
+        "code": "MAP_QUOTA_EXCEEDED",
+        "message": "地图服务今日额度已用完，可先保存参观顺序，额度恢复后再规划。"
+      }
+    }
+  ]
+}

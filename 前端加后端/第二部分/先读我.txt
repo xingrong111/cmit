@@ -1,0 +1,9 @@
+英迹完整交付包
+
+英迹-uni-node：uni-app前端与Node.js后端完整源码，启动方式见README.md。
+微信开发者工具导入包：小程序编译产物，正式发布需填写自己的AppID及HTTPS后端地址。
+网页静态阅读版：可独立托管的H5网页和公开历史资料。
+交付说明与部署：验收记录、首页截图及Sites部署归档。
+
+公开网址：https://yingji-heroes-20261010.tinyspice1.chatgpt.site/
+依赖通过npm ci安装，压缩包不包含node_modules、运行数据库或账号凭证。

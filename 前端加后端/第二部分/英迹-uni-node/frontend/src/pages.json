@@ -1,0 +1,19 @@
+{
+ "pages":[
+  {"path":"pages/home/index","style":{"navigationBarTitleText":"英迹"}},
+  {"path":"pages/people/index","style":{"navigationBarTitleText":"人物索引"}},
+  {"path":"pages/timeline/index","style":{"navigationBarTitleText":"山河长卷"}},
+  {"path":"pages/me/index","style":{"navigationBarTitleText":"我的阅读"}},
+  {"path":"pages/person/index","style":{"navigationBarTitleText":"人物档案"}},
+  {"path":"pages/event/index","style":{"navigationBarTitleText":"历史片段"}},
+  {"path":"pages/graph/index","style":{"navigationBarTitleText":"关系图谱"}},
+  {"path":"pages/sources/index","style":{"navigationBarTitleText":"事实与来源"}}
+ ],
+ "globalStyle":{"navigationBarTextStyle":"black","navigationBarTitleText":"英迹","navigationBarBackgroundColor":"#FBF5E9","backgroundColor":"#FBF5E9"},
+ "tabBar":{"color":"#75604B","selectedColor":"#982B28","backgroundColor":"#FFFAF1","borderStyle":"white","list":[
+  {"pagePath":"pages/home/index","text":"首页","iconPath":"static/icons/home.png","selectedIconPath":"static/icons/home-active.png"},
+  {"pagePath":"pages/people/index","text":"人物","iconPath":"static/icons/people.png","selectedIconPath":"static/icons/people-active.png"},
+  {"pagePath":"pages/timeline/index","text":"长卷","iconPath":"static/icons/timeline.png","selectedIconPath":"static/icons/timeline-active.png"},
+  {"pagePath":"pages/me/index","text":"我的","iconPath":"static/icons/bookmark.png","selectedIconPath":"static/icons/bookmark-active.png"}
+ ]}
+}

@@ -1,0 +1,80 @@
+{
+  "version": "2026-10-18-path",
+  "question_status": "待核验",
+  "note": "称号按全局学习进度依次获得，每个账户各获得一次，不按人物重复发放。人物进度在挑战页分别查看；称号仅记录学习完成情况，不代表史料已核验。",
+  "completion": "答完本次抽出的全部题目即完成本关。入门关为5题，进阶关为8题。不设分数线。同一组的入门关和进阶关都答完，才算读完这一组；只答完进阶关不算。",
+  "groups": [
+    {
+      "id": "QQB",
+      "person_name": "瞿秋白",
+      "reading_person_id": "P009",
+      "beginner_level_id": "QQB-入门",
+      "advanced_level_id": "QQB-进阶"
+    },
+    {
+      "id": "LYS",
+      "person_name": "狼牙山五壮士",
+      "reading_person_id": null,
+      "beginner_level_id": "LYS-入门",
+      "advanced_level_id": "LYS-进阶"
+    },
+    {
+      "id": "SZZ",
+      "person_name": "宋振中",
+      "reading_person_id": "P004",
+      "beginner_level_id": "SZZ-入门",
+      "advanced_level_id": "SZZ-进阶"
+    },
+    {
+      "id": "LDY",
+      "person_name": "陆定一",
+      "reading_person_id": "P014",
+      "beginner_level_id": "LDY-入门",
+      "advanced_level_id": "LDY-进阶"
+    },
+    {
+      "id": "JZY",
+      "person_name": "江竹筠",
+      "reading_person_id": null,
+      "beginner_level_id": "JZY-入门",
+      "advanced_level_id": "JZY-进阶"
+    }
+  ],
+  "titles": [
+    {
+      "id": "H-PATH-1",
+      "name": "星火初学者",
+      "scope": "milestone",
+      "condition": "完成任意1组入门挑战",
+      "beginner_groups": 1
+    },
+    {
+      "id": "H-PATH-2",
+      "name": "追光探寻者",
+      "scope": "milestone",
+      "condition": "完整完成任意1组的入门与进阶",
+      "completed_groups": 1
+    },
+    {
+      "id": "H-PATH-3",
+      "name": "山河寻迹者",
+      "scope": "milestone",
+      "condition": "完整完成任意2组的入门与进阶",
+      "completed_groups": 2
+    },
+    {
+      "id": "H-PATH-4",
+      "name": "薪火传习者",
+      "scope": "milestone",
+      "condition": "完整完成任意4组的入门与进阶",
+      "completed_groups": 4
+    },
+    {
+      "id": "H-PATH-5",
+      "name": "山河知音",
+      "scope": "milestone",
+      "condition": "完整完成全部5组的入门与进阶",
+      "completed_groups": 5
+    }
+  ]
+}

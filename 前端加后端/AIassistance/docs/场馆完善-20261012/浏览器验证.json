@@ -1,0 +1,66 @@
+{
+  "directLink": {
+    "page": "place",
+    "id": "PLACE-CZ-QQB"
+  },
+  "PLACE-CZ-QQB": {
+    "serviceRows": 5,
+    "contacts": 1,
+    "hasPhoto": true,
+    "imageLoaded": 6000,
+    "width": 1440,
+    "scrollWidth": 1425,
+    "navigationReady": false,
+    "sourceOpen": true
+  },
+  "PLACE-CZ-ZTL": {
+    "serviceRows": 5,
+    "contacts": 1,
+    "hasPhoto": false,
+    "imageLoaded": 0,
+    "width": 1440,
+    "scrollWidth": 1425,
+    "navigationReady": false,
+    "sourceOpen": true
+  },
+  "PLACE-WX-ZWT": {
+    "serviceRows": 5,
+    "contacts": 1,
+    "hasPhoto": false,
+    "imageLoaded": 0,
+    "width": 1440,
+    "scrollWidth": 1425,
+    "navigationReady": false,
+    "sourceOpen": true
+  },
+  "PLACE-WX-LDY": {
+    "serviceRows": 5,
+    "contacts": 0,
+    "hasPhoto": false,
+    "imageLoaded": 0,
+    "width": 1440,
+    "scrollWidth": 1425,
+    "navigationReady": false,
+    "sourceOpen": true
+  },
+  "PLACE-WX-QBC": {
+    "serviceRows": 5,
+    "contacts": 0,
+    "hasPhoto": false,
+    "imageLoaded": 0,
+    "width": 1440,
+    "scrollWidth": 1425,
+    "navigationReady": false,
+    "sourceOpen": true
+  },
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390,
+    "imageLoaded": 6000
+  },
+  "originalPreview": {
+    "rows": 5,
+    "imageLoaded": 6000
+  },
+  "exceptions": []
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#35291F">
+  <title>山河有迹｜狼牙山五壮士</title>
+  <link rel="stylesheet" href="./场景样式.css">
+  <link rel="stylesheet" href="./接地修正.css">
+</head>
+<body>
+  <main class="experience" id="experience">
+    <canvas id="vr-canvas" aria-label="狼牙山山脊 360 度互动场景"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">迹</span><span>山河有迹</span></div>
+      <button class="icon-button" onclick="if(history.length>1)history.back();else location.href='/#/pages/people/index'" aria-label="返回上一页">‹</button><button class="icon-button" id="fullscreen-button" aria-label="切换全屏">⛶</button><button class="icon-button" id="help-button" type="button" aria-label="查看操作说明">?</button>
+    </header>
+
+    <section class="scene-label" aria-live="polite">
+      <p id="scene-index">01 / 04</p>
+      <h1 id="scene-title">进入狼牙山</h1>
+      <p id="scene-subtitle">左右拖动，逐一看清山脊上的五人</p>
+    </section>
+
+    <nav class="chapter-nav" aria-label="场景章节">
+      <button class="chapter active" type="button" data-chapter="0"><span>01</span>进入</button>
+      <button class="chapter" type="button" data-chapter="1"><span>02</span>掩护</button>
+      <button class="chapter" type="button" data-chapter="2"><span>03</span>五壮士</button>
+      <button class="chapter" type="button" data-chapter="3"><span>04</span>纪念</button>
+    </nav>
+
+    <section class="reading-card is-collapsed" id="reading-card" aria-live="polite">
+      <div class="card-heading">
+        <div>
+          <p class="eyebrow" id="card-kicker">1941年9月</p>
+          <h2 id="card-title">山脊上的任务</h2>
+        </div>
+        <button class="card-toggle" id="card-toggle" type="button" aria-expanded="false" aria-controls="card-detail">展开</button>
+      </div>
+      <div id="card-detail">
+        <p id="card-body">1941年9月，五名八路军战士在河北易县狼牙山一带担负掩护任务。全景将山脊、远处烟尘和转移队伍作叙事合成；画面不复原同一时刻的真实站位或路线。</p>
+        <div class="card-actions">
+          <button class="button secondary" id="source-button" type="button">查看史料说明</button>
+          <button class="button primary" id="next-button" type="button">下一章节</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="notice" id="notice">战斗烟尘与转移队伍为艺术示意；非同一时刻、真实路线或历史照片。</aside>
+
+    <section class="opening is-hidden" style="display:none" aria-hidden="true" id="opening" aria-labelledby="opening-title">
+      <div class="opening-paper">
+        <p class="eyebrow">山河有迹 · 互动叙事初版</p>
+        <h2 id="opening-title">狼牙山五壮士</h2>
+        <p>从山脊地形、掩护任务到纪念传承，循着有出处的事实进入这段历史。</p>
+        <p class="small">本场景参考团队 V4 形象统一生成；手机上左右拖动可查看两侧人物。画面不等同于真实照片、原址测绘或服饰复原。</p>
+        <button class="button primary enter" id="enter-button" type="button">进入 360° 场景</button>
+      </div>
+    </section>
+
+    <dialog id="source-dialog">
+      <article class="dialog-paper">
+        <button class="close" id="close-dialog" type="button" aria-label="关闭">×</button>
+        <p class="eyebrow">史料与素材边界</p>
+        <h2>本场景依据什么？</h2>
+        <p>叙事采用“七连掩护机关、部队与群众转移；五名战士担负最后阻击任务”等可核对的概要事实。画面把不同阶段合成到一幅全景中；烟尘、队伍规模和路线、人物站位与天气均是艺术化设计，不能据此推断当时同一时刻的具体场面。</p>
+        <ul>
+          <li>史事参考：<a href="https://www.81.mil.cn/js_208592/16489227.html" target="_blank" rel="noopener noreferrer">中国军网《狼牙山五壮士：宁死不屈 战斗到底》</a>。</li>
+          <li>史事参考：<a href="https://www.xinhuanet.com/politics/2017-07/04/c_1121261426.htm" target="_blank" rel="noopener noreferrer">新华社《党史专家讲述狼牙山五壮士事迹》</a>。</li>
+          <li>全景图：以用户指定的“完整分图 V4”作为五人造型参考，将人物、岩石、山路及远处队伍统一生成；非现场影像。</li>
+          <li>人物外貌：艺术化 IP 设计，非历史肖像，也不对应特定历史人物的真实容貌。</li>
+        </ul>
+        <p class="small">正式发布前，应按项目素材台账补充图像授权、最终文字校审与线下点位核验。</p>
+      </article>
+    </dialog>
+
+    <section class="quiz" id="quiz" hidden aria-labelledby="quiz-title">
+      <div class="quiz-paper">
+        <p class="eyebrow">学习反馈</p>
+        <h2 id="quiz-title">辨认场景信息的边界</h2>
+        <p>山脊上的人物站位、姿态与天气效果应如何理解？</p>
+        <button type="button" data-answer="wrong">它们是现场摄影的完整复原</button>
+        <button type="button" data-answer="correct">它们是依据史实主题制作的艺术化场景设计</button>
+        <p class="answer" id="answer" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="fallback" id="fallback" hidden>
+      <div class="opening-paper"><h2>当前设备无法加载 360° 画面</h2><p>请使用支持 WebGL 的现代浏览器打开本页；史料说明仍可在项目文档中查看。</p></div>
+    </section>
+  </main>
+  <script type="module" src="./全景交互.js"></script>
+<script>document.getElementById("fullscreen-button").onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen()}catch{document.getElementById("notice").textContent="当前浏览器不支持全屏，请横屏浏览。"}};</script></body>
+</html>

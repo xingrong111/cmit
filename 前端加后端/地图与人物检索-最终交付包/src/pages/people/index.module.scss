@@ -1,0 +1,230 @@
+@use '@/styles/variables.scss' as *;
+
+.page {
+  min-height: 100vh;
+  padding: 0 $page-padding calc(144rpx + env(safe-area-inset-bottom));
+  background: $color-bg-page;
+}
+
+.header {
+  position: relative;
+  margin: 0 (-$page-padding) $spacing-md;
+  padding: 300rpx $page-padding $spacing-lg;
+  overflow: hidden;
+  text-align: center;
+}
+
+.heroBanner {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 360rpx;
+  overflow: hidden;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  opacity: 0.78;
+}
+
+.heroShade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 249, 236, 0.08) 0%, rgba(255, 249, 236, 0.16) 50%, $color-bg-page 100%);
+}
+
+.kicker,
+.title,
+.subtitle {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+.kicker {
+  color: $color-primary;
+  font-size: $font-size-sm;
+  letter-spacing: 4rpx;
+}
+
+.title {
+  margin-top: $spacing-xs;
+  color: $color-text-primary;
+  font-family: $color-font-title;
+  font-size: $font-size-display;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-tight;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 96rpx;
+  height: 2rpx;
+  margin: $spacing-sm auto 0;
+  background: linear-gradient(90deg, transparent, $color-accent, transparent);
+}
+
+.subtitle,
+.meta,
+.coverage,
+.geoNote {
+  display: block;
+  color: $color-text-secondary;
+  font-size: $font-size-sm;
+  line-height: $line-height-normal;
+}
+
+.subtitle { margin-top: $spacing-sm; }
+.searchCard { margin-top: -$spacing-xs; }
+
+.geoFilters {
+  display: flex;
+  gap: $spacing-sm;
+  margin-top: $spacing-sm;
+}
+
+.geoPicker {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  z-index: 1;
+}
+
+.geoPickerOpen {
+  z-index: 30;
+}
+
+.geoSelect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-xs;
+  min-height: 72rpx;
+  padding: 0 $spacing-xs;
+  border: 1rpx solid transparent;
+  border-radius: $radius-md;
+  background: rgba(245, 237, 222, .86);
+  color: $color-text-primary;
+  font-size: $font-size-sm;
+}
+
+.geoSelectActive {
+  border-color: rgba(156, 48, 41, .38);
+  color: $color-primary;
+}
+
+.geoValue { @include text-ellipsis; }
+.geoChevron {
+  width: 0;
+  height: 0;
+  border-right: 7rpx solid transparent;
+  border-left: 7rpx solid transparent;
+  border-top: 10rpx solid $color-primary-dark;
+  transition: transform .2s ease;
+}
+.geoChevronOpen { transform: rotate(180deg); }
+
+.geoMenu {
+  position: absolute;
+  top: calc(100% + 8rpx);
+  right: 0;
+  left: 0;
+  padding: 8rpx;
+  overflow: hidden;
+  border: 1rpx solid $color-divider;
+  border-radius: $radius-md;
+  background: $color-bg-card;
+  box-shadow: $shadow-popup;
+  z-index: 20;
+}
+
+.geoMenuScroll {
+  height: 360rpx;
+}
+
+.geoOption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 72rpx;
+  color: $color-text-primary;
+  font-size: $font-size-sm;
+  line-height: 1;
+}
+
+.geoOptionActive {
+  border-radius: $radius-sm;
+  background: rgba(156, 48, 41, .1);
+  color: $color-primary;
+  font-weight: $font-weight-semibold;
+}
+
+.person {
+  position: relative;
+  margin-top: $spacing-sm;
+  padding: $spacing-md;
+  overflow: hidden;
+  border: 1rpx solid $color-divider;
+  border-radius: $radius-xl;
+  background: $color-bg-card;
+  box-shadow: $shadow-card;
+}
+
+.person::before {
+  content: '';
+  position: absolute;
+  top: $spacing-md;
+  bottom: $spacing-md;
+  left: 0;
+  width: 4rpx;
+  background: $color-primary;
+}
+
+.personName {
+  display: block;
+  color: $color-primary-dark;
+  font-family: $color-font-title;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-medium;
+}
+
+.meta { margin-top: $spacing-xs; }
+
+.contribution {
+  display: block;
+  margin-top: $spacing-sm;
+  color: $color-text-primary;
+  font-size: $font-size-md;
+  line-height: $line-height-normal;
+}
+
+.sourceRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+  margin-top: $spacing-sm;
+  padding-top: $spacing-sm;
+  border-top: 1rpx solid $color-divider;
+}
+
+.sourceLabel,
+.sourceLink { font-size: $font-size-sm; }
+.sourceLabel { color: $color-text-secondary; }
+.sourceLink { color: $color-primary; text-decoration: underline; }
+.coverage { padding-top: $spacing-sm; }
+.provinceNote { display: flex; flex-direction: column; gap: 4rpx; margin: 0 0 $spacing-sm; padding: $spacing-xs $spacing-sm; border-left: 3rpx solid $color-accent; background: rgba(245, 237, 222, .58); color: $color-text-tertiary; font-size: $font-size-xs; line-height: $line-height-normal; }
+.moreNote { display: block; margin-top: $spacing-md; color: $color-text-tertiary; font-size: $font-size-xs; text-align: center; }
+.geoNote { padding: 0 $spacing-xs $spacing-md; color: $color-text-tertiary; text-align: center; }
+
+@media (min-width: 900px) {
+  .page { width: min(1180px, calc(100% - 64px)); margin: 0 auto; padding: 0 0 56px; background: transparent; }
+  .header { margin-right: 0; margin-left: 0; padding: 250px 32px 32px; }
+  .heroBanner { height: 310px; border-radius: 0 0 12px 12px; }
+  .title { font-size: 46px; }
+  .kicker, .subtitle, .meta, .coverage, .geoNote { font-size: 14px; }
+  .person { margin-top: 12px; padding: 20px; border-width: 1px; border-radius: 10px; }
+  .personName { font-size: 22px; }
+  .contribution { font-size: 16px; }
+}

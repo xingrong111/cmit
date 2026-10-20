@@ -1,0 +1,15 @@
+{
+  "readingPeople": 15,
+  "questions": 150,
+  "levels": 10,
+  "learningDraws": [
+    5,
+    8
+  ],
+  "learningCanResume": true,
+  "answersNotExposedBeforeSubmission": true,
+  "privateEnvCopied": false,
+  "demoPasswordsRemoved": true,
+  "vrIncluded": true,
+  "checkedAt": "2026-10-17T08:51:06.171Z"
+}
