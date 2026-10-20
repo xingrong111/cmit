@@ -1,0 +1,11 @@
+{
+  "records": 390,
+  "total": 389,
+  "assigned": 267,
+  "unassigned": 122,
+  "identityCandidatesUnchanged": true,
+  "birthplaceNotUsedAsOrigin": true,
+  "birthDatesUnchanged": true,
+  "workflowPromptsRemoved": true,
+  "deviceTest": false
+}

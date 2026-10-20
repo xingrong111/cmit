@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "人物资料条目",
+  "usingComponents": {
+    "app-shell": "../../components/AppShell",
+    "state-panel": "../../components/StatePanel"
+  }
+}

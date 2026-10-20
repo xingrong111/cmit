@@ -1,0 +1,14 @@
+{
+  "isolated": true,
+  "anonymousManagement401": true,
+  "userManagement403": true,
+  "adminManagement200": true,
+  "importProtected": true,
+  "loginRequired": true,
+  "learnerFromSession": true,
+  "crossAccountReadAndWrite403": true,
+  "beginner5": true,
+  "advanced8NoDuplicates": true,
+  "score5of5": true,
+  "restartPreservesProgress": true
+}

@@ -1,0 +1,1 @@
+Page({__returnPrevious(){const fallback=()=>wx.switchTab({url:'/pages/people/index'});if(getCurrentPages().length>1)wx.navigateBack({delta:1,fail:fallback});else fallback();},onLoad(o){const group=/^(QQB|LYS|SZZ|LDY|JZY)$/.test(o.group||'')?o.group:'';wx.redirectTo({url:'/pages/learn/learn'+(group?'?group='+group:'')})}});

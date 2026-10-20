@@ -1,0 +1,1 @@
+function key(k){const id=wx.getStorageSync('yingji:user-id');return id?k+':user:'+id:k;}function refreshRoute(){const app=getApp();const ids=wx.getStorageSync(key('yingji-route-v1'));app.globalData.routeIds=Array.isArray(ids)?ids:[];app.globalData.position=null;}module.exports={key,refreshRoute};

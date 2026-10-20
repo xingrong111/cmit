@@ -1,0 +1,18 @@
+{
+  "records": 119,
+  "provinceCountsSum": 119,
+  "regions": 34,
+  "pages": 27,
+  "tabs": 5,
+  "reviewStatusPreserved": true,
+  "privateEnvCopied": false,
+  "testResults": {
+    "阅读接口": true,
+    "导览接口": true,
+    "学习接口": true,
+    "模块联动": true,
+    "登录与学习权限": true
+  },
+  "nativeTotalBytes": 1284974,
+  "deviceTest": false
+}

@@ -1,0 +1,9 @@
+
+/* 英迹统一视觉基础 */
+:root,page,.app-shell{--paper:#FBF5E9;--card:#FFFAF1;--ink:#35281D;--red:#982B28;--red-dark:#762321;--green:#354D43;--gold:#BD9A67;--muted:#75604B;--line:#DDD0B8;--wash:#F1E7D5;--radius:12px;--serif:"Noto Serif SC","STSong","SimSun",serif;--sans:"PingFang SC","Microsoft YaHei",sans-serif}
+.primary,.secondary,.outline,.danger{border-radius:8px;min-height:44px;transition:background .18s,transform .18s,opacity .18s}
+.card,.fact-card,.source-card,.preference-card,.hero,.person-card,.q-bank{border-radius:12px}
+button:focus-visible,a:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+button:disabled{cursor:default;opacity:.5}
+h1,h2,h3,.title,.section-title,.page-title{font-family:var(--serif)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

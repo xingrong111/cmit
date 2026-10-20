@@ -1,0 +1,148 @@
+TAP version 13
+# Subtest: empty template has nothing to import
+ok 1 - empty template has nothing to import
+  ---
+  duration_ms: 2.3329
+  type: 'test'
+  ...
+# Subtest: example file is refused before it can be saved
+ok 2 - example file is refused before it can be saved
+  ---
+  duration_ms: 6.8529
+  type: 'test'
+  ...
+# Subtest: example body is valid once the example flag is removed
+ok 3 - example body is valid once the example flag is removed
+  ---
+  duration_ms: 1.3587
+  type: 'test'
+  ...
+# Subtest: question source ids stay separate from reading and place ids
+ok 4 - question source ids stay separate from reading and place ids
+  ---
+  duration_ms: 0.3404
+  type: 'test'
+  ...
+# Subtest: a place cannot borrow a design-pack person id or a coordinate
+ok 5 - a place cannot borrow a design-pack person id or a coordinate
+  ---
+  duration_ms: 0.2304
+  type: 'test'
+  ...
+# Subtest: disputed facts cannot be cited as a question answer and fact links stay empty
+ok 6 - disputed facts cannot be cited as a question answer and fact links stay empty
+  ---
+  duration_ms: 0.1358
+  type: 'test'
+  ...
+# Subtest: people without a reading id keep a null link and cannot reuse a verified question
+ok 7 - people without a reading id keep a null link and cannot reuse a verified question
+  ---
+  duration_ms: 0.3315
+  type: 'test'
+  ...
+# Subtest: published statuses and an existing place id are rejected
+ok 8 - published statuses and an existing place id are rejected
+  ---
+  duration_ms: 0.1142
+  type: 'test'
+  ...
+# Subtest: a passing file is copied as an unpublished draft and the submission stays unchanged
+ok 9 - a passing file is copied as an unpublished draft and the submission stays unchanged
+  ---
+  duration_ms: 14.326
+  type: 'test'
+  ...
+# Subtest: real library ids are not treated as new drafts
+ok 10 - real library ids are not treated as new drafts
+  ---
+  duration_ms: 26.6923
+  type: 'test'
+  ...
+# Subtest: beginner and advanced draws stay in their own pools
+ok 11 - beginner and advanced draws stay in their own pools
+  ---
+  duration_ms: 7.5859
+  type: 'test'
+  ...
+# Subtest: advanced level opens only after the beginner level is finished
+ok 12 - advanced level opens only after the beginner level is finished
+  ---
+  duration_ms: 1.6102
+  type: 'test'
+  ...
+# Subtest: finishing a beginner level offers the same group advanced level
+ok 13 - finishing a beginner level offers the same group advanced level
+  ---
+  duration_ms: 0.2427
+  type: 'test'
+  ...
+# Subtest: guest level list hides knowledge point ids and source urls stay hidden until submit
+ok 14 - guest level list hides knowledge point ids and source urls stay hidden until submit
+  ---
+  duration_ms: 3.0031
+  type: 'test'
+  ...
+# Subtest: two fully finished groups grant the cross-group title once
+ok 15 - two fully finished groups grant the cross-group title once
+  ---
+  duration_ms: 0.5122
+  type: 'test'
+  ...
+# Subtest: level list stays unpublished and does not reveal the draw pool
+ok 16 - level list stays unpublished and does not reveal the draw pool
+  ---
+  duration_ms: 0.888
+  type: 'test'
+  ...
+# Subtest: preview keeps a question unverified and out of the live pool
+ok 17 - preview keeps a question unverified and out of the live pool
+  ---
+  duration_ms: 0.7162
+  type: 'test'
+  ...
+# Subtest: verified status, fact links, foreign source ids and duplicate options are rejected
+ok 18 - verified status, fact links, foreign source ids and duplicate options are rejected
+  ---
+  duration_ms: 0.4145
+  type: 'test'
+  ...
+# Subtest: saving a draft does not change the audited question or its level pool
+ok 19 - saving a draft does not change the audited question or its level pool
+  ---
+  duration_ms: 9.1298
+  type: 'test'
+  ...
+# Subtest: a new question id stays outside the live pool
+ok 20 - a new question id stays outside the live pool
+  ---
+  duration_ms: 0.3625
+  type: 'test'
+  ...
+# Subtest: deleting a draft leaves the audited question and later version numbers in place
+ok 21 - deleting a draft leaves the audited question and later version numbers in place
+  ---
+  duration_ms: 0.4317
+  type: 'test'
+  ...
+# Subtest: a group without a reading person id cannot be given one
+ok 22 - a group without a reading person id cannot be given one
+  ---
+  duration_ms: 0.1385
+  type: 'test'
+  ...
+# Subtest: import preview separates conflicts from a passable empty check
+ok 23 - import preview separates conflicts from a passable empty check
+  ---
+  duration_ms: 0.5078
+  type: 'test'
+  ...
+1..23
+# tests 23
+# suites 0
+# pass 23
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 196.7413

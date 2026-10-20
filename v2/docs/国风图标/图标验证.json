@@ -1,0 +1,27 @@
+{
+  "icons": 19,
+  "navigationStatesDistinct": true,
+  "checks": [
+    {
+      "width": 390,
+      "homeFeatures": 6,
+      "personShortcuts": 4,
+      "myMenu": 3,
+      "guideScenes": 3,
+      "moduleHeaders": true,
+      "routesUnchanged": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "homeFeatures": 6,
+      "personShortcuts": 4,
+      "myMenu": 3,
+      "guideScenes": 3,
+      "moduleHeaders": true,
+      "routesUnchanged": true,
+      "noOverflow": true
+    }
+  ],
+  "deviceTest": false
+}

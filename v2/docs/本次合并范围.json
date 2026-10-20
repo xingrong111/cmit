@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-15",
+  "modules": [
+    "全国地图与名单",
+    "人物档案与长卷",
+    "账户评论审核",
+    "小迹导览与历史足迹",
+    "学习挑战"
+  ],
+  "researchRecords": 119,
+  "approvedByThisMerge": 0,
+  "originalDataReviewStatusUnchanged": true,
+  "tabs": 5,
+  "webAndMiniSeparated": true,
+  "deviceTest": false
+}

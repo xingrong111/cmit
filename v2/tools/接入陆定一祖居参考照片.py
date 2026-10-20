@@ -1,0 +1,15 @@
+from pathlib import Path
+import json
+root=Path('V1/services/guide');p=root/'server/data/content.json';d=json.loads(p.read_text(encoding='utf-8'));v=next(x for x in d['places'] if x['id']=='PLACE-WX-LDY');v['photo']={'id':'PHOTO-LDY-2020','url':'/media/venues/ldy-2020.jpg','caption':'陆定一祖居门额资料照片，出自2020年开放报道，不证明当前入口或营业状态。','author':'敖翔、吴镇界（报道统一摄影署名，未逐图细分）','capturedAt':'未显示单图拍摄日期','license':'转载许可未确认','licenseURL':None,'sourceURL':'https://www.sohu.com/a/435356261_120054268','originalFileURL':'https://p7.itc.cn/q_70/images03/20201130/8a9f9699f20648f08bd4d8a9da1f48a8.jpeg','changes':'页面等比例居中裁切；未改色、未修饰；点击可查看完整图片。','checkedAt':'2026-10-18','status':'permission_pending','published':False,'credit':'素材：堰桥街道宣传办 · 摄影：敖翔、吴镇界（报道署名） · 转载许可未确认'};p.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
+p=root/'server/src/server.js';s=p.read_text(encoding='utf-8').replace('qqb-2017|qbc-2011|zwt-2011|ztl-2012','qqb-2017|qbc-2011|zwt-2011|ztl-2012|ldy-2020');p.write_text(s,encoding='utf-8')
+p=root/'server/src/domain.js';s=p.read_text(encoding='utf-8');needle='    if(record.photo&&(';start=s.index(needle);end=s.index('\n',start)
+old=s[start:end]
+# 仅给这张有来源的内部参考图片保留未授权状态；公开模式仍不放行。
+new="""    if(record.photo){const f=record.photo;const pending=f.status==='permission_pending'&&f.url==='/media/venues/ldy-2020.jpg'&&f.license==='转载许可未确认'&&f.licenseURL===null&&f.published===false;
+      const licensed=safeSource({url:f.licenseURL})&&['CC BY-SA 4.0','CC BY-SA 3.0'].includes(f.license)&&/^\\/media\\/venues\\/(qqb-2017|qbc-2011|zwt-2011|ztl-2012)\\.jpg$/.test(f.url);
+      if(!safeSource({url:f.sourceURL})||!f.author||!f.caption||!f.changes||(!pending&&!licensed)||(f.published&&f.status!=='verified'))errors.push(`照片来源或许可记录无效：${record.id}`);
+    }"""
+s=s[:start]+new+s[end:];p.write_text(s,encoding='utf-8')
+p=root/'preview/app.js';s=p.read_text(encoding='utf-8').replace('<a href="${esc(f.licenseURL)}" target="_blank" rel="noopener noreferrer">许可条款 ↗</a>','${f.licenseURL?`<a href="${esc(f.licenseURL)}" target="_blank" rel="noopener noreferrer">许可条款 ↗</a>`:\'<span class="photo-rights-note">仅内部资料预览 · 转载许可未确认</span>\'}').replace('<a href="${esc(p.photo.licenseURL)}" target="_blank" rel="noopener noreferrer">许可</a>','${p.photo.licenseURL?`<a href="${esc(p.photo.licenseURL)}" target="_blank" rel="noopener noreferrer">许可</a>`:\'<span>仅内部预览</span>\'}');p.write_text(s,encoding='utf-8')
+p=root/'miniprogram/pages/place/index.wxml';s=p.read_text(encoding='utf-8').replace('<button class="ghost" bindtap="photoLicense">','<button wx:if="{{place.photo.licenseURL}}" class="ghost" bindtap="photoLicense">');p.write_text(s,encoding='utf-8')
+p=Path('V1/docs/五处场馆图片来源.md');s=p.read_text(encoding='utf-8');s+='\n## 陆定一祖居实景参考接入\n2026-10-18：本地预览已接入祖居门额照片。来源《陆定一祖居正式对外开放！》，2020-11-29，https://www.sohu.com/a/435356261_120054268 ，正文“带你去陆定一祖居看看”之后。素材来源：堰桥街道宣传办；摄影：敖翔、吴镇界（整篇署名，单图未细分）；单图拍摄日期未显示。原图：https://p7.itc.cn/q_70/images03/20201130/8a9f9699f20648f08bd4d8a9da1f48a8.jpeg 。转载许可未确认，published=false，正式公开模式不得展示。此前“未复制入系统”记录为接入前状态。\n';p.write_text(s,encoding='utf-8')

@@ -1,0 +1,8 @@
+{
+  "personP004ChallengeEntry": true,
+  "focusedSZZOnly": true,
+  "webBuild": true,
+  "miniBuild": true,
+  "nativeScriptSyntax": true,
+  "deviceTest": false
+}

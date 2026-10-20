@@ -1,0 +1,157 @@
+{
+  "checks": [
+    {
+      "personId": "P001",
+      "width": 390,
+      "loaded": true
+    },
+    {
+      "personId": "P002",
+      "width": 390,
+      "loaded": true
+    },
+    {
+      "personId": "P003",
+      "width": 390,
+      "loaded": true
+    },
+    {
+      "personId": "P004",
+      "width": 390,
+      "loaded": true
+    },
+    {
+      "personId": "P005",
+      "width": 390,
+      "loaded": true
+    },
+    {
+      "personId": "P006",
+      "width": 390,
+      "loaded": true
+    },
+    {
+      "personId": "P007",
+      "width": 390,
+      "loaded": true
+    },
+    {
+      "personId": "P008",
+      "width": 390,
+      "loaded": true
+    },
+    {
+      "personId": "P009",
+      "width": 390,
+      "loaded": true
+    },
+    {
+      "personId": "P010",
+      "width": 390,
+      "loaded": true
+    },
+    {
+      "personId": "P011",
+      "width": 390,
+      "loaded": true
+    },
+    {
+      "personId": "P012",
+      "width": 390,
+      "loaded": true
+    },
+    {
+      "personId": "P013",
+      "width": 390,
+      "loaded": true
+    },
+    {
+      "personId": "P014",
+      "width": 390,
+      "loaded": true
+    },
+    {
+      "personId": "P015",
+      "width": 390,
+      "loaded": true
+    },
+    {
+      "personId": "P001",
+      "width": 1440,
+      "loaded": true
+    },
+    {
+      "personId": "P002",
+      "width": 1440,
+      "loaded": true
+    },
+    {
+      "personId": "P003",
+      "width": 1440,
+      "loaded": true
+    },
+    {
+      "personId": "P004",
+      "width": 1440,
+      "loaded": true
+    },
+    {
+      "personId": "P005",
+      "width": 1440,
+      "loaded": true
+    },
+    {
+      "personId": "P006",
+      "width": 1440,
+      "loaded": true
+    },
+    {
+      "personId": "P007",
+      "width": 1440,
+      "loaded": true
+    },
+    {
+      "personId": "P008",
+      "width": 1440,
+      "loaded": true
+    },
+    {
+      "personId": "P009",
+      "width": 1440,
+      "loaded": true
+    },
+    {
+      "personId": "P010",
+      "width": 1440,
+      "loaded": true
+    },
+    {
+      "personId": "P011",
+      "width": 1440,
+      "loaded": true
+    },
+    {
+      "personId": "P012",
+      "width": 1440,
+      "loaded": true
+    },
+    {
+      "personId": "P013",
+      "width": 1440,
+      "loaded": true
+    },
+    {
+      "personId": "P014",
+      "width": 1440,
+      "loaded": true
+    },
+    {
+      "personId": "P015",
+      "width": 1440,
+      "loaded": true
+    }
+  ],
+  "pendingUsagePreserved": 5,
+  "groupPositionsLabeled": true,
+  "deviceTest": false
+}

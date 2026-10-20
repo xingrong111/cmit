@@ -1,0 +1,18 @@
+[
+  {
+    "width": 1366,
+    "dialogue": true,
+    "resume": true,
+    "drag": true,
+    "zoom": true,
+    "fullscreen": true
+  },
+  {
+    "width": 390,
+    "dialogue": true,
+    "resume": true,
+    "drag": true,
+    "zoom": true,
+    "fullscreen": true
+  }
+]

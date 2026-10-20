@@ -1,0 +1,16 @@
+
+/* V2：朱红印章与专题真人照片。 */
+.name-monogram{color:#f8df9b!important;background:linear-gradient(145deg,#b43930,#8f241e)!important;border:1px solid #b94d3a!important;border-radius:6px!important;box-shadow:inset 0 0 0 3px #a32f27,inset 0 0 0 4px #e9c274,0 3px 8px #63231b16!important;font-family:STKaiti,KaiTi,STSong,serif!important;font-weight:600!important;text-shadow:0 1px 0 #6e251f!important}
+.ip-topic{overflow:hidden!important}
+.ip-topic .ip-card-image{display:block!important;width:calc(100% + 40px)!important;max-width:none!important;height:260px!important;min-height:260px!important;margin:-20px -20px 20px!important;object-fit:cover!important;border-radius:0!important;background:#eee5d5!important}
+.ip-topic .ip-card-image img{object-fit:cover!important;object-position:center 30%!important}
+.topic-photo-note{display:block;font-size:12px;color:#75604b;margin:10px 0}
+.topic-source{display:inline-block;margin:10px 0 0;padding:4px 0;background:transparent;border:0;color:#8b6b45;font-size:12px;text-align:left;line-height:1.6}
+@media(max-width:650px){.ip-topic .ip-card-image{height:250px!important;min-height:250px!important}}
+
+.ip-topic .ip-card-image{padding:0!important}
+.people-grid .person-card-art .portrait-photo{padding:0!important;object-fit:cover!important}.people-grid .person-card-art .portrait-photo img{object-fit:cover!important;object-position:center 25%!important}
+
+.ip-topic .ip-card-image>div{background-position:center 18%!important}.people-grid .portrait-photo>div{background-position:center 20%!important}
+
+.archive-name .registry-name,.registry-card .registry-name,.name-record .registry-name{font-weight:700!important;color:#233d34!important}

@@ -1,0 +1,92 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "bytes": 1758,
+    "items": 0,
+    "modelConfigured": null,
+    "mapConfigured": null,
+    "error": null
+  },
+  {
+    "path": "/api/reading/people",
+    "status": 200,
+    "bytes": 13536,
+    "items": 15,
+    "modelConfigured": null,
+    "mapConfigured": null,
+    "error": null
+  },
+  {
+    "path": "/api/account/me",
+    "status": 200,
+    "bytes": 13,
+    "items": 0,
+    "modelConfigured": null,
+    "mapConfigured": null,
+    "error": null
+  },
+  {
+    "path": "/api/learning/levels",
+    "status": 200,
+    "bytes": 2422,
+    "items": 10,
+    "modelConfigured": null,
+    "mapConfigured": null,
+    "error": null
+  },
+  {
+    "path": "/api/guide/config",
+    "status": 200,
+    "bytes": 222,
+    "items": 0,
+    "modelConfigured": true,
+    "mapConfigured": true,
+    "error": null
+  },
+  {
+    "path": "/api/guide/places",
+    "status": 200,
+    "bytes": 35631,
+    "items": 5,
+    "modelConfigured": null,
+    "mapConfigured": null,
+    "error": null
+  },
+  {
+    "path": "/web/",
+    "status": 200,
+    "bytes": 2872,
+    "items": 0,
+    "modelConfigured": null,
+    "mapConfigured": null,
+    "error": null
+  },
+  {
+    "path": "/modules/account/",
+    "status": 200,
+    "bytes": 1498,
+    "items": 0,
+    "modelConfigured": null,
+    "mapConfigured": null,
+    "error": null
+  },
+  {
+    "path": "/modules/learning/",
+    "status": 200,
+    "bytes": 1987,
+    "items": 0,
+    "modelConfigured": null,
+    "mapConfigured": null,
+    "error": null
+  },
+  {
+    "path": "/vr/场景预览.html",
+    "status": 200,
+    "bytes": 6436,
+    "items": 0,
+    "modelConfigured": null,
+    "mapConfigured": null,
+    "error": null
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "width": 390,
+      "deepLink": true,
+      "refreshKeepsFilter": true,
+      "decadeFold": true,
+      "graphEvidence": true,
+      "mapDirectoryFolded": true,
+      "accountMenu": true,
+      "noOuterModuleScroll": true
+    },
+    {
+      "width": 1440,
+      "deepLink": true,
+      "refreshKeepsFilter": true,
+      "decadeFold": true,
+      "graphEvidence": true,
+      "mapDirectoryFolded": true,
+      "accountMenu": true,
+      "noOuterModuleScroll": true
+    }
+  ],
+  "deviceTest": false
+}

@@ -1,0 +1,9 @@
+{
+  "pages": 24,
+  "fiveTabs": true,
+  "requiredPageFiles": true,
+  "scriptSyntax": true,
+  "webBuilt": true,
+  "miniBuilt": true,
+  "deviceTest": false
+}

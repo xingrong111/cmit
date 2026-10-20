@@ -1,0 +1,27 @@
+from pathlib import Path
+import json
+exec((Path(__file__).parent/'检查合并页面.py').read_text(encoding='utf-8-sig').split('results=[]')[0])
+results=[]
+for width in [390,1440]:
+ size(width);nav('people/index');wait("document.querySelector('.archive-controls')")
+ assert js('document.documentElement.scrollWidth<=innerWidth')
+ shot('人物目录精修-'+str(width)+'.png')
+ js("document.querySelectorAll('.archive-controls .chips uni-button')[1].click()")
+ wait("document.querySelectorAll('.people-grid .person-card').length===15")
+ assert js("document.querySelectorAll('.card-read').length===15")
+ assert js("[...document.querySelectorAll('.card-read')].every(x=>getComputedStyle(x).backgroundColor==='rgb(152, 43, 40)')")
+ assert js('document.documentElement.scrollWidth<=innerWidth')
+ time.sleep(.5);shot('人物卡片精修-'+str(width)+'.png')
+ js("document.querySelector('.person-card').scrollIntoView({block:'center'})")
+ time.sleep(.3);shot('人物卡片细节-'+str(width)+'.png')
+ assert js("[...document.querySelectorAll('.card-foot')].every(x=>x.scrollWidth<=x.clientWidth+1)")
+ js("document.querySelector('.card-read').click()")
+ wait("location.hash.includes('person/index?id=P001')")
+ nav('people/index');wait("document.querySelector('.archive-controls')")
+ js("document.querySelectorAll('.archive-controls .chips uni-button')[2].click()")
+ wait("document.querySelectorAll('.ip-topic').length===5")
+ assert js('document.documentElement.scrollWidth<=innerWidth')
+ shot('人物IP精修-'+str(width)+'.png')
+ results.append({'width':width,'cards':15,'ipGroups':5,'navigation':True,'overflow':False})
+(r/'docs/人物卡片精修检查.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8')
+print('通过：手机/桌面人物目录、15张卡片、档案跳转、五组IP与无横向溢出。');ws.close()

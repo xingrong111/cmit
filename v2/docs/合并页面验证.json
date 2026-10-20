@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "width": 390,
+      "page": "人物索引",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "page": "人物档案",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "page": "学习挑战",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "page": "历史足迹",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "page": "小迹导览",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "page": "账户",
+      "passed": true
+    },
+    {
+      "width": 1366,
+      "page": "人物索引",
+      "passed": true
+    },
+    {
+      "width": 1366,
+      "page": "人物档案",
+      "passed": true
+    },
+    {
+      "width": 1366,
+      "page": "学习挑战",
+      "passed": true
+    },
+    {
+      "width": 1366,
+      "page": "历史足迹",
+      "passed": true
+    },
+    {
+      "width": 1366,
+      "page": "小迹导览",
+      "passed": true
+    },
+    {
+      "width": 1366,
+      "page": "账户",
+      "passed": true
+    }
+  ],
+  "mapCanvasPainted": true,
+  "zoomReset": true,
+  "provinceNavigation": true,
+  "recordNavigation": true,
+  "countDisclaimer": true,
+  "deviceTest": false
+}

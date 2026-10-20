@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "人物索引",
+  "usingComponents": {
+    "people-directory": "../../components/人物目录"
+  }
+}

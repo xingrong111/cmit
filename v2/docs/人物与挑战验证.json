@@ -1,0 +1,24 @@
+[
+  {
+    "width": 390,
+    "directory": 375,
+    "detail": 15,
+    "ipGroups": 5,
+    "searchAndDetailLink": true,
+    "stageFilters": true,
+    "lockedAdvanced": true,
+    "compactButtons": true,
+    "noOverflow": true
+  },
+  {
+    "width": 1440,
+    "directory": 375,
+    "detail": 15,
+    "ipGroups": 5,
+    "searchAndDetailLink": true,
+    "stageFilters": true,
+    "lockedAdvanced": true,
+    "compactButtons": true,
+    "noOverflow": true
+  }
+]

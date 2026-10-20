@@ -1,0 +1,16 @@
+{
+  "tasks": 166,
+  "peopleCovered": 153,
+  "peopleWithFieldUpdates": 71,
+  "directoryTotal": 390,
+  "mapTotal": 389,
+  "assigned": 217,
+  "unassigned": 172,
+  "excluded": 1,
+  "jiangsu": 17,
+  "hebei": 12,
+  "rawIdsPreserved": 375,
+  "duplicateCounting": false,
+  "sourceReview": "回填证据对应检查；外部网页未全部独立复核",
+  "idempotent": true
+}

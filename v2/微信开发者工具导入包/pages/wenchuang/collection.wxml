@@ -1,0 +1,35 @@
+<view class="{{__globalLarge ? 'global-large' : ''}}"><view class="explicit-return"><button bindtap="__returnPrevious">‹ 返回上一页</button></view>
+<view class="wc-page">
+  <view wx:if="{{mock}}" class="wc-mock">当前为演示数据（mock={{mock}}），不是真实解锁与领取记录</view>
+  <button class="wc-back" bindtap="goIndex">← 返回文创馆</button>
+  <text class="eyebrow">我的收藏 / COLLECTION</text>
+  <text class="page-title">领取过的文创，都收在这里</text>
+  <text class="muted">可以再次打开，也可以再次保存图片。</text>
+  <view wx:if="{{loading}}" class="wc-state"><view class="wc-state-title">正在读取收藏</view><text class="muted">请稍候…</text></view>
+  <view wx:elif="{{error}}" class="wc-state">
+    <view class="wc-state-title">{{errorTitle}}</view>
+    <text class="muted">{{error}}</text>
+    <button class="btn btn-primary" bindtap="onErrorAction">{{needLogin ? '去登录 ↗' : '重新读取'}}</button>
+  </view>
+  <view wx:elif="{{!items.length}}" class="wc-state">
+    <view class="wc-state-title">还没有领取的文创</view>
+    <text class="muted">完成学习挑战、获得称号后，就能在文创馆领取第一件。</text>
+    <button class="btn btn-primary" bindtap="goIndex">去文创馆看看 ↗</button>
+  </view>
+  <view wx:else class="wc-grid" style="margin-top:32rpx">
+    <button wx:for="{{items}}" wx:key="id" class="wc-card" data-id="{{item.id}}" bindtap="openItem">
+      <view class="wc-art">
+        <image wx:if="{{item.cover}}" class="wc-art-img" src="{{item.cover}}" mode="aspectFit"/>
+        <view wx:else class="wc-ph ph-{{item.kind}}"></view>
+        <view wx:if="{{!item.cover}}" class="ph-note">示意占位 · 正式图稿待上架</view>
+      </view>
+      <view class="wc-card-body">
+        <view class="wc-card-top"><text class="tag">{{item.category}}</text><text class="wc-badge badge-claimed">已领取</text></view>
+        <text class="wc-card-name">{{item.name}}</text>
+        <text class="small">{{item.tagline}}</text>
+        <text wx:if="{{item.date}}" class="small">领取于 {{item.date}}</text>
+      </view>
+    </button>
+  </view>
+</view>
+</view>

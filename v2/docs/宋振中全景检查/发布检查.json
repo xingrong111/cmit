@@ -1,0 +1,19 @@
+{
+  "github": "https://github.com/xingrong111/cmit",
+  "commit": "d2e72047b70b3bac18dcff8accff1bcc6e1f18dd",
+  "githubVerified": true,
+  "localChecks": [
+    "宋振中档案与IP页全景加载",
+    "缩放与复位",
+    "1366/390尺寸无横向溢出",
+    "陆定一远程更新合并并验证加载"
+  ],
+  "siteProject": "appgprj_6ad32f7119f481918ce92e88a2fd9821",
+  "siteVersion": 4,
+  "siteDeployment": "appgdep_6ad5da49be4c819183658412b2704689",
+  "siteStatus": "succeeded",
+  "realDeviceTest": false,
+  "siteURL": "https://shanhe-youji-20261017.bushystar3.chatgpt.site",
+  "onlineResourceCheck": "当前环境直连返回403访问校验；发布成功以Sites部署接口为准",
+  "publishWorktree": "E:/CMIT/output/本次GitHub发布"
+}

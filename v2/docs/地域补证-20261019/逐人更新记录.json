@@ -1,0 +1,197 @@
+[
+  {
+    "id": "P0177",
+    "name": "欧阳霖",
+    "evidence": [
+      {
+        "title": "《辽宁日报》辽宁籍抗日英烈名单",
+        "url": "https://epaper.lnd.com.cn/lnrbepaper/pc/con/202109/18/content_127223.html",
+        "excerpt": "八路军冀中军区第30团团长欧阳霖",
+        "fieldType": "籍贯",
+        "evidenceLevel": "附件所载直接记载",
+        "status": "按用户口径采用；未提升独立审核状态"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": "P0180",
+    "name": "高特",
+    "evidence": [
+      {
+        "title": "华北军区烈士陵园高特人物页",
+        "url": "https://www.hbjqlsly.com/photo/show-108.html",
+        "excerpt": "河北省保定彝县人",
+        "fieldType": "本人地域表述",
+        "evidenceLevel": "附件所载直接记载",
+        "status": "按用户口径采用；未提升独立审核状态"
+      }
+    ],
+    "note": "原文县名“彝县”可疑，仅采用河北省；来源牺牲年与名录有差异，不改原日期。"
+  },
+  {
+    "id": "P0186",
+    "name": "薛金吾",
+    "evidence": [
+      {
+        "title": "抗战牺牲的黄埔4期生们／转载",
+        "url": "https://m.krzzjn.com/show-2988-141705.html",
+        "excerpt": "河北磁县人",
+        "fieldType": "候选籍贯",
+        "evidenceLevel": "候选来源采用",
+        "status": "按用户口径采用；未提升独立审核状态"
+      }
+    ],
+    "note": "使用转载明示地域；广东省档案馆同名原件仍可进一步对读。"
+  },
+  {
+    "id": "P0187",
+    "name": "王何全",
+    "evidence": [
+      {
+        "title": "江西退役军人寻亲信息／新浪江西转载",
+        "url": "https://jx.sina.com.cn/news/b/2020-08-27/detail-iivhuipp0973858.shtml",
+        "excerpt": "王何全，籍贯：江西省",
+        "fieldType": "籍贯",
+        "evidenceLevel": "附件所载直接记载",
+        "status": "按用户口径采用；未提升独立审核状态"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": "P0196",
+    "name": "余光奎",
+    "evidence": [
+      {
+        "title": "中共张家界市委党史研究室撰稿／红网",
+        "url": "https://zjj.rednet.cn/content/2018/09/26/718373.html",
+        "excerpt": "出生于桑植县廖家村观音岩",
+        "fieldType": "出生地"
+      }
+    ],
+    "note": "两资料对村级地名有不同表述，出生地只取共同县级桑植县；不改作籍贯。"
+  },
+  {
+    "id": "P0197",
+    "name": "余秉钧",
+    "evidence": [
+      {
+        "title": "华北军区烈士陵园余秉钧碑文",
+        "url": "https://www.hbjqlsly.com/sacrifice/show-186.html",
+        "excerpt": "辽宁沈阳人",
+        "fieldType": "本人地域表述",
+        "evidenceLevel": "附件所载直接记载",
+        "status": "按用户口径采用；未提升独立审核状态"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": "P0198",
+    "name": "苗雨村",
+    "evidence": [
+      {
+        "title": "《栖霞县志》数字版",
+        "url": "https://shandong-chorography.org/database/c63/section/2/article/417/",
+        "excerpt": "烈士出生地苗家沟",
+        "fieldType": "出生地"
+      }
+    ],
+    "note": "保留苗家沟历史地名；来源牺牲年份有差异，不改原日期。"
+  },
+  {
+    "id": "P0201",
+    "name": "赵通三",
+    "evidence": [
+      {
+        "title": "《党建》纪念馆报道",
+        "url": "https://www.dangjian.cn/whsb/2024/10/16/detail_202410167001230.html",
+        "excerpt": "深泽县人",
+        "fieldType": "本人地域表述",
+        "evidenceLevel": "附件所载直接记载",
+        "status": "按用户口径采用；未提升独立审核状态"
+      },
+      {
+        "title": "长城网英雄河北专题",
+        "url": "https://hebfb.hebccw.cn/system/2025/09/01/102099681.shtml",
+        "excerpt": "1910年出生于该村",
+        "fieldType": "出生地"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": "P0202",
+    "name": "陶洪瀛",
+    "evidence": [
+      {
+        "title": "抗日战争纪念网陶洪瀛综合稿",
+        "url": "https://m.krzzjn.com/show-2343-111680.html",
+        "excerpt": "大吕巷村人",
+        "fieldType": "候选本人地域表述",
+        "evidenceLevel": "候选来源采用",
+        "status": "按用户口径采用；未提升独立审核状态"
+      }
+    ],
+    "note": "采用综合稿明示的“某地人”候选，不由地方志的地区关联推定籍贯；生年差异不覆盖现有日期。"
+  },
+  {
+    "id": "P0206",
+    "name": "曹洪德",
+    "evidence": [
+      {
+        "title": "曹洪德人物目录页",
+        "url": "https://m1.rw.ttdm.cn/history/10/caohongde.html",
+        "excerpt": "山西省太谷县人",
+        "fieldType": "候选籍贯",
+        "evidenceLevel": "候选来源采用",
+        "status": "按用户口径采用；未提升独立审核状态"
+      }
+    ],
+    "note": "二手人物汇编记载，原始出处未取得。"
+  },
+  {
+    "id": "P0207",
+    "name": "梁重馨",
+    "evidence": [
+      {
+        "text": "广西兴业",
+        "fieldType": "同名学员籍贯候选",
+        "url": "https://www.krzzjn.com/show-2409-120048.html",
+        "reason": "缺少同名学员与本条远征军团长的身份桥；不据此归省"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": "P0210",
+    "name": "王尚元",
+    "evidence": [
+      {
+        "title": "太行英雄网王尚元署名文章",
+        "url": "https://taihangsummit.com/faa1fa3f24/",
+        "excerpt": "皮烟村人",
+        "fieldType": "候选本人地域表述",
+        "evidenceLevel": "候选来源采用",
+        "status": "按用户口径采用；未提升独立审核状态"
+      }
+    ],
+    "note": "地域为署名文章明示；来源1922与原记录1921出生年不同，不改原日期。"
+  },
+  {
+    "id": "P0236",
+    "name": "李铎",
+    "evidence": [
+      {
+        "title": "南埠子村百科条目",
+        "url": "https://bkso.baidu.com/item/%E5%8D%97%E5%9F%A0%E5%AD%90%E6%9D%91/131889?fromModule=lemma_inlink",
+        "excerpt": "原名李唯一、任沂南县委书记、南埠村人",
+        "fieldType": "候选本人地域表述",
+        "evidenceLevel": "候选来源采用",
+        "status": "按用户口径采用；未提升独立审核状态"
+      }
+    ],
+    "note": "百科所述原名与职务用于辅助对应，保留二手来源性质，不与同名书法家合并。"
+  }
+]

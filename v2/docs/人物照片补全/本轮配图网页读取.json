@@ -1,0 +1,80 @@
+[
+  {
+    "name": "许晓轩",
+    "originalUrl": "https://dangshi.people.com.cn/n1/2019/0527/c85037-31105463.html",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'dangshi.people.com.cn'. (_ssl.c:1007)>"
+  },
+  {
+    "name": "钱振标",
+    "originalUrl": "https://www.qzbjng.com/qian/Article/ShowArticle.asp?ArticleID=1",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.qzbjng.com'. (_ssl.c:1007)>"
+  },
+  {
+    "name": "郭纲琳",
+    "originalUrl": "https://www.xinhuanet.com/politics/2018-10/26/c_1123616909.htm",
+    "finalUrl": "https://www.xinhuanet.com/politics/2018-10/26/c_1123616909.htm",
+    "title": "“永是勇士”的革命女战士——郭纲琳-新华网",
+    "images": [
+      {
+        "url": "https://www.news.cn/res/xhwimg/xl2017/images/net_logo.png",
+        "alt": ""
+      },
+      {
+        "url": "https://www.news.cn/res/xhwimg/xl2017/images/wx.png",
+        "alt": ""
+      },
+      {
+        "url": "https://www.xinhuanet.com/politics/2018-10/26/1123616909_15405281270871n.jpg",
+        "alt": "（为了民族复兴·英雄烈士谱·图文互动）“永是勇士”的革命女战士——郭纲琳"
+      },
+      {
+        "url": "https://www.xinhuanet.com/images/syicon/space.gif",
+        "alt": ""
+      },
+      {
+        "url": "https://www.news.cn/res/xhwimg/xl2017/images/bg6.jpg",
+        "alt": ""
+      },
+      {
+        "url": "https://www.xinhuanet.com/politics/titlepic/1123616818_1540519253160_title1n.jpg",
+        "alt": ""
+      },
+      {
+        "url": "https://www.xinhuanet.com/politics/titlepic/1123615707_1540512880099_title1n.jpg",
+        "alt": ""
+      },
+      {
+        "url": "https://www.xinhuanet.com/politics/titlepic/1123615472_1540511794159_title1n.png",
+        "alt": ""
+      },
+      {
+        "url": "https://www.xinhuanet.com/politics/titlepic/1123615460_1540511703108_title1n.png",
+        "alt": ""
+      },
+      {
+        "url": "https://www.xinhuanet.com/politics/titlepic/129979659_1_title1n.jpg",
+        "alt": "凌空金鱼艺术展亮相“空中上海”"
+      },
+      {
+        "url": "https://www.xinhuanet.com/politics/titlepic/129979552_1540514662609_title1n.jpg",
+        "alt": "整齐如刀割 南极发现方形冰山"
+      },
+      {
+        "url": "https://www.xinhuanet.com/politics/titlepic/129979495_1540512392617_title1n.jpg",
+        "alt": "女留学生返乡创业养土鸡"
+      },
+      {
+        "url": "https://www.xinhuanet.com/politics/titlepic/129979502_1540512213052_title1n.jpg",
+        "alt": "湿地霞光穿云来"
+      },
+      {
+        "url": "https://www.news.cn/res/xhwimg/common/share/logo4share.jpg",
+        "alt": ""
+      },
+      {
+        "url": "https://webd.home.news.cn/1.gif?z=1&_wdxid=010020020110000000000000011100601123616909",
+        "alt": ""
+      }
+    ]
+  }
+]

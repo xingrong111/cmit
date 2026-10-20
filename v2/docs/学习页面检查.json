@@ -1,0 +1,7 @@
+{
+  "lobbyLoaded": true,
+  "anonymousChallengeOpensLogin": true,
+  "loginReturnsToLearning": true,
+  "mobileNoHorizontalOverflow": true,
+  "deviceTest": false
+}

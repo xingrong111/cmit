@@ -1,0 +1,52 @@
+[
+  {
+    "group": "QQB",
+    "width": 1366,
+    "passed": true
+  },
+  {
+    "group": "SZZ",
+    "width": 1366,
+    "passed": true
+  },
+  {
+    "group": "LDY",
+    "width": 1366,
+    "passed": true
+  },
+  {
+    "group": "JZY",
+    "width": 1366,
+    "passed": true
+  },
+  {
+    "group": "LYS",
+    "width": 1366,
+    "passed": true
+  },
+  {
+    "group": "QQB",
+    "width": 390,
+    "passed": true
+  },
+  {
+    "group": "SZZ",
+    "width": 390,
+    "passed": true
+  },
+  {
+    "group": "LDY",
+    "width": 390,
+    "passed": true
+  },
+  {
+    "group": "JZY",
+    "width": 390,
+    "passed": true
+  },
+  {
+    "group": "LYS",
+    "width": 390,
+    "passed": true
+  }
+]

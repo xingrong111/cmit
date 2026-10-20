@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "收录说明",
+  "usingComponents": {
+    "app-shell": "../../components/AppShell"
+  }
+}

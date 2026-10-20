@@ -1,0 +1,24 @@
+[
+  {
+    "width": 390,
+    "dossiers": 15,
+    "historicalPhotos": 9,
+    "ipFallback": 1,
+    "ipGroups": 5,
+    "photoLabel": true,
+    "graphEvidence": true,
+    "nodeLimit": 7,
+    "noOverflow": true
+  },
+  {
+    "width": 1440,
+    "dossiers": 15,
+    "historicalPhotos": 9,
+    "ipFallback": 1,
+    "ipGroups": 5,
+    "photoLabel": true,
+    "graphEvidence": true,
+    "nodeLimit": 7,
+    "noOverflow": true
+  }
+]

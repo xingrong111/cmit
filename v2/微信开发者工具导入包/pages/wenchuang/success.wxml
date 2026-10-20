@@ -1,0 +1,28 @@
+<view class="{{__globalLarge ? 'global-large' : ''}}"><view class="explicit-return"><button bindtap="__returnPrevious">‹ 返回上一页</button></view>
+<view class="wc-page">
+  <view wx:if="{{mock}}" class="wc-mock">当前为演示数据（mock={{mock}}），不是真实解锁与领取记录</view>
+  <view wx:if="{{loading}}" class="wc-state"><view class="wc-state-title">正在读取收藏</view><text class="muted">请稍候…</text></view>
+  <view wx:elif="{{error}}" class="wc-state">
+    <view class="wc-state-title">{{errorTitle}}</view>
+    <text class="muted">{{error}}</text>
+    <button class="btn btn-primary" bindtap="onErrorAction">{{needLogin ? '去登录 ↗' : '重新读取'}}</button>
+  </view>
+  <view wx:elif="{{item}}" class="wc-success">
+    <text class="eyebrow">{{fresh ? 'CLAIMED' : 'MY COLLECTION'}}</text>
+    <text class="page-title">{{fresh ? '领取成功' : item.name}}</text>
+    <text class="muted">{{subtitle}}</text>
+    <view class="wc-art" bindtap="preview">
+      <image wx:if="{{item.cover}}" class="wc-art-img" src="{{item.cover}}" mode="aspectFit"/>
+      <view wx:else class="wc-ph ph-{{item.kind}}"></view>
+      <view wx:if="{{!item.cover}}" class="ph-note">示意占位 · 正式图稿待上架</view>
+    </view>
+    <view class="wc-actions">
+      <button wx:for="{{saves}}" wx:key="file" class="btn btn-primary" data-file="{{item.file}}" bindtap="save" loading="{{busyFile===item.file}}" disabled="{{busyFile}}">{{item.label}}</button>
+      <button wx:if="{{fresh}}" class="btn btn-outline" bindtap="goCollection">查看收藏 ↗</button>
+      <button class="btn btn-text" bindtap="goBackNav">{{fresh ? '返回文创馆' : '返回我的收藏'}}</button>
+    </view>
+    <text wx:if="{{hint}}" class="wc-hint">{{hint}}</text>
+    <view class="wc-note">{{item.meaning}}</view>
+  </view>
+</view>
+</view>

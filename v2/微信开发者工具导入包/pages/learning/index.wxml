@@ -1,0 +1,2 @@
+<view class="{{__globalLarge ? 'global-large' : ''}}"><view class="explicit-return"><button bindtap="__returnPrevious">‹ 返回上一页</button></view>
+<app-shell u-s="{{['d']}}" u-i="17a8fdef-0" bind:__l="__l"><view class="module-frame learning-flow" style="{{a}}"><text>原生学习页由组装脚本接入</text></view></app-shell></view>

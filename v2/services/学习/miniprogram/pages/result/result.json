@@ -1,0 +1,4 @@
+{
+  "navigationBarTitleText": "学习结果",
+  "usingComponents": { "tab-bar": "/components/tab-bar/tab-bar" }
+}

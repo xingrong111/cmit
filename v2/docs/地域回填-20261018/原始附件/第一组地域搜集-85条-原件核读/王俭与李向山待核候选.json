@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://people.isgoodgood.com/heilongjiangren/wangjian_9.html",
+    "final_url": "https://people.isgoodgood.com/heilongjiangren/wangjian_9.html",
+    "status": 200,
+    "ids": [
+      "P0100"
+    ],
+    "html_title": "王俭_黑龙江省哈尔滨市方正县名人",
+    "access_date": "2026-10-16",
+    "text": "王俭，民国8年（1914年）生于方正县二吉利村。其时王俭为伪二吉利村自卫团团总；后投奔抗联，起义人员被改编为三军一师一团，王俭任团长。1937年秋伏击日军时牺牲，时年仅24岁。",
+    "mode": "实际检索并读取公开人物聚合页；网页未标原始编纂来源，故只列候选，不回填主字段。"
+  },
+  {
+    "url": "https://m1.rw.ttdm.cn/history/10/lixiangshan10373363.html",
+    "final_url": "https://m1.rw.ttdm.cn/history/10/lixiangshan10373363.html",
+    "status": 200,
+    "ids": [
+      "P0078"
+    ],
+    "html_title": "李相山-桓仁满族自治县近现代人物专题",
+    "access_date": "2026-10-16",
+    "text": "李相山，原名李瑞林，号祥山。1884年生于桓仁县铧尖子乡东堡村一大户人家。29岁时，改名李相山。1934年东北人民革命军第一军独立师先遣部队到达桓仁境内后参加抗日活动。",
+    "mode": "实际检索并读取公开人物聚合页；页面使用“李相山”字形，原始编纂来源未标，故只列候选，不回填主字段。"
+  },
+  {
+    "url": "https://shizhiku.com/p/detail/wpa8aca216af/",
+    "final_url": "https://shizhiku.com/p/detail/wpa8aca216af/",
+    "status": 200,
+    "ids": [
+      "P0078"
+    ],
+    "html_title": "桓仁县志-史志库目录",
+    "access_date": "2026-10-16",
+    "text": "《桓仁县志》，桓仁县地方志编纂委员会编，1996年10月。目录第二十四篇人物、第一章人物传略列“李向山”。网页仅公开目录，未公开该人物传正文。",
+    "mode": "实际读取公开目录页；只确认县志存在本人传略，未取得人物传原页。"
+  }
+]

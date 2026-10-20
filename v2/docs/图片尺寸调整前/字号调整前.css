@@ -1,0 +1,307 @@
+/* 独立3131预览层，仅展示背景方案，不写入V1或Git检出目录。 */
+html[data-appearance=b]{--b-art:url('/static/赤脉山河.png')!important;--b-paper:#fbf5ea}
+html[data-appearance=b] .app-shell:before,
+html[data-appearance=b] .phone.web-shell:before,
+html[data-appearance=b] .app:before{
+ position:fixed!important;inset:0!important;
+ background-image:url('/static/赤脉山河.png')!important;
+ background-position:center bottom!important;
+ background-size:cover!important;
+ background-repeat:no-repeat!important;
+ background-attachment:scroll!important;
+ opacity:.85!important;
+}
+html[data-appearance=b] .masthead{background:rgba(255,252,245,.94)!important}
+html[data-appearance=b] .scope-metrics>:is(view,uni-view),
+html[data-appearance=b] .atlas-card,
+html[data-appearance=b] .atlas-map,
+html[data-appearance=b] .atlas-selected,
+html[data-appearance=b] .registry-card,
+html[data-appearance=b] .person-card,
+html[data-appearance=b] .directory-toolbar,
+html[data-appearance=b] .fact-card{background-color:rgba(255,253,248,.96)!important}
+html[data-appearance=b] .page-heading{background:rgba(255,251,242,.68)!important}
+
+/* 赤脉山河整页协调稿：只作用于3131临时预览。 */
+html[data-appearance=b]{--b-ink:#233d34;--b-muted:#665f51;--b-line:#ddc9a9;--b-card:#fffdf7;--preview-shadow:0 10px 32px #5638220c}
+html[data-appearance=b] body{font-size:16px;line-height:1.75;color:var(--b-ink)}
+html[data-appearance=b] .shell-body{max-width:1320px!important;margin:0 auto!important;padding:24px 30px 48px!important}
+html[data-appearance=b] .masthead{min-height:84px!important;padding:16px max(30px,calc((100vw - 1260px)/2))!important;box-shadow:0 3px 20px #5f482008;border-bottom:1px solid #d7c4a3!important}
+html[data-appearance=b] .brand-title{font-size:29px!important;letter-spacing:3px!important}
+html[data-appearance=b] .desktop-nav{gap:18px!important}
+html[data-appearance=b] .desktop-nav button{font-size:16px!important;padding:12px 7px!important}
+html[data-appearance=b] .page-return{padding:0 0 14px!important;margin-bottom:20px!important;border-bottom:1px solid #dbc9ae88;font-size:12px!important}
+html[data-appearance=b] .page-return button{font-size:13px!important;min-height:38px!important}
+html[data-appearance=b] .page-heading{padding:28px 32px!important;margin-bottom:24px!important;border:1px solid #ddc9a9!important;border-left:3px solid #a72c28!important;border-radius:16px!important;box-shadow:var(--preview-shadow);background:linear-gradient(100deg,#fffdf6f2,#fffaf1a6)!important}
+html[data-appearance=b] .page-title{font-size:38px!important;line-height:1.4!important;font-weight:700!important;letter-spacing:2px!important;margin:8px 0 12px!important}
+html[data-appearance=b] .section-title{font-size:27px!important;line-height:1.5!important;font-weight:650!important}
+html[data-appearance=b] .eyebrow{font-size:11px!important;letter-spacing:2px!important;color:#95754a!important}
+html[data-appearance=b] .muted{color:#665f51!important;font-size:15px;line-height:1.85}
+html[data-appearance=b] .small{font-size:12px;line-height:1.85;color:#7b6b54}
+html[data-appearance=b] .primary,
+html[data-appearance=b] .outline,
+html[data-appearance=b] .secondary{min-height:42px!important;display:inline-flex;align-items:center;justify-content:center;padding:10px 22px!important;font-size:14px!important;font-weight:500!important;line-height:1.5!important;border-radius:9px!important;text-align:center!important}
+html[data-appearance=b] .primary{box-shadow:0 5px 15px #982b2818}
+html[data-appearance=b] button:focus-visible,html[data-appearance=b] input:focus-visible{outline:2px solid #a72c28!important;outline-offset:3px}
+html[data-appearance=b] .primary.full,html[data-appearance=b] .outline.full{width:100%!important;box-sizing:border-box}
+html[data-appearance=b] .fact-card,
+html[data-appearance=b] .source-card,
+html[data-appearance=b] .preference-card,
+html[data-appearance=b] .chronicle-card,
+html[data-appearance=b] .stage-card,
+html[data-appearance=b] .honor-card{border:1px solid #ddc9a9!important;border-radius:14px!important;background:#fffdf8f5!important;box-shadow:var(--preview-shadow)!important}
+
+/* 首页：标题留景、三项指标同排、地图和所选省份对齐。 */
+html[data-appearance=b] .atlas-panel{background:transparent!important;border:0!important;padding:0!important;box-shadow:none!important}
+html[data-appearance=b] .atlas-top{height:auto!important;min-height:140px!important;padding:28px 28px 12px!important;margin:0!important;background:linear-gradient(105deg,#fffaf1b8,#fffaf12b)!important;border-radius:16px 16px 0 0!important;align-items:center!important}
+html[data-appearance=b] .atlas-top .section-title{font-size:42px!important;line-height:1.4!important;font-weight:700!important;color:#233d34!important}
+html[data-appearance=b] .atlas-top .text-button{font-size:12px!important;white-space:nowrap}
+html[data-appearance=b] .atlas-caption{display:block!important;padding:0 28px 26px!important;margin:0!important;font-size:14px!important;line-height:1.85;background:linear-gradient(105deg,#fffaf1b8,#fffaf12b)!important;border-radius:0 0 16px 16px}
+html[data-appearance=b] .scope-metrics{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:0!important;background:#fffdf6f2!important;border:1px solid #dcc6a5!important;border-radius:14px!important;margin:20px 0 12px!important;padding:16px 0!important;box-shadow:var(--preview-shadow)}
+html[data-appearance=b] .scope-metrics>:is(view,uni-view){display:flex!important;align-items:center!important;justify-content:center!important;gap:16px!important;padding:7px 20px!important;background:transparent!important;border:0!important;border-right:1px solid #ddc9a9!important;border-radius:0!important;min-height:64px!important;box-shadow:none!important}
+html[data-appearance=b] .scope-metrics>:is(view,uni-view):last-child{border-right:0!important}
+html[data-appearance=b] .scope-metrics .count-number{font-size:40px!important;font-weight:600!important;line-height:1.1!important;color:#a72c28!important}
+html[data-appearance=b] .scope-metrics>:is(view,uni-view)>:is(text,uni-text):last-child{font-size:14px!important;color:#34483d!important}
+html[data-appearance=b] .atlas-panel>.small{display:block!important;margin:12px 4px 18px!important;font-size:11px!important;background:#fffaf1c9;padding:6px 12px;border-radius:6px}
+html[data-appearance=b] .atlas-layout{grid-template-columns:minmax(0,1fr) 292px!important;gap:20px!important;align-items:stretch!important}
+html[data-appearance=b] .atlas-stage{background:#fffdf8f7!important;border:1px solid #ddc9a9!important;border-radius:16px!important;box-shadow:var(--preview-shadow)!important;overflow:hidden}
+html[data-appearance=b] .atlas-selection{display:flex!important;flex-direction:column!important;padding:28px 24px!important;border:1px solid #ddc9a9!important;border-radius:16px!important;background:#fffdf8f7!important;box-shadow:var(--preview-shadow)!important;gap:12px!important}
+html[data-appearance=b] .atlas-selection .atlas-region{font-size:31px!important;font-weight:650!important;margin:10px 0 0!important}
+html[data-appearance=b] .atlas-selection .atlas-count{margin:0 0 6px!important}
+html[data-appearance=b] .atlas-selection .atlas-count>:is(text,uni-text):first-child{font-size:48px!important;font-weight:600!important}
+html[data-appearance=b] .atlas-selection .primary{margin-top:auto!important}
+html[data-appearance=b] .atlas-selection .atlas-boundary{font-size:10px!important;line-height:1.7!important}
+html[data-appearance=b] .atlas-legend,
+html[data-appearance=b] .atlas-switch-heading{font-size:12px!important;background:#fffaf1de;padding:9px 14px!important;border-radius:7px}
+html[data-appearance=b] .atlas-region-scroll{background:#fffdf6ed;border:1px solid #ddc9a9;border-radius:12px;padding:8px!important;box-sizing:border-box}
+html[data-appearance=b] .atlas-discover{gap:14px!important;margin-top:20px!important}
+html[data-appearance=b] .atlas-discover button{background:#fffdf6ed!important;border:1px solid #dcc6a5!important;padding:18px!important;border-radius:12px!important}
+
+/* 人物：统计、条件筛选与卡片层级明确。 */
+html[data-appearance=b] .archive-overview{background:#fffdf6f2!important;border:1px solid #ddc9a9!important;border-radius:14px!important;margin-bottom:16px!important}
+html[data-appearance=b] .archive-stat{font-size:36px!important;font-weight:600!important}
+html[data-appearance=b] .registry-scope{background:#fffaf0ed!important;border:1px solid #e5d4ba!important;border-left:3px solid #bd9a67!important;border-radius:8px!important;padding:10px 16px!important;font-size:12px!important;line-height:1.8!important;margin:12px 0 18px!important}
+html[data-appearance=b] .directory-filter{padding:14px 16px!important;background:#fffdf7fa!important;border:1px solid #ddc9a9!important;border-radius:13px!important;gap:18px!important}
+html[data-appearance=b] .search-field{min-height:46px!important;border-radius:9px!important;background:#f7f1e6!important;border:1px solid #e0cfb3!important}
+html[data-appearance=b] .search-field input{font-size:15px!important}
+html[data-appearance=b] .directory-segments{gap:3px!important;padding:4px!important;border-radius:9px!important;background:#eee7d9!important}
+html[data-appearance=b] .directory-segments button{border:0!important;min-height:36px!important;padding:8px 14px!important;background:transparent!important;border-radius:6px!important;font-size:13px!important}
+html[data-appearance=b] .directory-segments button.active{background:#354f43!important;color:#fffdf6!important;box-shadow:0 2px 5px #31433218}
+html[data-appearance=b] .quick-directory{background:#fffdf7ed!important;border-radius:12px!important;border-color:#ddc9a9!important;margin:16px 0!important}
+html[data-appearance=b] .quick-toggle{padding:16px 20px!important}
+html[data-appearance=b] .quick-title{font-size:19px!important;font-weight:600!important}
+html[data-appearance=b] .quick-subtitle{font-size:11px!important}
+html[data-appearance=b] .section-head{padding:10px 0!important;margin:28px 0 16px!important;border-bottom:1px solid #cbb18a!important;background:linear-gradient(90deg,#fffaf1d9,#fffaf166);border-radius:6px}
+html[data-appearance=b] .section-head>:is(text,uni-text):first-child{font-size:25px!important;font-weight:650!important;padding-left:12px}
+html[data-appearance=b] .archive-name-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:14px!important}
+html[data-appearance=b] .archive-name{background:#fffdf8f7!important;border:1px solid #dfcdb0!important;border-radius:13px!important;box-shadow:var(--preview-shadow)!important;padding:20px!important}
+html[data-appearance=b] .registry-name{font-size:23px!important;font-weight:600!important}
+html[data-appearance=b] .name-origin,.name-date{font-size:12px!important;line-height:1.75!important}
+html[data-appearance=b] .people-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:20px!important;align-items:stretch!important}
+html[data-appearance=b] .person-card{background:#fffdf8fa!important;border:1px solid #ddc9a9!important;border-radius:15px!important;overflow:hidden;box-shadow:var(--preview-shadow)!important}
+html[data-appearance=b] .person-card-body{padding:22px!important}
+html[data-appearance=b] .person-card-name{font-size:27px!important;font-weight:650!important}
+html[data-appearance=b] .card-bio{font-size:14px!important;line-height:1.9!important;color:#665f51!important}
+html[data-appearance=b] .card-foot{margin-top:auto!important;gap:10px!important}
+html[data-appearance=b] .card-read{min-height:42px!important;font-size:14px!important;border-radius:8px!important}
+html[data-appearance=b] .ip-topic-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:20px!important}
+html[data-appearance=b] .ip-topic{background:#fffdf8f5!important;border:1px solid #ddc9a9!important;border-radius:14px!important;padding:20px!important}
+
+/* 足迹、小迹及学习的嵌入页：阅读区保持纸白，不与外层重复叠画。 */
+html[data-appearance=b] .phone.web-shell,html[data-appearance=b] body>.app{background:transparent!important;max-width:1260px!important;margin:0 auto!important;padding:18px 24px!important}
+html[data-appearance=b] .phone.web-shell:before,html[data-appearance=b] body>.app:before{opacity:.55!important}
+html[data-appearance=b] .web-subhead{padding:4px 0 14px!important;margin-bottom:18px!important;border-bottom:1px solid #d4bd99!important}
+html[data-appearance=b] .phone.web-shell .hero{padding:26px 30px!important;margin:0 0 20px!important;border:1px solid #ddc9a9!important;border-radius:14px!important;background:#fffaf1c9!important;min-height:0!important}
+html[data-appearance=b] .phone.web-shell .hero h1{font-size:34px!important;font-weight:700!important;line-height:1.4!important}
+html[data-appearance=b] .phone.web-shell .hero p{font-size:15px!important;line-height:1.8!important}
+html[data-appearance=b] .radar-toolbar{background:#fffdf8f5!important;border:1px solid #ddc9a9!important;border-radius:13px!important;padding:18px!important}
+html[data-appearance=b] .web-radar-layout{gap:20px!important;margin-top:20px!important}
+html[data-appearance=b] .web-radar-layout .card{background:#fffdf8f7!important;border-radius:14px!important;border-color:#ddc9a9!important;box-shadow:var(--preview-shadow)!important}
+html[data-appearance=b] .web-radar-layout h2{font-size:24px!important;line-height:1.55!important}
+html[data-appearance=b] .web-chat-panel{background:#fffdf8fa!important;border:1px solid #ddc9a9!important;border-radius:16px!important;box-shadow:var(--preview-shadow)!important}
+html[data-appearance=b] .composer{border:1px solid #ddc9a9!important;background:#f8f0e2!important;border-radius:13px!important}
+html[data-appearance=b] .learning-cover{border:1px solid #ddc9a9!important;background:#fffaf1d9!important;border-radius:16px!important;padding:28px!important;margin-bottom:20px!important}
+html[data-appearance=b] .learning-cover h1{font-size:36px!important;line-height:1.4!important;font-weight:700!important}
+html[data-appearance=b] .learning-person-card{background:#fffdf8f7!important;border:1px solid #ddc9a9!important;border-radius:14px!important;box-shadow:var(--preview-shadow)!important}
+html[data-appearance=b] .learning-person-heading{font-size:25px!important;font-weight:650!important}
+html[data-appearance=b] .my-cover{background:linear-gradient(100deg,#fffdf6f2,#fffaf1b8)!important;border:1px solid #ddc9a9!important;border-radius:16px!important;padding:28px!important}
+html[data-appearance=b] .account-menu button{background:#fffdf8f7!important;border-radius:13px!important;border-color:#ddc9a9!important;box-shadow:var(--preview-shadow)!important}
+
+/* 大字号偏好继续优先于预览标准字号。 */
+html[data-appearance=b].global-large body{font-size:18px}
+html[data-appearance=b] .global-large .muted{font-size:17px!important}
+html[data-appearance=b] .global-large .card-bio{font-size:17px!important}
+html[data-appearance=b] .global-large .registry-name{font-size:26px!important}
+@media(max-width:1000px){
+ html[data-appearance=b] .atlas-layout{grid-template-columns:minmax(0,1fr) 260px!important}
+ html[data-appearance=b] .people-grid,html[data-appearance=b] .ip-topic-grid,html[data-appearance=b] .archive-name-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ html[data-appearance=b] .scope-metrics>:is(view,uni-view){gap:10px!important;padding:6px 10px!important}
+ html[data-appearance=b] .scope-metrics .count-number{font-size:34px!important}
+}
+@media(max-width:650px){
+ html[data-appearance=b] body{font-size:15px}
+ html[data-appearance=b] .shell-body{padding:18px 16px 34px!important}
+ html[data-appearance=b] .masthead{min-height:66px!important;padding:12px 18px!important}
+ html[data-appearance=b] .brand-title{font-size:23px!important;letter-spacing:2px!important}
+ html[data-appearance=b] .page-return{margin-bottom:14px!important;padding-bottom:10px!important}
+ html[data-appearance=b] .page-heading{padding:22px 20px!important;margin-bottom:18px!important}
+ html[data-appearance=b] .page-title{font-size:29px!important;letter-spacing:1px!important}
+ html[data-appearance=b] .section-title{font-size:23px!important}
+ html[data-appearance=b] .muted{font-size:14px!important}
+ html[data-appearance=b] .atlas-top{padding:24px 20px 12px!important;min-height:125px!important;align-items:flex-start!important;gap:10px!important}
+ html[data-appearance=b] .atlas-top .section-title{font-size:29px!important;line-height:1.5!important}
+ html[data-appearance=b] .atlas-top .text-button{font-size:10px!important;padding:0!important}
+ html[data-appearance=b] .atlas-caption{padding:0 20px 22px!important;font-size:12px!important}
+ html[data-appearance=b] .scope-metrics{padding:10px 0!important;margin-top:16px!important}
+ html[data-appearance=b] .scope-metrics>:is(view,uni-view){flex-direction:column!important;gap:5px!important;padding:6px 4px!important;min-height:66px!important}
+ html[data-appearance=b] .scope-metrics .count-number{font-size:30px!important}
+ html[data-appearance=b] .scope-metrics>:is(view,uni-view)>:is(text,uni-text):last-child{font-size:10px!important;text-align:center}
+ html[data-appearance=b] .atlas-panel>.small{font-size:10px!important;margin-bottom:14px!important}
+ html[data-appearance=b] .atlas-layout{grid-template-columns:1fr!important;gap:14px!important}
+ html[data-appearance=b] .atlas-selection{padding:20px!important;gap:8px!important}
+ html[data-appearance=b] .atlas-discover{grid-template-columns:1fr!important;gap:10px!important}
+ html[data-appearance=b] .atlas-discover button{padding:15px!important;display:flex!important;justify-content:space-between!important}
+ html[data-appearance=b] .archive-overview{padding:12px 0!important}
+ html[data-appearance=b] .archive-stat{font-size:29px!important}
+ html[data-appearance=b] .archive-overview>:is(view,uni-view){gap:5px!important}
+ html[data-appearance=b] .archive-overview>:is(view,uni-view)>:is(text,uni-text):last-child{font-size:10px!important}
+ html[data-appearance=b] .directory-filter{padding:12px!important;gap:12px!important}
+ html[data-appearance=b] .directory-segments button{padding:7px 10px!important;font-size:12px!important}
+ html[data-appearance=b] .people-grid,html[data-appearance=b] .ip-topic-grid,html[data-appearance=b] .archive-name-grid{grid-template-columns:1fr!important;gap:14px!important}
+ html[data-appearance=b] .person-card-body{padding:20px!important}
+ html[data-appearance=b] .registry-name{font-size:22px!important}
+ html[data-appearance=b] .section-head>:is(text,uni-text):first-child{font-size:23px!important}
+ html[data-appearance=b] .phone.web-shell,html[data-appearance=b] body>.app{padding:14px 16px!important}
+ html[data-appearance=b] .phone.web-shell .hero{padding:22px 20px!important}
+ html[data-appearance=b] .phone.web-shell .hero h1{font-size:27px!important}
+ html[data-appearance=b] .learning-cover{padding:22px 18px!important}
+ html[data-appearance=b] .learning-cover h1{font-size:29px!important}
+}
+
+/* 浏览器中的uni-app节点也采用同一组件规则。 */
+html[data-appearance=b] .atlas-panel .scope-metrics>:is(view,uni-view){border:0!important;border-right:1px solid #ddc9a9!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+html[data-appearance=b] .atlas-panel .scope-metrics>:is(view,uni-view):last-child{border-right:0!important}
+html[data-appearance=b] .shell-body>.muted{display:block!important;background:#fffaf1e8;padding:10px 14px;border-radius:8px;margin-top:12px}
+html[data-appearance=b] .learning-embedded #view{padding:0!important}
+html[data-appearance=b] .learning-embedded .learning-crumb{padding:0!important;margin:0 0 12px!important;min-height:32px!important}
+html[data-appearance=b] .learning-embedded .learning-cover{margin:0 0 14px!important;padding:24px 26px!important}
+html[data-appearance=b] .learning-progress{display:grid!important;grid-template-columns:150px minmax(0,1fr)!important;gap:20px!important;align-items:center!important;padding:18px 24px!important;margin:16px 0!important}
+html[data-appearance=b] .learning-progress h2{font-size:22px!important;margin:0!important}
+html[data-appearance=b] .learning-progress .honor-stat{margin:4px 0 8px!important;font-size:28px!important;line-height:1.4!important}
+html[data-appearance=b] .learning-progress .aux{margin:0!important;font-size:12px!important}
+html[data-appearance=b] .learning-embedded #view>.section-head{margin:14px 0 8px!important;padding:6px 0!important}
+html[data-appearance=b] .learning-path{gap:12px!important;margin:8px 0 14px!important}
+html[data-appearance=b] .learning-path span{padding:10px 14px!important;border:1px solid #ddc9a9!important;border-radius:8px!important;background:#fffaf1e8!important;font-size:12px!important}
+html[data-appearance=b] .learning-section-title{margin:20px 0 14px!important;font-size:23px!important;font-weight:600!important;color:#354f43!important}
+html[data-appearance=b] .answer-paragraph{font-size:16px;line-height:1.95!important;color:#34483d}
+@media(max-width:650px){
+ html[data-appearance=b] .atlas-top .section-title{text-wrap:balance!important;max-width:290px!important;font-size:28px!important}
+ html[data-appearance=b] .atlas-top{display:block!important}
+ html[data-appearance=b] .atlas-top .text-button{display:block!important;margin:12px 0 0!important;text-align:left!important}
+ html[data-appearance=b] .scope-metrics>:is(view,uni-view)>:is(text,uni-text):last-child{white-space:nowrap!important;font-size:10px!important;letter-spacing:0!important}
+ html[data-appearance=b] .learning-progress{grid-template-columns:1fr!important;gap:12px!important;padding:18px!important}
+ html[data-appearance=b] .learning-progress h2{font-size:20px!important}
+ html[data-appearance=b] .learning-path{gap:5px!important}
+ html[data-appearance=b] .learning-path span{padding:9px 6px!important;font-size:10px!important}
+}
+
+/* 参考足迹卡片：仅内容容器采用纸白底，容器之间仍透出完整山河背景。 */
+html[data-appearance=b] :is(.fact-card,.source-card,.preference-card,.chronicle-card,.stage-card,.honor-card,.registry-card,.person-card,.ip-topic,.atlas-stage,.atlas-selection,.directory-filter,.quick-directory,.archive-overview,.scope-metrics,.web-chat-panel,.learning-person-card,.learning-progress,.account-menu button,.web-radar-layout .card){
+ background-color:#fffdf5!important;
+ border-color:#e0d3ba!important;
+ box-shadow:0 4px 18px rgba(74,51,28,.045)!important;
+}
+html[data-appearance=b] :is(.page-heading,.phone.web-shell .hero,.learning-cover,.my-cover){
+ background:linear-gradient(105deg,rgba(255,253,246,.97),rgba(255,250,239,.91))!important;
+ border-color:#e0d3ba!important;
+}
+html[data-appearance=b] :is(.shell-body,.atlas-panel,.web-radar-layout,.people-grid,.archive-name-grid,.ip-topic-grid){background-color:transparent!important}
+html[data-appearance=b] .registry-card{border-left:3px solid #bb975e!important}
+html[data-appearance=b] .section-head{background:rgba(255,253,245,.93)!important}
+html[data-appearance=b] .atlas-discover button{background:#fffdf5!important}
+
+/* 中间页面承载区与两侧山水分层：只调整整体衬底，不改变卡片布局。 */
+html[data-appearance=b] .app-shell>.shell-body{
+ background:rgba(255,250,239,.62)!important;
+ border-left:1px solid rgba(212,190,151,.52)!important;
+ border-right:1px solid rgba(212,190,151,.52)!important;
+ box-shadow:0 0 30px rgba(85,61,32,.06)!important;
+ min-height:calc(100vh - 100px);
+ box-sizing:border-box;
+}
+/* 嵌入页沿用外层的整块衬底，避免重复叠白。 */
+html[data-appearance=b] .phone.web-shell,
+html[data-appearance=b] body>.app{background-color:transparent!important}
+@media(max-width:650px){
+ html[data-appearance=b] .app-shell>.shell-body{background:rgba(255,250,239,.70)!important;border-left:0!important;border-right:0!important;box-shadow:none!important}
+}
+
+/* 学习、小迹的嵌入页不再重复绘制山水，让外层统一的米白衬底透出。 */
+html[data-appearance=b]:has(body>.phone.web-shell),
+html[data-appearance=b]:has(body.learning-embedded),
+html[data-appearance=b]:has(body>.phone.web-shell) body,
+html[data-appearance=b] body.learning-embedded{background:transparent!important}
+html[data-appearance=b] .phone.web-shell::before,
+html[data-appearance=b] .phone.web-shell::after,
+html[data-appearance=b] body.learning-embedded>.app::before,
+html[data-appearance=b] body.learning-embedded>.app::after{display:none!important}
+html[data-appearance=b] body.learning-embedded>.app,
+html[data-appearance=b] body.learning-embedded #view,
+html[data-appearance=b] .phone.web-shell{background:transparent!important}
+html[data-appearance=b] :is(.reference-learning,.reference-me,.reference-assistant)>.shell-body{
+ background:rgba(255,250,239,.62)!important;
+ border-left:1px solid rgba(212,190,151,.52)!important;
+ border-right:1px solid rgba(212,190,151,.52)!important;
+ box-shadow:0 0 30px rgba(85,61,32,.06)!important;
+}
+@media(max-width:650px){
+ html[data-appearance=b] :is(.reference-learning,.reference-me,.reference-assistant)>.shell-body{background:rgba(255,250,239,.70)!important;border-left:0!important;border-right:0!important;box-shadow:none!important}
+}
+
+html[data-appearance=b] .ip-topic .ip-card-image>div{background-position:center 18%!important}html[data-appearance=b] .people-grid .portrait-photo>div{background-position:center 20%!important}
+
+/* 人物照片改为留白展陈，暖灰米色画框衔接纸色卡片。 */
+html[data-appearance=b] .ip-topic .ip-card-image{width:100%!important;height:210px!important;min-height:210px!important;margin:0 0 16px!important;padding:0!important;border:1px solid #e0d6c6!important;border-radius:10px!important;background:linear-gradient(135deg,#eee9df,#f7f3ec)!important;box-sizing:border-box!important}
+html[data-appearance=b] .ip-topic .ip-card-image>div{inset:16px!important;width:calc(100% - 32px)!important;height:calc(100% - 32px)!important;background-size:contain!important;background-position:center!important;background-repeat:no-repeat!important}
+html[data-appearance=b] .ip-topic .ip-card-image img{object-fit:contain!important;object-position:center!important}
+html[data-appearance=b] .people-grid .person-card-art{height:220px!important;background:#eee9df!important}
+html[data-appearance=b] .people-grid .portrait-panel{background:linear-gradient(135deg,#eee9df,#f7f3ec)!important}
+html[data-appearance=b] .people-grid .portrait-photo>div{inset:16px 24px 40px!important;width:calc(100% - 48px)!important;height:calc(100% - 56px)!important;background-size:contain!important;background-position:center!important}
+html[data-appearance=b] .people-grid .portrait-photo img{object-fit:contain!important}
+@media(max-width:650px){html[data-appearance=b] .ip-topic .ip-card-image{height:190px!important;min-height:190px!important}html[data-appearance=b] .people-grid .person-card-art{height:210px!important}}
+
+html[data-appearance=b] .ip-topic .ip-card-image>div{transform:translateY(16px)!important}
+
+/* 档案卡照片栏：照片在左，编号、图注与来源在右，压缩无效留白。 */
+html[data-appearance=b] .people-grid .person-card-art{height:204px!important;background:#eee9df!important;border-bottom:1px solid #dfd4c2!important}
+html[data-appearance=b] .people-grid .portrait-card{background:linear-gradient(110deg,#e8e2d6,#f6f2e9)!important}
+html[data-appearance=b] .people-grid .portrait-card:after{display:none!important}
+html[data-appearance=b] .people-grid .portrait-card:before{content:'人物文献 · 影像档案';position:absolute;left:166px;right:18px;top:71px;font-size:11px;color:#8d785a;letter-spacing:1px}
+html[data-appearance=b] .people-grid .portrait-card .portrait-photo{position:absolute!important;left:18px!important;top:18px!important;width:130px!important;height:166px!important;padding:0!important;background:#dfd8cb!important;border:1px solid #d5c7af!important;border-radius:5px!important;box-sizing:border-box!important}
+html[data-appearance=b] .people-grid .portrait-card .portrait-photo>div{inset:0!important;width:100%!important;height:100%!important;background-size:contain!important;background-position:center!important;transform:none!important}
+html[data-appearance=b] .people-grid .person-card-art .card-index{left:166px!important;right:14px!important;top:22px!important;width:auto!important;max-width:none!important;text-align:left!important;background:transparent!important;border:0!important;padding:0!important;font-size:10px!important;letter-spacing:1px!important}
+html[data-appearance=b] .people-grid .portrait-card .portrait-photo-caption{left:166px!important;right:18px!important;top:97px!important;bottom:auto!important;background:transparent!important;padding:0!important;text-align:left!important;font-size:10px!important;line-height:1.8!important}
+html[data-appearance=b] .people-grid .portrait-card .portrait-credit{left:166px!important;right:18px!important;bottom:20px!important;top:auto!important;width:auto!important;max-width:none!important;min-height:28px!important;margin:0!important;padding:4px 0!important;text-align:left!important;justify-content:flex-start!important;white-space:normal!important;line-height:1.7!important;background:transparent!important;border:0!important;border-radius:0!important;font-size:10px!important;box-shadow:none!important}
+html[data-appearance=b] .people-grid .portrait-card .portrait-mode{top:45px!important;right:16px!important;min-height:22px!important;font-size:9px!important;padding:2px 8px!important}
+@media(max-width:650px){html[data-appearance=b] .people-grid .person-card-art{height:190px!important}html[data-appearance=b] .people-grid .portrait-card .portrait-photo{width:116px!important;height:154px!important}html[data-appearance=b] .people-grid .portrait-card:before,html[data-appearance=b] .people-grid .portrait-card .portrait-photo-caption,html[data-appearance=b] .people-grid .portrait-card .portrait-credit,html[data-appearance=b] .people-grid .person-card-art .card-index{left:150px!important}}
+
+html[data-appearance=b] .people-grid .person-card{display:flex!important;flex-direction:column!important;grid-template-columns:none!important}html[data-appearance=b] .people-grid .person-card-art{width:100%!important;flex:0 0 204px!important;min-width:0!important}html[data-appearance=b] .people-grid .portrait-card{height:100%!important;width:100%!important}html[data-appearance=b] .people-grid .person-card-body{width:100%!important;box-sizing:border-box!important}@media(max-width:650px){html[data-appearance=b] .people-grid .person-card-art{flex-basis:190px!important}}
+
+html[data-appearance=b] .people-grid .person-card-art{padding:0!important;box-sizing:border-box!important;min-height:0!important;max-height:204px!important}html[data-appearance=b] .people-grid .portrait-card{min-height:0!important;border:0!important;border-radius:0!important}html[data-appearance=b] .people-grid .portrait-card .portrait-credit{position:absolute!important}html[data-appearance=b] .people-grid .person-card-art .card-index{display:block!important;position:absolute!important}@media(max-width:650px){html[data-appearance=b] .people-grid .person-card-art{max-height:190px!important}}
+
+/* 小幅照片居中陈列，灰白画框与下方紧凑图注。 */
+html[data-appearance=b] .people-grid .person-card-art{height:238px!important;max-height:238px!important;flex:0 0 238px!important;background:#f4f4f1!important;padding:0!important}
+html[data-appearance=b] .people-grid .portrait-card{background:linear-gradient(135deg,#f0f0ed,#fafaf8)!important;position:relative!important}
+html[data-appearance=b] .people-grid .portrait-card:before,html[data-appearance=b] .people-grid .portrait-card:after{display:none!important}
+html[data-appearance=b] .people-grid .portrait-card .portrait-photo{position:absolute!important;left:50%!important;top:16px!important;transform:translateX(-50%)!important;width:150px!important;height:156px!important;background:#e9e9e5!important;border:1px solid #deded8!important;border-radius:4px!important}
+html[data-appearance=b] .people-grid .portrait-card .portrait-photo>div{inset:0!important;width:100%!important;height:100%!important;background-size:contain!important;background-position:center!important;transform:none!important}
+html[data-appearance=b] .people-grid .person-card-art .card-index{left:12px!important;right:auto!important;top:12px!important;background:#fafaf8e8!important;border:1px solid #e2dfd6!important;border-radius:5px!important;padding:4px 7px!important;font-size:9px!important;letter-spacing:0!important}
+html[data-appearance=b] .people-grid .portrait-card .portrait-photo-caption{left:12px!important;right:12px!important;top:181px!important;bottom:auto!important;text-align:center!important;line-height:1.5!important;font-size:10px!important;background:transparent!important;padding:0!important}
+html[data-appearance=b] .people-grid .portrait-card .portrait-credit{position:absolute!important;left:12px!important;right:12px!important;top:auto!important;bottom:7px!important;width:auto!important;min-height:24px!important;padding:2px 4px!important;text-align:center!important;justify-content:center!important;background:transparent!important;border:0!important;font-size:10px!important;line-height:1.6!important}
+html[data-appearance=b] .people-grid .portrait-card .portrait-mode{right:10px!important;top:42px!important;left:auto!important;font-size:9px!important}
+html[data-appearance=b] .ip-topic .ip-card-image{background:linear-gradient(135deg,#f0f0ed,#fafaf8)!important;border-color:#deded8!important}
+html[data-appearance=b] :is(.archive-name,.registry-card,.name-record) .registry-name{font-weight:700!important;color:#233d34!important}
+html[data-appearance=b] .name-record-title{font-weight:700!important}
+@media(max-width:650px){html[data-appearance=b] .people-grid .person-card-art{height:228px!important;max-height:228px!important;flex-basis:228px!important}html[data-appearance=b] .people-grid .portrait-card .portrait-photo{height:146px!important;width:142px!important}html[data-appearance=b] .people-grid .portrait-card .portrait-photo-caption{top:171px!important}}
+
+html[data-appearance=b] .people-grid .portrait-card .portrait-credit{transform:none!important;margin:0!important;display:flex!important;align-items:center!important;justify-content:center!important;max-width:none!important;text-indent:0!important}

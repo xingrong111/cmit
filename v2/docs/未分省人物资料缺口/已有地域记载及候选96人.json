@@ -1,0 +1,2430 @@
+[
+  {
+    "record": {
+      "id": "P0012",
+      "name": "罗伯特·肖特",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "境外籍贯",
+      "originText": "美国华盛顿州泰科玛（来源称某地人）",
+      "birthText": "1905",
+      "detailUrl": "",
+      "sourceId": "S02",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0012"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "来源记载的本人地域表述；按现行省级区划检索",
+      "birthplace": "美国华盛顿州 Steilacoom",
+      "regionEvidence": {
+        "title": "罗伯特.肖特（ROBERT SHORT） - 档案管理中心",
+        "url": "https://www.sipac.gov.cn/szdaglzx/yqfzrwls/202102/980bfce3ecc3488187ca283ad98e4b8c.shtml",
+        "excerpt": "美国华盛顿州泰科玛人",
+        "location": "正文介绍／信息栏；本次文本提取第38行（非原网页固定段号）"
+      },
+      "birthplaceSourceUrl": "https://archives.museumofflight.org/repositories/2/resources/31"
+    },
+    "clues": [
+      "originText:美国华盛顿州泰科玛（来源称某地人）",
+      "birthplace:美国华盛顿州 Steilacoom",
+      "新出生地区:美国华盛顿州 Steilacoom",
+      "新籍贯:美国华盛顿州泰科玛（来源称某地人）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0020",
+      "name": "李红光",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "境外籍贯",
+      "originText": "原籍朝鲜京畿道龙岩郡",
+      "birthText": "1910",
+      "detailUrl": "",
+      "sourceId": "S02",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0020"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "按原籍保留境外地域，不以在华定居地归省"
+    },
+    "clues": [
+      "originText:原籍朝鲜京畿道龙岩郡"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0059",
+      "name": "徐光",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1899",
+      "detailUrl": "",
+      "sourceId": "S15",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0059"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "朝鲜咸镜北道",
+      "birthplaceSourceUrl": "https://yanbian.zhongguolaoqu.com/index.php?a=show&c=index&catid=18&id=66329&m=content"
+    },
+    "clues": [
+      "birthplace:朝鲜咸镜北道",
+      "新出生地区:朝鲜咸镜北道"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0060",
+      "name": "金昌根",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1907",
+      "detailUrl": "",
+      "sourceId": "S15",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0060"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "朝鲜平安北道",
+      "birthplaceSourceUrl": "https://zhuanti.cnjiwang.com/dyxw/jltyjr/jltyjrhscc/202109/3456671.html"
+    },
+    "clues": [
+      "birthplace:朝鲜平安北道",
+      "新出生地区:朝鲜平安北道"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0062",
+      "name": "张蔚华",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1913",
+      "detailUrl": "",
+      "sourceId": "S15",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0062"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "ancestryText": "山东（来源明确为祖籍）"
+    },
+    "clues": [
+      "ancestryText:山东（来源明确为祖籍）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0064",
+      "name": "祁致中",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1913",
+      "detailUrl": "",
+      "sourceId": "S15",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0064"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "山东曹县曹家庄"
+    },
+    "clues": [
+      "birthplace:山东曹县曹家庄"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0066",
+      "name": "杨兴中",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1919",
+      "detailUrl": "",
+      "sourceId": "S15",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0066"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "新籍贯:山东省历城县（资料原文“历城人”）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0067",
+      "name": "李晓瑞",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "南皮县凤翔村人",
+      "birthText": "1918",
+      "detailUrl": "",
+      "sourceId": "S15",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0067"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "originText:南皮县凤翔村人"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0072",
+      "name": "罗伯特·亨利·莫尼",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1920",
+      "detailUrl": "",
+      "sourceId": "S15",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0072"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "美国密苏里州堪萨斯城（Kansas City, Missouri）",
+      "birthplaceSourceUrl": "https://valor.militarytimes.com/recipient/recipient-48897/"
+    },
+    "clues": [
+      "birthplace:美国密苏里州堪萨斯城（Kansas City, Missouri）",
+      "新出生地区:美国密苏里州堪萨斯城（Kansas City, Missouri）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0074",
+      "name": "曹基锡",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "境外籍贯",
+      "originText": "朝鲜咸镜北道钟城郡",
+      "birthText": "1904",
+      "detailUrl": "",
+      "sourceId": "S14",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0074"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "来源记载的本人地域表述；按现行省级区划检索",
+      "regionEvidence": {
+        "title": "《黄埔》2022年第4期：东北抗联中的黄埔师生",
+        "url": "http://www.huangpu.org.cn/hpzz/202204/202207/P020220714530671428964.pdf",
+        "excerpt": "朝鲜咸镜北道钟城郡人",
+        "location": "完整公开原刊；HTTPS证书校验失败，使用站方公开HTTP地址；35,334,870字节、EOF完整。PDF第21页／印刷页21，已对照图像。"
+      }
+    },
+    "clues": [
+      "originText:朝鲜咸镜北道钟城郡",
+      "新籍贯:朝鲜咸镜北道钟城郡"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0076",
+      "name": "郑桂林",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1889-12",
+      "detailUrl": "",
+      "sourceId": "S14",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0076"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "吉林双阳",
+      "ancestryText": "辽宁建昌杨树湾子乡郑家沟屯",
+      "birthplaceSourceUrl": "https://epaper.lnd.com.cn/lnrbepaper/pc/con/202509/03/content_298302.html"
+    },
+    "clues": [
+      "birthplace:吉林双阳",
+      "ancestryText:辽宁建昌杨树湾子乡郑家沟屯",
+      "新出生地区:吉林双阳",
+      "新祖籍:辽宁建昌杨树湾子乡郑家沟屯"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0078",
+      "name": "李向山",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1884",
+      "detailUrl": "",
+      "sourceId": "S14",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0078"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "新出生地区:辽宁省桓仁县铧尖子乡东堡村（传记原文）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0080",
+      "name": "成本华",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1914",
+      "detailUrl": "",
+      "sourceId": "S14",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0080"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "新出生地区:安徽和县"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0084",
+      "name": "黄金容",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1902",
+      "detailUrl": "",
+      "sourceId": "S14",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0084"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "儋州市光村镇泊潮社区（报道上下文所指小渔村）",
+      "birthplaceSourceUrl": "http://www.hnr.cn/news/xwzt/jd/ly/201606/t20160627_2554728.html"
+    },
+    "clues": [
+      "birthplace:儋州市光村镇泊潮社区（报道上下文所指小渔村）",
+      "新出生地区:儋州市光村镇泊潮社区（报道上下文所指小渔村）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0085",
+      "name": "王禾",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1929",
+      "detailUrl": "",
+      "sourceId": "S14",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0085"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "河北省保定市涞源县上庄村（报道原文）",
+      "birthplaceSourceUrl": "https://www.cnr.cn/hebei/ygjl/20260404/t20260404_527573910.shtml"
+    },
+    "clues": [
+      "birthplace:河北省保定市涞源县上庄村（报道原文）",
+      "新出生地区:河北省保定市涞源县上庄村（报道原文）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0089",
+      "name": "李爱锐",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1902",
+      "detailUrl": "",
+      "sourceId": "S14",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0089"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "天津"
+    },
+    "clues": [
+      "birthplace:天津"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0099",
+      "name": "张奎",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1899",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0099"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "山东省掖县（今山东省莱州市）",
+      "birthplaceSourceUrl": "https://www.krzzjn.com/show-2343-111367.html"
+    },
+    "clues": [
+      "birthplace:山东省掖县（今山东省莱州市）",
+      "新出生地区:山东省掖县（今山东省莱州市）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0100",
+      "name": "王俭",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1914",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0100"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "新出生地区:黑龙江省方正县二吉利村（资料原文）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0104",
+      "name": "杜吉臣",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1903",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0104"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "吉林省西安县",
+      "birthplaceSourceUrl": "https://www.krzzjn.com/show-2343-111374.html"
+    },
+    "clues": [
+      "birthplace:吉林省西安县",
+      "新出生地区:吉林省西安县"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0107",
+      "name": "金根",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1903",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0107"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "朝鲜咸镜北道庆兴郡雄基邑",
+      "birthplaceSourceUrl": "https://www.krzzjn.com/show-2343-111387.html"
+    },
+    "clues": [
+      "birthplace:朝鲜咸镜北道庆兴郡雄基邑",
+      "新出生地区:朝鲜咸镜北道庆兴郡雄基邑"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0111",
+      "name": "栾天林",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1899",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0111"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "新出生地区:辽宁省北票市泉巨永乡栾家窑（资料原文）",
+      "新籍贯:辽宁省北票市泉巨永乡栾家窑（资料原文“老家”）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0112",
+      "name": "隋相生",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1880",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0112"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "辽宁省桓仁县（正文细化为海清伙洛村）",
+      "birthplaceSourceUrl": "https://www.krzzjn.com/show-2343-111395.html"
+    },
+    "clues": [
+      "birthplace:辽宁省桓仁县（正文细化为海清伙洛村）",
+      "新出生地区:辽宁省桓仁县（正文细化为海清伙洛村）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0134",
+      "name": "刘耀庭",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1894",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0134"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "河北省宝坻县（报道原作“宝邸县”，按规范县名校正）",
+      "birthplaceSourceUrl": "https://www.hrbtv.net/folder477/2025-08-20/1071341.html"
+    },
+    "clues": [
+      "birthplace:河北省宝坻县（报道原作“宝邸县”，按规范县名校正）",
+      "新出生地区:河北省宝坻县（报道原作“宝邸县”，按规范县名校正）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0137",
+      "name": "吴起兴",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1917",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0137"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "新籍贯:江西抚州黎川"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0138",
+      "name": "邱金声",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "龙岩县曹溪乡月山村人",
+      "birthText": "1912",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0138"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "originText:龙岩县曹溪乡月山村人"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0141",
+      "name": "陈芳钧",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1906",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0141"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "黑龙江省双城县正黄旗五屯",
+      "birthplaceSourceUrl": "https://www.krzzjn.com/show-2343-111486.html"
+    },
+    "clues": [
+      "birthplace:黑龙江省双城县正黄旗五屯",
+      "新出生地区:黑龙江省双城县正黄旗五屯"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0142",
+      "name": "邵存诚",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1902",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0142"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "新籍贯:江苏省宜兴县（两来源均列江苏宜兴）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0144",
+      "name": "罗锦文",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1914",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0144"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "洛南县三条岭蟒岭沟",
+      "birthplaceSourceUrl": "https://www.krzzjn.com/show-2343-111490.html"
+    },
+    "clues": [
+      "birthplace:洛南县三条岭蟒岭沟",
+      "新出生地区:洛南县三条岭蟒岭沟"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0146",
+      "name": "耿殿君",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1903-03",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0146"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "ancestryText": "山东（祖籍）",
+      "birthplace": "山东掖县"
+    },
+    "clues": [
+      "birthplace:山东掖县",
+      "ancestryText:山东（祖籍）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0148",
+      "name": "崔哲宽",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "境外籍贯",
+      "originText": "朝鲜（原籍）",
+      "birthText": "1915",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0148"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "来源记载的本人地域表述；按现行省级区划检索",
+      "birthplace": "延吉市朝阳川镇凤林村",
+      "regionEvidence": {
+        "title": "崔哲宽 - 第三批著名抗日英烈、英雄群体 - 抗日战争纪念网",
+        "url": "https://www.krzzjn.com/show-2343-111503.html",
+        "excerpt": "原籍朝鲜",
+        "location": "正文介绍／信息栏；本次文本提取第1241行（非原网页固定段号）"
+      },
+      "birthplaceSourceUrl": "https://www.yanjinews.com/html/news/yanjinews/2021/0507/154432.html"
+    },
+    "clues": [
+      "originText:朝鲜（原籍）",
+      "birthplace:延吉市朝阳川镇凤林村",
+      "新出生地区:延吉市朝阳川镇凤林村",
+      "新籍贯:朝鲜（原籍）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0155",
+      "name": "赵敬夫",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1916",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0155"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "黑龙江桦川县悦来镇"
+    },
+    "clues": [
+      "birthplace:黑龙江桦川县悦来镇"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0156",
+      "name": "郗晓峰",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1906",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0156"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "新籍贯:陕西省蓝田县（资料原文）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0160",
+      "name": "郭震",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1915",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0160"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:山东省宁津县大柳乡（今大柳镇）大郭庄（今大郭村）人。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0162",
+      "name": "宿之杰",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1905",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0162"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:甘肃省临洮县辛店镇（原文“临洮县辛店镇人”）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0163",
+      "name": "蓝和春",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "龙岩武平大禾乡人",
+      "birthText": "1901",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0163"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthConflict": true
+    },
+    "clues": [
+      "originText:龙岩武平大禾乡人"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0164",
+      "name": "蒲云照",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1919",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0164"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:四川省（待复核）。",
+      "籍贯:四川省（待复核"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0165",
+      "name": "漆承宏",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1908",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0165"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:安徽省金寨县（原文“安徽金寨人”）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0169",
+      "name": "白福厚",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1913",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0169"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:辽宁省辽阳市小堡黄家屯。",
+      "籍贯:辽宁省辽阳市小堡黄家屯人（原文未使用“籍贯”字样）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0171",
+      "name": "孙占彪",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1920",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0171"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:江苏省南通县余西乡五福桥（原文作“南通县余西乡五福桥人”）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0174",
+      "name": "李光汉",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1907",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0174"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:山西河津／万荣（冲突待核）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0179",
+      "name": "周苏平",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1909",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0179"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:江苏省溧阳县马垫乡张巷里。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0182",
+      "name": "蒋永孚",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1916",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0182"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:湖北省黄梅县黄梅镇（网页原文“出生在……黄梅镇”）。",
+      "籍贯:湖北省黄梅县黄梅镇（待复核）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0184",
+      "name": "蔡戎前",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1914",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0184"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:山东省乳山（原文“山东省乳山人”）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0185",
+      "name": "颜景伦",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1908",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0185"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:山东省苍山县后芦柞村（今行政区划待复核"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0188",
+      "name": "王鼎臣",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1910",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0188"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:山东省掖县（线索，待核）。",
+      "附件有地域或境外身份线索"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0189",
+      "name": "石鼎",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1901",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0189"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:朝鲜庆尚南道密阳郡（线索，待核）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0190",
+      "name": "白凤翔",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1897",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0190"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:热河围场（今河北省承德市围场一带",
+      "籍贯:河北省沧州（原文“河北沧州人”）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0191",
+      "name": "刘星南",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1887",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0191"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:山东省单县单城镇东关街（原文“单城镇东关街人”）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0192",
+      "name": "孙立民",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1914",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0192"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:山东省冠县崇文街道唐寺村（历史表述“冠县唐寺村人”）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0193",
+      "name": "李曾志",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1894",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0193"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:河南省郾城县李湾村冯湾庄（今属漯河市相关行政区，待核）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0194",
+      "name": "杨锡芳",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "牟平县东凤凰崖村（今属乳山市崖子镇）人",
+      "birthText": "1917",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0194"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "originText:牟平县东凤凰崖村（今属乳山市崖子镇）人"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0199",
+      "name": "金雯",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1908",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0199"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:浙江省永嘉县（原名册“浙江永嘉”）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0200",
+      "name": "郇振民",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1917",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0200"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:山东省博山县域城镇西域城村（今行政区待复核）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0205",
+      "name": "梅华樊",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "六安县（报道转述部队档案与墓碑登记）",
+      "birthText": "1909",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0205"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthConflict": true
+    },
+    "clues": [
+      "originText:六安县（报道转述部队档案与墓碑登记）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0208",
+      "name": "彭为工",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1923",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0208"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:四川省成都市（报道作“四川成都人”）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0209",
+      "name": "储蓄谋",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "岳西县莲云乡平岗村人",
+      "birthText": "1905",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0209"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "originText:岳西县莲云乡平岗村人"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0213",
+      "name": "刘一鸿",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1906",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0213"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:安徽省当涂县杜塘乡坝头村（今马鞍山市向山镇落星村，原文“人”）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0216",
+      "name": "牟伦扬",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1919",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0216"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:湖北省利川县汪营镇（原文“出生在”）",
+      "籍贯:湖北省利川汪营镇。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0217",
+      "name": "吴亚屋",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1919",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0217"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:山东省茌平县北关（地方志另作茌平镇北关村）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0218",
+      "name": "陈宗胜",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1911",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0218"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:湖北省礼山县/大悟县（仅非权威线索，待核）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0221",
+      "name": "胡式禹",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1894",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0221"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:河北省唐县（线索，待核）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0223",
+      "name": "陶朗卿",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1911",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0223"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:湖北省新洲县徐古公社雷树大队雷陶树湾（历史行政名称）",
+      "籍贯:同地（待官方方志复核）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0224",
+      "name": "常隆基",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1921",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0224"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:辽宁省西丰县成平乡凤楼村苔碧屯",
+      "籍贯:辽宁省西丰县成平乡凤楼村苔碧屯。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0225",
+      "name": "曾飞",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1914",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0225"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:江西省兴国县。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0226",
+      "name": "曾福",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1921",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0226"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:新界沙头角三椏（线索，待核）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0227",
+      "name": "潘玉凯",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1916",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0227"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:山东省乐陵市黄夹镇潘寨村（线索，待核）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0228",
+      "name": "薛汉三",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1915",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0228"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:山东省乐陵县东关街",
+      "籍贯:山东省乐陵县东关。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0229",
+      "name": "魏双贵",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1925",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0229"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:河南省内黄县亳城乡魏庄村（待核）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0232",
+      "name": "朱学勉",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1912",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0232"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:浙江省宁海县城",
+      "籍贯:浙江省宁海县。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0233",
+      "name": "刘秀东",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1911",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0233"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:山东省莱州市虎头崖镇趴埠刘家村（历史掖县，待核）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0234",
+      "name": "观杰",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1921",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0234"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "浙江上虞县章镇任叶村"
+    },
+    "clues": [
+      "birthplace:浙江上虞县章镇任叶村",
+      "出生地区:浙江省上虞县章镇任叶村",
+      "籍贯:浙江省上虞县章镇任叶村。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0235",
+      "name": "李忍涛",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1904",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0235"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:云南省鹤庆县云鹤镇（待核）",
+      "籍贯:云南省鹤庆县。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0239",
+      "name": "赵东鲁",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1919",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0239"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:山西省浮山县。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0242",
+      "name": "彭仕复",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1901",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0242"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:四川省蒲江县西南镇金花坪（今光明乡金花村）",
+      "籍贯:四川省蒲江县。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0243",
+      "name": "曾佛新",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1921",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0243"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:香港九龙牛头角乡鸡寮村（待核）",
+      "籍贯:香港新界（墓碑表述，待核）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0244",
+      "name": "鲍夫",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1917",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0244"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:安徽省芜湖市（原文“芜湖人”）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0245",
+      "name": "叶发青",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1891",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0245"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "广东曲江县东厢乡翻溪桥石安村（现属韶关浈江区东联村）"
+    },
+    "clues": [
+      "birthplace:广东曲江县东厢乡翻溪桥石安村（现属韶关浈江区东联村）",
+      "出生地区:广东省曲江县东厢翻溪桥石安村（今韶关市浈江区东联村）",
+      "籍贯:同地。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0246",
+      "name": "权永碧",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1909",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0246"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:朝鲜咸镜北道镜城郡（百科线索，待核）"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0249",
+      "name": "李东杰",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1906",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0249"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:黑龙江省（线索，待核）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0251",
+      "name": "茆健群",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1916",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0251"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "江苏常熟浒浦镇"
+    },
+    "clues": [
+      "birthplace:江苏常熟浒浦镇",
+      "出生地区:江苏省常熟市浒浦镇",
+      "籍贯:江苏省常熟市浒浦镇。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0253",
+      "name": "殷德林",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1919",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0253"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:江西省（原文“原籍江西”）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0254",
+      "name": "赖章",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "坪山乡马安岭村",
+      "birthText": "1920",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0254"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "originText:坪山乡马安岭村"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0259",
+      "name": "吴继光",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "安徽省盱眙县三界镇（现属嘉山县）人",
+      "birthText": "1903",
+      "detailUrl": "https://sy.mva.gov.cn/sy/lsjnrjnhdsy/201905/t20190517_29079.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0259"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "originText:安徽省盱眙县三界镇（现属嘉山县）人"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0263",
+      "name": "张诚德",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1880",
+      "detailUrl": "https://sy.mva.gov.cn/sy/lsjnrjnhdsy/201905/t20190517_29079.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0263"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "附件有地域或境外身份线索"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0286",
+      "name": "黄梅兴",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1897",
+      "detailUrl": "https://sy.mva.gov.cn/sy/lsjnrjnhdsy/201905/t20190517_29079.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0286"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:广东省梅州市平远县东石镇坳上村（原文作“广东梅州平远县东石镇坳上村人”）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0289",
+      "name": "马尔克·尼古拉耶维奇·马尔琴科夫",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1914",
+      "detailUrl": "https://sy.mva.gov.cn/sy/lsjnrjnhdsy/201905/t20190517_29079.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0289"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "附件有地域或境外身份线索"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0291",
+      "name": "王平陆",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1901",
+      "detailUrl": "https://sy.mva.gov.cn/sy/lsjnrjnhdsy/201905/t20190517_29079.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0291"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:河北省迁安县上梨树峪村",
+      "籍贯:河北省迁安县（与出生地原行政区一致"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0293",
+      "name": "王祯祥",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1900",
+      "detailUrl": "https://sy.mva.gov.cn/sy/lsjnrjnhdsy/201905/t20190517_29079.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0293"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:湖南省醴陵市（仅就同名、同一黄埔一期和武汉会战叙述对象的辅助来源记录，未作最终同一性裁定）。",
+      "籍贯:湖南醴陵（抗日战争纪念网“黄埔军校同学录”检索结果亦列“王祯祥｜湖南醴陵”，但需查询原始学籍页）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0296",
+      "name": "邓佐虞",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1898",
+      "detailUrl": "https://sy.mva.gov.cn/sy/lsjnrjnhdsy/201905/t20190517_29079.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0296"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "出生地区:河北省高阳县。",
+      "籍贯:河北省高阳县（同一来源直接给出出生地，原记录未另见祖籍异说）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0299",
+      "name": "刘连科",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1917",
+      "detailUrl": "https://sy.mva.gov.cn/sy/lsjnrjnhdsy/201905/t20190517_29079.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0299"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "籍贯:河北省滦县（今河北省唐山市滦州市），为辅助来源所记。"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0302",
+      "name": "刘曙华",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1912",
+      "detailUrl": "https://sy.mva.gov.cn/sy/lsjnrjnhdsy/201905/t20190517_29079.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0302"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthplace": "山东济南普利门外"
+    },
+    "clues": [
+      "birthplace:山东济南普利门外",
+      "出生地区:山东省济南市普利门外。",
+      "籍贯:山东省济南市（出生地与籍贯未见异说）。"
+    ]
+  },
+  {
+    "record": {
+      "id": "D-P004",
+      "name": "宋振中",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "地区待核",
+      "originText": "",
+      "birthText": "",
+      "detailUrl": "https://jsnews.jschina.com.cn/nj/a/201805/t20180529_1640465.shtml",
+      "sourceId": "",
+      "memberships": [
+        "详细档案",
+        "IP专项"
+      ],
+      "rawIds": [],
+      "reviewStatus": "pending",
+      "regionBasis": "籍贯待核；详细档案中的出生地不自动改作籍贯",
+      "readingId": "P004",
+      "birthplace": "江苏党史网记生于西安，新华社原稿记生于邳县；出生省份存在直接来源差异，保留待核",
+      "ipGroup": "SZZ"
+    },
+    "clues": [
+      "birthplace:江苏党史网记生于西安，新华社原稿记生于邳县；出生省份存在直接来源差异，保留待核"
+    ]
+  },
+  {
+    "record": {
+      "id": "D-P013",
+      "name": "钱振标",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "地区待核",
+      "originText": "",
+      "birthText": "",
+      "detailUrl": "https://www.jiangyin.gov.cn/doc/2018/08/29/956072.shtml",
+      "sourceId": "",
+      "memberships": [
+        "详细档案"
+      ],
+      "rawIds": [],
+      "reviewStatus": "pending",
+      "regionBasis": "籍贯待核；详细档案中的出生地不自动改作籍贯",
+      "readingId": "P013",
+      "birthplace": "江阴政府正文明确出生江阴西郊能家村；P013-F-004"
+    },
+    "clues": [
+      "birthplace:江阴政府正文明确出生江阴西郊能家村；P013-F-004"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0021",
+      "name": "王德泰",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1907-05-23",
+      "detailUrl": "",
+      "sourceId": "S02",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0021"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "历史检索记录出生地：奉天省盖平县第四区詹家村后王家庄（今为辽宁省营口市博洛铺镇詹家村）"
+    ],
+    "evidenceFile": "output/256人重新核查/逐人核查记录.json",
+    "sourceRefs": [
+      "N05"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0082",
+      "name": "张庚良",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1908",
+      "detailUrl": "",
+      "sourceId": "S14",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0082"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）",
+      "birthConflict": true
+    },
+    "clues": [
+      "历史检索记录出生地：陕西乾县铁佛乡太平岭村"
+    ],
+    "evidenceFile": "output/256人重新核查/逐人核查记录.json",
+    "sourceRefs": [
+      "N33"
+    ]
+  },
+  {
+    "record": {
+      "id": "P0172",
+      "name": "李正华",
+      "aliases": [],
+      "provinceCode": "",
+      "provinceName": "省份待核验",
+      "originText": "",
+      "birthText": "1905-02",
+      "detailUrl": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+      "sourceId": "S16",
+      "memberships": [
+        "全国名单"
+      ],
+      "rawIds": [
+        "P0172"
+      ],
+      "reviewStatus": "pending",
+      "regionBasis": "资料包所记籍贯（待复核）"
+    },
+    "clues": [
+      "历史检索记录出生地：泰安市马庄乡漕河涯村"
+    ],
+    "evidenceFile": "output/256人重新核查/逐人核查记录.json",
+    "sourceRefs": [
+      "N38"
+    ]
+  }
+]

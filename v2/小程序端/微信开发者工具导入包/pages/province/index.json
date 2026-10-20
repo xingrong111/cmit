@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "分省人物名单",
+  "usingComponents": {
+    "app-shell": "../../components/AppShell",
+    "state-panel": "../../components/StatePanel"
+  }
+}

@@ -1,0 +1,2887 @@
+[
+  {
+    "id": "P0015",
+    "name": "孟杰民",
+    "fields": {
+      "originText": "吉林省磐石县",
+      "provinceCode": "220000",
+      "provinceName": "吉林省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A2",
+        "title": "《孟杰民》",
+        "publisher": "杨靖宇烈士陵园暨东北抗日联军纪念馆；作者未显示",
+        "publishedAt": "未显示",
+        "url": "https://yjylsly.org.cn/news/165.html",
+        "finalUrl": "同原始URL，未发生跳转",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"孟杰民（1912—1933），吉林省磐石县人，中国工农红军第32军南满游击队总队长兼第1大队大队长。\"",
+        "position": "正文开头人物概况段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0020",
+    "name": "李红光",
+    "fields": {
+      "originText": "原籍朝鲜京畿道龙岩郡",
+      "provinceCode": "",
+      "provinceName": "境外籍贯",
+      "regionBasis": "按原籍保留境外地域，不以在华定居地归省"
+    },
+    "notes": [
+      "本轮另有地域补充线索，尚不足以覆盖籍贯；详见资料更新报告。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A3",
+        "title": "《抗日战争中的中共党员【10】》",
+        "publisher": "中国共产党新闻网党史频道；新华社供稿",
+        "publishedAt": "2015-07-13",
+        "url": "http://dangshi.people.com.cn/n/2015/0713/c85037-27293315-10.html",
+        "finalUrl": "正文显示站点跳转至 http://cpc.people.com.cn/ ，正文仍为该人物条目",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"李红光，1910年出生，朝鲜族人，原籍朝鲜京畿道龙岩郡，1926年定居在吉林省伊通县流沙嘴子屯。\"",
+        "position": "正文首段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0021",
+    "name": "王德泰",
+    "fields": {},
+    "notes": [
+      "本轮另有地域补充线索，尚不足以覆盖籍贯；详见资料更新报告。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A4",
+        "title": "《吉林省人民政府历史人文》；《中共抗战英烈：王德泰》；《英雄烈士谱|王德泰：威震“东满”的虎威将军》",
+        "publisher": "吉林省人民政府；中国共产党新闻网；中华人民共和国国防部/新华社",
+        "publishedAt": "未显示；2014-03-25；2018-10-14",
+        "url": "https://jl.gov.cn/shengqing/jlgk/lsrw/；http://dangshi.people.com.cn/n/2014/0325/c85037-24729636.html；http://www.mod.gov.cn/2018gfbztlbmb/2018-10/14/content_4826672.htm",
+        "finalUrl": "同原始URL",
+        "accessedAt": "2026-10-16",
+        "excerpt": "吉林省人民政府：‘王德泰 辽宁营口人。’人民网：‘祖籍山东省莱州府，出生在今辽宁省营口县博铺镇詹家村。’国防部：‘1907年出生于奉天省盖平县（今辽宁省营口市大石桥市）’。",
+        "position": "吉林省人民政府历史人文人物条目；人民网正文第2段；国防部正文人物生平段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0024",
+    "name": "李学忠",
+    "fields": {
+      "originText": "山东掖县（今莱州市）",
+      "provinceCode": "370000",
+      "provinceName": "山东省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A5",
+        "title": "《李学忠》；《英雄烈士谱|李学忠：烈火淬炼真男儿》；《中共抗战英烈：李学忠》",
+        "publisher": "杨靖宇烈士陵园暨东北抗日联军纪念馆；中华人民共和国国防部/新华社；中国共产党新闻网",
+        "publishedAt": "未显示；2018-10-09；2014-03-25",
+        "url": "https://yjylsly.org.cn/news/156.html；http://www.mod.gov.cn/2018gfbztlbmb/2018-10/09/content_4826280.htm；http://dangshi.people.com.cn/n/2014/0325/c85037-24729590.html",
+        "finalUrl": "同原始URL",
+        "accessedAt": "2026-10-16",
+        "excerpt": "杨靖宇烈士陵园暨东北抗日联军纪念馆：‘李学忠（1910-1936），山东掖县(今莱州市)人。’国防部/新华社：‘李学忠，又名李宗学，1910年出生在山东掖县。’",
+        "position": "纪念馆人物标题与首段；国防部/新华社正文第1段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0025",
+    "name": "赵一曼",
+    "fields": {
+      "originText": "四川省宜宾县白花镇",
+      "provinceCode": "510000",
+      "provinceName": "四川省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A6",
+        "title": "《〈红色印记〉第29集：迟到的绝笔信》",
+        "publisher": "共产党员网；来源中央广播电视总台中国之声",
+        "publishedAt": "2021-04-27 07:08",
+        "url": "https://www.12371.cn/2021/04/27/VIDE1619477641480257.shtml",
+        "finalUrl": "同原始URL，未发生跳转",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"图为赵一曼故居，赵一曼（1905年10月—1936年8月），四川省宜宾县白花镇人。\"",
+        "position": "视频正文中段，赵一曼故居图片说明及人物简介处",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0041",
+    "name": "夏云杰",
+    "fields": {
+      "originText": "山东沂水县",
+      "provinceCode": "370000",
+      "provinceName": "山东省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A7",
+        "title": "《夏云杰生平简介》",
+        "publisher": "杨靖宇烈士陵园暨东北抗日联军纪念馆；作者未显示",
+        "publishedAt": "未显示",
+        "url": "https://yjylsly.org.cn/news/185.html",
+        "finalUrl": "同原始URL，未发生跳转",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"夏云杰（1903年—1936年），又名夏云阶，山东沂水人。\"",
+        "position": "标题下人物概况首句",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0062",
+    "name": "张蔚华",
+    "fields": {
+      "ancestryText": "山东（来源明确为祖籍）"
+    },
+    "notes": [
+      "本轮另有地域补充线索，尚不足以覆盖籍贯；详见资料更新报告。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A8",
+        "title": "《关于进一步做好对张蔚华烈士宣传工作的几点思考》",
+        "publisher": "吉林省地方志编纂委员会；作者未显示",
+        "publishedAt": "2008-10-27 17:28",
+        "url": "http://dfz.jl.gov.cn/fzlt/200810/t20081027_5218783.html",
+        "finalUrl": "正文规范化显示为 https://dfz.jl.gov.cn/fzlt/200810/t20081027_5218783.html",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"张蔚华祖籍山东\"；\"张蔚华生在吉林，学在吉林，生活和战斗在吉林，是我们'家乡人'。\"",
+        "position": "原文\"我思考的第二个问题\"部分",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0064",
+    "name": "祁致中",
+    "fields": {
+      "birthplace": "山东曹县曹家庄"
+    },
+    "notes": [
+      "本轮另有地域补充线索，尚不足以覆盖籍贯；详见资料更新报告。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A9",
+        "title": "《中共抗战英烈：祁致中》",
+        "publisher": "中国共产党新闻网党史频道；中国人民抗日战争纪念馆资料提供；作者未显示",
+        "publishedAt": "2014-03-25 11:10",
+        "url": "http://dangshi.people.com.cn/n/2014/0325/c85037-24730375.html",
+        "finalUrl": "正文显示站点跳转至 http://cpc.people.com.cn/ ，正文仍为原人物页",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"祁致中（1913—1939），东北抗日联军第十一军军长。原名祁宝堂，别号明山。1913年生于山东省曹县曹家庄。\"",
+        "position": "正文人物概况段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0065",
+    "name": "黄文杰",
+    "fields": {
+      "originText": "广东兴宁",
+      "provinceCode": "440000",
+      "provinceName": "广东省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A10",
+        "title": "《先辈足迹闪光励后人》；《黄文杰：无限忠诚的战士》",
+        "publisher": "梅州日报；人民日报／新华社供稿",
+        "publishedAt": "2001-07-01；2025-07-17",
+        "url": "http://mzrb.meizhou.cn/html/2001-07/01/content_253363.htm；http://cpc.people.com.cn/n1/2025/0717/c443712-40523746.html",
+        "finalUrl": "同原始URL；人民日报版面页可访问：http://paper.people.com.cn/rmrb/pc/content/202507/17/content_30088282.html",
+        "accessedAt": "2026-10-16",
+        "excerpt": "梅州日报：‘黄文杰（1902—1939）又名祥庆，广东兴宁人’。人民日报/新华社：‘1902年10月6日，黄文杰出生于广东省兴宁县大坪区（今广东省兴宁市大坪镇）’。",
+        "position": "梅州日报人物段；人民日报正文人物早年经历段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0082",
+    "name": "张庚良",
+    "fields": {
+      "birthConflict": true
+    },
+    "notes": [
+      "本轮另有地域补充线索，尚不足以覆盖籍贯；详见资料更新报告。",
+      "出生日期存在另载，保留原值，尚未定论。名录丙1908；陕西师范大学历史文化名城页1905。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A11",
+        "title": "《抗日烈士—张庚良》",
+        "publisher": "乾县人民政府；作者刘保刚",
+        "publishedAt": "2015-08-31 20:07:20",
+        "url": "http://www.snqianxian.gov.cn/mlqx/jrqx/qxmr/201508/t20150831_1257741.html",
+        "finalUrl": "同原始URL，未发生跳转",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"张庚良(1909-1938)原名张瑞林……1909年3月出生在陕西乾县阳峪镇太平岭村。\"；另陕西师范大学历史文化名城页：\"张庚良(1909—1938)，又名靖夷，乾县铁佛乡太平岭村人。\"",
+        "position": "乾县政府正文首段；陕西师范大学页面人物概况首段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      },
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 25. P0082 张庚良",
+        "urls": [
+          "https://lishiwenhua.snnu.edu.cn/info/1756/10829.htm"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0089",
+    "name": "李爱锐",
+    "fields": {
+      "birthplace": "天津"
+    },
+    "notes": [
+      "本轮另有地域补充线索，尚不足以覆盖籍贯；详见资料更新报告。",
+      "英国籍、苏格兰背景不作为中国籍贯；不以父母背景填祖籍。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A12",
+        "title": "Eric Liddell (1902–1945)；About Eric Liddell；通讯｜“苏格兰飞人”的抗战情缘",
+        "publisher": "爱丁堡大学；The Eric Liddell Community；新华网（新华社）",
+        "publishedAt": "网页现行页面；2025-09-09（新华网）",
+        "url": "https://www.ed.ac.uk/alumni/services/notable-alumni/alumni-in-history/eric-liddell；https://www.ericliddell.org/biography/；http://www.news.cn/20250909/aafab190eb294d4c952071df4841c22f/c.html",
+        "finalUrl": "同原始URL",
+        "accessedAt": "2026-10-16",
+        "excerpt": "University of Edinburgh: ‘born ... in Tientsin (Tianjin), North China’ and ‘Scottish athlete’; Eric Liddell Community: ‘an inspirational Scotsman’; 新华网：‘出生于中国天津，父母都是苏格兰传教士。’",
+        "position": "University of Edinburgh页面Eric Liddell条目；Eric Liddell Community Biography；新华网正文首段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0097",
+    "name": "高兴亚",
+    "fields": {
+      "originText": "辽宁省法库县大六家子村",
+      "provinceCode": "210000",
+      "provinceName": "辽宁省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A13",
+        "title": "《高兴亚烈士传略》",
+        "publisher": "辽河记忆（中国军网同名页转载）",
+        "publishedAt": "2024-08-30",
+        "url": "http://www.81.cn/yljnt_208627/ylml/G/16397118.html",
+        "finalUrl": "同原始URL",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"高兴亚，字震东，别号高桂枝，中医世家，汉族，生于１８９８年，辽宁省沈阳市法库县柏家沟镇大六家子村人。\"",
+        "position": "正文首段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0098",
+    "name": "蔺秀义",
+    "fields": {
+      "originText": "吉林省柳河县大泉眼村",
+      "provinceCode": "220000",
+      "provinceName": "吉林省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A14",
+        "title": "《吉林英雄赞·百名英烈事迹展播之五十三|蔺秀义》",
+        "publisher": "吉林省退役军人事务厅",
+        "publishedAt": "2021-09-13",
+        "url": "https://tyjrt.jl.gov.cn/ztzl/qxldkar/zjyxls/202109/t20210913_8215699.html",
+        "finalUrl": "同原始URL",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"蔺秀义是土生土长柳河县大泉眼村农民。\"",
+        "position": "正文第4段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0140",
+    "name": "张谞行",
+    "fields": {
+      "originText": "杭县人（来源原文）",
+      "provinceCode": "330000",
+      "provinceName": "浙江省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核",
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录乙1904；人物页标题1903—1939，正文1903年1月。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A15",
+        "title": "《浙江历史名人辞典 张谞行》",
+        "publisher": "浙江档案数据库",
+        "publishedAt": "2012-09-12",
+        "url": "https://zjdy.zjdafw.gov.cn/art/2012/9/12/art_25_14891.html",
+        "finalUrl": "同原始URL",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"【籍贯】：杭县人\"",
+        "position": "人物信息表\"籍贯\"字段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      },
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 27. P0140 张谞行",
+        "urls": [
+          "https://www.1937china.com/kzgdata/html/20190829/156706175320863112293.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0146",
+    "name": "耿殿君",
+    "fields": {
+      "ancestryText": "山东（祖籍）",
+      "birthplace": "山东掖县"
+    },
+    "notes": [
+      "本轮另有地域补充线索，尚不足以覆盖籍贯；详见资料更新报告。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A16",
+        "title": "《耿殿君》；《第32期：大庆市抗日战争时期抗联烈士耿殿君使用过的围巾》；《耿殿君》",
+        "publisher": "克东县人民政府；黑龙江省文化和旅游厅；百科类人物资料",
+        "publishedAt": "2016-06-01；2025-09；未显示",
+        "url": "https://www.kedong.gov.cn/kedong/c100872/201606/c02_e8ad8f2a8af9496d8ac80805672a6674.shtml；https://wlt.hlj.gov.cn/wlt/c116709/202509/c00_31875833.shtml；https://m.baike.com/wiki/%E8%80%BF%E6%AE%BF%E5%90%9B/2398933",
+        "finalUrl": "同原始URL",
+        "accessedAt": "2026-10-16",
+        "excerpt": "克东县人民政府：‘祖籍山东省。’百科资料：‘耿殿君，出生于1903年，原籍山东掖县（今山东省莱州市）。’黑龙江省文化和旅游厅：‘1903年3月出生于山东省掖县。’",
+        "position": "克东县政府人物条目；百科人物事迹段；黑龙江省文化和旅游厅正文人物简介段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0155",
+    "name": "赵敬夫",
+    "fields": {
+      "birthplace": "黑龙江桦川县悦来镇"
+    },
+    "notes": [
+      "本轮另有地域补充线索，尚不足以覆盖籍贯；详见资料更新报告。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A17",
+        "title": "《中共抗战英烈：赵敬夫》；东北抗联相关人物资料",
+        "publisher": "中国共产党新闻网／人民网；资料提供：中国人民抗日战争纪念馆；相关资料作者未显示",
+        "publishedAt": "2014-03-25；未显示",
+        "url": "http://dangshi.people.com.cn/n/2014/0325/c85037-24731213.html；https://c.m.163.com/news/a/KIMUPQ1K0556660Y.html",
+        "finalUrl": "同原始URL；相关资料页面可访问",
+        "accessedAt": "2026-10-16",
+        "excerpt": "人民网：‘原名叫白长岭，出生于黑龙江省桦川县悦来镇’。相关抗联资料称：‘赵敬夫……桦川人’。",
+        "position": "人民网正文第2段；相关抗联人物叙述段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0167",
+    "name": "方和平",
+    "fields": {
+      "originText": "安徽寿县瓦埠镇",
+      "provinceCode": "340000",
+      "provinceName": "安徽省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核",
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录乙1906；淮南市政府转载淮南日报1905。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A18",
+        "title": "《方和平：瓦埠湖畔的抗日游击大队长》；《瓦埠镇简介》",
+        "publisher": "淮南市人民政府／淮南日报；寿县人民政府",
+        "publishedAt": "2025-07-23；未显示",
+        "url": "https://www.huainan.gov.cn/zwgk/xqdt/1260689890.html；https://www.shouxian.gov.cn/public/118322875/1260045753.html",
+        "finalUrl": "同原始URL",
+        "accessedAt": "2026-10-16",
+        "excerpt": "寿县人民政府：‘革命烈士方和平’前称为‘瓦埠籍革命烈士方和平’。相关人物资料概述为‘方和平（1906—1941年）安徽寿县人’；淮南市政府正文记载其1905年出生于寿县瓦埠镇。",
+        "position": "寿县政府瓦埠镇简介革命烈士段；相关人物资料人物标题；淮南市政府正文首段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      },
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 29. P0167 方和平",
+        "urls": [
+          "https://www.huainan.gov.cn/zwgk/xqdt/1260689890.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0168",
+    "name": "方瑛",
+    "fields": {
+      "originText": "安徽池州",
+      "provinceCode": "340000",
+      "provinceName": "安徽省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A19",
+        "title": "《烽火岁月·江淮英烈——追忆抗战精神》",
+        "publisher": "安徽省退役军人事务厅",
+        "publishedAt": "2020-09-14",
+        "url": "https://dva.ah.gov.cn/content/article/8454259",
+        "finalUrl": "同原始URL",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"方瑛，男，1904年生，安徽池州人。\"",
+        "position": "\"方瑛烈士\"小节开头",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0172",
+    "name": "李正华",
+    "fields": {},
+    "notes": [
+      "本轮另有地域补充线索，尚不足以覆盖籍贯；详见资料更新报告。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A20",
+        "title": "《死难者名录》；《李正华：放下教鞭扛钢枪 为国捐躯父子兵》；《全国著名抗日英烈李正华》",
+        "publisher": "网上山东抗日战争纪念馆/大众网；新华社（退役军人事务部转载）；泰安市退役军人事务局",
+        "publishedAt": "名录页面；2025-09-02；2024-11-06",
+        "url": "http://w.dzwww.com/zt/kr/yunan.php?city=9&page=39；https://www.mva.gov.cn/sy/zt/jnkzsl80zn/mhxl/202509/t20250902_510583.html；https://tyjrj.taian.gov.cn/art/2024/11/6/art_255112_10312348.html",
+        "finalUrl": "同原始URL",
+        "accessedAt": "2026-10-16",
+        "excerpt": "《死难者名录》：‘李正华｜岱岳区马庄镇漕河崖村｜36｜男｜1941年4月’，该列标题为‘籍贯’；官方传记：‘李正华原名李连秀，1905年出生于泰安县漕河涯村（现泰安市岱岳区马庄镇漕河村）’。",
+        "position": "《死难者名录》泰安筛选第39页，序号770；新华社稿正文首段；泰安市退役军人事务局正文首段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0203",
+    "name": "姬兴周",
+    "fields": {
+      "originText": "吉林伊通",
+      "provinceCode": "220000",
+      "provinceName": "吉林省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核",
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录乙1909；该页1910-03-28。不拼成1909-03-28。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A21",
+        "title": "《我校6位校史人物入选全国著名抗日英烈名录》",
+        "publisher": "北华大学",
+        "publishedAt": "2020-09-05",
+        "url": "https://www.beihua.edu.cn/info/1053/5754.htm",
+        "finalUrl": "同原始URL",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"姬兴周（1909—1942）……吉林伊通人。\"",
+        "position": "姬兴周人物段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      },
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 31. P0203 姬兴周",
+        "urls": [
+          "https://cpc.people.com.cn/n/2014/1121/c68742-26069140.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0212",
+    "name": "朱廉",
+    "fields": {
+      "originText": "江苏宜兴",
+      "provinceCode": "320000",
+      "provinceName": "江苏省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A22",
+        "title": "《水西英烈：朱廉（1905—1943）》",
+        "publisher": "《溧阳日报》第三版\"综合\"；图文来源新四军江南指挥部纪念馆",
+        "publishedAt": "2025-08-16",
+        "url": "https://mobile.epaper.routeryun.com/index.php/home/article/index/appkey/84/date/2025-08-16/page/1623778/aid/8991098.html",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"朱廉，江苏宜兴人，1905年生。\"",
+        "position": "正文首段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0215",
+    "name": "许如梅",
+    "fields": {
+      "originText": "海南文昌",
+      "provinceCode": "460000",
+      "provinceName": "海南省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A23",
+        "title": "《英烈人物许如梅：身怀六甲战沙场，榕树下的巾帼绝唱》",
+        "publisher": "海南省退役军人事务厅；页面来源标注\"海南省退役军人事务厅、直播海南\"",
+        "publishedAt": "2026-04-08 20:29:34",
+        "url": "https://tyt.hainan.gov.cn/twjr/ylfc/202604/b833ff9c62b64cda93e28e410b7944b4.shtml?ddtab=true",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"许如梅，海南文昌人，出身知识分子家庭。\"",
+        "position": "人物早年介绍段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0230",
+    "name": "白桐本",
+    "fields": {
+      "originText": "河南巩县",
+      "provinceCode": "410000",
+      "provinceName": "河南省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A24",
+        "title": "《白桐本》",
+        "publisher": "南通史志网；未显示个人作者",
+        "publishedAt": "未显示",
+        "url": "https://www.ntszw.gov.cn/?c=index&a=show&id=1091",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"白桐本(1920～1944)，原名本桐，字梧村，河南省巩县人。\"",
+        "position": "人物介绍首段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0240",
+    "name": "姜谔生",
+    "fields": {
+      "originText": "胶县前店口乡大店村（历史地名）",
+      "provinceCode": "370000",
+      "provinceName": "山东省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A25",
+        "title": "《人 物》",
+        "publisher": "胶州市情网（青岛市情网站域名托管）；未显示个人作者",
+        "publishedAt": "2017-03-31（页面显示日期，非URL中的2022年日期）",
+        "url": "http://qdsq-jz.qingdao.gov.cn/jzfz_145/jzjz_145/202204/t20220407_5218273.shtml",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"姜谔生（1911～1944）又名姜效骞，前店口乡大店村人。\"",
+        "position": "\"一 人物传略\"之\"姜谔生\"条首句",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0248",
+    "name": "许子和",
+    "fields": {
+      "originText": "南阳县溧河乡（历史地名）",
+      "provinceCode": "410000",
+      "provinceName": "河南省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A26",
+        "title": "《烽火记忆里的英雄南阳》",
+        "publisher": "澎湃新闻政务号\"玉乡镇平\"（中共镇平县委员会官方澎湃号）；来源南阳日报",
+        "publishedAt": "2020-09-01 18:09",
+        "url": "https://m.thepaper.cn/newsDetail_forward_9000088",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"许子和，是南阳县（今宛城区）溧河乡人。\"",
+        "position": "许子和人物介绍段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0258",
+    "name": "吴克仁",
+    "fields": {
+      "originText": "吉林宁安（今属黑龙江省，来源括注）",
+      "provinceCode": "230000",
+      "provinceName": "黑龙江省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A27",
+        "title": "《吴克仁》",
+        "publisher": "中国军网；来源中华英烈网；责任编辑张硕",
+        "publishedAt": "2019-06-12 10:52",
+        "url": "http://www.81.cn/yljnt_208627/ylml/W_208652/16391385.html",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"吴克仁，字静山。男，满族，1894年出生，吉林宁安（今属黑龙江省）人。\"",
+        "position": "正文人物基本资料首段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0260",
+    "name": "宋铁岩",
+    "fields": {
+      "originText": "吉林永吉县",
+      "provinceCode": "220000",
+      "provinceName": "吉林省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核",
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录甲1909；人物页标题1910—1937，正文1910年10月24日。不拼成1909-10-24。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A28",
+        "title": "《山河换新颜 英雄可回家》",
+        "publisher": "永吉县政府信息公开平台；发文机关及文末署名为永吉县文化广电新闻出版局",
+        "publishedAt": "2019-04-04（成文、发布日期；不按URL日期记为2020年）",
+        "url": "http://xxgk.jlyj.gov.cn/gzbm/gaj_1/xxgkml/202009/t20200904_854251.html",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"宋铁岩(1909—1937),原名孙肃先，永吉县人。\"",
+        "position": "\"宋铁岩\"条首句",
+        "status": "回填人记载；本轮未逐站独立核验"
+      },
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 34. P0260 宋铁岩",
+        "urls": [
+          "https://www.1937china.com/kzgdata/html/20190704/156605108362515028698.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0261",
+    "name": "张中华",
+    "fields": {
+      "originText": "永吉县（来源原文）",
+      "provinceCode": "220000",
+      "provinceName": "吉林省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A29",
+        "title": "《山河换新颜 英雄可回家》",
+        "publisher": "永吉县政府信息公开平台；永吉县文化广电新闻出版局",
+        "publishedAt": "2019-04-04（成文、发布日期；不按URL日期记为2020年）",
+        "url": "http://xxgk.jlyj.gov.cn/gzbm/gaj_1/xxgkml/202009/t20200904_854251.html",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"张中华（1912—1937），永吉县人。\"",
+        "position": "\"张中华\"人物简介首句（前条宋铁岩，后条史忠恒）",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0262",
+    "name": "张甲洲",
+    "fields": {
+      "originText": "黑龙江巴彦县",
+      "provinceCode": "230000",
+      "provinceName": "黑龙江省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核",
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录甲1907；该页正文1907年5月21日；该页标题1906—1937。同页写时年31岁，不倒推，也不把5月21日当成已经定论的唯一生日。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A30",
+        "title": "《张甲洲：从清北学子到抗日英雄》",
+        "publisher": "黑龙江史志网；作者贺劲松、张文良",
+        "publishedAt": "2025-03-21",
+        "url": "https://www.hljszw.org.cn/columnlistnews/925.html",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"张甲洲，号平洋，化名张进思，黑龙江省巴彦县人\"",
+        "position": "\"少年求学 点燃革命火种\"小节首段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      },
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 35. P0262 张甲洲",
+        "urls": [
+          "https://www.1937china.com/kzgdata/html/20190821/156696044135292326709.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0265",
+    "name": "李伯蛟",
+    "fields": {
+      "originText": "湖南邵阳",
+      "provinceCode": "430000",
+      "provinceName": "湖南省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A31",
+        "title": "《上海、南京两次战役中殉国的湘籍将领》",
+        "publisher": "湖南省参事室、文史研究馆站点；作者李长林",
+        "publishedAt": "2017-09-12 16:09",
+        "url": "http://css.hunan.gov.cn/css/tslm/hxws/wssy/201702/sxrj_20/201709/t20170912_4505566.html",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"李伯蛟(1897—1937)，湖南邵阳人，早岁从军，入第六十三师任职。\"",
+        "position": "\"李伯蛟\"小节军职概述后第一段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0266",
+    "name": "陈荣久",
+    "fields": {
+      "originText": "黑龙江宁安县",
+      "provinceCode": "230000",
+      "provinceName": "黑龙江省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A32",
+        "title": "《中国档案报》：初心如磐 抗联英烈传 庆祝中国共产党成立105周年⑤",
+        "publisher": "吉林省档案馆网站；作者冯惠普；稿源《中国档案报》",
+        "publishedAt": "2026-05-06 15:07（原载《中国档案报》2026-03-27第二版）",
+        "url": "http://www.jlsda.cn/G_NR_W.jsp?urltype=news.NewsContentUrl&wbtreeid=1604&wbnewsid=789359",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"陈荣久（1904-1937），黑龙江省宁安县人，1933年7月加入中国共产党，是东北抗日联军第七军的缔造者之一。\"",
+        "position": "陈荣久\"'岳武将军'的铁血征程\"小节，画像下第一段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0331",
+    "name": "易安华",
+    "fields": {
+      "originText": "江西宜春",
+      "provinceCode": "360000",
+      "provinceName": "江西省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A33",
+        "title": "《易安华：\"国将不保，何以家为？\"》",
+        "publisher": "退役军人事务部网站；新华社记者袁慧晶；来源新华网",
+        "publishedAt": "2025-08-05 11:40（正文页面显示；URL日期不作发布日期）",
+        "url": "https://www.mva.gov.cn/sy/zt/jnkzsl80zn/mhxl/202509/t20250902_510597.html",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"易安华，江西宜春人，1925年，易安华入黄埔军校，次年毕业，参加北伐。\"",
+        "position": "正文新华社电讯后人物早年介绍段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0274",
+    "name": "姜玉贞",
+    "fields": {
+      "originText": "山东菏泽",
+      "provinceCode": "370000",
+      "provinceName": "山东省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核",
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录甲1894；同页标题1894—1937；正文1893年8月。不把8月拼到1894。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A34",
+        "title": "《抗日英雄谱：太原会战烽火燎原【3】》",
+        "publisher": "人民网党史频道；来源解放军报；本报记者仇建辉、特约记者唐亚平",
+        "publishedAt": "2015-07-17 09:21",
+        "url": "http://dangshi.people.com.cn/n/2015/0717/c85037-27319560-3.html",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"姜玉贞，山东菏泽人，1894年生。\"",
+        "position": "姜玉贞\"誓死抗日，不离斯土\"小节第三个文字段落",
+        "status": "回填人记载；本轮未逐站独立核验"
+      },
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 36. P0274 姜玉贞",
+        "urls": [
+          "https://www.1937china.com/kzgdata/html/20190821/156696003078239855532.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0277",
+    "name": "郝梦龄",
+    "fields": {
+      "originText": "河北藁城县庄合村",
+      "provinceCode": "130000",
+      "provinceName": "河北省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A35",
+        "title": "燕赵英烈-详情页（郝梦龄条目；正文未返回独立标题）",
+        "publisher": "河北省退役军人事务厅",
+        "publishedAt": "未显示（URL日期2021-09-24不冒充发布日期）",
+        "url": "https://tyjrswt.hebei.gov.cn/c/2021-09-24/491352.shtml",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"郝梦龄(1898年-1937年)，字锡九，河北藁城县（现藁城区）庄合村人。\"",
+        "position": "正文第一句",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0279",
+    "name": "夏国璋",
+    "fields": {
+      "originText": "容县松山乡沙田村（历史地名）",
+      "provinceCode": "450000",
+      "provinceName": "广西壮族自治区",
+      "regionBasis": "本轮回填明确地域表述；待独立复核",
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录甲1896；人物页标题和正文1894。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A36",
+        "title": "《夏国璋》",
+        "publisher": "黄埔军校同学会网",
+        "publishedAt": "2015-03-27 11:10",
+        "url": "http://www.huangpu.org.cn/zt/49267/yinglieci/201503/t20150327_9422978.html",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"夏国璋(1894-1937) 字超然。梧州容县（今玉林）松山乡沙田村人。\"",
+        "position": "职务介绍后生平第一段开头",
+        "status": "回填人记载；本轮未逐站独立核验"
+      },
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 38. P0279 夏国璋",
+        "urls": [
+          "https://www.1937china.com/kzgdata/html/20190701/156605108351401642453.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0280",
+    "name": "秦霖",
+    "fields": {
+      "originText": "广西桂林丁字村",
+      "provinceCode": "450000",
+      "provinceName": "广西壮族自治区",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A37",
+        "title": "《秦霖》",
+        "publisher": "黄埔军校同学会网",
+        "publishedAt": "2015-03-27 10:46",
+        "url": "http://www.huangpu.org.cn/zt/49267/yinglie/201503/t20150327_9422588.html",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"秦霖（1899—1937），字松涛，原名同观，广西桂林丁字村人，1899年生。\"",
+        "position": "职务介绍后生平首段首句",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0284",
+    "name": "萧山令",
+    "fields": {
+      "originText": "益阳人（来源原文）",
+      "provinceCode": "430000",
+      "provinceName": "湖南省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A38",
+        "title": "《益阳人萧山令：誓与南京共存亡》",
+        "publisher": "益阳市政府门户网站；作者江怀远、赵路路",
+        "publishedAt": "2025-07-19 11:14",
+        "url": "https://www.yiyang.gov.cn/yiyang/1/15/21/content_2083696.html",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"南京保卫战中，中国军队牺牲的最高长官——益阳人萧山令，就是中国将士的杰出代表。\"",
+        "position": "图片下正文首段末句；标题亦写\"益阳人\"",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0292",
+    "name": "王光宇",
+    "fields": {
+      "originText": "吉林德惠县",
+      "provinceCode": "220000",
+      "provinceName": "吉林省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A39",
+        "title": "《王光宇：西征路上铸英魂》",
+        "publisher": "沈阳日报；杨博整理；资料由中共满洲省委旧址纪念馆业务部王旭福提供",
+        "publishedAt": "2026-04-14",
+        "url": "https://epaper.syd.com.cn/syrb/h5/html5/2026-04/14/content_121058_19449345.htm",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"王光宇（1911-1938），原名王兴，吉林省德惠县人。\"",
+        "position": "正文第一段首句",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0341",
+    "name": "王铭章",
+    "fields": {
+      "originText": "四川新都县泰兴乡",
+      "provinceCode": "510000",
+      "provinceName": "四川省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A40",
+        "title": "《【巴蜀英烈】抗日名将王铭章》",
+        "publisher": "四川省地方志工作办公室；成都市新都区地方志办公室供稿",
+        "publishedAt": "2021-06-27 21:18:00（归档时间2023-04-25 09:16:44）",
+        "url": "http://scdfz.sc.gov.cn/scyx/scrw/bsyl/content_62387",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"王铭章（1893—1938），字之钟，四川省新都县泰兴乡（今成都市新都区新都街道）人。\"",
+        "position": "正文\"抗日名将王铭章\"小标题后第一段",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0297",
+    "name": "冯安邦",
+    "fields": {
+      "originText": "山东无棣县张辛店",
+      "provinceCode": "370000",
+      "provinceName": "山东省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核",
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录甲1885；人物页标题1884—1938。正文“生于山东省无棣县张辛店”没有再写年份，1884来自同页标题。"
+    ],
+    "evidence": [
+      {
+        "file": "籍贯补充40条.xlsx",
+        "row": "A41",
+        "title": "《抗日殉国将领冯安邦》",
+        "publisher": "渤海潮起网站（bhcq.gov.cn）；正文未显示作者或主办机构全称",
+        "publishedAt": "2017-11-27 10:24",
+        "url": "http://www.bhcq.gov.cn/m/detail/495",
+        "finalUrl": "未能独立验证",
+        "accessedAt": "2026-10-16",
+        "excerpt": "\"（1885-1938）冯安邦，字化民，一名景树。山东省无棣县张辛店（现为信阳乡店子村）人，出生于1885年。\"",
+        "position": "正文第一段前两句",
+        "status": "回填人记载；本轮未逐站独立核验"
+      },
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 41. P0297 冯安邦",
+        "urls": [
+          "https://www.1937china.com/kzgdata/html/20190704/156605108379035152905.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0160",
+    "name": "郭震",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0160-郭震.md",
+        "url": "https://m1.rw.ttdm.cn/history/10/guozhen126393086.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0161",
+    "name": "阎祖皋",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0161-阎祖皋.md",
+        "url": "https://www.mva.gov.cn/sy/xx/tzgg/202009/t20200903_41976.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0162",
+    "name": "宿之杰",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0162-宿之杰.md",
+        "url": "https://www.sohu.com/a/722770627_121106869",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0164",
+    "name": "蒲云照",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0164-蒲云照.md",
+        "url": "https://m1.rw.ttdm.cn/history/10/puyunzhao.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0165",
+    "name": "漆承宏",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0165-漆承宏.md",
+        "url": "https://m1.rw.ttdm.cn/history/10/qichenghong.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0169",
+    "name": "白福厚",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0169-白福厚.md",
+        "url": "https://m1.rw.ttdm.cn/history/10/baifuhou.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0170",
+    "name": "冯汉英",
+    "fields": {
+      "originText": "陕西岐山",
+      "provinceCode": "610000",
+      "provinceName": "陕西省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0170-冯汉英.md",
+        "url": "https://esb.sxdaily.com.cn/pad/content/202507/26/content_914356.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0171",
+    "name": "孙占彪",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0171-孙占彪.md",
+        "url": "https://www.krzzjn.com/show-999-69782.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0173",
+    "name": "李石安",
+    "fields": {
+      "originText": "湖南醴陵",
+      "provinceCode": "430000",
+      "provinceName": "湖南省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核",
+      "birthText": "1905"
+    },
+    "notes": [
+      "出生日期按回填来源精度补充，待独立复核；未载月份不补月份。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0173-李石安.md",
+        "url": "https://www.hunantoday.cn/news/xhn/202508/30309192.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      },
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 14. P0173 李石安",
+        "urls": [
+          "http://www.hndsyjy.cn/content/646942/90/15188635.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0174",
+    "name": "李光汉",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0174-李光汉.md",
+        "url": "https://www.lvliang.gov.cn/zfjgzd/llsjrj/syrw/202102/t20210203_1473150.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0175",
+    "name": "时芒",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0175-时芒.md",
+        "url": "https://m.krzzjn.com/list-2343-5.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0177",
+    "name": "欧阳霖",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0177-欧阳霖.md",
+        "url": "https://m.krzzjn.com/show-3155-162146.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0178",
+    "name": "易元鳌",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0178-易元鳌.md",
+        "url": "https://m.krzzjn.com/show-3155-162026.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0179",
+    "name": "周苏平",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0179-周苏平.md",
+        "url": "https://m1.rw.ttdm.cn/history/4/zhousuping.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0180",
+    "name": "高特",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0180-高特.md",
+        "url": "https://m.krzzjn.com/list-2343-5.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0182",
+    "name": "蒋永孚",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0182-蒋永孚.md",
+        "url": "https://m.krzzjn.com/list-2343-5.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0183",
+    "name": "蔡亚雄",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0183-蔡亚雄.md",
+        "url": "https://m.krzzjn.com/show-2343-111580.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0184",
+    "name": "蔡戎前",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0184-蔡戎前.md",
+        "url": "https://m.krzzjn.com/show-2343-111582.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0185",
+    "name": "颜景伦",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0185-颜景伦.md",
+        "url": "https://m.krzzjn.com/show-2343-111583.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0186",
+    "name": "薛金吾",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0186-薛金吾.md",
+        "url": "https://www.mva.gov.cn/sy/xx/tzgg/202009/t20200903_41976.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0187",
+    "name": "王何全",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0187-王何全.md",
+        "url": "https://www.mva.gov.cn/sy/xx/tzgg/202009/t20200903_41976.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0188",
+    "name": "王鼎臣",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0188-王鼎臣.md",
+        "url": "https://m1.rw.ttdm.cn/history/4/wangdingchen.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0189",
+    "name": "石鼎",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0189-石鼎.md",
+        "url": "https://bkso.baidu.com/item/%E7%9F%B3%E9%BC%8E/53554089",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0190",
+    "name": "白凤翔",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0190-白凤翔.md",
+        "url": "https://dangshi.people.com.cn/n1/2016/1208/c85037-28934962.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0191",
+    "name": "刘星南",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0191-刘星南.md",
+        "url": "https://m1.rw.ttdm.cn/history/10/liuxingnan.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0192",
+    "name": "孙立民",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0192-孙立民.md",
+        "url": "https://shandong-chorography.org/database/liaocheng-prefecture/section/23/article/374/",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0193",
+    "name": "李曾志",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0193-李曾志.md",
+        "url": "https://news.china.com.cn/live/2020-09/05/content_952691.htm",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0196",
+    "name": "余光奎",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0196-余光奎.md",
+        "url": "https://www.12371.cn/2020/09/04/ARTI1599184974530519.shtml",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0197",
+    "name": "余秉钧",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0197-余秉钧.md",
+        "url": "https://tyjrswj.beijing.gov.cn/fwzl/bjjn/202103/t20210323_2316695.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0198",
+    "name": "苗雨村",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0198-苗雨村.md",
+        "url": "https://www.chinamartyrs.gov.cn/x_xwzx/xwfb/202009/t20200904_42006.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0199",
+    "name": "金雯",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0199-金雯.md",
+        "url": "https://www.krzzjn.com/show-2949-138949.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0200",
+    "name": "郇振民",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0200-郇振民.md",
+        "url": "https://shandong-chorography.org/database/c33/section/1/article/615/",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0201",
+    "name": "赵通三",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0201-赵通三.md",
+        "url": "https://www.mva.gov.cn/sy/xx/tzgg/202009/t20200903_41976.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0202",
+    "name": "陶洪瀛",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0202-陶洪瀛.md",
+        "url": "https://www.mva.gov.cn/sy/xx/tzgg/202009/t20200903_41976.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0204",
+    "name": "萧治国",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0204-萧治国.md",
+        "url": "https://www.mva.gov.cn/sy/xx/tzgg/202009/t20200903_41976.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0206",
+    "name": "曹洪德",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0206-曹洪德.md",
+        "url": "https://www.mva.gov.cn/sy/xx/tzgg/202009/t20200903_41976.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0207",
+    "name": "梁重馨",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0207-梁重馨.md",
+        "url": "https://www.mva.gov.cn/sy/xx/tzgg/202009/t20200903_41976.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0208",
+    "name": "彭为工",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0208-彭为工.md",
+        "url": "https://m.thepaper.cn/baijiahao_9017404",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0210",
+    "name": "王尚元",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0210-王尚元.md",
+        "url": "https://www.bjwmb.gov.cn/kz2025/",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0213",
+    "name": "刘一鸿",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0213-刘一鸿.md",
+        "url": "https://m1.rw.ttdm.cn/history/1/liuyihong.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0216",
+    "name": "牟伦扬",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0216-牟伦扬.md",
+        "url": "https://m1.rw.ttdm.cn/history/6/moulunyang.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0217",
+    "name": "吴亚屋",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0217-吴亚屋.md",
+        "url": "https://shandong-chorography.org/database/liaocheng-prefecture/section/23/article/374/",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0218",
+    "name": "陈宗胜",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0218-陈宗胜.md",
+        "url": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0219",
+    "name": "武大风",
+    "fields": {
+      "originText": "山东庆云县东安务村",
+      "provinceCode": "370000",
+      "provinceName": "山东省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0219-武大风.md",
+        "url": "https://sdkrzzjng.com/kzqy/kzyx/201506/t20150608_12516526.htm",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0221",
+    "name": "胡式禹",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0221-胡式禹.md",
+        "url": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0222",
+    "name": "烙钢",
+    "fields": {
+      "originText": "山西平定",
+      "provinceCode": "140000",
+      "provinceName": "山西省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0222-烙钢.md",
+        "url": "https://www.lvliang.gov.cn/zfjgzd/llsjrj/syrw/202101/t20210126_1470883.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0223",
+    "name": "陶朗卿",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0223-陶朗卿.md",
+        "url": "https://m.krzzjn.com/show-2343-111721.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0224",
+    "name": "常隆基",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0224-常隆基.md",
+        "url": "https://www.krzzjn.com/show-2343-111728.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0225",
+    "name": "曾飞",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0225-曾飞.md",
+        "url": "https://m1.rw.ttdm.cn/history/10/zengfei.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0226",
+    "name": "曾福",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0226-曾福.md",
+        "url": "https://www.somanhing.com/friends/recommend/book/dongzhong.pdf",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0227",
+    "name": "潘玉凯",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0227-潘玉凯.md",
+        "url": "https://www.mva.gov.cn/sy/xx/tzgg/202009/t20200903_41976.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0228",
+    "name": "薛汉三",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0228-薛汉三.md",
+        "url": "https://m.krzzjn.com/show-2343-111751.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0229",
+    "name": "魏双贵",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0229-魏双贵.md",
+        "url": "https://m.krzzjn.com/show-2343-111760.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0232",
+    "name": "朱学勉",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0232-朱学勉.md",
+        "url": "https://m1.rw.ttdm.cn/history/6/zhuxuemian.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0233",
+    "name": "刘秀东",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0233-刘秀东.md",
+        "url": "https://m.krzzjn.com/show-2343-111766.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0234",
+    "name": "观杰",
+    "fields": {
+      "birthplace": "浙江上虞县章镇任叶村"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0234-观杰.md",
+        "url": "https://sz.sx.gov.cn/col/col1228978019/art/2026/art_2b30b193e8aa4f319a896f765840e990.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0235",
+    "name": "李忍涛",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0235-李忍涛.md",
+        "url": "https://www.krzzjn.com/show-1556-74528.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0236",
+    "name": "李铎",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0236-李铎.md",
+        "url": "https://www.mva.gov.cn/gongkai/zfxxgkpt/fdzdgknr/qtxx/202508/t20250829_509833.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0237",
+    "name": "岑铿",
+    "fields": {
+      "originText": "广东台山",
+      "provinceCode": "440000",
+      "provinceName": "广东省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0237-岑铿.md",
+        "url": "https://www.12371.cn/2020/09/04/ARTI1599184974530519.shtml",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0239",
+    "name": "赵东鲁",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0239-赵东鲁.md",
+        "url": "https://www.sohu.com/a/442925933_120214183",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0241",
+    "name": "贾征远",
+    "fields": {
+      "originText": "陕西吴堡",
+      "provinceCode": "610000",
+      "provinceName": "陕西省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0241-贾征远.md",
+        "url": "https://www.sxdaily.com.cn/2025-08/30/content_11310921.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0242",
+    "name": "彭仕复",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0242-彭仕复.md",
+        "url": "https://m1.rw.ttdm.cn/history/10/pengshifu.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0243",
+    "name": "曾佛新",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0243-曾佛新.md",
+        "url": "https://zijing.com.cn/article/2020-09/30/content_926250474486722560.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0244",
+    "name": "鲍夫",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0244-鲍夫.md",
+        "url": "https://www.krzzjn.com/show-2343-111784.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0245",
+    "name": "叶发青",
+    "fields": {
+      "birthplace": "广东曲江县东厢乡翻溪桥石安村（现属韶关浈江区东联村）"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0245-叶发青.md",
+        "url": "https://www.zhongguodiqing.cn/gjmr/201902/t20190228_4840302.shtml",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0246",
+    "name": "权永碧",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0246-权永碧.md",
+        "url": "https://politics.people.com.cn/n1/2020/0904/c1001-31848663.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0247",
+    "name": "任义汉",
+    "fields": {
+      "originText": "山西陵川",
+      "provinceCode": "140000",
+      "provinceName": "山西省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0247-任义汉.md",
+        "url": "https://www.lvliang.gov.cn/zfjgzd/llsjrj/syrw/202101/t20210119_1469263.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0249",
+    "name": "李东杰",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0249-李东杰.md",
+        "url": "https://m1.rw.ttdm.cn/history/10/lidongjie.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0251",
+    "name": "茆健群",
+    "fields": {
+      "birthplace": "江苏常熟浒浦镇"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0251-茆健群.md",
+        "url": "https://tyjrswj.suzhou.gov.cn/sztyjrswj/sxxw/202610/05206ab658264cff9167d0e1efcff1c1.shtml",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0253",
+    "name": "殷德林",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0253-殷德林.md",
+        "url": "https://www.krzzjn.com/show-2343-111849.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0255",
+    "name": "熊景升",
+    "fields": {
+      "originText": "广西博白新田乡美沙村",
+      "provinceCode": "450000",
+      "provinceName": "广西壮族自治区",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0255-熊景升.md",
+        "url": "https://www.cngongji.cn/2023-10/17/c_1310745823.htm",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0263",
+    "name": "张诚德",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0263-张诚德.md",
+        "url": "https://news.ifeng.com/c/7fj2ncQsQFz",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0283",
+    "name": "梁鉴堂",
+    "fields": {
+      "originText": "河北蠡县",
+      "provinceCode": "130000",
+      "provinceName": "河北省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0283-梁鉴堂.md",
+        "url": "https://www.xinhuanet.com/politics/2015-05/28/c_127851606.htm",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0286",
+    "name": "黄梅兴",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0286-黄梅兴.md",
+        "url": "https://www.krzzjn.com/list-3090-1.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0354",
+    "name": "谢彩轩",
+    "fields": {
+      "originText": "广西北海铁山港区南康镇黄稍村",
+      "provinceCode": "450000",
+      "provinceName": "广西壮族自治区",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0287-谢彩轩.md",
+        "url": "https://ssw.gxrb.com.cn/json/interface/epaper/index.php?code=003&date=2025-08-18&name=gxrb&xuhao=5",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0289",
+    "name": "马尔克·尼古拉耶维奇·马尔琴科夫",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0289-马尔克·尼古拉耶维奇·马尔琴科夫.md",
+        "url": "https://www.nbs.cn/subject/2025ycshycx/2/5/202508/t20250828_763095.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0291",
+    "name": "王平陆",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0291-王平陆.md",
+        "url": "https://epaper.huanbohainews.com.cn/tsldrb/pc/content/202507/08/content_116397.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0293",
+    "name": "王祯祥",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0293-王祯祥.md",
+        "url": "https://m.krzzjn.com/show-1908-89957.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0295",
+    "name": "王锡山",
+    "fields": {
+      "originText": "辽宁凤城",
+      "provinceCode": "210000",
+      "provinceName": "辽宁省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0295-王锡山.md",
+        "url": "https://www.people.com.cn/n/2015/0830/c398863-27532125.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0296",
+    "name": "邓佐虞",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0296-邓佐虞.md",
+        "url": "https://m.krzzjn.com/show-394-108797.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0299",
+    "name": "刘连科",
+    "fields": {},
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0299-刘连科.md",
+        "url": "https://m.krzzjn.com/show-991-73514.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0301",
+    "name": "刘震东",
+    "fields": {
+      "originText": "山东沂水县张庄村",
+      "provinceCode": "370000",
+      "provinceName": "山东省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0301-刘震东.md",
+        "url": "https://shandong-chorography.org/database/f063/section/22/article/10/",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0302",
+    "name": "刘曙华",
+    "fields": {
+      "birthplace": "山东济南普利门外"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0302-刘曙华.md",
+        "url": "https://www.hljszw.org.cn/home/book/info/get_id/273392.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0304",
+    "name": "朱家麟",
+    "fields": {
+      "originText": "河北满城县尉公村",
+      "provinceCode": "130000",
+      "provinceName": "河北省",
+      "regionBasis": "本轮回填明确地域表述；待独立复核"
+    },
+    "notes": [],
+    "evidence": [
+      {
+        "file": "回填结果/P0304-朱家麟.md",
+        "url": "https://www.chinamartyrs.gov.cn/x_xwzx/zhzx/202109/t20210922_51246.html",
+        "status": "回填人记载；本轮未逐站独立核验"
+      }
+    ]
+  },
+  {
+    "id": "P0379",
+    "name": "罗福星",
+    "fields": {
+      "birthText": "1886-02-24",
+      "statEligible": false,
+      "scopeNote": "1914年就义，早于1919—1949研究区间；保留研究记录，不纳入地图人数",
+      "birthplace": "印度尼西亚雅加达",
+      "ancestryText": "广东蕉岭（祖籍）",
+      "provinceCode": "",
+      "provinceName": "区间外记录",
+      "originText": "未确认本人籍贯；广东为祖籍，台湾为活动地"
+    },
+    "notes": [
+      "本轮回填仍有待核事项，未以缺失值或辅助线索覆盖原记录。",
+      "出生日期按回填来源精度补充，待独立复核；未载月份不补月份。"
+    ],
+    "evidence": [
+      {
+        "file": "回填结果/P0379-罗福星.md",
+        "url": "https://paper.people.com.cn/rmrbhwb/html/2015-09/10/content_1608176.htm",
+        "status": "回填人记载；本轮未逐站独立核验"
+      },
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 23. P0379 罗福星",
+        "urls": [
+          "https://www.81.cn/yljnt_208627/ylml/L_208641/16288060.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0005",
+    "name": "张建生",
+    "fields": {},
+    "notes": [],
+    "evidence": []
+  },
+  {
+    "id": "P0009",
+    "name": "阎克林",
+    "fields": {},
+    "notes": [],
+    "evidence": []
+  },
+  {
+    "id": "P0010",
+    "name": "张健",
+    "fields": {},
+    "notes": [],
+    "evidence": []
+  },
+  {
+    "id": "P0016",
+    "name": "邓铁梅",
+    "fields": {
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。不合并为单值。直接写法有1892与1893。"
+    ],
+    "evidence": [
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 4. P0016 邓铁梅",
+        "urls": [
+          "http://dangshi.people.com.cn/n/2014/0901/c85037-25582010.html",
+          "https://bx.benxi.gov.cn/zjmx/lswh/bxmr",
+          "https://people.cctv.com/2020/09/16/ARTINHOaSst7j1K4qrA9uVwy200916.shtml",
+          "http://www.people.com.cn/n/2015/0830/c398863-27532110.html",
+          "https://www.krzzjn.com/show-996-108136.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0057",
+    "name": "方振国",
+    "fields": {},
+    "notes": [],
+    "evidence": []
+  },
+  {
+    "id": "P0095",
+    "name": "毛长山",
+    "fields": {},
+    "notes": [],
+    "evidence": []
+  },
+  {
+    "id": "P0101",
+    "name": "王子阳",
+    "fields": {},
+    "notes": [],
+    "evidence": []
+  },
+  {
+    "id": "P0109",
+    "name": "秦士铨",
+    "fields": {},
+    "notes": [],
+    "evidence": []
+  },
+  {
+    "id": "P0116",
+    "name": "谢家珣",
+    "fields": {},
+    "notes": [],
+    "evidence": []
+  },
+  {
+    "id": "P0123",
+    "name": "陆希田",
+    "fields": {},
+    "notes": [],
+    "evidence": []
+  },
+  {
+    "id": "P0125",
+    "name": "哥利亚捷夫",
+    "fields": {},
+    "notes": [],
+    "evidence": []
+  },
+  {
+    "id": "P0132",
+    "name": "王济洲",
+    "fields": {},
+    "notes": [],
+    "evidence": []
+  },
+  {
+    "id": "P0145",
+    "name": "赵庆祥",
+    "fields": {},
+    "notes": [],
+    "evidence": []
+  },
+  {
+    "id": "P0308",
+    "name": "杜蓉",
+    "fields": {},
+    "notes": [],
+    "evidence": []
+  },
+  {
+    "id": "P0339",
+    "name": "柴意新",
+    "fields": {
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。不合并。人民网党史写1898；抗日战争纪念网该页写1907年11月。"
+    ],
+    "evidence": [
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 17. P0339 柴意新",
+        "urls": [
+          "http://dangshi.people.com.cn/n/2014/0325/c85037-24732408.html",
+          "https://m.krzzjn.com/show-1013-108508.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0340",
+    "name": "饶国华",
+    "fields": {
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。不在本编号单立。年份见 P0278。本页自己还有两处写法，并入 P0278 的另载。",
+      "出生日期存在另载，保留原值，尚未定论。  "
+    ],
+    "evidence": [
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 18. P0340 饶国华",
+        "urls": [
+          "https://m.krzzjn.com/show-1013-108485.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      },
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 37. P0278 饶国华",
+        "urls": [
+          "https://www.1937china.com/kzgdata/html/20190701/156605108350532618095.html",
+          "https://dsfz.xuancheng.gov.cn/News/show/1676951.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0343",
+    "name": "梁希贤",
+    "fields": {
+      "birthText": "1898"
+    },
+    "notes": [
+      "出生日期按回填来源精度补充，待独立复核；未载月份不补月份。"
+    ],
+    "evidence": [
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 19. P0343 梁希贤",
+        "urls": [
+          "https://www.news.cn/20250724/fab3730eb2554c87a7355a02dc4ed6bc/c.html",
+          "https://m.krzzjn.com/show-1018-93016.html",
+          "http://www.mod.gov.cn/gfbw/gfjy_index/16398676.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0344",
+    "name": "杜斌丞",
+    "fields": {
+      "birthText": "1888"
+    },
+    "notes": [
+      "出生日期按回填来源精度补充，待独立复核；未载月份不补月份。"
+    ],
+    "evidence": [
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 20. P0344 杜斌丞",
+        "urls": [
+          "http://dangshi.people.com.cn/n1/2019/0530/c85037-31110043.html",
+          "https://m.krzzjn.com/show-1018-103403.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0345",
+    "name": "石嘉植",
+    "fields": {
+      "birthText": "1918"
+    },
+    "notes": [
+      "出生日期按回填来源精度补充，待独立复核；未载月份不补月份。"
+    ],
+    "evidence": [
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 21. P0345 石嘉植",
+        "urls": [
+          "https://www.news.cn/politics/20250826/4bcc09ba6c24412dabe14b80c40ec032/c.html",
+          "https://m.krzzjn.com/show-1018-108021.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0356",
+    "name": "柳树人",
+    "fields": {
+      "birthText": "1905"
+    },
+    "notes": [
+      "出生日期按回填来源精度补充，待独立复核；未载月份不补月份。"
+    ],
+    "evidence": [
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 22. P0356 柳树人",
+        "urls": [
+          "https://cpc.people.com.cn/n1/2025/0829/c443712-40552459.html",
+          "https://m.krzzjn.com/show-925-56779.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0069",
+    "name": "王明星",
+    "fields": {
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录乙1914；福州日报稿（东南网转载）1919。"
+    ],
+    "evidence": [
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 24. P0069 王明星",
+        "urls": [
+          "https://fz.fjsen.com/wap/2023-09/28/content_31422319_0.htm",
+          "https://fz.fjsen.com/2023-09/28/content_31422319.htm"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0088",
+    "name": "常恩多",
+    "fields": {
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录丙1896；湖北工业大学转载稿1895。同页写“终年47岁”，不倒推。任务提示里的山东抗战纪念馆页面本轮未打开，不新增那条证据。"
+    ],
+    "evidence": [
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 26. P0088 常恩多",
+        "urls": [
+          "https://www.hbut.edu.cn/info/1047/6526.htm"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0163",
+    "name": "蓝和春",
+    "fields": {
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录乙1901；福建省退役军人事务厅页面1904。同页写时年36岁，不倒推。"
+    ],
+    "evidence": [
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 28. P0163 蓝和春",
+        "urls": [
+          "https://tyjrswt.fujian.gov.cn/jrfc/tyjrfc/202009/t20200914_5385861.htm"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0181",
+    "name": "梁海波",
+    "fields": {
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录乙1917；烟台档案信息网1914。同页写年仅27岁，不倒推。"
+    ],
+    "evidence": [
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 30. P0181 梁海波",
+        "urls": [
+          "https://dag.yantai.gov.cn/art/2024/12/9/art_117740_2904315.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0205",
+    "name": "梅华樊",
+    "fields": {
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录1909已打开。任务所记1911来自 https://www.chinamartyrs.gov.cn/x_xwzx/gdyw/202511/t20251114_519665.html ，本次返回403，未取得正文，不把1911写成已复核摘录。"
+    ],
+    "evidence": [
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 32. P0205 梅华樊",
+        "urls": [
+          "https://www.chinamartyrs.gov.cn/x_xwzx/gdyw/202511/t20251114_519665.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0231",
+    "name": "冯芝",
+    "fields": {
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录乙1892；中央政府驻港联络办页1883。"
+    ],
+    "evidence": [
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 33. P0231 冯芝",
+        "urls": [
+          "https://www.locpg.gov.cn/jsdt/2021-07/15/c_1211240586.htm"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0281",
+    "name": "高志航",
+    "fields": {
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录甲1908；共产党员网1908年6月；1937china页标题1907—1937、正文1907年5月。1908年6月与名录年份相同，但不能把5月改接到1908，也不能用“30岁”取舍。"
+    ],
+    "evidence": [
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 39. P0281 高志航",
+        "urls": [
+          "https://www.12371.cn/2018/10/30/ARTI1540891385635595.shtml",
+          "https://www.1937china.com/kzgdata/html/20190701/156605108352352681818.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  },
+  {
+    "id": "P0290",
+    "name": "马威龙",
+    "fields": {
+      "birthConflict": true
+    },
+    "notes": [
+      "出生日期存在另载，保留原值，尚未定论。名录甲1906；人物页标题1905—1938。同页写时年33岁，不倒推。"
+    ],
+    "evidence": [
+      {
+        "file": "第一人回填-出生年与冲突复核.md",
+        "section": "### 40. P0290 马威龙",
+        "urls": [
+          "https://www.1937china.com/kzgdata/html/20190821/156696286034043538063.html"
+        ],
+        "status": "回填人记载；待独立复核"
+      }
+    ]
+  }
+]

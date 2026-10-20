@@ -1,0 +1,8 @@
+{
+  "isolated": true,
+  "ordinaryUserCannotHide": true,
+  "hideRemovesPublic": true,
+  "authorSeesReason": true,
+  "resubmitRequiresReview": true,
+  "staleVersionRejected": true
+}

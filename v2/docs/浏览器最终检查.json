@@ -1,0 +1,78 @@
+[
+  {
+    "page": "home",
+    "viewport": 1440,
+    "width": 1425,
+    "brand": true,
+    "frameLoaded": true,
+    "tabs": 5
+  },
+  {
+    "page": "radar",
+    "viewport": 1440,
+    "width": 1425,
+    "frameWidth": 1145,
+    "frameViewport": 1160,
+    "brand": true,
+    "frameLoaded": true,
+    "tabs": 5
+  },
+  {
+    "page": "assistant",
+    "viewport": 1440,
+    "width": 1425,
+    "frameWidth": 1145,
+    "frameViewport": 1160,
+    "brand": true,
+    "frameLoaded": true,
+    "tabs": 5
+  },
+  {
+    "page": "discussion",
+    "viewport": 1440,
+    "width": 1425,
+    "frameWidth": 1145,
+    "frameViewport": 1160,
+    "brand": true,
+    "frameLoaded": true,
+    "tabs": 5
+  },
+  {
+    "page": "home",
+    "viewport": 390,
+    "width": 390,
+    "brand": true,
+    "frameLoaded": true,
+    "tabs": 5
+  },
+  {
+    "page": "radar",
+    "viewport": 390,
+    "width": 390,
+    "frameWidth": 354,
+    "frameViewport": 354,
+    "brand": true,
+    "frameLoaded": true,
+    "tabs": 5
+  },
+  {
+    "page": "assistant",
+    "viewport": 390,
+    "width": 390,
+    "frameWidth": 354,
+    "frameViewport": 354,
+    "brand": true,
+    "frameLoaded": true,
+    "tabs": 5
+  },
+  {
+    "page": "account",
+    "viewport": 390,
+    "width": 390,
+    "frameWidth": 354,
+    "frameViewport": 354,
+    "brand": true,
+    "frameLoaded": true,
+    "tabs": 5
+  }
+]

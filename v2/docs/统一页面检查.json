@@ -1,0 +1,13 @@
+{
+  "twoStageCards": true,
+  "advancedLocked": true,
+  "allFiveGroups": true,
+  "backFallback": true,
+  "personShortcuts": true,
+  "xiaojContextAndDismiss": true,
+  "mobileNoOverflow": true,
+  "desktopNoOverflow": true,
+  "desktopFrameUsesFullWidth": true,
+  "mobileMapPanelToggle": true,
+  "deviceTest": false
+}

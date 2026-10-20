@@ -1,0 +1,40 @@
+<view class="wc-page">
+  <view wx:if="{{mock}}" class="wc-mock">当前为演示数据（mock={{mock}}），不是真实解锁与领取记录</view>
+  <button class="wc-back" bindtap="back">← 返回文创馆</button>
+  <view wx:if="{{loading}}" class="wc-state"><view class="wc-state-title">正在读取作品</view><text class="muted">请稍候…</text></view>
+  <view wx:elif="{{error}}" class="wc-state">
+    <view class="wc-state-title">{{errorTitle}}</view>
+    <text class="muted">{{error}}</text>
+    <button class="btn btn-primary" bindtap="onErrorAction">{{needLogin ? '去登录 ↗' : '重新读取'}}</button>
+  </view>
+  <block wx:elif="{{item}}">
+    <view class="wc-art" bindtap="preview">
+      <image wx:if="{{item.cover}}" class="wc-art-img" src="{{item.cover}}" mode="aspectFit"/>
+      <view wx:else class="wc-ph ph-{{item.kind}}"></view>
+      <view wx:if="{{!item.cover}}" class="ph-note">示意占位 · 正式图稿待上架</view>
+    </view>
+    <text class="small" style="text-align:center">点击图稿放大查看</text>
+    <view class="wc-badge badge-{{item.stateKey}}" style="margin-top:24rpx">{{item.stateLabel}}</view>
+    <text class="page-title">{{item.name}}</text>
+    <text class="muted">{{item.tagline}}</text>
+    <view wx:if="{{item.meaning}}" class="wc-block"><view class="wc-block-title">设计寓意</view><text>{{item.meaning}}</text></view>
+    <view class="wc-block">
+      <view class="wc-block-title">获取条件</view>
+      <text>{{item.conditionText}}</text>
+      <view wx:if="{{item.required && !item.guest}}" class="wc-meter"><view class="wc-meter-fill" style="width: {{item.percent}}%;"></view></view>
+      <text class="small">{{item.progressLabel}}</text>
+    </view>
+    <view class="wc-actions">
+      <button wx:if="{{item.stateKey==='guest'}}" class="btn btn-primary" bindtap="login">登录后领取 ↗</button>
+      <button wx:elif="{{item.stateKey==='claimed'}}" class="btn btn-outline" bindtap="viewItem">查看收藏 ↗</button>
+      <button wx:elif="{{item.stateKey==='ready'}}" class="btn btn-primary" loading="{{busy}}" disabled="{{busy}}" bindtap="claim">领取这件文创</button>
+      <button wx:elif="{{item.stateKey==='pending'}}" class="btn btn-primary" disabled>原图整理中，暂不能领取</button>
+      <block wx:else>
+        <button class="btn btn-primary" disabled>尚未解锁</button>
+        <button class="btn btn-outline" bindtap="learning">去学习挑战 ↗</button>
+      </block>
+    </view>
+    <text wx:if="{{hint}}" class="wc-hint">{{hint}}</text>
+    <view class="wc-note">称号永久保留，领取不会消耗称号；同一作品每个账户只能领取一次。</view>
+  </block>
+</view>

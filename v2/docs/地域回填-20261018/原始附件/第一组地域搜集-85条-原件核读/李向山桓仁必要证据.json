@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://m1.rw.ttdm.cn/history/10/lixiangshan10373363.html",
+    "final_url": "https://m1.rw.ttdm.cn/history/10/lixiangshan10373363.html",
+    "status": 200,
+    "ids": [
+      "P0078"
+    ],
+    "html_title": "李相山-桓仁满族自治县近现代人物专题",
+    "access_date": "2026-10-16",
+    "text": "李相山，原名李瑞林，号祥山。1884年生于桓仁县铧尖子乡东堡村一大户人家。1934年，东北人民革命军第一军独立师根据党开辟新游击区的指示，由韩浩率领先遣部队到达桓仁境内。李相山后来参加东北人民革命军。",
+    "mode": "网页检索取得正文；逐项核对姓名异写、原名、号、出生年、出生村和参加东北人民革命军经历"
+  },
+  {
+    "url": "https://www.benxi.gov.cn/publicity/szfxx/zfgb/112928",
+    "final_url": "https://www.benxi.gov.cn/publicity/szfxx/zfgb/112928",
+    "status": 200,
+    "ids": [
+      "P0078"
+    ],
+    "html_title": "本溪市人民政府公报2023年第2号",
+    "access_date": "2026-10-16",
+    "text": "本溪市不可移动革命文物名录：华尖子东堡李向山旧居，桓仁县华来镇铧尖子村海青伙洛屯沟里。",
+    "mode": "读取本溪市人民政府公开公报正文中的不可移动革命文物名录"
+  },
+  {
+    "url": "https://whly.ln.gov.cn/whly/mtjj/12E3E2308BF64E2EB46A7423D9762155/index.shtml",
+    "final_url": "https://whly.ln.gov.cn/whly/mtjj/12E3E2308BF64E2EB46A7423D9762155/index.shtml",
+    "status": 200,
+    "ids": [
+      "P0078"
+    ],
+    "html_title": "东北抗联史实陈列馆再添重量级藏品",
+    "access_date": "2026-10-16",
+    "text": "辽宁日报报道，东北抗联史实陈列馆展出抗联一师副官李向山戴过的毡帽。",
+    "mode": "读取辽宁省文化和旅游厅转载辽宁日报正文，核对姓名和抗联一师副官身份"
+  },
+  {
+    "url": "https://shizhiku.com/p/detail/wpa8aca216af/",
+    "final_url": "https://shizhiku.com/p/detail/wpa8aca216af/",
+    "status": 200,
+    "ids": [
+      "P0078"
+    ],
+    "html_title": "桓仁县志",
+    "access_date": "2026-10-16",
+    "text": "《桓仁县志》，桓仁县地方志编纂委员会编，1996年10月出版。第二十四篇人物，第一章人物传略列李向山；其后另设附记：桓仁籍县外人物简介。",
+    "mode": "读取县志书目信息与完整目录结构；未取得收费人物传正文"
+  }
+]

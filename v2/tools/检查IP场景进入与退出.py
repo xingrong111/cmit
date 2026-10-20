@@ -1,0 +1,17 @@
+from pathlib import Path
+exec((Path(__file__).parent/'检查合并页面.py').read_text(encoding='utf-8-sig').split('results=[]')[0].replace('9227','9228'))
+size(390)
+for group,selector in [('JZY','#enter'),('LYS','#enter-button')]:
+ nav('ip/index?group='+group)
+ wait("document.querySelector('iframe')?.contentDocument?.querySelector('"+selector+"')")
+ wait("!document.querySelector('iframe').contentDocument.querySelector('"+selector+"').disabled")
+ wait("(()=>{const d=document.querySelector('iframe').contentDocument;const a=d.querySelector('#welcome article,.opening-paper');return getComputedStyle(a).overflowY==='auto'})()")
+ js("document.querySelector('iframe').contentDocument.querySelector('"+selector+"').click()")
+ js("document.querySelector('.scene-expand').click()")
+ wait("document.querySelector('.ip-scene-full')")
+ assert js('document.body.style.overflow==="hidden"')
+ call('Input.dispatchKeyEvent',{'type':'keyDown','key':'Escape','code':'Escape','windowsVirtualKeyCode':27});call('Input.dispatchKeyEvent',{'type':'keyUp','key':'Escape','code':'Escape','windowsVirtualKeyCode':27})
+ wait("!document.querySelector('.ip-scene-full')")
+ assert js('document.body.style.overflow!=="hidden"')
+ shot('IP专题-'+group+'-手机进入后.png')
+print('手机场景进入、说明滚动、全屏与Esc退出、恢复页面滚动通过');ws.close()

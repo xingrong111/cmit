@@ -1,0 +1,47 @@
+{
+  "logicAndAudioTests": 20,
+  "passed": 20,
+  "browser": [
+    "全景ready",
+    "桌面1366与手机390无横向溢出",
+    "B分支到结尾",
+    "主程序故事页iframe加载",
+    "人物IP专项入口跳转"
+  ],
+  "resources": [
+    {
+      "resource": "vr/互动故事.html",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "bytes": 2104
+    },
+    {
+      "resource": "vr/剧情配置.mjs",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "bytes": 18175
+    },
+    {
+      "resource": "vr/剧情控制.mjs",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "bytes": 9767
+    },
+    {
+      "resource": "vr/素材/第一幕-窗边交谈-v1.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 2628340
+    },
+    {
+      "resource": "vr/配音/N01-01.mp3",
+      "status": 200,
+      "type": "audio/mpeg",
+      "bytes": 73212
+    }
+  ],
+  "miniVoicePackages": 6,
+  "miniAudioFiles": 48,
+  "realDeviceTest": false,
+  "published": false
+}

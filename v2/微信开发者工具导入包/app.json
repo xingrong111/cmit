@@ -1,0 +1,139 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/people/index",
+    "pages/timeline/index",
+    "pages/me/index",
+    "pages/wenchuang/index",
+    "pages/person/index",
+    "pages/event/index",
+    "pages/graph/index",
+    "pages/sources/index",
+    "pages/radar/index",
+    "pages/assistant/index",
+    "pages/account/index",
+    "pages/discussion/index",
+    "pages/admin/index",
+    "pages/my-comments/index",
+    "pages/route/index",
+    "pages/place/index",
+    "pages/source/index",
+    "pages/privacy/index",
+    "pages/learning/index",
+    "pages/province/index",
+    "pages/registry/index",
+    "pages/statistics/index",
+    "pages/panorama/index",
+    "pages/ip/index",
+    "pages/story/index",
+    "pages/story-sources/index",
+    "pages/guide/index",
+    "pages/learn/learn",
+    "pages/quiz/quiz",
+    "pages/result/result",
+    "pages/honors/honors",
+    "pages/reward/reward",
+    "pages/other/other",
+    "pages/wenchuang/detail",
+    "pages/wenchuang/collection",
+    "pages/wenchuang/success"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "山河有迹",
+    "navigationBarBackgroundColor": "#FBF5E9",
+    "backgroundColor": "#FBF5E9"
+  },
+  "tabBar": {
+    "color": "#75604B",
+    "selectedColor": "#982B28",
+    "backgroundColor": "#FFFAF1",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "static/icons/home.png",
+        "selectedIconPath": "static/icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/people/index",
+        "text": "人物",
+        "iconPath": "static/icons/people.png",
+        "selectedIconPath": "static/icons/people-active.png"
+      },
+      {
+        "pagePath": "pages/radar/index",
+        "text": "足迹",
+        "iconPath": "static/icons/pin.png",
+        "selectedIconPath": "static/icons/pin-active.png"
+      },
+      {
+        "pagePath": "pages/assistant/index",
+        "text": "小迹",
+        "iconPath": "static/icons/assistant.png",
+        "selectedIconPath": "static/icons/assistant-active.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我的",
+        "iconPath": "static/icons/bookmark.png",
+        "selectedIconPath": "static/icons/bookmark-active.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "subPackages": [
+    {
+      "root": "voice-act0",
+      "name": "voice-act0",
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "root": "voice-act1",
+      "name": "voice-act1",
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "root": "voice-act2",
+      "name": "voice-act2",
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "root": "voice-act3",
+      "name": "voice-act3",
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "root": "voice-act4",
+      "name": "voice-act4",
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "root": "voice-act5",
+      "name": "voice-act5",
+      "pages": [
+        "index"
+      ]
+    }
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于查询附近历史场所与步行路线，仅在你选择定位时使用"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

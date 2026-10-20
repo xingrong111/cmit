@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://epaper.jxxw.com.cn/resfile/2025-09-12/06/06.pdf",
+    "result": "网页打开失败；直接PDF读取超时，工作底稿留实际访问失败记录。未亲见版面。"
+  },
+  {
+    "url": "https://jxrb.jxwmw.cn/system/2025/09/12/020981400.shtml",
+    "result": "原发布网页实际全文打开，支持永新县籍贯及自然村调查尚未确认的报道状态。"
+  },
+  {
+    "url": "https://www.krzzjn.com/uploadfile/2025/0916/20250916110748596.jpg",
+    "result": "网页工具从文章材料链接打开失败，Cache miss；未辨读照片、未下载图片。"
+  },
+  {
+    "url": "https://www.shuangyang.gov.cn/zjsy/whly/ycmr/200805/t20080507_1410863.html",
+    "result": "郑桂林条目维基所引官方入口，实际打开502，未据维基所引原页回填。"
+  },
+  {
+    "url": "https://news.ifeng.com/history/special/yiyongjun/200912/1219_8987_1480446.shtml",
+    "result": "郑桂林旧报道入口打开Cache miss，未取得正文。"
+  }
+]

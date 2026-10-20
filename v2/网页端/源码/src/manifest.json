@@ -1,0 +1,5 @@
+{
+ "name":"英迹 · 山河英雄谱","appid":"","description":"人物档案与历史呈现","versionName":"1.0.0","versionCode":"100",
+ "vueVersion":"3","uniStatistics":{"enable":false},"mp-weixin":{"appid":"","setting":{"urlCheck":true},"usingComponents":true},
+ "h5":{"title":"英迹 · 山河英雄谱","router":{"mode":"hash"}}
+}

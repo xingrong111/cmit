@@ -1,0 +1,14 @@
+/* B 版：同一原图作为页面背景随文档滚动；不改变组件、事件或地图。 */
+html[data-appearance=b] .reference-page{position:relative;isolation:isolate;background:#fcf9f2}
+html[data-appearance=b] .reference-page:before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:var(--b-art,url('/static/山河卷首.webp'));background-position:center 72px;background-repeat:repeat-y;background-size:100% auto;background-attachment:scroll;opacity:.10}
+html[data-appearance=b] .reference-page .atlas-top:before,
+html[data-appearance=b] .reference-page .page-heading:before{display:none}
+html[data-appearance=b] .reference-page .atlas-top,
+html[data-appearance=b] .reference-page .page-heading{background:transparent}
+html[data-appearance=b] .reference-page .atlas-stage{background:#fffdf8f5}
+html[data-appearance=b] .reference-page .atlas-selection{background:#fffdf8f5}
+html[data-appearance=b] .reference-page .person-card,
+html[data-appearance=b] .reference-page .directory-filter,
+html[data-appearance=b] .reference-page .archive-name{background:#fffdf8f5!important}
+html[data-appearance=b] .reference-page .masthead{background:#fffdf9ed}
+@media(max-width:650px){html[data-appearance=b] .reference-page:before{background-size:auto 440px;opacity:.08}}

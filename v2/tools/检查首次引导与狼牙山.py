@@ -1,0 +1,20 @@
+from pathlib import Path
+exec((Path(__file__).parent/'检查合并页面.py').read_text(encoding='utf-8-sig').split('results=[]')[0].replace('9227','9228'))
+size(1366);nav('home/index');time.sleep(2)
+js("localStorage.removeItem('shanhe:guide:v1')")
+call('Page.reload');wait("document.querySelector('.first-guide')")
+for i in range(7):
+ wait("document.querySelector('.first-guide-head').textContent.includes('"+str(i+1)+" / 7')")
+ if i==1:shot('首次使用指导-桌面.png')
+ js("document.querySelector('[data-next]').click()")
+ time.sleep(.7)
+assert js("!document.querySelector('.first-guide')&&localStorage.getItem('shanhe:guide:v1')==='done'")
+call('Page.reload');time.sleep(2);assert js("!document.querySelector('.first-guide')")
+js("window.dispatchEvent(new Event('shanhe:open-guide'))");wait("document.querySelector('.first-guide')");size(390);shot('首次使用指导-手机.png');js("document.querySelector('[data-skip]').click()")
+call('Page.navigate',{'url':'http://127.0.0.1:3110/panorama/lys/场景预览.html'});wait("document.getElementById('enter-button')")
+js("document.getElementById('enter-button').click()");time.sleep(3)
+assert js("!document.getElementById('fallback').hidden") is False
+assert js("!!document.querySelector('#vr-canvas')&&!!document.querySelector('#fullscreen-button')")
+js("document.querySelector('[data-chapter=\"2\"]').click()")
+wait("document.getElementById('scene-title').textContent.includes('五壮士')")
+shot('狼牙山全景-手机.png');print('首次引导七步、完成不重复、重新打开、跳过、狼牙山加载与章节切换通过');ws.close()

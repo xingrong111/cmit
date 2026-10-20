@@ -1,0 +1,15 @@
+from pathlib import Path
+exec((Path(__file__).parent/'检查合并页面.py').read_text(encoding='utf-8-sig').split('results=[]')[0])
+for width in [1440,390]:
+ size(width);nav('me/index');call('Page.reload');time.sleep(1)
+ wait("document.querySelector('.my-space')")
+ assert js("document.documentElement.scrollWidth<=innerWidth")
+ assert js("document.querySelectorAll('.my-reading-stats>uni-view').length===3")
+ shot('我的阅读空间-'+str(width)+'.png')
+ nav('learning/index');time.sleep(1)
+ wait("document.querySelector('iframe')?.contentDocument?.querySelector('.learning-cover')")
+ time.sleep(.3)
+ print(width,js("(()=>{const f=document.querySelector('iframe'),d=f.contentDocument;return {cards:d.querySelectorAll('.challenge-grid article').length,frame:f.clientHeight,body:d.body.getBoundingClientRect().height,overflow:d.documentElement.scrollWidth>d.defaultView.innerWidth,text:d.querySelector('#view').innerText.slice(-180)}})()"))
+ assert js("(()=>{const d=document.querySelector('iframe').contentDocument;return d.documentElement.scrollWidth<=d.defaultView.innerWidth})()")
+ shot('学习挑战新版-'+str(width)+'.png')
+print('通过：个人阅读空间、学习页面两种宽度布局与真实页面加载。');ws.close()

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "widths": [
+    1366,
+    390,
+    844
+  ],
+  "firstVisit": true,
+  "skipAndCompleteSeparated": true,
+  "replay": true,
+  "realLearningRecordsChanged": false,
+  "miniRealDevice": false,
+  "ruleAndServiceTests": 10,
+  "keyboardEscapeAndFocus": true,
+  "h5Build": true,
+  "miniBuild": true,
+  "miniAssembled": true
+}

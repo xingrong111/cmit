@@ -1,0 +1,16 @@
+[
+  {
+    "width": 390,
+    "cards": 15,
+    "ipGroups": 5,
+    "navigation": true,
+    "overflow": false
+  },
+  {
+    "width": 1440,
+    "cards": 15,
+    "ipGroups": 5,
+    "navigation": true,
+    "overflow": false
+  }
+]

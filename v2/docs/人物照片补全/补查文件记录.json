@@ -1,0 +1,449 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "pages": {
+      "-1": {
+        "ns": 6,
+        "title": "File:Jiang Zhuyun.jpg",
+        "missing": "",
+        "imagerepository": ""
+      },
+      "-2": {
+        "ns": 6,
+        "title": "File:江竹筠.jpg",
+        "missing": "",
+        "imagerepository": ""
+      },
+      "9892126": {
+        "pageid": 9892126,
+        "ns": 6,
+        "title": "File:Qijunzi.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Qijunzi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Qijunzi.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=9892126",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2010-04-01 07:50:22",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Qijunzi",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD China|Nationalist Government (China)|Zhang Naiqi|Wang Zaoshi|Shen Junru|Shi Liang|Zou Taofen|Sha Qianli|Li Gongpu|Suzhou in the 1930s|1937 in Jiangsu|PD-old missing SDC copyright status|China photographs taken on 1937-07-31",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Release of prisoners from the \"Seven Gentlemen Incident\" Suzhou July 31, 1936 (Wang Zaoshi, Shi Liang, Zhang Naiqi, Shen Junru, Sha Qianli, Li Gongbu, Zou Taofen)",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 31 July 1937",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"http://www.audit.gov.cn/n1057/n1102/n2064/n2653/1650468.html\">http://www.audit.gov.cn/n1057/n1102/n2064/n2653/1650468.html</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "不详",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "To uploader: <b>Please provide where the image was first published and who created it or held its copyright.</b>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "18477875": {
+        "pageid": 18477875,
+        "ns": 6,
+        "title": "File:Qin Bangxian.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Qin_Bangxian.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Qin_Bangxian.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=18477875",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-02-23 23:25:49",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Qin Bangxian",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Qin Bangxian|PD China|Template Unknown (author)|PD-old missing SDC copyright status",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Qin Bangxian （1907－1946）",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "before 1946<div style=\"display: none;\">date QS:P,+1946-00-00T00:00:00Z/7,P1326,+1946-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"mw:ExtLink nofollow\" href=\"http://news.xinhuanet.com/theory/2011-01/14/c_12981022_4.htm\" class=\"external free\">http://news.xinhuanet.com/theory/2011-01/14/c_12981022_4.htm</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Unknown author<link rel=\"mw:PageProp/Category\" href=\"./Category:Template_Unknown_(author)\"><span style=\"display: none;\">Unknown author</span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "99083666": {
+        "pageid": 99083666,
+        "ns": 6,
+        "title": "File:Zhou Enlai 1927.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Zhou_Enlai_1927.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Zhou_Enlai_1927.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=99083666",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-01-21 08:49:26",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Zhou Enlai 1927",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Zhou Enlai|PD China|PD-old missing SDC copyright status",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "In March 1927, Zhou Enlai led the third armed uprising of Shanghai workers. After the \"April 12\" counter-revolutionary coup, he led the Nanchang Uprising on August 1.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1927",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"http://www.81.cn/2017zt/2018-01/09/content_7900470_7.htm\">http://www.81.cn/2017zt/2018-01/09/content_7900470_7.htm</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "unknown author",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "150042620": {
+        "pageid": 150042620,
+        "ns": 6,
+        "title": "File:恽代英.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/%E6%81%BD%E4%BB%A3%E8%8B%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:%E6%81%BD%E4%BB%A3%E8%8B%B1.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=150042620",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-07-05 16:12:10",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "恽代英",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD China|Yun Daiying|Template Unknown (author)|PD-old missing SDC copyright status",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "​1924年，时任国民党上海执行部宣传部秘书的恽代英",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1924",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://news.cyol.com/gb/articles/2021-04/29/content_ElB9AFaNj.html\">https://news.cyol.com/gb/articles/2021-04/29/content_ElB9AFaNj.html</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      "129653464": {
+        "pageid": 129653464,
+        "ns": 6,
+        "title": "File:被上海⽇本纱⼚资本家枪杀的共产党员顾正红烈⼠肖像照⽚.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/%E8%A2%AB%E4%B8%8A%E6%B5%B7%E2%BD%87%E6%9C%AC%E7%BA%B1%E2%BC%9A%E8%B5%84%E6%9C%AC%E5%AE%B6%E6%9E%AA%E6%9D%80%E7%9A%84%E5%85%B1%E4%BA%A7%E5%85%9A%E5%91%98%E9%A1%BE%E6%AD%A3%E7%BA%A2%E7%83%88%E2%BC%A0%E8%82%96%E5%83%8F%E7%85%A7%E2%BD%9A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:%E8%A2%AB%E4%B8%8A%E6%B5%B7%E2%BD%87%E6%9C%AC%E7%BA%B1%E2%BC%9A%E8%B5%84%E6%9C%AC%E5%AE%B6%E6%9E%AA%E6%9D%80%E7%9A%84%E5%85%B1%E4%BA%A7%E5%85%9A%E5%91%98%E9%A1%BE%E6%AD%A3%E7%BA%A2%E7%83%88%E2%BC%A0%E8%82%96%E5%83%8F%E7%85%A7%E2%BD%9A.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=129653464",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-03-16 18:29:17",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "被上海⽇本纱⼚资本家枪杀的共产党员顾正红烈⼠肖像照⽚",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Gu Zhenghong|Template Unknown (artist)|PD China expired",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "​被上海⽇本纱⼚资本家枪杀的共产党员顾正红烈⼠肖像照⽚",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "circa 1925<div style=\"display: none;\">date QS:P,+1925-00-00T00:00:00Z/9,P1480,Q5727902</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.artfoxlive.com/product/9145838.html\" class=\"external text\">LOT 4381 1925年摄制 被上海⽇本纱⼚资本家枪杀的共产党员顾正红烈⼠肖像照⽚</a> (<a rel=\"mw:ExtLink nofollow\" href=\"https://oss-product-img.artfoxlive.com/202303/1678862293471_9145838.jpg\" class=\"external text\">Image</a>)",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Unknown photographer<span class=\"mw-empty-elt\"><link rel=\"mw:PageProp/Category\" href=\"./Category:Template_Unknown_(artist)\"></span>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "To uploader: <b>Please provide where the image was first published and who created it or held its copyright.</b>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

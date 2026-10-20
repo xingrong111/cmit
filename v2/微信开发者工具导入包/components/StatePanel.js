@@ -1,0 +1,1 @@
+"use strict";const e=require("../common/vendor.js"),r={__name:"StatePanel",props:{loading:Boolean,error:String,title:{default:"资料整理中"},message:{default:"现有材料仍在补充，稍后再来看看。"}},emits:["retry"],setup:r=>(t,o)=>e.e({a:r.loading},r.loading?{}:e.e({b:e.t(r.error?"暂时无法展开":r.title),c:e.t(r.error||r.message),d:r.error},r.error?{e:e.o(e=>t.$emit("retry"),"48")}:{}))};wx.createComponent(r);

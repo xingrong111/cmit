@@ -1,0 +1,103 @@
+{
+  "batch": "2026-10-16史料追索；56次定向检索请求",
+  "queries": [
+    "\"马天民\" 籍贯 北旺庄",
+    "\"毕玉民\" \"莱芜县\"",
+    "\"邵存诚\" \"宜兴\"",
+    "\"谢家珣\" \"美东\"",
+    "\"Mooney\" \"Yunnanyi\"",
+    "\"Mooney\" \"North Kansas City\" pilot",
+    "\"哥利亚捷夫\" 飞行员 姓名",
+    "\"郗晓峰\" 陕西 革命",
+    "\"勇士郗晓峰\"",
+    "\"郗晓峰\" \"郗选\"",
+    "\"郗天皙\" \"出生\"",
+    "\"毕玉民\" 抗联 人物传",
+    "\"郗晓峰\" \"才能建立\"",
+    "\"郗选\" \"爷爷\"",
+    "\"郗天皙\" 蓝田",
+    "\"郗晓峰\" \"白鹿原\"",
+    "\"郗晓峰\" \"新中国\" \"2015\"",
+    "\"郗晓峰\" \"郗选\" 蓝田",
+    "\"郗晓峰\" \"勇士\" -site:sn.people.com.cn",
+    "\"郗晓峰\" \"华商报\"",
+    "\"郗晓峰同志\" \"碑文\"",
+    "\"郗晓峰\" site:hbjqlsly.com/sacrifice",
+    "\"黄胜斌同志\"",
+    "\"辛力生\" \"辽宁\"",
+    "\"郗晓峰\" \"sacrifice/show\"",
+    "\"郗晓峰\" \"photo/show\"",
+    "\"黄胜斌\" \"碑文\"",
+    "\"辛力生\" \"碑文\"",
+    "\"郗晓峰\" \"打败日本\"",
+    "\"郗晓峰\" \"老家门前\"",
+    "\"郗晓峰\" \"蓝田特别支部\"",
+    "\"郗天皙\" 人",
+    "\"郗晓峰\" site:sanqin.com",
+    "\"郗晓峰\" site:epaper.sanqin.com",
+    "\"郗晓峰\" \"1906\" 蓝田",
+    "\"蓝田特别支部\" 郗",
+    "\"郗晓峰\" \"三秦都市报\" \"蓝田\"",
+    "\"郗晓峰\" \"选\" \"1906\"",
+    "\"郗晓峰\" \"故居\"",
+    "\"郗晓峰\" site:xadsw.org.cn",
+    "\"郗晓峰\" site:hbdsw.org.cn",
+    "\"郗晓峰\" \"蓝田县\" -site:ttdm.cn -site:sohu.com",
+    "\"毕玉民\" \"山东人\"",
+    "\"谢家珣\" \"赣县\" -site:huangpu.org.cn",
+    "\"郗天皙\" \"县志\"",
+    "\"郗晓峰\" \"蓝田县志\"",
+    "\"郗晓峰\" \"三秦\" -site:rsj.*",
+    "\"蓝田县志\" \"郗\"",
+    "蓝田县志 人物 site:dfz.shaanxi.gov.cn",
+    "\"郗晓峰\" 纪念馆 籍贯",
+    "\"辛力生同志\" 烈士陵园",
+    "\"邵存诚\" \"江苏\"",
+    "\"Robert H\" \"Mooney\" \"Lexington\"",
+    "\"Robert Mooney\" \"1920\" pilot",
+    "\"Mooney\" \"December 26, 1942\" born",
+    "\"郗晓峰\" \"三地委\" \"陕西\""
+  ],
+  "candidates": [
+    {
+      "title": "人民网--404页面",
+      "url": "http://sn.people.com.cn/n/2015/0826/c372977-26124559.html"
+    },
+    {
+      "title": "Yunnan Province: Robert Mooney Memorial",
+      "url": "https://www.saracavalieri.com/post/robert-mooney-memorial"
+    },
+    {
+      "title": "华北军区烈士陵园完成23位烈士碑文修补",
+      "url": "http://he.people.com.cn/n2/2020/0720/c192235-34168596.html"
+    },
+    {
+      "title": "华北军区烈士陵园开展英烈家庭走访慰问活动 - 园馆新闻 - 华北军区烈士陵园",
+      "url": "https://www.hbjqlsly.com/news/show-192.html"
+    },
+    {
+      "title": "【纪念抗日战争胜利八十周年】抗日英烈 - 方志曲阳 - 曲阳县人民政府",
+      "url": "https://quyang.gov.cn/index.php/d/fangzhiquyang/13024.html"
+    },
+    {
+      "title": "Robert Mooney - Hall of Valor: Medal of Honor, Silver Star, U.S. Military Awards",
+      "url": "https://valor.militarytimes.com/recipient/recipient-48897/"
+    },
+    {
+      "title": "The Digital Collections of the National WWII Museum : Oral Histories | Oral History",
+      "url": "https://www.ww2online.org/view/robert-liles"
+    },
+    {
+      "title": "Robert H Mooney's memorial page - Honor Veterans Legacies at VLM",
+      "url": "https://www.vlm.cem.va.gov/ROBERTHMOONEY/5850AD0"
+    },
+    {
+      "title": "访问失败／见记录",
+      "url": "https://99csw.com/book/3990/138321.htm"
+    },
+    {
+      "title": "访问失败／见记录",
+      "url": "https://www.hbjqlsly.com/sacrifice.html?page=1"
+    }
+  ]
+}

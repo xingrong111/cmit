@@ -1,0 +1,87 @@
+[
+  {
+    "ids": [
+      "P0072"
+    ],
+    "url": "https://www.saracavalieri.com/post/robert-mooney-memorial",
+    "status": 200,
+    "final_url": "https://www.saracavalieri.com/post/robert-mooney-memorial",
+    "html_title": "Yunnan Province: Robert Mooney Memorial",
+    "text": "Yunnan Province: Robert Mooney Memorial\nSep 9, 2025\nFirst Lieutenant Robert H. Mooney was a fighter pilot from Kansas City who came to China after Pearl Harbor.\nHis father is also said to have built a replica of his monument in Lexington, Missouri.",
+    "access_date": "2026-10-16",
+    "mode": "个人旅行纪念文章；只作英文姓名与纪念地追索线索，不当作出生登记或独立权威出处。"
+  },
+  {
+    "ids": [
+      "P0156",
+      "P0122"
+    ],
+    "url": "http://he.people.com.cn/n2/2020/0720/c192235-34168596.html",
+    "status": 200,
+    "final_url": "http://he.people.com.cn/n2/2020/0720/c192235-34168596.html",
+    "html_title": "华北军区烈士陵园完成23位烈士碑文修补",
+    "text": "除了修补碑文，华北军区烈士陵园还编辑整理出了何腊光、辛力生、那恕、郗晓峰等59位抗日英烈的资料，全部上报第三批国家级著名抗日英烈。",
+    "access_date": "2026-10-16",
+    "mode": "人民网河北频道2020-07-20转载河北日报；资料整理段。证明曾整理资料，不证明其中具体地域字段。"
+  },
+  {
+    "ids": [
+      "P0156"
+    ],
+    "url": "https://www.hbjqlsly.com/news/show-192.html",
+    "status": 200,
+    "final_url": "https://www.hbjqlsly.com/news/show-192.html",
+    "html_title": "华北军区烈士陵园开展英烈家庭走访慰问活动 - 园馆新闻 - 华北军区烈士陵园",
+    "text": "郗晓峰烈士的孙子郗选讲述了爷爷在古城读马列、在白鹿原闹革命、租屋建立党支部的过程。",
+    "access_date": "2026-10-16",
+    "mode": "陵园新闻公开正文，家属走访段。仅证实孙辈姓名及走访史料线索，不用革命活动地推籍贯。"
+  },
+  {
+    "ids": [
+      "P0156"
+    ],
+    "url": "https://quyang.gov.cn/index.php/d/fangzhiquyang/13024.html",
+    "status": 200,
+    "final_url": "https://quyang.gov.cn/index.php/d/fangzhiquyang/13024.html",
+    "html_title": "【纪念抗日战争胜利八十周年】抗日英烈 - 方志曲阳 - 曲阳县人民政府",
+    "text": "与王溥司令员一同牺牲在张家峪战斗中的，还有三地委组织部部长郗晓峰",
+    "access_date": "2026-10-16",
+    "mode": "曲阳县政府方志曲阳人物群像，张家峪牺牲段；仅作身份与事件辅助，不将牺牲地当作出生地。"
+  },
+  {
+    "ids": [
+      "P0072"
+    ],
+    "url": "https://valor.militarytimes.com/recipient/recipient-48897/",
+    "status": 200,
+    "final_url": "https://valor.militarytimes.com/recipient/recipient-48897/",
+    "html_title": "Robert Mooney - Hall of Valor: Medal of Honor, Silver Star, U.S. Military Awards",
+    "text": "Robert H. Mooney\nJune 16, 1920 – December 26, 1942\nBorn:\nKansas City\n,\nMissouri\nHome: Kansas City, Missouri\nFirst Lieutenant (Air Corps)\n10th Air Force\nAction Date: December 26, 1942\nASN: 0-421285\nHeadquarters, 10th Air Force, General Orders No. 19 (March 22, 1943)\n(Citation Needed) – SYNOPSIS\nMaking a head-on run at nine bombers, Lieutenant Mooney shot down one of them.",
+    "access_date": "2026-10-16",
+    "mode": "实际取得网页全文；人物页Born栏、Action Date栏及战斗摘要。只保留必要摘录；未亲见所列1943年军令原件。"
+  },
+  {
+    "ids": [
+      "P0072"
+    ],
+    "url": "https://www.ww2online.org/view/robert-liles",
+    "status": 200,
+    "final_url": "https://www.ww2online.org/view/robert-liles",
+    "html_title": "The Digital Collections of the National WWII Museum : Oral Histories | Oral History",
+    "text": "Liles' buddy, Bob Mooney, went after an airplane going left and Liles went after one going right.",
+    "access_date": "2026-10-16",
+    "mode": "美国国家二战博物馆Robert Liles口述资料的馆方Annotation；Fighter Planes and Fellow Pilots部分。只作身份辅助，不是莫尼出生记录。"
+  },
+  {
+    "ids": [
+      "P0072"
+    ],
+    "url": "https://www.vlm.cem.va.gov/ROBERTHMOONEY/5850AD0",
+    "status": 200,
+    "final_url": "https://www.vlm.cem.va.gov/ROBERTHMOONEY/5850AD0",
+    "html_title": "Robert H Mooney's memorial page - Honor Veterans Legacies at VLM",
+    "text": "ROBERT H MOONEY\nJune 16, 1920 - Dec. 26, 1942\nUS ARMY, 1 LT\nNATIONAL MEMORIAL CEMETERY OF THE PACIFIC",
+    "access_date": "2026-10-16",
+    "mode": "美国退伍军人事务部VLM纪念页姓名、日期、军衔、墓园栏。用于人物对应，不由墓址推出生地。"
+  }
+]

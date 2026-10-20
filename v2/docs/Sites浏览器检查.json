@@ -1,0 +1,28 @@
+{
+  "status": 200,
+  "data": {
+    "citations": [],
+    "factIds": [],
+    "actions": [],
+    "placeCards": [],
+    "followUps": [
+      "你能帮我做什么？",
+      "无锡文化路线怎么安排？"
+    ],
+    "status": "answered",
+    "contentLabel": "小迹 · AI对话",
+    "mode": "model_chat",
+    "modelStatus": "available",
+    "answer": "我叫小迹，是“英迹·山河英雄谱”的AI导览助手，可以陪你聊聊天，也能帮你了解路线和场馆相关的问题。",
+    "modelNotice": "AI辅助回答",
+    "reviewNotice": "",
+    "presentation": {
+      "kind": "chat",
+      "title": "小迹",
+      "paragraphs": [
+        "我叫小迹，是“英迹·山河英雄谱”的AI导览助手，可以陪你聊聊天，也能帮你了解路线和场馆相关的问题。"
+      ]
+    },
+    "retryable": false
+  }
+}

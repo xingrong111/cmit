@@ -1,0 +1,31 @@
+/* 成员2：全景层默认样式。气泡、旁白与操作栏由成员3负责，不在此文件。 */
+.pano-canvas { display: block; width: 100%; height: 100%; outline: none; cursor: grab; touch-action: none; }
+.pano-canvas:active { cursor: grabbing; }
+.pano-hotspots { position: absolute; inset: 0; pointer-events: none; }
+
+.pano-hotspot {
+  position: absolute; transform: translate(-50%, -50%); pointer-events: auto;
+  display: flex; align-items: center; gap: 6px; min-height: 36px; padding: 4px 12px 4px 8px;
+  border: 1px solid #c8a96a; border-radius: 999px; background: rgba(245, 239, 226, .92);
+  color: #2c2a26; font: 14px/1.4 "Microsoft YaHei", "PingFang SC", sans-serif; cursor: pointer;
+}
+.pano-hotspot:focus-visible { outline: 2px solid #a8322a; outline-offset: 2px; }
+.pano-dot { width: 10px; height: 10px; border-radius: 50%; background: #a8322a; }
+.pano-hotspot.is-active .pano-dot { animation: pano-breathe 2.4s ease-in-out infinite; }
+.pano-hotspot.is-done .pano-dot { background: #2f4a3c; }
+.pano-hotspot.is-locked { opacity: .55; cursor: not-allowed; }
+.pano-hotspot.is-locked .pano-dot { background: #8a8070; }
+.pano-hotspot.is-highlight { border-color: #a8322a; box-shadow: 0 0 0 4px rgba(200, 169, 106, .55); }
+
+@keyframes pano-breathe {
+  0%, 100% { box-shadow: 0 0 0 2px rgba(168, 50, 42, .25); }
+  50% { box-shadow: 0 0 0 7px rgba(168, 50, 42, .08); }
+}
+
+.pano-closeup { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(20, 24, 22, .85); }
+.pano-closeup img { max-width: 90%; max-height: 80%; }
+.pano-closeup-close { position: absolute; top: 16px; right: 16px; min-height: 36px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .pano-hotspot.is-active .pano-dot { animation: none; box-shadow: 0 0 0 4px rgba(168, 50, 42, .25); }
+}

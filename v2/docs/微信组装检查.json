@@ -1,0 +1,9 @@
+{
+  "pages": 24,
+  "tabs": 5,
+  "requiredFilesExist": true,
+  "scriptsSyntaxPass": true,
+  "learningUsesAccountToken": true,
+  "singleBottomNavigation": true,
+  "deviceTest": false
+}

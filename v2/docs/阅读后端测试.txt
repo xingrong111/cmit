@@ -1,0 +1,28 @@
+✔ 01 aliases and natural-person count (135.3267ms)
+✔ 02 unknown and unpublished facts return 404 (6.9706ms)
+✔ 03 every published fact retains an accessible source (1396.5398ms)
+✔ 04 attributed dates do not appear as confirmed timeline events (3133.3185ms)
+✔ 05 exact source day is retained (306.4109ms)
+✔ 06 graph excludes unreviewed relationships (870.4271ms)
+✔ 07 source attribution and evidence boundary survive migration (22.6717ms)
+✔ 08 all published event records have facts and sources (15913.209ms)
+✔ 09 merged event retains both date precisions and sources (334.4993ms)
+✔ 10 birth conflicts remain empty instead of guessed (277.2144ms)
+✔ 11 multiple-year text is not turned into a single event (372.5378ms)
+✔ 12 province and empty search filters (29.5931ms)
+✔ 13 initialization does not overwrite existing SQLite data (94.5236ms)
+✔ 14 group counts and member links avoid counting the group as a person (416.6443ms)
+✔ 15 pagination preserves total and IDs (18.9462ms)
+✔ 16 parameter schema rejects invalid and unknown values with 400 (75.8301ms)
+✔ 17 global timeline filtering and homepage counts (1742.9359ms)
+✔ 18 draft-only sources and explicit draft sources are inaccessible (1589.8821ms)
+✔ 19 CORS is exact-origin, production requires explicit origins, writes are disabled (270.6892ms)
+✔ 来源撤下后人物事实、来源详情及事件不得继续公开 (160.8199ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 29237.2119

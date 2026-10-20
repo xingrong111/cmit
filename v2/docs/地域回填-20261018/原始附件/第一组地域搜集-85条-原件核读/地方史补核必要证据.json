@@ -1,0 +1,63 @@
+[
+  {
+    "html_title": "从莱芜走出的东北抗联英雄",
+    "url": "https://m.krzzjn.com/show-90-13032.html",
+    "ids": [
+      "P0118"
+    ],
+    "access_date": "2026-10-16",
+    "status": 200,
+    "final_url": "https://m.krzzjn.com/show-90-13032.html",
+    "text": "1909年生于山东省莱芜县雪野庄农民家里。",
+    "mode": "实际HTTP200读取单篇正文与注释；仅摘录必要段落交付，不保存图片素材。"
+  },
+  {
+    "html_title": "日军细菌战“特别输送”实证调查的几点结论",
+    "url": "https://m.krzzjn.com/show-91-27957.html",
+    "ids": [
+      "P0118"
+    ],
+    "access_date": "2026-10-16",
+    "status": 200,
+    "final_url": "https://m.krzzjn.com/show-91-27957.html",
+    "text": "原名刘镇东,山东莱芜人",
+    "mode": "实际HTTP200读取单篇正文与注释；仅摘录必要段落交付，不保存图片素材。"
+  },
+  {
+    "html_title": "诗韵嬴城",
+    "url": "https://www.sdscxh.com/uploads/file/20251117/1301fe1b04ea717427afd02fb75647e6.pdf",
+    "ids": [
+      "P0118"
+    ],
+    "access_date": "2026-10-16",
+    "status": 200,
+    "final_url": "https://www.sdscxh.com/uploads/file/20251117/1301fe1b04ea717427afd02fb75647e6.pdf",
+    "page_count": 288,
+    "text": "1909 年出生于山东省济南市莱芜口镇农民家里",
+    "mode": "实际读取PDF第2页版权页及第139—140页（印刷91—92页）注㊻；已渲染第139页核读。"
+  },
+  {
+    "url": "https://www.hljszw.org.cn/home/book/info/get_id/106940.html",
+    "final_url": "https://www.hljszw.org.cn/home/book/info/get_id/106940.html",
+    "ids": [
+      "P0102"
+    ],
+    "status": 200,
+    "access_date": "2026-10-16",
+    "html_title": "第二节 反帝爱国斗争",
+    "text": "1932年，在卢英春的带领下，居住桦川县苏苏屯、万里河屯的尤国清、傅金山、尤福山、吴永祥等20余人",
+    "mode": "检索工具实际打开官方数字方志文字页，第42行；原书名、版本及页码尚未核定。仅身份/队伍线索。"
+  },
+  {
+    "url": "https://www.hljszw.org.cn/home/book/info/get_id/274781.html",
+    "final_url": "https://www.hljszw.org.cn/home/book/info/get_id/274781.html",
+    "ids": [
+      "P0118"
+    ],
+    "status": 200,
+    "access_date": "2026-10-16",
+    "html_title": "传记三·郑鲁岩条",
+    "text": "1938年10月，没经过组织批准，擅自处死徐凤山、毕于民、邹其昌",
+    "mode": "检索工具实际打开官方数字方志文字页，第50行。直接HTTP访问返回404另记，不等于本地下载成功；未取得原书扫描及版权页。"
+  }
+]

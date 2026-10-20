@@ -1,0 +1,9 @@
+{
+  "tabs": 5,
+  "mobileOverflow": false,
+  "invalidTopicDoesNotFallback": true,
+  "correctPersonTopic": true,
+  "topicSwitchWithoutReload": true,
+  "loginReturnsToDiscussion": true,
+  "nativeDeviceTest": false
+}

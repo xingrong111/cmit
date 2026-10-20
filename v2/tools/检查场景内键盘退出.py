@@ -1,0 +1,3 @@
+from pathlib import Path
+exec((Path(__file__).parent/'检查合并页面.py').read_text(encoding='utf-8-sig').split('results=[]')[0].replace('9227','9228'))
+nav('ip/index?group=LYS');wait("document.querySelector('iframe')?.contentDocument?.querySelector('#enter-button')");wait("[...document.querySelector('iframe').contentDocument.querySelectorAll('style')].some(s=>s.textContent.includes('#experience>header'))");js("document.querySelector('.scene-expand').click()");wait("document.querySelector('.ip-scene-full')");js("document.querySelector('iframe').contentWindow.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape'}))");wait("!document.querySelector('.ip-scene-full')");print('焦点在场景内时Escape退出通过');ws.close()

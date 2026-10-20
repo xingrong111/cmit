@@ -1,0 +1,28 @@
+{
+  "style": "原创暖金国风图标，米白、淡金、朱红、墨绿；参考整体气质，不描摹截图素材。",
+  "icons": [
+    "home",
+    "people",
+    "pin",
+    "assistant",
+    "bookmark",
+    "book",
+    "timeline",
+    "graph",
+    "learning",
+    "medal",
+    "comment",
+    "account",
+    "route",
+    "museum",
+    "source",
+    "calendar",
+    "search",
+    "edit",
+    "copy"
+  ],
+  "compactControls": [
+    "send",
+    "stop"
+  ]
+}

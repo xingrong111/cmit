@@ -1,0 +1,15 @@
+{
+  "version": "v2",
+  "date": "2026-10-20",
+  "baseCommit": "8c29180b05af7f6eab201d751c0980375b967501",
+  "acceptedPreview": "http://127.0.0.1:3131",
+  "url": "http://127.0.0.1:3210",
+  "originalPreserved": "E:/CMIT/V1",
+  "backgroundSha256": "064b3cf8903262d9eeb621c89e30480f83032b4cd21ddc3a60f9a68ed185b21c",
+  "changes": [
+    "确认背景与中间衬底",
+    "专题真人照片",
+    "照片放大填充",
+    "姓氏朱章金字"
+  ]
+}

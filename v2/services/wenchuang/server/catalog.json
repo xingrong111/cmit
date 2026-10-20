@@ -1,0 +1,82 @@
+{
+  "version": "2026-10-20-v2",
+  "note": "六件文创作品；解锁与领取由现有账户及学习进度核验。",
+  "products": [
+    {
+      "id": "WC001",
+      "name": "针线里的黎明",
+      "condition": {
+        "type": "group_level",
+        "group_id": "JZY",
+        "difficulty": "入门"
+      },
+      "assets": [
+        "WC001-front.png",
+        "WC001-back.png"
+      ],
+      "asset_status": "已就绪"
+    },
+    {
+      "id": "WC002",
+      "name": "山河初识",
+      "condition": {
+        "type": "distinct_titles",
+        "count": 1
+      },
+      "assets": [
+        "WC002.png"
+      ],
+      "asset_status": "已就绪"
+    },
+    {
+      "id": "WC003",
+      "name": "循迹成长纪念册",
+      "condition": {
+        "type": "distinct_titles",
+        "count": 5
+      },
+      "assets": [
+        "WC003-album.pdf"
+      ],
+      "asset_status": "已就绪"
+    },
+    {
+      "id": "WC004",
+      "name": "光明的路",
+      "condition": {
+        "type": "group_level",
+        "group_id": "QQB",
+        "difficulty": "入门"
+      },
+      "assets": [
+        "WC004-front.png",
+        "WC004-back.png"
+      ],
+      "asset_status": "已就绪"
+    },
+    {
+      "id": "WC005",
+      "name": "山河有迹",
+      "condition": {
+        "type": "free"
+      },
+      "assets": [
+        "WC005-front.png",
+        "WC005-back.png"
+      ],
+      "asset_status": "已就绪"
+    },
+    {
+      "id": "WC006",
+      "name": "山河灯明",
+      "condition": {
+        "type": "distinct_titles",
+        "count": 5
+      },
+      "assets": [
+        "WC006.png"
+      ],
+      "asset_status": "已就绪"
+    }
+  ]
+}

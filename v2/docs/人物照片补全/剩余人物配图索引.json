@@ -1,0 +1,53 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "pages": {
+      "-1": {
+        "ns": 0,
+        "title": "史砚芬",
+        "missing": ""
+      },
+      "-2": {
+        "ns": 0,
+        "title": "张应春",
+        "missing": ""
+      },
+      "-3": {
+        "ns": 0,
+        "title": "郭纲琳",
+        "missing": ""
+      },
+      "-4": {
+        "ns": 0,
+        "title": "钱振标",
+        "missing": ""
+      },
+      "205455": {
+        "pageid": 205455,
+        "ns": 0,
+        "title": "宋振中",
+        "images": [
+          {
+            "ns": 6,
+            "title": "File:Song Zhenzhong.jpeg"
+          },
+          {
+            "ns": 6,
+            "title": "File:Statue of Song Zhenzhong at Shangdi Experimental Primary School Shangzhuang Camus (20241009134905) (cropped).jpg"
+          }
+        ]
+      },
+      "1757534": {
+        "pageid": 1757534,
+        "ns": 0,
+        "title": "许晓轩",
+        "images": [
+          {
+            "ns": 6,
+            "title": "File:Tango-nosources.svg"
+          }
+        ]
+      }
+    }
+  }
+}

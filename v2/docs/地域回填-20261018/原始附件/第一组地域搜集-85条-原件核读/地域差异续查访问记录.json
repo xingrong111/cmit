@@ -1,0 +1,89 @@
+{
+  "检索词": [
+    "\"刘耀庭\" \"宝坻\"",
+    "\"吴起兴\" \"黎川\"",
+    "\"栾天林\" \"蓝家窑\"",
+    "\"刘耀庭\" 抗联 出生",
+    "\"刘耀廷\" \"宝坻\"",
+    "\"刘耀庭\" \"河北\"",
+    "\"刘耀庭\" site:hljszw.org.cn",
+    "\"刘景春\" \"宝坻\"",
+    "\"吴起兴\" site:librarydata.cn",
+    "\"栾天林\" site:gov.cn",
+    "\"刘晓明\" \"宝坻\"",
+    "\"刘耀庭\" \"景春\"",
+    "\"刘景阳\" \"河北\"",
+    "\"刘鸣琴\" \"出生\"",
+    "\"黄金容\" \"籍贯\"",
+    "\"杨万兴\" \"出生\"",
+    "\"张海川\" \"出生\"",
+    "\"张海川\" \"出生于\" \"洼子沟\"",
+    "\"张海川\" \"张海川烈士\"",
+    "\"张海川\" \"富裕农民\"",
+    "\"张海川\" \"洼子沟村\" -site:lnds.com.cn",
+    "\"张海川\" \"毛甸子乡\" -site:lnds.com.cn",
+    "\"辽宁党史人物传\" \"张海川\"",
+    "\"王俭\" \"二吉利\" \"出生\"",
+    "\"张海川\" site:krzzjn.com \"毛甸子\"",
+    "\"高俊凤\" \"宁安人\"",
+    "\"方振国\" \"生于\"",
+    "\"吴起兴\" \"江西\" -site:sohu.com -site:shandong-chorography.org",
+    "\"刘耀庭\" \"出生于河北\" -site:hrbtv.net",
+    "\"栾天林\" \"蓝家窑\" -site:baidu.com -site:sohu.com",
+    "\"曲荣本\" 生于",
+    "\"曲显明\" \"1911\" -site:ttdm.cn -site:shandong-chorography.org",
+    "\"刘鸣琴\" \"南章\" -site:hswh.org.cn -site:baike.com",
+    "\"张海天\" \"九台子\" 台安",
+    "\"九台子村\" \"台安县\" 沙岭",
+    "\"张海天\" \"出生\" 盘山"
+  ],
+  "未取得正文": [
+    {
+      "html_title": "张海川·辽宁党史人物传",
+      "url": "https://www.lnds.com.cn/lnds/cgzs/lndsrwc/4D2A65D8236C49DCB25E63240BB7C92B/index.shtml",
+      "ids": [
+        "P0058"
+      ],
+      "access_date": "2026-10-16",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "html_title": "张海川·辽宁党史人物传",
+      "url": "http://www.lnds.com.cn/lnds/cgzs/lndsrwc/4D2A65D8236C49DCB25E63240BB7C92B/index.shtml",
+      "ids": [
+        "P0058"
+      ],
+      "access_date": "2026-10-16",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "html_title": "铭记白山黑水间抗战烽火",
+      "url": "https://www.cngongji.cn/2023-06/12/c_1310726598.htm",
+      "ids": [
+        "P0134"
+      ],
+      "access_date": "2026-10-16",
+      "status": 0,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cngongji.cn'. (_ssl.c:1010)>"
+    }
+  ],
+  "公共存档索引": {
+    "url": "https://web.archive.org/cdx/search/cdx?url=www.lnds.com.cn%2Flnds%2Fcgzs%2Flndsrwc%2F4D2A65D8236C49DCB25E63240BB7C92B%2Findex.shtml&output=json&filter=statuscode%3A200&collapse=timestamp%3A4",
+    "access_date": "2026-10-16",
+    "person": "P0058",
+    "status": 0,
+    "error": "The read operation timed out"
+  },
+  "未核候选": [
+    {
+      "编号": "P0058",
+      "姓名": "张海川",
+      "字段": "出生地区候选",
+      "值": "辽宁省宽甸县毛甸子乡洼子沟村",
+      "说明": "仅搜索缓存命中明确出生句；本轮原站HTTP及HTTPS均404，公开网页存档索引超时，不能列为亲见正文。",
+      "原始资料线索": "搜索缓存注释提及东北烈士纪念馆藏《张海川烈士》、宽甸档案馆藏高维义《回忆张海川》及《中国老区·宽甸抗日游击根据地》134—136页；均未取得原件。"
+    }
+  ]
+}

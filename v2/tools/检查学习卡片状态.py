@@ -1,0 +1,12 @@
+from pathlib import Path
+exec((Path(__file__).parent/'检查合并页面.py').read_text(encoding='utf-8-sig').split('results=[]')[0].replace('9227','9228'))
+nav('learning/index');call('Page.reload');time.sleep(1);wait("document.querySelector('iframe')?.contentDocument?.querySelectorAll('.journey-learning-card').length===5")
+js("document.querySelector('iframe').contentWindow.eval(\"hallView.items.filter(x=>x.group==='QQB').forEach(x=>x.completed=x.difficulty==='入门');paintLearn();\")")
+assert js("document.querySelector('iframe').contentDocument.querySelector('.journey-learning-card .primary').textContent==='开始进阶'")
+js("document.querySelector('iframe').contentWindow.eval(\"hallView.items.filter(x=>x.group==='QQB').forEach(x=>x.completed=true);paintLearn();\")")
+assert js("document.querySelector('iframe').contentDocument.querySelectorAll('.journey-learning-card:first-child .primary').length===1")
+assert js("document.querySelector('iframe').contentDocument.querySelector('.journey-learning-card .primary').textContent==='复习进阶'")
+js("document.querySelector('iframe').contentDocument.querySelector('[data-reading]').click()")
+wait("location.hash.includes('/pages/person/index?id=P009')")
+assert Path('V1/微信开发者工具导入包/utils/人物卡片素材.json').exists()
+print('通过：入门完成→开始进阶，全部完成→单一复习进阶主按钮，阅读档案跳转；仅浏览器演练，未修改账户进度。');ws.close()

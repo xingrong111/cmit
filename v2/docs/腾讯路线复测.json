@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-12",
+  "originNote": "独立测试起点，不是用户实际位置",
+  "results": [
+    {
+      "name": "秦邦宪故居附近单站",
+      "status": 200,
+      "provider": "腾讯位置服务",
+      "destinationScope": "venue_area",
+      "distanceMeters": 236,
+      "durationMinutes": 4,
+      "notice": "地图平台估算，终点可能为场馆附近；实际游客入口请以现场指引为准。耗时不含寻找入口、排队和预约等待；开放与预约请出发前确认。",
+      "legs": [
+        {
+          "placeId": "PLACE-WX-QBC",
+          "destinationKind": "venue_area",
+          "sourceId": "MAP-20261012-PLACE-WX-QBC",
+          "pointCount": 25,
+          "stepCount": 3
+        }
+      ]
+    },
+    {
+      "name": "无锡两站附近",
+      "status": 503,
+      "error": {
+        "code": "MAP_QUOTA_EXCEEDED",
+        "message": "地图服务今日额度已用完，可先保存参观顺序，额度恢复后再规划。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "layouts": [
+    {
+      "viewport": 390,
+      "outerWidth": 390,
+      "frameWidth": 300,
+      "frameViewport": 300,
+      "textarea": "TEXTAREA",
+      "composerWidth": 270,
+      "questionWidth": 202,
+      "bottomNavVisible": true,
+      "preferencesFolded": true
+    },
+    {
+      "viewport": 1440,
+      "outerWidth": 1425,
+      "frameWidth": 285,
+      "frameViewport": 300,
+      "textarea": "TEXTAREA",
+      "composerWidth": 255,
+      "questionWidth": 187,
+      "bottomNavVisible": false,
+      "preferencesFolded": true
+    }
+  ],
+  "routeDownReorders": true,
+  "originConfirmationPresent": true,
+  "browserGPSWorkflowWithSyntheticData": true,
+  "realGPS": false
+}

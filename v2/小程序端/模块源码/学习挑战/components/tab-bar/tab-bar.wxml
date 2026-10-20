@@ -1,0 +1,6 @@
+<view class="tabbar">
+  <view class="tab {{current === 'mountain' ? 'active' : ''}}" data-tab="mountain" bindtap="go">山河</view>
+  <view class="tab {{current === 'trace' ? 'active' : ''}}" data-tab="trace" bindtap="go">足迹</view>
+  <view class="tab {{current === 'learn' ? 'active' : ''}}" data-tab="learn" bindtap="go">学习</view>
+  <view class="tab {{current === 'me' ? 'active' : ''}}" data-tab="me" bindtap="go">我的</view>
+</view>

@@ -1,0 +1,16 @@
+{
+  "regions": 34,
+  "points": 68824,
+  "allCoordinatesExactlyRestored": true,
+  "mainPackageBytes": 2035461,
+  "mainPackageWithin2MiB": true,
+  "subPackageBytes": {
+    "voice-act0": 352157,
+    "voice-act1": 784937,
+    "voice-act2": 1028369,
+    "voice-act3": 423473,
+    "voice-act4": 502697,
+    "voice-act5": 864869
+  },
+  "deviceTest": false
+}

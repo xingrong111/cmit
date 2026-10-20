@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "app-shell": "./AppShell",
+    "person-card": "./PersonCard",
+    "state-panel": "./StatePanel"
+  }
+}

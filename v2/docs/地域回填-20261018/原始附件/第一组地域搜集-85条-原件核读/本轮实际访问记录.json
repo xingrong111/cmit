@@ -1,0 +1,165 @@
+[
+  {
+    "ids": [
+      "P0156"
+    ],
+    "url": "http://sn.people.com.cn/n/2015/0826/c372977-26124559.html",
+    "status": 404,
+    "final_url": "http://www.people.cn/404/error.html",
+    "html_title": "人民网--404页面",
+    "access_date": "2026-10-16",
+    "content_status": "软404；非正文",
+    "error": "HTTP200但页面明示不存在，不能算取得文章正文"
+  },
+  {
+    "ids": [
+      "P0072"
+    ],
+    "url": "https://www.saracavalieri.com/post/robert-mooney-memorial",
+    "status": 200,
+    "final_url": "https://www.saracavalieri.com/post/robert-mooney-memorial",
+    "html_title": "Yunnan Province: Robert Mooney Memorial",
+    "access_date": "2026-10-16",
+    "mode": "个人旅行纪念文章；只作英文姓名与纪念地追索线索，不当作出生登记或独立权威出处。"
+  },
+  {
+    "ids": [
+      "P0156",
+      "P0122"
+    ],
+    "url": "http://he.people.com.cn/n2/2020/0720/c192235-34168596.html",
+    "status": 200,
+    "final_url": "http://he.people.com.cn/n2/2020/0720/c192235-34168596.html",
+    "html_title": "华北军区烈士陵园完成23位烈士碑文修补",
+    "access_date": "2026-10-16",
+    "mode": "人民网河北频道2020-07-20转载河北日报；资料整理段。证明曾整理资料，不证明其中具体地域字段。"
+  },
+  {
+    "ids": [
+      "P0156"
+    ],
+    "url": "https://www.hbjqlsly.com/news/show-192.html",
+    "status": 200,
+    "final_url": "https://www.hbjqlsly.com/news/show-192.html",
+    "html_title": "华北军区烈士陵园开展英烈家庭走访慰问活动 - 园馆新闻 - 华北军区烈士陵园",
+    "access_date": "2026-10-16",
+    "mode": "陵园新闻公开正文，家属走访段。仅证实孙辈姓名及走访史料线索，不用革命活动地推籍贯。"
+  },
+  {
+    "ids": [
+      "P0156"
+    ],
+    "url": "https://quyang.gov.cn/index.php/d/fangzhiquyang/13024.html",
+    "status": 200,
+    "final_url": "https://quyang.gov.cn/index.php/d/fangzhiquyang/13024.html",
+    "html_title": "【纪念抗日战争胜利八十周年】抗日英烈 - 方志曲阳 - 曲阳县人民政府",
+    "access_date": "2026-10-16",
+    "mode": "曲阳县政府方志曲阳人物群像，张家峪牺牲段；仅作身份与事件辅助，不将牺牲地当作出生地。"
+  },
+  {
+    "ids": [
+      "P0072"
+    ],
+    "url": "https://valor.militarytimes.com/recipient/recipient-48897/",
+    "status": 200,
+    "final_url": "https://valor.militarytimes.com/recipient/recipient-48897/",
+    "html_title": "Robert Mooney - Hall of Valor: Medal of Honor, Silver Star, U.S. Military Awards",
+    "access_date": "2026-10-16",
+    "mode": "实际取得网页全文；人物页Born栏、Action Date栏及战斗摘要。只保留必要摘录；未亲见所列1943年军令原件。"
+  },
+  {
+    "ids": [
+      "P0072"
+    ],
+    "url": "https://www.ww2online.org/view/robert-liles",
+    "status": 200,
+    "final_url": "https://www.ww2online.org/view/robert-liles",
+    "html_title": "The Digital Collections of the National WWII Museum : Oral Histories | Oral History",
+    "access_date": "2026-10-16",
+    "mode": "美国国家二战博物馆Robert Liles口述资料的馆方Annotation；Fighter Planes and Fellow Pilots部分。只作身份辅助，不是莫尼出生记录。"
+  },
+  {
+    "ids": [
+      "P0072"
+    ],
+    "url": "https://www.vlm.cem.va.gov/ROBERTHMOONEY/5850AD0",
+    "status": 200,
+    "final_url": "https://www.vlm.cem.va.gov/ROBERTHMOONEY/5850AD0",
+    "html_title": "Robert H Mooney's memorial page - Honor Veterans Legacies at VLM",
+    "access_date": "2026-10-16",
+    "mode": "美国退伍军人事务部VLM纪念页姓名、日期、军衔、墓园栏。用于人物对应，不由墓址推出生地。"
+  },
+  {
+    "url": "https://99csw.com/book/3990/138321.htm",
+    "ids": [
+      "P0118"
+    ],
+    "error": "HTTP Error 403: Forbidden",
+    "access_date": "2026-10-16"
+  },
+  {
+    "url": "https://www.hbjqlsly.com/sacrifice.html?page=1",
+    "ids": [
+      "P0156",
+      "P0122"
+    ],
+    "error": "HTTP Error 500: Internal Server Error",
+    "access_date": "2026-10-16"
+  },
+  {
+    "url": "http://sn.people.com.cn/GB/337080/372977/",
+    "access_date": "2026-10-16",
+    "status": 200,
+    "final_url": "http://sn.people.com.cn/GB/337080/372977/",
+    "links": [
+      {
+        "url": "/n/2015/0826/c372977-26124559.html",
+        "text": "勇士郗晓峰——打败日本鬼子才能建立起新中国"
+      },
+      {
+        "url": "/n/2015/0826/c372977-26124559.html",
+        "text": "新闻提示\n\n\t在郗选的老家门前，立有这样一座石碑，上面写着“中共蓝田特别支部遗址”。上个世纪20年代，在白鹿原上，这里就曾是他的爷爷郗晓峰和一批有志青年闹革命的根据地，也成了后来陈忠实笔下《白鹿原》里的“红窝子”。\n\n\t“尽管爷爷牺牲了，但在我的心目中，他永远都是英雄。”郗选告诉…"
+      }
+    ]
+  },
+  {
+    "url": "https://sn.people.com.cn/GB/337080/372977/",
+    "access_date": "2026-10-16",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'sn.people.com.cn'. (_ssl.c:1028)>"
+  },
+  {
+    "url": "https://www.hbjqlsly.com/news/show-192.html",
+    "access_date": "2026-10-16",
+    "status": 200,
+    "final_url": "https://www.hbjqlsly.com/news/show-192.html",
+    "links": []
+  },
+  {
+    "url": "https://www.saracavalieri.com/updates",
+    "access_date": "2026-10-16",
+    "status": 200,
+    "final_url": "https://www.saracavalieri.com/updates",
+    "links": [
+      {
+        "url": "https://www.saracavalieri.com/post/robert-mooney-memorial",
+        "text": "Yunnan Province: Robert Mooney Memorial"
+      }
+    ]
+  },
+  {
+    "url": "http://www.xadsw.org.cn/uploadfile/202204/dfb8ea356805.pdf",
+    "access_date": "2026-10-16",
+    "read_type": "公开PDF文字检索，未下载人物图片",
+    "status": 200,
+    "final_url": "http://www.xadsw.org.cn/uploadfile/202204/dfb8ea356805.pdf",
+    "bytes": 12464280,
+    "pages": 254,
+    "hits": [
+      {
+        "pdf_page": 242,
+        "name": "郗波亭",
+        "excerpt": "1920 年 7 月 ， 出生于陕\n西省蓝田县孟村乡石官寨一个农民家庭 。 1931 年 ， 11 岁的朱平去巩村高级\n小学读书 ， 巩村高级小学被誉为 “ 红色巩小 ” ， 校长郗波亭是蓝田早期共产\n党员之一 ， 教员中也有不少进步人士和地下党员 。\n1934 年秋 ， 朱平以优异的成绩考进了陕西省立西安第二初级中学 。 这\n个学校的社会科学书籍和进步报刊较为丰富 ， 如 《 社会发展简史 》 和 《 生\n活周刊 》 等 。 朱平不仅如饥似渴地广泛阅读 ， 还主动参加学校的进步活动 。\n1936 年 12 月 ， 在纪念一二 · 九运动一周年的时候 ， 朱平与同学们四处为流\n亡到西安的平津学生组织募捐 ， 号召并带领同学赴临潼参加请愿活动 。\n1937 年 2 月 ， 西安二中已经建立了地下党支部 ， 经房有义介绍 ， 朱平\n加入了中华民族解放先锋队 （ 简称民先队 "
+      }
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "checks": [
+    {
+      "width": 1366,
+      "loaded": true,
+      "drag": true,
+      "zoom": true,
+      "fullscreen": true,
+      "portraitAndIP": true,
+      "otherPersonUnchanged": true
+    },
+    {
+      "width": 390,
+      "loaded": true,
+      "drag": true,
+      "zoom": true,
+      "fullscreen": true,
+      "portraitAndIP": true,
+      "otherPersonUnchanged": true
+    }
+  ],
+  "deviceTest": false,
+  "nativeWebviewDomainRequired": true
+}
