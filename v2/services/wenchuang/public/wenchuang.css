@@ -134,3 +134,12 @@ img{display:block;max-width:100%}
 }
 @media (max-width:360px){.wc-grid{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.wc-card,.wc-meter>span,.btn{transition:none}.wc-card:hover{transform:none}.wc-spinner{animation:none}}
+
+/* 放大说明文字，强调状态；不修改领取、收藏或解锁逻辑。 */
+:is(.small,.muted,.wc-note,.wc-description,.wc-card-desc,.wc-preview-cap,small){font-size:16px;line-height:1.75}
+.wc-badge{font-size:15px;font-weight:700;line-height:1.6}
+@media(max-width:650px){:is(.small,.muted,.wc-note,.wc-description,.wc-card-desc,.wc-preview-cap,small){font-size:15px}}
+
+/* 全站宋体：保留字号、字重和专用图标字体。 */
+html body{--sans:'SimSun','STSong',serif;--serif:'SimSun','STSong',serif;--b-sans:'SimSun','STSong',serif;--b-serif:'SimSun','STSong',serif}
+html body,html body *:not(.uni-icons):not(.uni-icons *):not(.iconfont):not(.iconfont *){font-family:'SimSun','STSong',serif!important}
