@@ -22,4 +22,5 @@ export default {onLaunch(){
 @import './static/b-theme.css';
 @import './static/v2-视觉.css';
 /* #endif */
+@import './styles/长卷配图.css';
 </style>
