@@ -32,6 +32,18 @@ node --dns-result-order=ipv4first --env-file-if-exists=.env src/server.js
 
 地点详情：资料卡双栏，保留开放与核验说明、官方来源、关联人物、问小迹和加入路线。
 
+## 五馆定制封面
+
+场馆详情页共用 `web/app.js` 的封面构建逻辑，并按场馆 ID 加载 `web/venue-covers/` 中的定制图片：
+
+- `PLACE-WX-LDY`：`lu-dingyi.png`（陆定一祖居陈列馆）
+- `PLACE-WX-QBC`：`qin-bangxian.png`（秦邦宪故居）
+- `PLACE-CZ-QQB`：`qu-qiubai.png`（瞿秋白纪念馆）
+- `PLACE-CZ-ZTL`：`zhang-tailei.png`（张太雷纪念馆）
+- `PLACE-WX-ZWT`：`zhang-wentian.png`（张闻天旧居）
+
+2026-10-21 起五馆封面替换为全幅实景版式（与 `五处景点/五馆封面` 独立封面文件同源）：实景照片铺满整个封面区，按场馆 ID 应用不同定向渐变遮罩与文字落点——陆定一左上（`mask-l`+`at-lt`，图片定位 `100% 48%`）、秦邦宪右中（`mask-r`+`at-rm`，`50% 38%`）、瞿秋白左中（`mask-l`+`at-lm`，`50% 65%`）、张太雷右上（`mask-r`+`at-rt`，`50% 90%`）、张闻天上下分区（`cover-split`，上米黄文字区、下建筑照片，`center 80%`）。标题拆为 `.name`（中华薪火体大字）与 `.suffix`（馆名后缀）两行，下缀地址小字；朱红"循迹访馆"印章位置随版式左右切换（`seal-l`/`seal-r`）。标题字体来自 `venue-covers/zhonghua-xinhuo.ttf`。定制封面无动效、隐藏"暂停动效"按钮；其他场馆仍使用接口资料图或原有占位图，不受定制样式影响。720px 以下字号自动缩小；旧版通用封面的移动端规则已限定为 `.hero.venue-cover:not(.venue-cover-custom)`，避免其 `min-height:0` 覆盖定制封面在窄屏下的 230px 高度。发布时须同步 `app.js`、`统一视觉.css` 和整个 `venue-covers` 目录到 Sites 发布版。
+
 顶部“专题首页／人物索引／山河长卷／我的阅读”沿用成员2结构，当前提示待团队接入，不假装已经合并其他成员内容；模块内三项导航可正常切换。
 
 landscape.svg使用用户提供的青绿山水参考图，作为装饰背景，不是真实地形或场馆复原。

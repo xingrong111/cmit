@@ -63,15 +63,41 @@ function webRouteLayout(){
 }
 route=async function(){await webOriginal.route();webRouteLayout();nav();};
 
+const venueCoverDesigns={
+ 'PLACE-WX-LDY':{image:'/web/venue-covers/lu-dingyi.png',position:'100% 48%',mask:'mask-l',pos:'at-lt',seal:'seal-r',name:'陆定一',suffix:'祖居陈列馆',addr:'无锡市惠山区 · 老陆巷 4 号'},
+ 'PLACE-WX-QBC':{image:'/web/venue-covers/qin-bangxian.png',position:'50% 38%',mask:'mask-r',pos:'at-rm',seal:'seal-l',name:'秦邦宪',suffix:'故居',addr:'无锡市梁溪区 · 崇安寺街道'},
+ 'PLACE-CZ-QQB':{image:'/web/venue-covers/qu-qiubai.png',position:'50% 65%',mask:'mask-l',pos:'at-lm',seal:'seal-r',name:'瞿秋白',suffix:'纪念馆',addr:'常州市天宁区 · 延陵西路 188 号'},
+ 'PLACE-CZ-ZTL':{image:'/web/venue-covers/zhang-tailei.png',position:'50% 90%',mask:'mask-r',pos:'at-rt',seal:'seal-l',name:'张太雷',suffix:'纪念馆',addr:'常州市天宁区 · 延陵西路'},
+ 'PLACE-WX-ZWT':{image:'/web/venue-covers/zhang-wentian.png',position:'center 80%',split:true,seal:'seal-r',name:'张闻天旧居',addr:'无锡市梁溪区 · 崇安寺街道汤巷 45 号'}
+};
 function decorateVenueCover(){
- const cover=screen.querySelector('.hero'),p=state.current;if(!cover||!p||cover.querySelector('.venue-cover-art'))return;
+ const cover=screen.querySelector('.hero'),p=state.current;if(!cover||!p||cover.querySelector('.venue-cover-art,.venue-cover-photo,.split-photo'))return;
+ const design=venueCoverDesigns[p.id];
  cover.classList.add('venue-cover');
+ if(design){
+  // 五馆定制封面：全幅实景+定向遮罩，各馆文字落点不同；张闻天为上下分区
+  cover.classList.add('venue-cover-custom');
+  if(design.split)cover.classList.add('cover-split');else cover.classList.add(design.mask);
+  const keep=[...cover.children].filter(e=>e.matches('.motion-toggle'));
+  cover.innerHTML='';keep.forEach(e=>cover.append(e));
+  const photo=design.split
+   ?`<img class="split-photo" src="${design.image}" alt="${esc(p.name)}" style="object-position:${design.position}">`
+   :`<img class="venue-cover-photo" src="${design.image}" alt="${esc(p.name)}" style="object-position:${design.position}">`;
+  const copy=design.split
+   ?`<div class="cover-copy split"><span class="eyebrow">山河有迹 · 循迹访馆</span><h2><span class="name">${design.name}</span></h2><p class="subtitle">${design.addr}</p></div>`
+   :`<div class="cover-copy ${design.pos}"><span class="eyebrow">山河有迹 · 循迹访馆</span><h2><span class="name">${design.name}</span><span class="suffix">${design.suffix}</span></h2><p class="subtitle">${design.addr}</p></div>`;
+  const seal=`<span class="venue-cover-seal ${design.seal}" aria-hidden="true">循迹<br>访馆</span>`;
+  cover.insertAdjacentHTML('beforeend',design.split?copy+photo+seal:photo+seal+copy);
+  return;
+ }
  const words=panel('venue-cover-copy',[...cover.children].filter(e=>!e.matches('.motion-toggle')));
  words.querySelector('.eyebrow').textContent='山河有迹 · 循迹访馆';
  words.insertAdjacentHTML('beforeend','<div class="venue-cover-tags"><span>人物与场所</span><span>城市文化足迹</span></div>');
  cover.append(words);
  const art=document.createElement('div');art.className='venue-cover-art';
- art.innerHTML=p.photo?`<img class="venue-cover-photo" src="${esc(p.photo.url)}" alt="${esc(p.photo.caption)}"><div class="venue-cover-credit"><a href="${esc(p.photo.sourceURL)}" target="_blank" rel="noopener noreferrer">资料照片 · 来源 ↗</a><span>${esc(p.photo.author)} · ${esc(p.photo.license)}</span></div>`:'<img class="venue-cover-photo" src="/preview/assets/场馆意象.svg" alt="原创建筑意象，非实景复原">';
+ const image=design?.image||p.photo?.url||'/preview/assets/场馆意象.svg';
+ const alt=p.photo?.caption||p.name||'场馆实景';
+ art.innerHTML=`<img class="venue-cover-photo" src="${esc(image)}" alt="${esc(alt)}"${design?` style="object-position:${design.position}"`:''}>${p.photo?`<div class="venue-cover-credit"><a href="${esc(p.photo.sourceURL)}" target="_blank" rel="noopener noreferrer">资料照片 · 来源 ↗</a><span>${esc(p.photo.author)} · ${esc(p.photo.license)}</span></div>`:''}`;
  art.insertAdjacentHTML('beforeend','<span class="venue-cover-seal" aria-hidden="true">循迹<br>访馆</span>');cover.append(art);
 }
 function arrangeVenueDetail(layout){
