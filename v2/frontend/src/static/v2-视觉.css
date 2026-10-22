@@ -1192,3 +1192,22 @@ html body .source-card-top{flex-wrap:wrap!important;gap:12px!important}
 html body .source-card-top .tag{white-space:normal!important;max-width:100%!important;overflow-wrap:anywhere!important}
 html body .source-card .text-button{white-space:normal!important;max-width:100%!important}
 @media(max-width:700px){html body .sources-grid{grid-template-columns:minmax(0,1fr)!important}html body .source-card{padding:22px!important}}
+
+/* Reading refinements and route confirmation, October 22 */
+html[data-appearance=b] body .app-shell .source-card .source-title,html[data-appearance=b] body .app-shell .source-card .source-title span{font-weight:700!important;font-size:29px!important;color:#29483c!important}
+html[data-appearance=b] body .app-shell .source-card .muted,html[data-appearance=b] body .app-shell .source-card .tag,html[data-appearance=b] body .app-shell .source-card .source-card-loc>uni-text,html[data-appearance=b] body .app-shell .source-card .text-button{font-size:20px!important;line-height:1.85!important}
+html[data-appearance=b] body .app-shell .event-cover-meta{gap:24px!important;flex-wrap:wrap!important;font-size:19px!important}
+html[data-appearance=b] body .app-shell .event-cover-meta uni-text{font-size:19px!important;line-height:1.8!important}
+html[data-appearance=b] body .app-shell .event-reading .article-intro>.eyebrow,html[data-appearance=b] body .app-shell .event-context .eyebrow,html[data-appearance=b] body .app-shell .article-rule{font-size:19px!important}
+html[data-appearance=b] body .app-shell .event-reading .reading-body{font-size:24px!important;line-height:1.95!important}
+html[data-appearance=b] body .app-shell .event-reading .citation{font-size:19px!important;min-height:48px!important;line-height:1.8!important}
+html[data-appearance=b] body .app-shell .event-context>uni-view>uni-text:not(.eyebrow){font-size:19px!important;line-height:1.9!important}
+html[data-appearance=b] body .app-shell .event-sources .source-row>uni-view>uni-text{font-size:23px!important;font-weight:600!important;line-height:1.8!important}
+html[data-appearance=b] body .app-shell .event-sources .source-row .small{font-size:19px!important;font-weight:400!important}
+html[data-appearance=b] body .app-shell .event-next-actions{display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:18px!important;padding:22px!important;margin-top:18px!important}
+html[data-appearance=b] body .app-shell .event-next-actions .serif{font-size:23px!important;font-weight:600!important}
+html[data-appearance=b] body .app-shell .event-next-actions uni-button{margin:0!important;padding:12px 22px!important;min-height:54px!important;font-size:20px!important}
+html[data-appearance=b] body .app-shell .qs-step-title,html[data-appearance=b] body .app-shell .qs-path-title{font-size:25px!important;font-weight:700!important;color:#354f43!important}
+html[data-appearance=b] body .app-shell .qs-step-text,html[data-appearance=b] body .app-shell .qs-path-text,html[data-appearance=b] body .app-shell .qs-story,html[data-appearance=b] body .app-shell .qs-story uni-button{font-size:19px!important;line-height:1.9!important}
+html[data-appearance=b] body .app-shell .qs-steps~.section-heading .eyebrow,html[data-appearance=b] body .app-shell .reference-guide .section-heading .eyebrow{font-size:19px!important}
+@media(max-width:650px){html[data-appearance=b] body .app-shell .source-card .source-title,html[data-appearance=b] body .app-shell .source-card .source-title span{font-size:25px!important}html[data-appearance=b] body .app-shell .source-card .muted,html[data-appearance=b] body .app-shell .source-card .tag,html[data-appearance=b] body .app-shell .source-card .source-card-loc>uni-text,html[data-appearance=b] body .app-shell .source-card .text-button{font-size:18px!important}html[data-appearance=b] body .app-shell .event-reading .reading-body{font-size:21px!important}html[data-appearance=b] body .app-shell .event-next-actions uni-button{flex:1 1 100%!important;font-size:18px!important}html[data-appearance=b] body .app-shell .qs-step-title,html[data-appearance=b] body .app-shell .qs-path-title{font-size:23px!important}html[data-appearance=b] body .app-shell .qs-step-text,html[data-appearance=b] body .app-shell .qs-path-text{font-size:17px!important}}

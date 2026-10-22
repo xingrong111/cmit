@@ -22,7 +22,7 @@ function panel(cls,children){const el=document.createElement('div');el.className
 function webAssistantLayout(){
   if(state.page!=='assistant')return;
   fitAssistantViewport();
-  const readingLabel=screen.querySelector('.label');if(readingLabel)readingLabel.textContent='资料试读';
+  screen.querySelector('.label')?.remove();
   const heading=screen.querySelector('.hero');if(heading){heading.classList.add('assistant-cover');heading.querySelector('h2').innerHTML='<img class="module-feature-icon" src="/static/icons/assistant.png" alt="">小迹 · 你的山河导览员';heading.querySelector('p').textContent='读人物、寻足迹，把每一次好奇变成一段旅程。';if(!heading.querySelector('.assistant-cover-seal'))heading.insertAdjacentHTML('beforeend','<span class="assistant-cover-seal" aria-hidden="true">循迹<br>问知</span>');}
   const welcome=screen.querySelector('.guide-welcome');
   if(welcome){const heading=welcome.querySelector('h3,.heading');if(heading)heading.textContent='小迹陪你循迹';}
@@ -142,7 +142,7 @@ document.addEventListener('click',e=>{if(e.target.closest('[data-web-clear-conte
 
 document.addEventListener('click',e=>{const b=e.target.closest('[data-web-toggle-places]');if(b){const panel=b.closest('.web-place-column');const folded=panel.classList.toggle('places-folded');b.setAttribute('aria-expanded',String(!folded));b.textContent=folded?'展开地点列表 ⌃':'收起地点列表 ⌄';}});
 
-let webAccount=localStorage.getItem('yingji_user_id')||'';window.addEventListener('message',e=>{if(e.origin!==location.origin||e.data?.type!=='yingji-account-refresh')return;const id=localStorage.getItem('yingji_user_id')||'';if(id===webAccount)return;webAccount=id;state.stops=readLocal('yingji-route-v1',[]);state.stays=readLocal('yingji-stay-v1',{});state.budget=readLocal('yingji-budget-minutes-v1',0);state.messages=[];state.current=null;state.selectedId='';go(state.page==='place'?'radar':state.page);});
+let webAccount=localStorage.getItem('yingji_user_id')||'';window.addEventListener('message',e=>{if(e.origin!==location.origin||e.data?.type!=='yingji-account-refresh')return;const id=localStorage.getItem('yingji_user_id')||'';if(id===webAccount)return;webAccount=id;state.stops=readLocal('yingji-route-v1',[]);state.stays=readLocal('yingji-stay-v1',{});state.budget=readLocal('yingji-budget-minutes-v1',0);state.routeOrigin=readLocal('yingji-route-origin-v1',null);state.routeError='';state.walkResult=null;state.messages=[];state.current=null;state.selectedId='';go(state.page==='place'?'radar':state.page);});
 
 document.addEventListener('click',e=>{if(e.target.closest('[data-venue-back]'))venueBack();});
 

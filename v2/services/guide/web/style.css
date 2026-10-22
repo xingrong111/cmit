@@ -38,3 +38,21 @@ h1,h2,h3,.title,.section-title,.page-title{font-family:var(--serif)}
 .context-chip{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--wash);border:1px solid var(--line);border-radius:8px;padding:4px 12px;margin:0 0 12px;font-size:13px;color:var(--green)}.context-chip button{border:0;background:none;min-width:44px;min-height:44px;font-size:22px;color:var(--muted)}.web-chat-panel{min-width:0}.web-shell .card{border-radius:12px}.web-shell .primary,.web-shell .secondary,.web-shell .chip{border-radius:8px}.web-map-column{min-width:0}.web-place-column{min-width:0}.web-column-title h3{font-family:var(--serif)}@media(max-width:700px){.web-radar-layout{display:flex;flex-direction:column}.web-map-column{width:100%}.web-place-column{width:100%;border:1px solid var(--line);border-radius:16px 16px 0 0;background:var(--card);margin-top:-8px;position:relative;padding:16px 12px}.web-place-column::before{content:"";display:block;width:36px;height:4px;background:var(--line);border-radius:4px;margin:0 auto 16px}.web-place-column .web-column-title{padding:0 4px}.web-assistant-sidebar{min-width:0}.context-chip{margin:0 0 12px}}
 
 .map-panel-toggle{display:none}@media(max-width:700px){.map-panel-toggle{display:block;min-height:44px;width:100%;border:0;border-bottom:1px solid var(--line);background:none;color:var(--red);text-align:center}.web-place-column.places-folded #places,.web-place-column.places-folded .web-column-title{display:none}}
+
+/* Balanced route columns and accessible origin confirmation */
+.phone.web-shell[data-page=route] .web-route-layout{grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:24px}
+.phone.web-shell[data-page=route] .web-route-column,.phone.web-shell[data-page=route] #stops{min-width:0;width:100%}
+.phone.web-shell[data-page=route] .route-stop{width:100%;box-sizing:border-box;padding:26px}
+.phone.web-shell[data-page=route] .web-map-column{position:static}
+.phone.web-shell[data-page=route] .row.spread{flex-wrap:wrap;gap:12px}
+.phone.web-shell[data-page=route] select{min-width:140px;min-height:48px;font-size:18px}
+.phone.web-shell[data-page=route] .route-stop .actions{display:flex;flex-wrap:wrap;gap:12px}
+.ink-map-stage .ink-map-origin{z-index:20;pointer-events:auto;bottom:18px;left:16px;right:66px;font-size:16px;flex-wrap:wrap}
+.ink-map-origin button{pointer-events:auto!important;position:relative;z-index:21;min-height:48px;min-width:125px;font-size:17px;touch-action:manipulation}
+.phone.web-shell .label{display:none!important}
+@media(max-width:900px){.phone.web-shell[data-page=route] .web-route-layout{grid-template-columns:minmax(0,1fr)}.ink-map-stage .ink-map-origin{font-size:14px;right:16px}.phone.web-shell[data-page=route] .route-stop{padding:20px}}
+
+body:has(.phone.web-shell[data-page=route]){overflow-x:clip}
+.phone.web-shell[data-page=route]{box-sizing:border-box;max-width:100%}
+
+.phone.web-shell[data-page=route] #stops>.card{box-sizing:border-box!important;max-width:100%!important;margin-left:0!important;margin-right:0!important}
