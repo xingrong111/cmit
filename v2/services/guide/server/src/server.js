@@ -94,13 +94,14 @@ export function createApp({ data, config = envConfig(), fetcher = fetch, maxRequ
         return res.end(fs.readFileSync(path.join(here,'../../media/venues',path.basename(u.pathname))));
       }
       const previewFiles = { '/': 'index.html', '/preview/': 'index.html', '/preview/app.js': 'app.js', '/preview/style.css': 'style.css','/preview/live-map.js':'live-map.js', '/preview/assets/ai-guide-xiaoying-v1.png':'assets/ai-guide-xiaoying-v1.png', '/preview/assets/ai-guide-xiaoying-v1.webp':'assets/ai-guide-xiaoying-v1.webp' };
-      const webFiles = { '/web': 'index.html', '/web/': 'index.html', '/web/index.html': 'index.html', '/web/app.js': 'app.js', '/web/style.css': 'style.css', '/web/landscape.svg': 'landscape.svg' };
+      const webFiles = { '/web': 'index.html', '/web/': 'index.html', '/web/index.html': 'index.html', '/web/app.js': 'app.js', '/web/style.css': 'style.css', '/web/landscape.svg': 'landscape.svg', '/web/assistant-cover-board.svg': 'assistant-cover-board.svg', '/web/assistant-chat-board.svg': 'assistant-chat-board.svg', '/web/logo.png': 'logo.png', '/web/logo-mark.png': 'logo-mark.png' };
       webFiles['/web/'+encodeURIComponent('关联配置.js')]='关联配置.js';
       webFiles['/web/'+encodeURIComponent('统一视觉.css')]='统一视觉.css';
+      for(const name of ['lu-dingyi.png','qin-bangxian.png','qu-qiubai.png','zhang-tailei.png','zhang-wentian.png','zhonghua-xinhuo.ttf'])webFiles['/web/venue-covers/'+name]='venue-covers/'+name;
       previewFiles['/preview/'+encodeURIComponent('统一视觉.css')]='统一视觉.css';
       if (!config.publicMode && method === 'GET' && webFiles[u.pathname]) {
         const file=webFiles[u.pathname], full=path.join(here,'../../web',file);
-        res.writeHead(200, {'Content-Type': file.endsWith('.svg')?'image/svg+xml':file.endsWith('.js')?'text/javascript; charset=utf-8':file.endsWith('.css')?'text/css; charset=utf-8':'text/html; charset=utf-8', 'X-Content-Type-Options':'nosniff'});
+        res.writeHead(200, {'Content-Type': file.endsWith('.ttf')?'font/ttf':file.endsWith('.png')?'image/png':file.endsWith('.svg')?'image/svg+xml':file.endsWith('.js')?'text/javascript; charset=utf-8':file.endsWith('.css')?'text/css; charset=utf-8':'text/html; charset=utf-8', 'X-Content-Type-Options':'nosniff'});
         return res.end(fs.readFileSync(full));
       }
       previewFiles['/preview/assets/'+encodeURIComponent('场馆意象.svg')]='assets/场馆意象.svg';

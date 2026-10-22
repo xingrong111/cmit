@@ -12,7 +12,13 @@ const PORT = Number(process.env.PORT || 3103);
 const ROOT = __dirname;
 const PUBLIC_DIR = path.join(ROOT, 'public');
 const DATA_FILE = process.env.DATA_FILE || path.join(ROOT, 'data.json');
-const sessions = new Map();
+const syncFs=require('node:fs');
+const SESSION_FILE=process.env.SESSION_DATA_FILE||path.join(path.dirname(DATA_FILE),'login-sessions.json');
+const sessionKey=token=>crypto.createHash('sha256').update(String(token)).digest('hex');
+const sessions=new Map(syncFs.existsSync(SESSION_FILE)?JSON.parse(syncFs.readFileSync(SESSION_FILE,'utf8')).filter(([,row])=>row.expiresAt>Date.now()):[]);
+function saveSessions(){for(const [key,row] of sessions)if(row.expiresAt<=Date.now())sessions.delete(key);const temporary=SESSION_FILE+'.tmp';syncFs.writeFileSync(temporary,JSON.stringify([...sessions]),{mode:0o600});syncFs.renameSync(temporary,SESSION_FILE);}
+const {createVerification,smtpConfigured}=require('./email-verification');const verification=createVerification({storeFile:process.env.VERIFICATION_DATA_FILE||path.join(path.dirname(DATA_FILE),'verification-codes.json')});
+const adminEmails=new Set((process.env.ADMIN_EMAILS||'').split(',').map(x=>x.trim().toLowerCase()).filter(Boolean));
 const TOPICS=require('./topics.json');let transactionQueue=Promise.resolve();
 const MAX_COMMENT = 500;
 
@@ -40,10 +46,10 @@ async function writeDb(db) { const temp=DATA_FILE+'.tmp';await fs.writeFile(temp
 async function audit(db, actorId, action, targetType, targetId, detail = {}) {
   db.audit.push({ id: id('audit'), actorId, action, targetType, targetId, detail, createdAt: now() });
 }
-function publicUser(user) { return { id: user.id, nickname: user.nickname, role: user.role, createdAt: user.createdAt }; }
+function publicUser(user) { return { id: user.id, nickname: user.nickname, role: user.role, email:user.email, emailVerified:Boolean(user.emailVerifiedAt), createdAt: user.createdAt }; }
 function tokenFrom(req) { return (req.headers.authorization || '').replace(/^Bearer\s+/i, ''); }
 function currentUser(req, db) {
-  const session = sessions.get(tokenFrom(req));
+  const session = sessions.get(sessionKey(tokenFrom(req)));
   if (!session || session.expiresAt < Date.now()) return null;
   return db.users.find((user) => user.id === session.userId) || null;
 }
@@ -101,24 +107,33 @@ async function serveStatic(req, res, pathname) {
 
 async function api(req, res, pathname) {
   const db = await readDb();if(req.method==='GET'&&pathname==='/api/topics')return json(res,200,{items:TOPICS});
+  if(req.method==='GET'&&pathname==='/api/auth/config')return json(res,200,{emailVerificationRequired:true,emailSendingConfigured:smtpConfigured()});
+  if(req.method==='POST'&&pathname==='/api/auth/email-code'){
+    const input=await body(req),email=sanitizeText(input.email).toLowerCase();
+    if(!/^[^\s@,;<>]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email)||email.length>254)return fail(res,400,'INVALID_EMAIL','请输入有效邮箱。');
+    if(db.users.some(u=>u.email===email))return fail(res,409,'EMAIL_EXISTS','该邮箱已注册，请直接登录。');
+    try{await verification.issue(email,require('node:net').isIP(String(req.headers['x-real-ip']||''))&&['127.0.0.1','::1','::ffff:127.0.0.1'].includes(req.socket.remoteAddress)?String(req.headers['x-real-ip']):req.socket.remoteAddress);return json(res,200,{message:'验证码已发送，请检查收件箱或垃圾邮件。',expiresIn:300,retryAfter:60});}
+    catch(e){const messages={MAIL_NOT_CONFIGURED:'邮件发送服务尚未配置，请稍后再试。',MAIL_SEND_FAILED:'邮件暂未发送成功，请稍后重试。',CODE_COOLDOWN:'请60秒后再获取验证码。',CODE_RATE_LIMITED:'验证码请求较频繁，请稍后再试。'};return fail(res,e.message.startsWith('CODE_')?429:503,e.message,messages[e.message]||'邮件发送失败。');}
+  }
   if (req.method === 'POST' && pathname === '/api/auth/register') {
     const input = await body(req); const email = sanitizeText(input.email).toLowerCase(); const nickname = sanitizeText(input.nickname); const password = String(input.password || '');
-    if (!/^\S+@\S+\.\S+$/.test(email)) return fail(res, 400, 'INVALID_EMAIL', '请输入有效邮箱。');
+    if (!/^[^\s@,;<>]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email)) return fail(res, 400, 'INVALID_EMAIL', '请输入有效邮箱。');
     if (nickname.length < 2 || nickname.length > 20) return fail(res, 400, 'INVALID_NICKNAME', '昵称应为2—20个字符。');
     if (password.length < 8) return fail(res, 400, 'WEAK_PASSWORD', '密码至少8位。');
     if (input.agreementAccepted !== true) return fail(res, 400, 'AGREEMENT_REQUIRED', '请先阅读并同意用户协议。');
     if (db.users.some((user) => user.email === email)) return fail(res, 409, 'EMAIL_EXISTS', '该邮箱已注册，请直接登录。');
-    const user = { id: id('usr'), email, nickname, role: 'user', passwordHash: hashPassword(password), createdAt: now(), agreementVersion: 'v1.0', agreementAcceptedAt: now() };
+    const codeResult=verification.check(email,input.emailCode);if(!codeResult.ok){const messages={EMAIL_CODE_MISSING:'当前邮箱没有待验证的验证码，请确认邮箱地址并重新获取。',EMAIL_CODE_EXPIRED:'验证码已超过5分钟，请重新获取。',EMAIL_CODE_LOCKED:'验证码输入错误已达5次，请重新获取。',EMAIL_CODE_FORMAT:'请输入邮件中的6位数字验证码。',EMAIL_CODE_MISMATCH:'验证码与当前邮箱最近发送的不一致，请核对邮件收件人及6位数字；重新获取后旧验证码会失效。'};return fail(res,400,codeResult.reason,messages[codeResult.reason]);}
+    const user = { id: id('usr'), email, nickname, role: adminEmails.has(email)?'admin':'user', emailVerifiedAt:now(), passwordHash: hashPassword(password), createdAt: now(), agreementVersion: 'v1.0', agreementAcceptedAt: now() };
     db.users.push(user); await audit(db, user.id, 'register', 'user', user.id); await writeDb(db);
-    return json(res, 201, { user: publicUser(user), message: '注册成功，请登录。' });
+    verification.consume(email);return json(res, 201, { user: publicUser(user), message: '邮箱验证成功，账户已创建。' });
   }
   if (req.method === 'POST' && pathname === '/api/auth/login') {
     const input = await body(req); const email = sanitizeText(input.email).toLowerCase(); const user = db.users.find((item) => item.email === email);
     if (!user || !verifyPassword(String(input.password || ''), user.passwordHash)) return fail(res, 401, 'INVALID_CREDENTIALS', '邮箱或密码不正确。');
-    const token = crypto.randomBytes(32).toString('base64url'); sessions.set(token, { userId: user.id, expiresAt: Date.now() + 1000 * 60 * 60 * 24 * 7 });
+    const token = crypto.randomBytes(32).toString('base64url'); sessions.set(sessionKey(token), { userId: user.id, expiresAt: Date.now() + 1000 * 60 * 60 * 24 * 7 });saveSessions();
     await audit(db, user.id, 'login', 'user', user.id); await writeDb(db); return json(res, 200, { token, user: publicUser(user) });
   }
-  if (req.method === 'POST' && pathname === '/api/auth/logout') { sessions.delete(tokenFrom(req)); return json(res, 200, { message: '已退出登录。' }); }
+  if (req.method === 'POST' && pathname === '/api/auth/logout') { sessions.delete(sessionKey(tokenFrom(req)));saveSessions(); return json(res, 200, { message: '已退出登录。' }); }
   if (req.method === 'GET' && pathname === '/api/me') { const user = currentUser(req, db); return json(res, 200, { user: user ? publicUser(user) : null }); }
 
   if (req.method === 'GET' && pathname === '/api/comments') {
@@ -152,7 +167,8 @@ async function api(req, res, pathname) {
 
   if (req.method === 'GET' && pathname === '/api/admin/dashboard') {
     const admin = requireAdmin(req, res, db); if (!admin) return;
-    return json(res, 200, { pendingComments: db.comments.filter((item) => item.status === 'pending').length, pendingFacts: db.facts.filter((item) => item.status === 'pending').length, recentAudit: db.audit.slice(-8).reverse() });
+    const commentCounts=Object.fromEntries(['pending','approved','rejected','hidden'].map(status=>[status,db.comments.filter(item=>item.status===status).length]));
+    return json(res, 200, { commentCounts,totalComments:db.comments.length,reviewAudit:db.audit.filter(item=>item.action.startsWith('review_comment_')||item.action==='hide_comment').slice(-12).reverse().map(item=>({...item,actorNickname:db.users.find(user=>user.id===item.actorId)?.nickname||'管理员'})),pendingComments: db.comments.filter((item) => item.status === 'pending').length, pendingFacts: db.facts.filter((item) => item.status === 'pending').length, recentAudit: db.audit.slice(-8).reverse() });
   }
   if (req.method === 'GET' && pathname === '/api/admin/comments') {
     const admin = requireAdmin(req, res, db); if (!admin) return; const url = new URL(req.url, `http://${req.headers.host}`); const status = url.searchParams.get('status') || 'pending';

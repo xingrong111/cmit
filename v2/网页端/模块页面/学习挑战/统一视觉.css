@@ -78,3 +78,27 @@ html[data-appearance=b] #view .learning-person-cover{grid-template-columns:112px
 html[data-appearance=b] #view .learning-person-cover>img{width:112px!important;height:136px!important;object-fit:contain!important;object-position:center!important;background:#e7e1d6!important;border:1px solid #dbd0bf!important;padding:5px!important;box-sizing:border-box!important}
 html[data-appearance=b] .learning-image-kind{left:24px!important;max-width:112px!important;font-size:8px!important}
 @media(max-width:650px){html[data-appearance=b] #view .learning-person-cover{grid-template-columns:88px minmax(0,1fr)!important;gap:16px!important;min-height:130px!important}html[data-appearance=b] #view .learning-person-cover>img{width:88px!important;height:108px!important}html[data-appearance=b] .learning-image-kind{left:20px!important;max-width:88px!important;font-size:7px!important}}
+/* 徽章大图由用户点击打开，不自动播放或改变获得状态。 */
+.badge-preview-trigger{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;min-height:170px;margin:8px 0 0;padding:0;border:0;background:transparent;color:#8a7251;cursor:pointer}
+.badge-preview-trigger img{display:block;width:142px;height:142px;object-fit:contain}
+.badge-preview-trigger span{font-size:11px;line-height:1.7}
+.badge-album-card.locked .badge-preview-trigger img,.badge-album-card.next .badge-preview-trigger img{filter:grayscale(1);opacity:.5}
+.badge-preview-trigger:focus-visible{outline:3px solid #9c3029;outline-offset:3px}
+.badge-spotlight{position:fixed;inset:0;width:100vw;max-width:none;height:100dvh;max-height:none;margin:0;padding:0;border:0;background:transparent;color:#fff;overflow:hidden;cursor:pointer}
+.badge-spotlight::backdrop{background:#ffffff1a;backdrop-filter:blur(3px)}
+.badge-spotlight-stage{position:absolute;left:50%;top:var(--badge-spotlight-center-y,50%);transform:translate(-50%,-50%);width:min(94vw,540px);max-height:94dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;cursor:default;outline:0}
+.badge-spotlight-art{position:relative;isolation:isolate;display:grid;place-items:center;width:min(68vw,340px,42dvh);aspect-ratio:1;margin:4px auto}
+.badge-spotlight-art img{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 12px 18px #6d492b69);position:relative;z-index:1;animation:badge-arrive .7s cubic-bezier(.2,.8,.2,1) both}
+.badge-spotlight-earned .badge-spotlight-art img{filter:drop-shadow(0 0 11px #f4bc57) drop-shadow(0 0 28px #ebad5d9c) drop-shadow(0 13px 17px #6d492b80)}
+.badge-spotlight-preview .badge-spotlight-art{width:min(82vw,420px,72dvh)}
+.badge-spotlight-preview .badge-spotlight-art img{animation:none;filter:grayscale(1) drop-shadow(0 12px 18px #6d492b69)}
+.badge-spotlight-heading{font:clamp(25px,5vw,40px)/1.5 STKaiti,KaiTi,serif;letter-spacing:.12em;color:#6c3526;text-shadow:0 1px 0 #fff;position:relative;z-index:2}
+.badge-spotlight-heading:before,.badge-spotlight-heading:after{content:'✦';font:17px/1 serif;color:#ba873d;margin:0 15px}
+.badge-spotlight-name{font:clamp(24px,5vw,37px)/1.5 STSong,SimSun,serif;letter-spacing:.1em;color:#35291f;margin-top:-3px}
+.badge-spotlight-stage p{max-width:85%;font-size:clamp(16px,3vw,21px);line-height:1.75;color:#5b4630;margin:5px 0 0}
+.badge-spotlight-sparks{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at center,#f6c66791 0,#f9de9f5c 35%,transparent 70%);box-shadow:0 0 38px #e8b55170;animation:badge-glow 1s ease-out both;pointer-events:none;z-index:0}
+.badge-spotlight-sparks:before,.badge-spotlight-sparks:after{content:'✦　✧　✦';position:absolute;left:0;right:0;top:9%;font-size:27px;letter-spacing:23px;color:#bb842b;text-shadow:0 0 13px #f0bd56;animation:badge-spark-light 1s ease-out both}
+.badge-spotlight-sparks:after{top:69%;font-size:18px}
+@keyframes badge-spark-light{from{opacity:0}55%{opacity:1}to{opacity:.7}}
+@media(max-width:650px){.badge-preview-trigger{min-height:135px}.badge-preview-trigger img{width:110px;height:110px}.badge-spotlight-heading:before,.badge-spotlight-heading:after{margin:0 7px}}
+@media(prefers-reduced-motion:reduce){.badge-spotlight *,.badge-spotlight *:before,.badge-spotlight *:after{animation:none!important}}

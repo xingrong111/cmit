@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev:h5": "uni --host 127.0.0.1 --port 8791",
-    "build:h5": "uni build",
+    "build:h5": "node scripts/build-h5.cjs",
     "build:mp-weixin": "uni build -p mp-weixin"
   },
   "dependencies": {

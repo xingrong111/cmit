@@ -40,3 +40,8 @@
 **/audit.json
 **/chat-history.json
 v2/docs/.学习验证-*/
+
+# Private account state
+**/verification-codes.json
+**/login-sessions.json
+**/claims.json

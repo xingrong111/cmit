@@ -177,7 +177,41 @@ html::-webkit-scrollbar,body::-webkit-scrollbar,#screen::-webkit-scrollbar,.web-
 .web-shell[data-page=place] .venue-action-bar button{width:130px!important;max-width:160px;min-width:0!important;min-height:42px;padding:9px 14px!important;font-size:12px!important;text-align:center;display:flex;align-items:center;justify-content:center}
 @media(max-width:720px){.web-shell[data-page=place] .venue-reading-columns{grid-template-columns:minmax(0,1fr);gap:16px}.web-shell[data-page=place] .venue-reading-columns .card{padding:21px}.web-shell[data-page=place] .venue-reading-right{grid-row:1}.web-shell[data-page=place] .venue-reference-grid{grid-template-columns:minmax(0,1fr);gap:9px}.web-shell[data-page=place] .venue-action-bar{gap:7px;padding:11px 8px}.web-shell[data-page=place] .venue-action-bar:before{display:none}.web-shell[data-page=place] .venue-action-bar button{flex:1;width:auto!important;max-width:none;font-size:11px!important;padding:9px 6px!important}}
 /* 场馆封面：左侧文献题签，右侧真实场馆资料照片。 */
+@font-face{font-family:"中华薪火体";src:url('/web/venue-covers/zhonghua-xinhuo.ttf') format('truetype');font-display:swap}
 .web-shell[data-page=place] .hero.venue-cover{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);padding:0!important;min-height:258px;background:#f1e8d6;border-radius:20px;isolation:isolate;border-color:#deceb0}
+/* 五馆定制封面：全幅实景照片+定向渐变遮罩，各馆文字落点不同（陆定一左上、秦邦宪右中、瞿秋白左中、张太雷右上、张闻天上下分区）。 */
+.web-shell[data-page=place] .hero.venue-cover-custom{display:block;position:relative;min-height:300px;background:#f7f0e2;padding:0!important;animation:none}
+.web-shell[data-page=place] .hero.venue-cover-custom:before{animation:none}
+.web-shell[data-page=place] .hero.venue-cover-custom.cover-split:before{display:none}
+.web-shell[data-page=place] .venue-cover-custom .venue-cover-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;animation:none}
+.web-shell[data-page=place] .venue-cover-custom.mask-l:before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#f7f0e2 0%,#f7f0e2e6 18%,#f7f0e299 35%,transparent 60%)}
+.web-shell[data-page=place] .venue-cover-custom.mask-r:before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(-90deg,#f7f0e2 0%,#f7f0e2e6 18%,#f7f0e299 35%,transparent 60%)}
+.web-shell[data-page=place] .venue-cover-custom .cover-copy{position:absolute;z-index:3;padding:30px 38px;max-width:52%;display:flex;flex-direction:column;margin:0}
+.web-shell[data-page=place] .venue-cover-custom .cover-copy:before{content:'';display:block;width:35px;height:3px;background:#982b28;margin-bottom:12px}
+.web-shell[data-page=place] .venue-cover-custom .cover-copy .eyebrow{font-size:12px;letter-spacing:.2em;color:#6b5030;margin:0 0 12px}
+.web-shell[data-page=place] .venue-cover-custom .cover-copy h2{display:flex;flex-direction:column;margin:6px 0 0;gap:0}
+.web-shell[data-page=place] .venue-cover-custom .cover-copy .name{font:900 56px/1 "中华薪火体",STKaiti,KaiTi,STSong,serif;letter-spacing:.04em;color:#354d43;text-shadow:0 1px 4px #fff8e8cc;-webkit-text-stroke:.8px #1d2e26;paint-order:stroke fill}
+.web-shell[data-page=place] .venue-cover-custom .cover-copy .suffix{font:900 40px/1.25 "中华薪火体",STKaiti,KaiTi,STSong,serif;letter-spacing:.06em;margin-top:4px;color:#354d43;-webkit-text-stroke:.2px #1d2e26}
+.web-shell[data-page=place] .venue-cover-custom .cover-copy .subtitle{font-size:13px;color:#75604b;font-weight:600;margin:10px 0 0;letter-spacing:.04em}
+.web-shell[data-page=place] .venue-cover-custom .at-lt{top:0;left:0;align-items:flex-start;text-align:left}
+.web-shell[data-page=place] .venue-cover-custom .at-lm{top:50%;left:0;transform:translateY(-50%);align-items:flex-start;text-align:left}
+.web-shell[data-page=place] .venue-cover-custom .at-rm{top:50%;right:0;transform:translateY(-50%);align-items:flex-end;text-align:right}
+.web-shell[data-page=place] .venue-cover-custom .at-rt{top:0;right:0;align-items:flex-end;text-align:right}
+.web-shell[data-page=place] .venue-cover-custom .at-rm h2,.web-shell[data-page=place] .venue-cover-custom .at-rt h2{align-items:flex-end}
+.web-shell[data-page=place] .venue-cover-custom .venue-cover-seal{z-index:4;top:26px;background:#982b28df;border-color:#fff2dbb0;color:#fff5df}
+.web-shell[data-page=place] .venue-cover-custom .venue-cover-seal.seal-r{right:22px;left:auto;transform:rotate(5deg)}
+.web-shell[data-page=place] .venue-cover-custom .venue-cover-seal.seal-l{left:22px;right:auto;transform:rotate(-5deg)}
+.web-shell[data-page=place] .venue-cover-custom .motion-toggle{display:none}
+/* 张闻天旧居：上米黄文字区、下建筑照片的上下分区版式 */
+.web-shell[data-page=place] .hero.venue-cover-custom.cover-split{display:flex;flex-direction:column;min-height:300px}
+.web-shell[data-page=place] .cover-split .cover-copy.split{position:relative;flex:0 0 auto;max-width:none;padding:14px 38px 12px;align-items:center;justify-content:center;text-align:center;background:#f7f0e2}
+.web-shell[data-page=place] .cover-split .cover-copy.split:before{margin-bottom:8px}
+.web-shell[data-page=place] .cover-split .cover-copy.split .eyebrow{font-size:11px;margin:0 0 4px}
+.web-shell[data-page=place] .cover-split .cover-copy.split h2{margin:0}
+.web-shell[data-page=place] .cover-split .cover-copy.split .name{font-size:46px;line-height:1.05;letter-spacing:.06em}
+.web-shell[data-page=place] .cover-split .cover-copy.split .subtitle{font-size:12px;margin:6px 0 0}
+.web-shell[data-page=place] .cover-split .split-photo{position:relative;z-index:0;flex:1 1 0;min-height:170px;width:100%;object-fit:cover;animation:none}
+@media(max-width:720px){.web-shell[data-page=place] .hero.venue-cover-custom{min-height:230px}.web-shell[data-page=place] .venue-cover-custom .cover-copy{padding:20px;max-width:82%}.web-shell[data-page=place] .venue-cover-custom .cover-copy .name{font-size:34px}.web-shell[data-page=place] .venue-cover-custom .cover-copy .suffix{font-size:24px}.web-shell[data-page=place] .venue-cover-custom .cover-copy .subtitle{font-size:11px}.web-shell[data-page=place] .cover-split .cover-copy.split .name{font-size:30px}.web-shell[data-page=place] .cover-split .split-photo{min-height:130px}}
 .web-shell[data-page=place] .venue-cover:after{display:none}
 .web-shell[data-page=place] .venue-cover-copy{position:relative;z-index:2;padding:32px 36px;min-width:0;background:radial-gradient(ellipse at 10% 100%,#e4ddc87a,transparent 75%),linear-gradient(90deg,#f7f0e2,#f5eedf)}
 .web-shell[data-page=place] .venue-cover-copy:before{content:'';display:block;width:35px;height:3px;background:#982b28;margin-bottom:16px}
@@ -195,7 +229,7 @@ html::-webkit-scrollbar,body::-webkit-scrollbar,#screen::-webkit-scrollbar,.web-
 .web-shell[data-page=place] .venue-cover .motion-toggle{z-index:4;right:15px;top:14px;background:#fffaf1ed;border-color:#d8c4a0}
 @keyframes venue-photo-arrive{from{opacity:.3;transform:scale(1.035)}to{opacity:1;transform:scale(1)}}
 .motion-off .venue-cover-photo{animation:none}
-@media(max-width:720px){.web-shell[data-page=place] .hero.venue-cover{grid-template-columns:minmax(0,1fr);min-height:0;border-radius:16px}.web-shell[data-page=place] .venue-cover-copy{padding:24px 23px}.web-shell[data-page=place] .venue-cover h2{font-size:25px!important;padding-right:0;gap:8px}.venue-cover-art{min-height:170px}.venue-cover-art:before{background:linear-gradient(#f5eedf,transparent 30%)}.venue-cover-seal{top:24px;right:18px;font-size:14px}.venue-cover-tags{margin-top:15px}.venue-cover-credit{padding-left:18px}.web-shell[data-page=place] .venue-cover .motion-toggle{font-size:9px;right:12px;top:12px;padding:4px 8px;min-height:25px}}
+@media(max-width:720px){.web-shell[data-page=place] .hero.venue-cover:not(.venue-cover-custom){grid-template-columns:minmax(0,1fr);min-height:0;border-radius:16px}.web-shell[data-page=place] .venue-cover-copy{padding:24px 23px}.web-shell[data-page=place] .venue-cover h2{font-size:25px!important;padding-right:0;gap:8px}.venue-cover-art{min-height:170px}.venue-cover-art:before{background:linear-gradient(#f5eedf,transparent 30%)}.venue-cover-seal{top:24px;right:18px;font-size:14px}.venue-cover-tags{margin-top:15px}.venue-cover-credit{padding-left:18px}.web-shell[data-page=place] .venue-cover .motion-toggle{font-size:9px;right:12px;top:12px;padding:4px 8px;min-height:25px}}
 @media(prefers-reduced-motion:reduce){.venue-cover-photo{animation:none!important}}
 .web-shell[data-page=place] .web-detail-layout>.venue-photo,.web-shell[data-page=place] .web-detail-layout>.venue-illustration{width:100%;max-width:none;min-width:0;box-sizing:border-box;grid-column:1;grid-row:1}
 .web-shell[data-page=place] .web-detail-layout>.venue-story{grid-column:2;grid-row:1;box-sizing:border-box}
@@ -233,13 +267,21 @@ html::-webkit-scrollbar,body::-webkit-scrollbar,#screen::-webkit-scrollbar,.web-
 .phone.web-shell[data-page=assistant] .guide-welcome .guide-skills{display:none!important}
 .phone.web-shell[data-page=assistant] .guide-copy small{max-width:105px;bottom:16px!important;top:auto!important;line-height:1.7}
 @media(max-width:720px){.web-shell[data-page=assistant] .assistant-cover .motion-toggle{font-size:8px!important;color:#8a714d!important;min-width:46px!important}}
-/* 对话优先：取消定高裁切，回答自然展开，整页滚动。 */
-.phone.web-shell[data-page=assistant] #screen{height:auto!important;min-height:0!important;overflow:visible!important;display:block}
-.web-shell[data-page=assistant] .web-assistant-layout{overflow:visible!important;min-height:620px;align-items:start}
-.web-shell[data-page=assistant] .web-assistant-sidebar{overflow:visible!important;position:sticky;top:16px}
-.web-shell[data-page=assistant] .web-chat-panel{height:auto!important;min-height:620px;overflow:visible!important}
-.web-shell[data-page=assistant] .web-chat-panel .conversation{height:auto!important;max-height:none!important;min-height:440px!important;overflow:visible!important;flex:none!important;scrollbar-gutter:auto;padding:10px 0}
-.web-shell[data-page=assistant] .web-chat-panel .web-empty-chat{height:auto!important;min-height:420px!important}
+/* 单一阅读区滚动：外层用弹性高度，不靠 overflow:hidden 锁死整页。 */
+html:has(.phone.web-shell[data-page=assistant]),html:has(.phone.web-shell[data-page=assistant]) body{height:100%;min-height:0}
+.phone.web-shell[data-page=assistant]{height:100%!important;min-height:0!important;padding:10px 18px 12px!important;box-sizing:border-box}
+.phone.web-shell[data-page=assistant]{height:calc(100% - var(--keyboard-inset,0px))!important;margin-top:var(--vv-offset,0px)}
+.phone.web-shell[data-page=assistant] #screen{height:100%!important;min-height:0!important;overflow:visible!important;display:flex;flex-direction:column;padding-bottom:4px}
+.web-shell[data-page=assistant] .hero.assistant-cover{flex:none;min-height:72px;margin:0 0 8px!important}
+.web-shell[data-page=assistant] .web-assistant-layout{flex:1;min-height:0;overflow:visible;align-items:stretch}
+.web-shell[data-page=assistant] .web-assistant-sidebar{overflow:visible;min-height:0}
+.web-shell[data-page=assistant] .web-chat-panel{position:relative;height:auto!important;min-height:0;flex:1;overflow:hidden;display:flex;flex-direction:column;padding-bottom:8px!important}
+.web-shell[data-page=assistant] .web-chat-panel .conversation{flex:1;min-height:0!important;height:auto!important;max-height:none;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:6px 4px 12px;outline:none}
+.web-shell[data-page=assistant] .web-chat-panel .conversation::-webkit-scrollbar{width:0;height:0;display:none}
+.web-shell[data-page=assistant] .web-chat-panel .web-empty-chat{min-height:0!important;height:100%}
+.web-shell[data-page=assistant] .follow-row{display:flex;align-items:center;flex-wrap:wrap;gap:6px;padding:6px 2px 0;margin:0;flex:none}
+.web-shell[data-page=assistant] .follow-row>span{font-size:10px;color:#9a886d;white-space:nowrap}
+.web-shell[data-page=assistant] .follow-row button{min-height:28px;padding:4px 9px;font-size:11px;border-radius:7px;margin:0;line-height:1.5;background:#f4edde;border:1px solid #e4d6bd;color:#6d5b45}
 .web-shell[data-page=assistant] .web-chat-panel>.card:has([data-action=quick]){display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:9px 11px;margin:10px 0 0;border:0;border-radius:9px;background:#f4edde;box-shadow:none;flex:none}
 .web-shell[data-page=assistant] .web-chat-panel>.card:has([data-action=quick])>.small{font-size:10px;white-space:nowrap}
 .web-shell[data-page=assistant] .web-chat-panel>.card:has([data-action=quick]) .chips{display:flex;flex-wrap:wrap;gap:6px;margin:0}
@@ -247,7 +289,25 @@ html::-webkit-scrollbar,body::-webkit-scrollbar,#screen::-webkit-scrollbar,.web-
 .web-shell[data-page=assistant] .scenario .scene-icon{display:block!important;grid-column:1;grid-row:1/3}
 .web-shell[data-page=assistant] .scenario strong{grid-column:2;grid-row:1;white-space:nowrap}
 .web-shell[data-page=assistant] .scenario small{grid-column:2;grid-row:2}
-@media(max-width:720px){.web-shell[data-page=assistant] .web-assistant-layout{min-height:0;overflow:visible!important}.web-shell[data-page=assistant] .web-assistant-sidebar{position:static}.web-shell[data-page=assistant] .web-chat-panel{min-height:530px;overflow:visible!important}.web-shell[data-page=assistant] .web-chat-panel .conversation{min-height:330px!important}.web-shell[data-page=assistant] .web-chat-panel .web-empty-chat{min-height:330px!important}.web-shell[data-page=assistant] .scenario .scene-icon{grid-row:1}.web-shell[data-page=assistant] .web-chat-panel>.card:has([data-action=quick]){gap:5px;padding:8px}}
+.web-shell[data-page=assistant] .has-conversation .hero.assistant-cover{min-height:58px;padding:12px 18px!important}
+.web-shell[data-page=assistant] .has-conversation .hero.assistant-cover p{display:none}
+.web-shell[data-page=assistant] .latest-jump{position:absolute;left:50%;bottom:108px;transform:translateX(-50%);z-index:6;flex:none;min-height:30px;margin:0;padding:5px 12px;font-size:11px;border-radius:14px;box-shadow:0 6px 18px #3c2a1414}
+.web-shell[data-page=assistant] .assistant-thinking{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:4px 0 0;padding:8px 10px;font-size:12px}
+.web-shell[data-page=assistant] .assistant-thinking .ghost{min-height:28px;padding:4px 10px;font-size:11px}
+.web-shell[data-page=assistant] .guide-conversation .assistant-bubble,.web-shell[data-page=assistant] .guide-conversation>.card:not(.user){padding:12px 14px 10px;background:#fffaf1;border:1px solid #eadbc4;border-radius:4px 16px 16px 16px}
+.web-shell[data-page=assistant] .guide-conversation .answer-paragraph{font-size:15px;line-height:1.9;margin:0 0 8px}
+.web-shell[data-page=assistant] .guide-conversation .answer-title{display:block;font-size:16px;color:#354d43;margin:0 0 8px}
+.web-shell[data-page=assistant] .evidence-panel{margin:8px 0 0;padding:0;border:0;background:transparent;box-shadow:none}
+.web-shell[data-page=assistant] .evidence-panel>summary{cursor:pointer;font-size:11px;color:#8b714d;min-height:28px;line-height:28px;list-style:none}
+.web-shell[data-page=assistant] .evidence-panel>summary::-webkit-details-marker{display:none}
+.web-shell[data-page=assistant] .evidence-panel .source{margin:6px 0;padding:10px 12px;font-size:12px}
+.web-shell[data-page=assistant] .composer{margin-top:8px!important;padding:6px 8px 6px 12px!important;align-items:flex-end;gap:8px}
+.web-shell[data-page=assistant] .composer textarea{min-height:34px;max-height:96px}
+.web-shell[data-page=assistant] .composer .send-icon{width:38px;height:38px;min-height:38px;border-radius:50%!important}
+.web-shell[data-page=assistant] .composer .send-icon:disabled{opacity:.4}
+.web-shell[data-page=assistant] .web-chat-panel>p.small{margin-top:6px}
+.web-shell[data-page=assistant] .error,.web-shell[data-page=assistant] .reply-status{font-size:12px;line-height:1.6;color:#8a3b32;background:#f9e8e3;border-radius:8px;padding:8px 10px;margin-top:8px}
+@media(max-width:720px){.phone.web-shell[data-page=assistant]{padding:8px 10px 8px!important}.web-shell[data-page=assistant] .web-assistant-layout{min-height:0;overflow:visible;gap:8px}.web-shell[data-page=assistant] .web-assistant-sidebar{position:static;flex:none}.web-shell[data-page=assistant] .web-chat-panel{min-height:0;overflow:hidden}.web-shell[data-page=assistant] .web-chat-panel .conversation{min-height:0!important}.web-shell[data-page=assistant] .web-chat-panel .web-empty-chat{min-height:0!important}.web-shell[data-page=assistant] .scenario .scene-icon{grid-row:1}.web-shell[data-page=assistant] .hero.assistant-cover{min-height:56px;padding:10px 12px!important}.web-shell[data-page=assistant] .latest-jump{bottom:96px}}
 /* 提问气泡的修改图标不占额外一行。 */
 .guide-conversation>.user{position:relative;padding:10px 42px 10px 14px!important;min-height:40px!important}
 .guide-conversation>.user .message-tools{position:absolute;right:5px;bottom:5px;width:28px;height:28px!important;margin:0!important;display:flex;align-items:center;justify-content:center}
@@ -256,6 +316,37 @@ html::-webkit-scrollbar,body::-webkit-scrollbar,#screen::-webkit-scrollbar,.web-
 .guide-conversation>.user .message-tools .icon-button:hover,.guide-conversation>.user .message-tools .icon-button:focus-visible{opacity:1;background:#cdb88c22!important}
 .guide-conversation>.user .answer-paragraph{margin:0!important;line-height:1.65}
 @media(hover:none){.guide-conversation>.user .message-tools .icon-button{opacity:.65}}
+.guide-conversation>.card:not(.user){position:relative;padding-right:40px}
+.guide-conversation>.card:not(.user) .message-tools{position:absolute;right:4px;top:6px;margin:0!important;width:28px;height:28px;display:flex;align-items:center;justify-content:center}
+.guide-conversation>.card:not(.user) .message-tools .icon-button{width:28px!important;height:28px!important;min-height:28px!important;margin:0!important;padding:6px!important;opacity:.4;background:transparent!important;border:0!important}
+.guide-conversation>.card:not(.user) .message-tools .chat-icon{width:13px;height:13px;transform:scale(.78)}
+.guide-conversation>.card:not(.user) .message-tools .icon-button:hover,.guide-conversation>.card:not(.user) .message-tools .icon-button:focus-visible{opacity:1}
+
+/* 小迹专属底板：标题用山河路线，阅读区用淡纸纹，内容仍保持清晰。 */
+.web-shell[data-page=assistant] .hero.assistant-cover{
+ background:#faf5eb url('/web/assistant-cover-board.svg') center/cover no-repeat!important;
+ background-position:center bottom!important;
+ border-color:#d9c9ac!important;
+ box-shadow:0 8px 22px #6c5a3810,inset 0 1px #fffaf5!important;
+}
+.web-shell[data-page=assistant] .assistant-cover h2,.web-shell[data-page=assistant] .assistant-cover p{
+ position:relative;z-index:1;text-shadow:0 1px 9px #fffaf5;
+}
+.web-shell[data-page=assistant] .web-chat-panel{
+ background:#fffdf8 url('/web/assistant-chat-board.svg') center/cover no-repeat!important;
+ border-color:#dacbb1!important;
+ box-shadow:0 14px 32px #59462b0c,inset 0 1px #fff!important;
+}
+.web-shell[data-page=assistant] .web-chat-panel .web-empty-chat{
+ background:transparent!important;background-image:none!important;
+}
+.web-shell[data-page=assistant] .web-chat-panel>.hint{
+ border-bottom-color:#ddcfb6;
+}
+@media(max-width:720px){
+ .web-shell[data-page=assistant] .hero.assistant-cover{background-position:66% bottom!important}
+ .web-shell[data-page=assistant] .web-chat-panel{background-position:54% center!important}
+}
 
 /* 青绿山水铺满标题框与初始对话欢迎区。 */
 .web-shell[data-page=assistant] .hero.assistant-cover{background-image:linear-gradient(90deg,#fbf5e9ee 0%,#fbf5e9c4 40%,#fbf5e920 100%),url('/web/landscape.svg')!important;background-size:cover!important;background-position:center 48%!important;background-repeat:no-repeat!important}
@@ -281,3 +372,48 @@ html::-webkit-scrollbar,body::-webkit-scrollbar,#screen::-webkit-scrollbar,.web-
 .web-shell[data-page=assistant] .web-empty-chat .assistant-starts button:hover{background:#fffdf5;border-color:#bd9a67}
 @media(max-width:720px){.web-shell[data-page=assistant] .web-chat-panel .web-empty-chat{padding:28px 18px!important}.web-shell[data-page=assistant] .web-empty-chat .web-empty-seal{width:50px;height:50px;font-size:29px;margin-bottom:16px}.web-shell[data-page=assistant] .web-empty-chat h3{font-size:25px}.web-shell[data-page=assistant] .web-empty-chat .eyebrow{font-size:9px}.web-shell[data-page=assistant] .web-empty-chat p{font-size:11px;margin-bottom:22px}.web-shell[data-page=assistant] .web-empty-chat .assistant-starts{width:100%;max-width:310px;gap:8px}.web-shell[data-page=assistant] .web-empty-chat .assistant-starts button{font-size:11px;min-height:39px;padding:9px 12px}}
 @media(prefers-reduced-motion:reduce){.web-shell[data-page=assistant] .web-empty-chat .assistant-starts button{transition:none}}
+
+.web-shell[data-page=assistant] .web-empty-chat,.web-shell[data-page=assistant] .web-chat-panel .web-empty-chat{background:none!important;background-image:none!important;border:0!important;box-shadow:none!important;padding:12px 8px 8px!important;height:auto!important;min-height:0!important;justify-content:flex-start}
+.web-shell[data-page=assistant] .web-empty-chat:before,.web-shell[data-page=assistant] .web-empty-chat:after{display:none!important;content:none!important}
+.web-shell[data-page=assistant] .web-empty-logo{display:block;width:72px;height:72px;object-fit:contain;margin:0 auto 16px}
+.web-shell[data-page=assistant] .web-empty-seal{display:none!important}
+.web-shell[data-page=assistant] .web-empty-chat .eyebrow{font-size:12px!important;letter-spacing:.14em;color:#534433!important}
+.web-shell[data-page=assistant] .web-empty-chat h3{font:28px/1.5 STSong,SimSun,serif!important;margin:8px 0 10px;color:#354d43}
+.web-shell[data-page=assistant] .web-empty-chat p{font-size:14px!important;line-height:1.8;color:#534433!important;margin:0 0 20px}
+.web-shell[data-page=assistant] .assistant-starts,.web-shell[data-page=assistant] .web-empty-chat .assistant-starts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;width:min(720px,100%);max-width:none}
+.web-shell[data-page=assistant] .assistant-starts button,.web-shell[data-page=assistant] .web-empty-chat .assistant-starts button{display:grid;grid-template-columns:36px minmax(0,1fr);grid-template-rows:auto auto;column-gap:10px;align-items:center;text-align:left;min-height:76px;padding:12px 14px;background:#fffdf8;border:1px solid #e4d3b5;border-radius:12px;color:#35281d;font-size:14px;line-height:1.5;transition:border-color .15s,box-shadow .15s}
+.web-shell[data-page=assistant] .assistant-starts button:hover,.web-shell[data-page=assistant] .web-empty-chat .assistant-starts button:hover{border-color:#982b28;background:#fffdf8;box-shadow:0 4px 12px #982b2810}
+.web-shell[data-page=assistant] .start-icon{grid-column:1;grid-row:1/3;width:32px;height:32px;object-fit:contain}
+.web-shell[data-page=assistant] .start-copy{grid-column:2;display:flex;flex-direction:column;gap:4px;min-width:0}
+.web-shell[data-page=assistant] .assistant-starts strong{font-size:14px;line-height:1.45;color:#35281d;font-weight:600}
+.web-shell[data-page=assistant] .assistant-starts small{font-size:12px;line-height:1.5;color:#534433}
+.web-shell[data-page=assistant] .web-chat-panel>.hint{font-size:14px;color:#35281d;align-items:center}
+.web-shell[data-page=assistant] .chat-mode-label{font-size:14px;color:#35281d}
+.web-shell[data-page=assistant] [data-action=reset-guide],.web-shell[data-page=assistant] .reset-guide{min-height:28px!important;height:28px;padding:0 10px!important;font-size:12px;line-height:26px;border:1px solid #d7c09a!important;background:#fffdf8!important;border-radius:8px;color:#534433;box-shadow:none}
+.web-shell[data-page=assistant] .web-chat-panel .composer{background:#fffdf8!important;border:1px solid #e4d3b5!important;border-radius:14px!important;box-shadow:none;margin-top:12px!important}
+.web-shell[data-page=assistant] .web-chat-panel .composer:focus-within{border-color:#982b28!important;box-shadow:0 4px 14px #982b2814}
+.web-shell[data-page=assistant] .composer textarea{font-size:14px!important;color:#35281d}
+.web-shell[data-page=assistant] .ai-disclaimer{font-size:12px!important;line-height:1.6;color:#534433!important;margin:8px 0 0;text-align:center}
+.web-shell[data-page=assistant] .web-chat-panel>p.small{font-size:12px!important;color:#534433}
+.web-shell[data-page=assistant] .guide-conversation .answer-paragraph,.web-shell[data-page=assistant] .guide-conversation .message{font-size:14px!important;line-height:1.85;color:#35281d}
+.web-shell[data-page=assistant] .web-side-note p,.web-shell[data-page=assistant] .web-side-note small,.web-shell[data-page=assistant] .label,.web-shell[data-page=assistant] .assistant-cover p,.web-shell[data-page=assistant] .scenario small,.web-shell[data-page=assistant] .evidence-panel>summary,.web-shell[data-page=assistant] .follow-row>span{font-size:12px!important;color:#534433}
+.web-shell[data-page=assistant] .web-assistant-sidebar .guide-welcome,.web-shell[data-page=assistant] .has-conversation .web-assistant-sidebar .guide-welcome,.phone.web-shell[data-page=assistant] .guide-welcome,.web-shell[data-page=assistant] .web-assistant-sidebar .web-side-note,.web-shell[data-page=assistant] .has-conversation .web-side-note,.web-shell[data-page=assistant] .has-conversation .web-assistant-sidebar .preference-panel{display:block!important}
+.web-shell[data-page=assistant] .web-chat-panel .composer{position:relative;padding:10px 12px!important}
+.web-shell[data-page=assistant] .web-chat-panel .composer:before{content:'';position:absolute;left:0;right:0;top:-12px;height:1px;background:#eadfcd}
+.web-shell[data-page=assistant] .web-empty-logo{width:88px;height:88px;object-fit:contain;background:transparent}
+@media(max-width:720px){.web-shell[data-page=assistant] .assistant-starts,.web-shell[data-page=assistant] .web-empty-chat .assistant-starts{grid-template-columns:1fr;max-width:100%}.web-shell[data-page=assistant] .web-empty-chat .eyebrow{font-size:12px!important}.web-shell[data-page=assistant] .web-empty-chat p{font-size:14px!important}.web-shell[data-page=assistant] .assistant-starts button{min-height:68px}.web-shell[data-page=assistant] .web-assistant-sidebar .guide-welcome,.phone.web-shell[data-page=assistant] .guide-welcome{display:block!important;height:150px!important;min-height:150px!important}}
+/* 回答操作图标、继续了解间距 */
+.web-shell[data-page=assistant] .follow-row{gap:8px 10px;padding:clamp(8px,1.6vh,14px) 2px 0;margin-bottom:14px}
+.web-shell[data-page=assistant] .follow-row button{min-height:32px;padding:5px 12px;font-size:12px;border-radius:9px}
+.web-shell[data-page=assistant] .follow-row>span{font-size:12px;margin-right:2px}
+.web-shell[data-page=assistant] .web-chat-panel:has(.follow-row) .conversation{padding-bottom:12px}
+.web-shell[data-page=assistant] .web-chat-panel:has(.follow-row) .latest-jump{bottom:156px}
+.guide-conversation>.card:not(.user) .reply-tools{display:flex;justify-content:flex-end;align-items:center;gap:2px;margin-top:8px}
+.reply-tools .icon-button{width:30px;height:30px;min-height:30px;padding:6px!important;margin:0;border-radius:8px;background:transparent;border:0;color:#806a52;opacity:.7;box-shadow:none}
+.reply-tools .icon-button:hover,.reply-tools .icon-button:focus-visible{opacity:1;background:#cdb88c26}
+.reply-tools .icon-button.active{opacity:1;color:#982b28;background:#982b2814}
+.reply-tools .chat-icon{width:16px;height:16px;background:currentColor;background-image:none;-webkit-mask:var(--ic) center/contain no-repeat;mask:var(--ic) center/contain no-repeat}
+.reply-tools .chat-icon-copy{--ic:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><rect x='9' y='9' width='13' height='13' rx='2'/><path d='M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1'/></svg>")}
+.reply-tools .chat-icon-retry{--ic:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8'/><path d='M21 3v5h-5'/><path d='M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16'/><path d='M8 16H3v5'/></svg>")}
+.reply-tools .chat-icon-like{--ic:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M7 10v12'/><path d='M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z'/></svg>")}
+.reply-tools .chat-icon-dislike{--ic:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M17 14V2'/><path d='M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z'/></svg>")}

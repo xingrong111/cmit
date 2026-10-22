@@ -4,6 +4,7 @@ export function backOr(page='home'){
  else go(page)
 }
 export function go(page,params={}){
+ if(page==='me'&&params.auth)uni.setStorageSync('yingji:account-intent',{mode:params.auth,returnTo:params.returnTo||''});
  const query=Object.entries(params).filter(([,v])=>v!=null).map(([k,v])=>k+'='+encodeURIComponent(v)).join('&')
  if(page==='timeline')uni.setStorageSync('yingji:timeline-person',{person_id:params.person_id||''})
  if(page==='assistant'&&params.person_id)uni.setStorageSync('yingji:guide-person',{id:params.person_id,name:params.name||''})

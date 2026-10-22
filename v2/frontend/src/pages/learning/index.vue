@@ -7,7 +7,7 @@ function fitFrame(){
  frameObserver=new ResizeObserver(resize);frameObserver.observe(d.body);resize();
  // #endif
 }
-onBeforeUnmount(()=>frameObserver?.disconnect());const url=ref('/modules/learning/');onLoad(o=>{if(/^(QQB|LYS|SZZ|LDY|JZY)$/.test(o.group||''))url.value+='?group='+o.group});onShow(()=>{
+onBeforeUnmount(()=>frameObserver?.disconnect());const url=ref('/modules/learning/');onLoad(o=>{if(o.view==='honors')url.value+='?view=honors';else if(/^(QQB|LYS|SZZ|LDY|JZY)$/.test(o.group||''))url.value+='?group='+o.group});onShow(()=>{
 // #ifdef H5
 setTimeout(()=>frame.value?.contentWindow?.postMessage({type:'yingji-refresh-learning'},location.origin),100);
 // #endif

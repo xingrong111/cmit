@@ -134,3 +134,48 @@ img{display:block;max-width:100%}
 }
 @media (max-width:360px){.wc-grid{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.wc-card,.wc-meter>span,.btn{transition:none}.wc-card:hover{transform:none}.wc-spinner{animation:none}}
+
+/* 放大说明文字，强调状态；不修改领取、收藏或解锁逻辑。 */
+:is(.small,.muted,.wc-note,.wc-description,.wc-card-desc,.wc-preview-cap,small){font-size:16px;line-height:1.75}
+.wc-badge{font-size:15px;font-weight:700;line-height:1.6}
+@media(max-width:650px){:is(.small,.muted,.wc-note,.wc-description,.wc-card-desc,.wc-preview-cap,small){font-size:15px}}
+
+/* 全站宋体：保留字号、字重和专用图标字体。 */
+html body{--sans:'SimSun','STSong',serif;--serif:'SimSun','STSong',serif;--b-sans:'SimSun','STSong',serif;--b-serif:'SimSun','STSong',serif}
+html body,html body *:not(.uni-icons):not(.uni-icons *):not(.iconfont):not(.iconfont *){font-family:'SimSun','STSong',serif!important}
+
+/* 人物专题一致的文创卷首与收藏卡片。 */
+.wc-banner{min-height:245px;padding:34px 36px;border:1px solid #d8c5a5;border-radius:14px;box-shadow:0 10px 28px #3d352417;background:linear-gradient(90deg,#fffcf5f2,#fffcf54a 75%),url('images/cultural-collection.webp') center/cover no-repeat}
+.wc-banner::after{display:none}
+.wc-banner .page-title{font-size:clamp(42px,3.3vw,52px);font-weight:900;line-height:1.34;color:#142d25;-webkit-text-stroke:.35px currentColor;letter-spacing:2px}
+.wc-banner .muted{font-size:18px;font-weight:600;max-width:650px;line-height:1.8}
+.wc-banner .eyebrow{font-size:17px;font-weight:700;color:#88704d}
+.wc-banner-bar{background:#fffaf1d9;padding:16px 18px;border:1px solid #ddcfb5;border-radius:10px}
+.wc-summary strong{font-size:17px;font-weight:700}
+.wc-grid{gap:24px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.wc-card{border-radius:14px;border:1px solid #d8c5a5;box-shadow:0 6px 18px #3d35240a;background:#fffaf2}
+.wc-card-body{padding:22px;display:flex;flex-direction:column;gap:8px}
+.wc-card-name{font-size:26px;font-weight:900;color:#142d25;line-height:1.5;margin:6px 0}
+.wc-card-desc{font-size:17px;line-height:1.8}
+.wc-card-top{flex-wrap:wrap}
+@media(max-width:760px){.wc-banner{padding:24px 20px;min-height:210px;background-position:62% center}.wc-banner .page-title{font-size:29px;letter-spacing:1px}.wc-banner .muted{font-size:17px}.wc-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.wc-card-body{padding:14px}.wc-card-name{font-size:21px}.wc-card-desc{font-size:16px}.wc-banner-bar{padding:12px}.wc-summary{min-width:0;width:100%}.wc-badge{white-space:normal}}
+@media(max-width:380px){.wc-grid{grid-template-columns:1fr}}
+
+@media(min-width:761px){.wc-banner .page-title{font-size:48px}}
+
+.wc-banner .eyebrow{display:none!important}.wc-banner .page-title{font-size:var(--page-cover-title,38px)!important;line-height:1.4!important}
+
+/* v2.2 collectible reading pages */
+body.wc-embedded{background:transparent}
+.wc-detail,.wc-success{padding:32px;border:1px solid #ddc9a8;border-radius:20px;background:linear-gradient(135deg,#fffdf8ee,#f8f0e2e8);box-shadow:0 12px 36px #4731180a}
+.wc-detail{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:36px}
+.wc-detail .page-title,.wc-success .page-title{font:600 38px/1.5 var(--serif);color:var(--green)}
+.wc-detail .wc-art-large,.wc-success-art{max-width:620px;width:100%}
+.wc-detail .wc-art,.wc-success .wc-art{aspect-ratio:1/1.12;border-radius:14px;overflow:hidden;background:#f3ead9}
+.wc-block h2{font-size:20px;font-weight:600}.wc-block p,.wc-detail .muted,.wc-success>p{font-size:20px;line-height:1.9}
+.wc-actions{max-width:520px;width:100%}.wc-actions .btn{font-size:20px;min-height:56px;border-radius:10px}
+.wc-success .wc-note{font-size:18px;line-height:1.9;max-width:1000px}
+.wc-success .eyebrow{display:none}
+@media(max-width:700px){.wc-detail{grid-template-columns:minmax(0,1fr);gap:24px}.wc-detail,.wc-success{padding:20px}.wc-detail .page-title,.wc-success .page-title{font-size:30px}.wc-block p,.wc-detail .muted,.wc-success>p{font-size:18px}.wc-detail .wc-art-large,.wc-success-art{max-width:100%}}
+
+.wc-detail .wc-art,.wc-success .wc-art{padding-top:0;aspect-ratio:1/1.12}

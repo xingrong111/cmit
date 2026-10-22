@@ -42,5 +42,5 @@ test('重试旧问题丢弃后续消息且只发送之前上下文',async()=>{
  p.data.messages=[{role:'user',text:'旧问题'},{role:'assistant',text:'失败',failed:true,retryQuestion:'旧问题'},{role:'user',text:'后来的问题'},{role:'assistant',text:'后来的回答'}];p.data.question='旧问题';await p.send(1);assert.equal(sent.history.length,0);assert.equal(p.data.messages.length,2);assert.equal(p.data.messages[1].text,'重新回答');
 });
 test('用户上滑阅读时回答完成不强制滚动',async()=>{
- let finish;let scrolled=false;const {p}=page('pages/assistant/index.js',{'../../utils/api':{request:()=>({promise:new Promise(r=>finish=r)})},wx:{pageScrollTo:()=>scrolled=true}});p.sequence=0;p.data.question='问题';const task=p.send();p.previousScroll=100;p.onPageScroll({scrollTop:50});finish({answer:'回答',citations:[],actions:[]});await task;assert.equal(scrolled,false);assert.equal(p.data.showLatest,true);
+ let finish;const {p}=page('pages/assistant/index.js',{'../../utils/api':{request:()=>({promise:new Promise(r=>finish=r)})}});p.sequence=0;p.threadView=400;p.data.question='问题';const task=p.send();p.onThreadScroll({detail:{scrollTop:20,scrollHeight:900}});finish({answer:'回答',citations:[],actions:[]});await task;assert.equal(p.data.scrollInto,'');assert.equal(p.data.showLatest,true);assert.equal(p.readingEarlier,true);
 });

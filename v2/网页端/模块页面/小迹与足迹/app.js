@@ -11,6 +11,7 @@ const webOriginal = {assistant, radar, route, place, nav, go};
 const webLabels = {assistant:'小迹导览',radar:'历史足迹',route:'文化路线'};
 nav = function webNav() {
   const active=state.page==='place'?'radar':state.page;
+  if(['assistant','radar'].includes(state.page))screen.querySelectorAll('.hero .motion-toggle').forEach(button=>button.remove());
   try{if(parent!==window){const back=parent.document.querySelector('.page-return');if(back)back.style.display=state.page==='place'?'none':'';}}catch{}
   if(state.page==='place'&&!screen.querySelector('.venue-return'))screen.insertAdjacentHTML('afterbegin','<button class="venue-return" data-venue-back>‹ 返回上一页</button>');
   const links=Object.entries(webLabels).map(([id,name])=>`<button data-action="page" data-value="${id}" class="${id===active?'active':''}" ${id===active?'aria-current="page"':''}>${name}${id==='route'?'<span class="route-count">'+state.stops.length+'</span>':''}</button>`).join('');
@@ -21,6 +22,7 @@ function panel(cls,children){const el=document.createElement('div');el.className
 function webAssistantLayout(){
   if(state.page!=='assistant')return;
   fitAssistantViewport();
+  const readingLabel=screen.querySelector('.label');if(readingLabel)readingLabel.textContent='资料试读';
   const heading=screen.querySelector('.hero');if(heading){heading.classList.add('assistant-cover');heading.querySelector('h2').innerHTML='<img class="module-feature-icon" src="/static/icons/assistant.png" alt="">小迹 · 你的山河导览员';heading.querySelector('p').textContent='读人物、寻足迹，把每一次好奇变成一段旅程。';if(!heading.querySelector('.assistant-cover-seal'))heading.insertAdjacentHTML('beforeend','<span class="assistant-cover-seal" aria-hidden="true">循迹<br>问知</span>');}
   const welcome=screen.querySelector('.guide-welcome');
   if(welcome){const heading=welcome.querySelector('h3,.heading');if(heading)heading.textContent='小迹陪你循迹';}
@@ -32,9 +34,12 @@ function webAssistantLayout(){
   const chat=panel('web-chat-panel',chatNodes);
   if(state.guideContext?.personName||state.personId){const name=state.guideContext.personName||({"IP-QC":"瞿秋白","IP-LYS":"狼牙山五壮士","IP-SZZ":"宋振中","IP-LDY":"陆定一","IP-JZY":"江竹筠"}[state.personId]||'人物资料');chat.insertAdjacentHTML('afterbegin',`<div class="context-chip"><span>正在讨论：${esc(name)}</span><button data-web-clear-context aria-label="取消人物限定">×</button></div>`);}
   const conversation=chat.querySelector('.conversation');
-  if(!state.messages.length)conversation.innerHTML='<div class="web-empty-chat"><span class="web-empty-seal">迹</span><span class="eyebrow">与小迹一起，循迹而行</span><h3>从一个问题开始</h3><p>聊一位人物，或说说你想去的城市。</p><div class="assistant-starts"><button data-action="quick" data-value="这个小程序有哪些功能？">小程序怎么用？ <span>↗</span></button><button data-action="quick" data-value="帮我安排无锡两小时文化路线">无锡两小时怎么逛？ <span>↗</span></button><button data-action="quick" data-value="介绍一下瞿秋白，并给出资料依据">读一读瞿秋白 <span>↗</span></button></div></div>';
+  if(!state.messages.length)conversation.innerHTML='<div class="web-empty-chat"><img class="web-empty-logo" src="/static/山河有迹Logo.png" alt="山河有迹"><span class="eyebrow">与小迹一起，循迹而行</span><h3>从一个问题开始</h3><p>'+esc(sceneIntro())+'</p>'+startCards()+'</div>';
   layout.append(side,chat);screen.append(layout);
-  chat.querySelector('#question')?.setAttribute('placeholder','问小迹，或告诉我出行计划…');
+  chat.querySelector('#question')?.setAttribute('placeholder',scenePlaceholder());
+  if(typeof bindConversationScroll==='function')bindConversationScroll();
+  if(typeof restoreConversation==='function')requestAnimationFrame(()=>restoreConversation(!state.readingEarlier));
+  if(typeof syncKeyboardInset==='function')syncKeyboardInset();
 }
 assistant=function(){webOriginal.assistant();webAssistantLayout();nav();};
 function webRadarLayout(){
@@ -63,15 +68,41 @@ function webRouteLayout(){
 }
 route=async function(){await webOriginal.route();webRouteLayout();nav();};
 
+const venueCoverDesigns={
+ 'PLACE-WX-LDY':{image:'/web/venue-covers/lu-dingyi.png',position:'100% 48%',mask:'mask-l',pos:'at-lt',seal:'seal-r',name:'陆定一',suffix:'祖居陈列馆',addr:'无锡市惠山区 · 老陆巷 4 号'},
+ 'PLACE-WX-QBC':{image:'/web/venue-covers/qin-bangxian.png',position:'50% 38%',mask:'mask-r',pos:'at-rm',seal:'seal-l',name:'秦邦宪',suffix:'故居',addr:'无锡市梁溪区 · 崇安寺街道'},
+ 'PLACE-CZ-QQB':{image:'/web/venue-covers/qu-qiubai.png',position:'50% 65%',mask:'mask-l',pos:'at-lm',seal:'seal-r',name:'瞿秋白',suffix:'纪念馆',addr:'常州市天宁区 · 延陵西路 188 号'},
+ 'PLACE-CZ-ZTL':{image:'/web/venue-covers/zhang-tailei.png',position:'50% 90%',mask:'mask-r',pos:'at-rt',seal:'seal-l',name:'张太雷',suffix:'纪念馆',addr:'常州市天宁区 · 延陵西路'},
+ 'PLACE-WX-ZWT':{image:'/web/venue-covers/zhang-wentian.png',position:'center 80%',split:true,seal:'seal-r',name:'张闻天旧居',addr:'无锡市梁溪区 · 崇安寺街道汤巷 45 号'}
+};
 function decorateVenueCover(){
- const cover=screen.querySelector('.hero'),p=state.current;if(!cover||!p||cover.querySelector('.venue-cover-art'))return;
+ const cover=screen.querySelector('.hero'),p=state.current;if(!cover||!p||cover.querySelector('.venue-cover-art,.venue-cover-photo,.split-photo'))return;
+ const design=venueCoverDesigns[p.id];
  cover.classList.add('venue-cover');
+ if(design){
+  // 五馆定制封面：全幅实景+定向遮罩，各馆文字落点不同；张闻天为上下分区
+  cover.classList.add('venue-cover-custom');
+  if(design.split)cover.classList.add('cover-split');else cover.classList.add(design.mask);
+  const keep=[...cover.children].filter(e=>e.matches('.motion-toggle'));
+  cover.innerHTML='';keep.forEach(e=>cover.append(e));
+  const photo=design.split
+   ?`<img class="split-photo" src="${design.image}" alt="${esc(p.name)}" style="object-position:${design.position}">`
+   :`<img class="venue-cover-photo" src="${design.image}" alt="${esc(p.name)}" style="object-position:${design.position}">`;
+  const copy=design.split
+   ?`<div class="cover-copy split"><span class="eyebrow">山河有迹 · 循迹访馆</span><h2><span class="name">${design.name}</span></h2><p class="subtitle">${design.addr}</p></div>`
+   :`<div class="cover-copy ${design.pos}"><span class="eyebrow">山河有迹 · 循迹访馆</span><h2><span class="name">${design.name}</span><span class="suffix">${design.suffix}</span></h2><p class="subtitle">${design.addr}</p></div>`;
+  const seal=`<span class="venue-cover-seal ${design.seal}" aria-hidden="true">循迹<br>访馆</span>`;
+  cover.insertAdjacentHTML('beforeend',design.split?copy+photo+seal:photo+seal+copy);
+  return;
+ }
  const words=panel('venue-cover-copy',[...cover.children].filter(e=>!e.matches('.motion-toggle')));
  words.querySelector('.eyebrow').textContent='山河有迹 · 循迹访馆';
  words.insertAdjacentHTML('beforeend','<div class="venue-cover-tags"><span>人物与场所</span><span>城市文化足迹</span></div>');
  cover.append(words);
  const art=document.createElement('div');art.className='venue-cover-art';
- art.innerHTML=p.photo?`<img class="venue-cover-photo" src="${esc(p.photo.url)}" alt="${esc(p.photo.caption)}"><div class="venue-cover-credit"><a href="${esc(p.photo.sourceURL)}" target="_blank" rel="noopener noreferrer">资料照片 · 来源 ↗</a><span>${esc(p.photo.author)} · ${esc(p.photo.license)}</span></div>`:'<img class="venue-cover-photo" src="/preview/assets/场馆意象.svg" alt="原创建筑意象，非实景复原">';
+ const image=design?.image||p.photo?.url||'/preview/assets/场馆意象.svg';
+ const alt=p.photo?.caption||p.name||'场馆实景';
+ art.innerHTML=`<img class="venue-cover-photo" src="${esc(image)}" alt="${esc(alt)}"${design?` style="object-position:${design.position}"`:''}>${p.photo?`<div class="venue-cover-credit"><a href="${esc(p.photo.sourceURL)}" target="_blank" rel="noopener noreferrer">资料照片 · 来源 ↗</a><span>${esc(p.photo.author)} · ${esc(p.photo.license)}</span></div>`:''}`;
  art.insertAdjacentHTML('beforeend','<span class="venue-cover-seal" aria-hidden="true">循迹<br>访馆</span>');cover.append(art);
 }
 function arrangeVenueDetail(layout){
@@ -116,7 +147,11 @@ let webAccount=localStorage.getItem('yingji_user_id')||'';window.addEventListene
 document.addEventListener('click',e=>{if(e.target.closest('[data-venue-back]'))venueBack();});
 
 function fitAssistantViewport(){
- if(window.frameElement?.parentElement.classList.contains('assistant-flow'))return;
- try{if(parent!==window&&window.frameElement){const f=window.frameElement,holder=f.parentElement,tab=parent.document.querySelector('uni-tabbar'),height=tab&&parent.getComputedStyle(tab).display!=='none'?tab.getBoundingClientRect().height:0;let bottom=parent.innerHeight-height;for(let n=holder.parentElement;n;n=n.parentElement){const style=parent.getComputedStyle(n);if(/hidden|clip|auto|scroll/.test(style.overflowY))bottom=Math.min(bottom,n.getBoundingClientRect().bottom);}holder.style.setProperty('height',Math.max(280,bottom-f.getBoundingClientRect().top-8)+'px','important');}}catch{}
+ try{if(parent!==window&&window.frameElement){const holder=window.frameElement.parentElement;if(!holder)return;const screen=document.querySelector('#screen');if(!screen)return;const height=Math.ceil(Math.max(document.body.getBoundingClientRect().height,screen.getBoundingClientRect().bottom+24));holder.style.setProperty('height',height+'px','important');window.frameElement.setAttribute('scrolling','no');}}catch{}
 }
+let assistantResizeObserver;
+function observeAssistantHeight(){if(assistantResizeObserver)return;const screen=document.querySelector('#screen');if(screen){assistantResizeObserver=new ResizeObserver(()=>requestAnimationFrame(fitAssistantViewport));assistantResizeObserver.observe(screen);}}
+observeAssistantHeight();
+window.fitAssistantViewport=fitAssistantViewport;
 window.addEventListener('resize',()=>{if(state.page==='assistant')fitAssistantViewport()});
+try{parent.visualViewport?.addEventListener('resize',()=>{if(state.page==='assistant')fitAssistantViewport()});}catch{}

@@ -308,5 +308,30 @@
     "id": "EV-P009-F-008",
     "title": "无锡任教",
     "type": "event"
+  },
+  {
+    "id": "QQB",
+    "type": "person",
+    "title": "瞿秋白 · 学习讨论"
+  },
+  {
+    "id": "SZZ",
+    "type": "person",
+    "title": "宋振中 · 学习讨论"
+  },
+  {
+    "id": "LDY",
+    "type": "person",
+    "title": "陆定一 · 学习讨论"
+  },
+  {
+    "id": "LYS",
+    "type": "person",
+    "title": "狼牙山五壮士 · 学习讨论"
+  },
+  {
+    "id": "JZY",
+    "type": "person",
+    "title": "江竹筠 · 学习讨论"
   }
 ]

@@ -1,0 +1,76 @@
+/* Small, consistently sized original photographs opposite each event. */
+.chronicle-body:not(.is-compact) .chronicle-entry {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  column-gap:116px;
+  align-items:center;
+  width:100%;
+  margin-left:0;
+  padding:0 0 16px;
+}
+.chronicle-body:not(.is-compact) .chronicle-entry .chronicle-year {
+  left:auto;right:calc(50% - 10px);top:20px;
+}
+.chronicle-body:not(.is-compact) .chronicle-entry.right .chronicle-year {
+  left:calc(50% - 10px);right:auto;
+}
+.chronicle-body:not(.is-compact) .chronicle-card {
+  grid-column:1;grid-row:1;box-sizing:border-box;
+  height:auto;min-height:0;padding:12px 16px;
+  border-radius:5px;overflow:visible;
+  box-shadow:0 3px 12px #6240200d;
+}
+.chronicle-body:not(.is-compact) .chronicle-entry.right .chronicle-card {grid-column:2}
+.chronicle-photo {
+  grid-column:2;grid-row:1;width:180px;max-width:100%;height:128px;
+  justify-self:start;
+  box-sizing:border-box;border:1px solid #d6c4a7;border-radius:5px;
+  overflow:hidden;box-shadow:0 3px 10px #62402012;
+}
+.chronicle-photo image {display:block;width:100%;height:100%;object-fit:contain}
+.chronicle-entry.right .chronicle-photo {grid-column:1;justify-self:end}
+.chronicle-body:not(.is-compact) {max-width:1040px;margin:0 auto}
+.chronicle-body:not(.is-compact) .chronicle-card:after {
+  content:'';position:absolute;top:26px;right:-8px;
+  width:14px;height:14px;background:#fffaf1;
+  border-top:1px solid #e1d2b9;border-right:1px solid #e1d2b9;
+  transform:rotate(45deg);
+}
+.chronicle-body:not(.is-compact) .right .chronicle-card:after {
+  right:auto;left:-8px;transform:rotate(225deg);
+}
+.chronicle-body .chronicle-year {font-size:21px;font-weight:800;letter-spacing:.02em}
+.chronicle-body .chronicle-date {font-size:17px;font-weight:800;line-height:1.5}
+.chronicle-body .chronicle-person-label {font-size:19px;font-weight:800;line-height:1.5;color:#354d43;margin-top:5px}
+.chronicle-body .decade-numeral {font-size:36px;font-weight:800}
+.chronicle-body:not(.is-compact) .chronicle-event-title,
+.chronicle-body.is-compact .chronicle-event-title {font-size:16px;line-height:1.45;margin:4px 0;font-weight:400}
+.chronicle-body:not(.is-compact) .chronicle-entry {column-gap:144px}
+.chronicle-body:not(.is-compact) .chronicle-summary {font-size:12px;line-height:1.65}
+.chronicle-body:not(.is-compact) .chronicle-card-actions {margin-top:7px;padding-top:4px}
+.chronicle-body:not(.is-compact) .chronicle-read,
+.chronicle-body:not(.is-compact) .chronicle-source {min-height:28px;padding:3px 7px;font-size:11px}
+.chronicle-body:not(.is-compact) .chronicle-decade-title {padding:8px 0 10px;margin-bottom:14px}
+.chronicle-body:not(.is-compact) .chronicle-axis {padding:6px 0 0}
+@media(min-width:701px) and (max-width:1100px){
+  .chronicle-body:not(.is-compact) .chronicle-entry {column-gap:128px}
+}
+@media(max-width:700px){
+  .chronicle-body:not(.is-compact) .chronicle-entry,
+  .chronicle-body:not(.is-compact) .chronicle-entry.right {
+    grid-template-columns:minmax(0,1fr);row-gap:8px;
+    padding:26px 0 16px 33px;
+  }
+  .chronicle-body:not(.is-compact) .chronicle-entry .chronicle-year,
+  .chronicle-body:not(.is-compact) .chronicle-entry.right .chronicle-year {left:3px;right:auto;top:0}
+  .chronicle-body:not(.is-compact) .chronicle-entry .chronicle-card {grid-column:1;grid-row:1;height:auto;min-height:0}
+  .chronicle-body .chronicle-year {font-size:19px;font-weight:800}
+  .chronicle-body .chronicle-date {font-size:16px;font-weight:800}
+  .chronicle-body .chronicle-person-label {font-size:18px;font-weight:800}
+  .chronicle-body .decade-numeral {font-size:31px;font-weight:800}
+  .chronicle-body:not(.is-compact) .chronicle-card:after {display:none}
+  .chronicle-entry .chronicle-photo,.chronicle-entry.right .chronicle-photo {grid-column:1;grid-row:2;width:180px;height:128px;justify-self:start}
+}
+
+/* Keep alternating events in the same full-width column on phones. */
+@media(max-width:700px){.chronicle-body:not(.is-compact) .chronicle-entry.right .chronicle-card{grid-column:1;grid-row:1}}

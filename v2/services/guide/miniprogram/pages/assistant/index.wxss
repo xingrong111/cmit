@@ -1,10 +1,24 @@
-.composer{left:24rpx;right:24rpx;width:auto;padding:16rpx;gap:16rpx;border-radius:24rpx;background:#fffaf1}.composer textarea{flex:1;min-width:0;max-height:210rpx;font-size:30rpx;line-height:1.7}.fine{font-size:24rpx;line-height:1.7}.card{border-radius:24rpx}
+page{height:100%}
+.assistant-page{position:relative;height:100%;min-height:0;display:flex;flex-direction:column;padding:24rpx 24rpx 0;padding-bottom:0!important;box-sizing:border-box;overflow:hidden}
+.assistant-page .hero,.assistant-page .guide-welcome,.assistant-page .evidence-badge,.assistant-page .hint.row,.assistant-page .scenario-grid,.assistant-page .preference-panel,.assistant-page>.chips,.assistant-page>.card.row{flex:none}
+.chat-thread{flex:1;min-height:0;height:0;margin:8rpx 0}
+.follow-row{display:flex;flex-wrap:wrap;align-items:center;gap:10rpx;padding:8rpx 0;flex:none}
+.follow-row>text{font-size:22rpx;color:#8b714d}
+.follow-row .chip{margin:0;min-height:52rpx;padding:8rpx 16rpx;font-size:22rpx}
+.latest-jump{position:absolute;left:50%;bottom:200rpx;transform:translateX(-50%);z-index:6;flex:none;min-height:52rpx;margin:0;font-size:22rpx}
+.session-note{flex:none;margin:8rpx 0;font-size:20rpx}
+.cite-link{margin:8rpx 0 0;min-height:48rpx;padding:6rpx 0;font-size:22rpx;text-align:left;background:transparent;border:0;color:#8b714d}
+.assistant-page .composer{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;transform:none!important;width:auto;flex:none;padding:16rpx;gap:16rpx;border-radius:24rpx;background:#fffaf1;margin:0 0 calc(12rpx + env(safe-area-inset-bottom))}
+.composer textarea{flex:1;min-width:0;max-height:210rpx;font-size:30rpx;line-height:1.7}.fine{font-size:24rpx;line-height:1.7}.card{border-radius:24rpx}
 .conversation-card.user{position:relative;padding:20rpx 78rpx 20rpx 26rpx!important;min-height:0!important}
 .conversation-card.user .message-tools{position:absolute;right:8rpx;bottom:8rpx;width:56rpx;height:56rpx;margin:0!important}
 .conversation-card.user .message-tools .icon-button{width:56rpx;height:56rpx;min-height:56rpx;padding:12rpx!important;opacity:.6;background:transparent!important;border:0!important}
 .conversation-card.user .message-tools .icon-button::after{border:0}
 .conversation-card.user .message-tools .chat-icon{transform:scale(.75)}
 .conversation-card.user .gap{margin-top:0!important}
+.conversation-card:not(.user){position:relative;padding-right:72rpx}
+.conversation-card:not(.user) .message-tools{position:absolute;right:8rpx;top:8rpx;margin:0!important;width:56rpx;height:56rpx}
+.conversation-card:not(.user) .message-tools .icon-button{width:56rpx;height:56rpx;min-height:56rpx;opacity:.45;background:transparent!important;border:0!important}
 
 .assistant-page .hero{position:relative;overflow:hidden;background:#f2eadb}
 .assistant-page .hero .module-landscape{position:absolute;inset:0;width:100%;height:100%;opacity:.58;pointer-events:none}

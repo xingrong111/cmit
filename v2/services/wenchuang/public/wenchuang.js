@@ -278,7 +278,7 @@
     }
     return statePanel({ title: '暂时无法展开', message: errorText(e), action: 'retry', actionText: '重新读取' })
   }
-  var NOTE = '<p class="wc-note">文创为原创艺术化设计，称号只记录学习进度，不代表史料已核验，也不是证书或官方勋章。</p>'
+  var NOTE = ''
 
   // ---------- 预览 ----------
   var lastFocus = null

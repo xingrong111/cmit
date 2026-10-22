@@ -1,5 +1,5 @@
-<template><AppShell><view class="module-frame"><!-- #ifdef H5 --><iframe :src="url" title="我的评论" class="embedded-module"></iframe><!-- #endif --><!-- #ifndef H5 --><text>原生页面将在组装时接入</text><!-- #endif --></view></AppShell></template>
-<script setup>import AppShell from '../../components/AppShell.vue';import {ref} from 'vue';import {onLoad,onShow,onUnload} from '@dcloudio/uni-app';const url=ref('/modules/account/#my-comments');function setTopic(id){const base=url.value.split('?')[0].split('#')[0];const route='my-comments';url.value=base+(id?'?topicId='+encodeURIComponent(id):'')+'#'+route;}function syncTopic(){
+<template><AppShell><!-- #ifdef H5 --><AccountModule :src="url" title="账户与讨论"/><!-- #endif --></AppShell></template>
+<script setup>import AppShell from '../../components/AppShell.vue';import AccountModule from '../../components/AccountModule.vue';import {ref} from 'vue';import {onLoad,onShow,onUnload} from '@dcloudio/uni-app';const url=ref('/modules/account/#my-comments');function setTopic(id){const base=url.value.split('?')[0].split('#')[0];const route='my-comments';url.value=base+(id?'?topicId='+encodeURIComponent(id):'')+'#'+route;}function syncTopic(){
 // #ifdef H5
 if(location.hash.split('?')[0]==='#/pages/my-comments/index')setTopic(new URLSearchParams(location.hash.split('?')[1]||'').get('topicId'));
 // #endif

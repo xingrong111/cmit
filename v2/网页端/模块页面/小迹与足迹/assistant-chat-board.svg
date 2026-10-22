@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+ <defs>
+  <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fffdf8"/><stop offset="1" stop-color="#f8f3e9"/></linearGradient>
+  <radialGradient id="wash"><stop stop-color="#aec4b0" stop-opacity=".23"/><stop offset="1" stop-color="#aec4b0" stop-opacity="0"/></radialGradient>
+  <pattern id="grain" width="85" height="83" patternUnits="userSpaceOnUse"><circle cx="8" cy="11" r=".7" fill="#ae9c79" opacity=".22"/><circle cx="58" cy="62" r=".7" fill="#ae9c79" opacity=".17"/></pattern>
+ </defs>
+ <path fill="url(#paper)" d="M0 0h1200v900H0z"/>
+ <ellipse cx="120" cy="780" rx="370" ry="270" fill="url(#wash)"/>
+ <ellipse cx="1155" cy="100" rx="330" ry="230" fill="url(#wash)"/>
+ <g fill="none" stroke="#91a697" stroke-opacity=".16" stroke-width="2">
+  <path d="M-30 710c177-101 253-80 370-14 132 75 239 73 350 9"/>
+  <path d="M-30 746c177-101 253-80 370-14 132 75 239 73 350 9"/>
+  <path d="M-30 782c177-101 253-80 370-14 132 75 239 73 350 9"/>
+  <path d="M770 143c124-94 189-65 268-30 73 33 124 25 193-17"/>
+  <path d="M770 174c124-94 189-65 268-30 73 33 124 25 193-17"/>
+  <path d="M770 205c124-94 189-65 268-30 73 33 124 25 193-17"/>
+ </g>
+ <path d="M0 894c149-64 284-86 412-39 107 39 175 30 278 0 177-52 331-12 510-68" fill="none" stroke="#ad5545" stroke-opacity=".18" stroke-width="3"/>
+ <circle cx="412" cy="855" r="5" fill="#ad5545" opacity=".25"/>
+ <path fill="url(#grain)" d="M0 0h1200v900H0z"/>
+</svg>

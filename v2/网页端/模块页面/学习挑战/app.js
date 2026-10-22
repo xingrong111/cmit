@@ -47,7 +47,7 @@ function setTab(name) {
 function shell(title, body) {
   document.body.classList.toggle('learning-embedded',parent!==window);document.body.dataset.learningScreen=screen;
   view.classList.toggle('focused',!!focusGroup);
-  view.innerHTML = `<div class="learning-crumb"><button type="button" data-learning-back>${screen==='reward'?'← 作答结果':screen==='honors'?'← 返回挑战':'← 返回'}</button><button type="button" data-learning-all>全部挑战</button></div><section class="learning-cover"><span class="learning-cover-seal" aria-hidden="true">学以<br>知史</span><p class="eyebrow">山河有迹 · 学习与探索</p><h1><img class="learning-title-icon" src="/static/icons/${screen==='honors'?'medal':'learning'}.png" alt=""/>${title}</h1><p class="learning-cover-sub">循人物故事，读时代篇章。</p></section>${!localStorage.getItem('yingji_token')?'<p class="aux">登录后开始挑战，进度与学习称号保存在你的账户中。</p>':''}${body}`;
+  view.innerHTML = `<div class="learning-crumb"><button type="button" data-learning-back>${screen==='reward'?'← 作答结果':screen==='honors'?'← 返回挑战':'← 返回'}</button><button type="button" data-learning-all>全部挑战</button></div><section class="learning-cover"><span class="learning-cover-seal" aria-hidden="true">学以<br>知史</span><p class="eyebrow">山河有迹 · 学习与探索</p><h1><img class="learning-title-icon" src="/static/icons/${screen==='honors'?'medal':'learning'}.png" alt=""/>${title}</h1><p class="learning-cover-sub">循人物故事，读时代篇章。</p></section>${!localStorage.getItem('yingji_token')?'<p class="aux">登录后开始挑战，进度与学习称号保存在你的账户中。</p>':''}${body}<section class="card learning-discussion"><h2>读有所感</h2><p class="aux">交流人物故事与学习心得。</p><button class="primary" data-discussion="${focusGroup||'P009'}">发表评论</button></section>`;
 }
 function otherModule(title, owner) {
   setTab(title === '山河' ? 'mountain' : title === '足迹' ? 'trace' : 'me');
@@ -223,7 +223,7 @@ function paintResult() {
   const actions = next
     ? `<div class="result-actions"><button class="secondary" id="again" type="button">再答一次</button>${next}</div><button class="secondary" id="honors" type="button">查看学习称号</button>`
     : `<button class="primary" id="honors" type="button">查看学习称号</button><button class="secondary" id="again" type="button">再答一次</button>`;
-  shell('这一关答完了', `${chart}${titles}<div class="filters"><button type="button" data-review="wrong" class="${resultReview === 'wrong' ? 'on' : ''}">${resultReview === 'wrong' ? '收起错题' : '查看我的错题'} ${score.wrong}</button><button type="button" data-review="all" class="${resultReview === 'all' ? 'on' : ''}">${resultReview === 'all' ? '收起题目' : '查看本次题目'} ${score.total}</button></div>${review}${actions}${(()=>{const id=hallView?.items.find(x=>x.person_name===attempt.person_name)?.reading_person_id;return id?`<div class="result-actions"><button class="secondary" data-reading="${id}">回顾人物</button><button class="secondary" data-radar="${id}">探索关联场馆</button></div>`:''})()}<button class="secondary" id="hall" type="button">返回学习挑战</button><p class="aux">学习讨论由账户模块接入，这里不展示评论。</p>`);
+  shell('这一关答完了', `${chart}${titles}<div class="filters"><button type="button" data-review="wrong" class="${resultReview === 'wrong' ? 'on' : ''}">${resultReview === 'wrong' ? '收起错题' : '查看我的错题'} ${score.wrong}</button><button type="button" data-review="all" class="${resultReview === 'all' ? 'on' : ''}">${resultReview === 'all' ? '收起题目' : '查看本次题目'} ${score.total}</button></div>${review}${actions}${(()=>{const id=hallView?.items.find(x=>x.person_name===attempt.person_name)?.reading_person_id;return id?`<div class="result-actions"><button class="secondary" data-reading="${id}">回顾人物</button><button class="secondary" data-radar="${id}">探索关联场馆</button></div>`:''})()}<button class="secondary" id="hall" type="button">返回学习挑战</button>`);
   view.querySelectorAll('[data-review]').forEach(button => { button.onclick = () => { resultReview = resultReview === button.dataset.review ? '' : button.dataset.review; paintResult(); }; });
   document.querySelector('#honors').onclick = showHonors;
   if (attempt.next_level) document.querySelector('#next').onclick = () => begin(attempt.next_level.id);
@@ -247,19 +247,33 @@ function paintHonors(){
  const rows=honorRows(honorView),owned=rows.filter(x=>x.state==='已获得'),current=owned[owned.length-1],next=rows.find(x=>x.state!=='已获得');
  const idOf=row=>honorView.titles.find(t=>t.name===row?.name)?.id;
  const emblem=window.learningBadges?.[idOf(current)||'H-PATH-1'];
- shell('学习徽章册',`<section class="card badge-album-cover"><div><span class="eyebrow">山河有迹 · 我的学习印记</span><h2>${current?escape(current.name):'从第一枚星火开始'}</h2><p>已获得 ${owned.length} / ${rows.length} 枚徽章 · 完整学习 ${honorView.completed_groups} / 5 组</p><p class="aux">${next?'下一目标：'+escape(next.detail):'五枚徽章已集齐，随时可以重温人物故事。'}</p></div><img class="album-current-badge ${current?'':'unearned'}" src="${escape(emblem.badge)}" alt="${current?escape(current.name):'星火初学者，尚未获得'}徽章"></section><div class="badge-album-grid">${rows.map((row,i)=>{const art=window.learningBadges?.[idOf(row)];return `<article class="badge-album-card ${row.state==='已获得'?'earned':row===next?'next':'locked'}"><span class="badge-position">${String(i+1).padStart(2,'0')} / 成长印记</span><img src="${escape(art?.badge||'')}" alt="${escape(row.name)}徽章"><h3>${escape(row.name)}</h3><span class="badge-state">${row.state==='已获得'?'已获得':row===next?'下一目标':'未解锁'}</span><p>${escape(row.detail)}</p><small>${escape(row.progress||'')}</small></article>`}).join('')}</div><p class="honor-rule-note">${escape(honorView.note)}</p><button class="primary" id="hall">继续学习</button>`);
+ shell('学习徽章册',`<section class="card badge-album-cover"><div><span class="eyebrow">山河有迹 · 我的学习印记</span><h2>${current?escape(current.name):'从第一枚星火开始'}</h2><p>已获得 ${owned.length} / ${rows.length} 枚徽章 · 完整学习 ${honorView.completed_groups} / 5 组</p><p class="aux">${next?'下一目标：'+escape(next.detail):'五枚徽章已集齐，随时可以重温人物故事。'}</p></div><img class="album-current-badge ${current?'':'unearned'}" src="${escape(emblem.badge)}" alt="${current?escape(current.name):'星火初学者，尚未获得'}徽章"></section><div class="badge-album-grid">${rows.map((row,i)=>{const art=window.learningBadges?.[idOf(row)];return `<article class="badge-album-card ${row.state==='已获得'?'earned':row===next?'next':'locked'}"><span class="badge-position">${String(i+1).padStart(2,'0')} / 成长印记</span><button class="badge-preview-trigger" type="button" data-badge-preview="${escape(art?.id||'')}" aria-label="放大查看${escape(row.name)}徽章"><img src="${escape(art?.badge||'')}" alt="${escape(row.name)}徽章"><span>点击查看大图</span></button><h3>${escape(row.name)}</h3><span class="badge-state">${row.state==='已获得'?'已获得':row===next?'下一目标':'未解锁'}</span><p>${escape(row.detail)}</p><small>${escape(row.progress||'')}</small></article>`}).join('')}</div><p class="honor-rule-note">${escape(honorView.note)}</p><div class="honor-actions"><button class="primary" id="hall">继续学习</button><button class="secondary" data-reward-wenchuang>去文创馆领取 ↗</button></div>`);
  document.querySelector('#hall').onclick=showLearn;
+ view.querySelectorAll('[data-badge-preview]').forEach(button=>button.onclick=()=>{const art=window.learningBadges?.[button.dataset.badgePreview];if(!art)return;openBadgeSpotlight(art,owned.some(row=>idOf(row)===art.id)?'owned':'preview',button);});
+}
+function openBadgeSpotlight(art,mode,returnFocus){
+ document.querySelector('.badge-spotlight')?.remove();
+ const dialog=document.createElement('dialog');dialog.className=`badge-spotlight ${mode==='preview'?'badge-spotlight-preview':'badge-spotlight-earned'}`;
+ dialog.setAttribute('aria-label',mode==='preview'?`${art.name}徽章大图`:`${mode==='new'?'恭喜获得':'已经获得'}${art.name}徽章`);
+ dialog.innerHTML=`<div class="badge-spotlight-stage" tabindex="-1">${mode==='preview'?'':`<div class="badge-spotlight-heading">${mode==='new'?'恭喜获得':'已经获得'}</div>`}<div class="badge-spotlight-art">${mode==='preview'?'':'<div class="badge-spotlight-sparks" aria-hidden="true"></div>'}<img src="${escape(art.badge)}" alt="${escape(art.name)}徽章"></div>${mode==='preview'?'':`<div class="badge-spotlight-name">${escape(art.name)}</div><p>${escape(art.condition)}</p>`}</div>`;
+ document.body.append(dialog);dialog.addEventListener('close',()=>{dialog.remove();if(returnFocus?.isConnected)returnFocus.focus();});
+ dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
+ if(window.frameElement){
+  const frameTop=window.frameElement.getBoundingClientRect().top;
+  const visibleCenter=window.parent.innerHeight/2-frameTop;
+  dialog.style.setProperty('--badge-spotlight-center-y',`${Math.max(130,Math.min(window.innerHeight-130,visibleCenter))}px`);
+ }
+ dialog.showModal();dialog.querySelector('.badge-spotlight-stage').focus({preventScroll:true});
 }
 function rewardItems(){const records=window.learningBadges||{};return [...new Map(earned.filter(x=>records[x.title_id]).map(x=>[x.title_id,records[x.title_id]])).values()].sort((a,b)=>a.id.localeCompare(b.id));}
 function rewardSeenKey(){return 'yingji:reward-seen:'+(localStorage.getItem('yingji_user_id')||'guest')+':'+attempt?.id;}
 function pendingReward(){return Boolean(attempt?.finished&&rewardItems().length&&sessionStorage.getItem('yingji:earned-attempt')===attempt.id&&!localStorage.getItem(rewardSeenKey()));}
 function showReward(){
  const items=rewardItems();if(!items.length||!attempt?.finished)return;
- const top=items[items.length-1];screen='reward';localStorage.setItem(rewardSeenKey(),'1');
- shell('荣誉时刻',`<section class="reward-scene"><button class="reward-skip" data-reward-skip>跳过动画</button><span class="eyebrow">山河有迹 · 学习印记</span><div class="reward-badge-halo"><img class="reward-main-badge" src="${escape(top.badge)}" alt="新获得${escape(top.name)}徽章"></div><span class="reward-new">新称号已获得</span><h2 tabindex="-1">${escape(top.name)}</h2><p class="reward-condition">${escape(top.condition)}</p><p class="aux">这一段学习，留下了新的印记。</p>${items.length>1?`<div class="reward-additional"><span>本次共获得 ${items.length} 枚</span>${items.map(x=>`<div><img src="${escape(x.badge)}" alt=""><span>${escape(x.name)}</span></div>`).join('')}</div>`:''}<div class="reward-actions"><button class="primary" data-reward-learn>继续学习</button><button class="secondary" data-reward-album>查看徽章册</button><button class="secondary" data-reward-wenchuang>去文创馆领取 ↗</button></div><button class="reward-result-link" data-reward-result>查看作答结果 ↗</button><small>称号记录学习进度，不代表史料核验结论。</small></section>`);
- window.scrollTo(0,0);view.querySelector('.reward-scene h2')?.focus({preventScroll:true});
+ const top=items[items.length-1];localStorage.setItem(rewardSeenKey(),'1');
+ openBadgeSpotlight(top,'new',view.querySelector('[data-replay-reward]'));
 }
-document.addEventListener('click',e=>{if(e.target.closest('[data-replay-reward]'))showReward();if(e.target.closest('[data-reward-skip]'))view.querySelector('.reward-scene')?.classList.add('motion-stopped');if(e.target.closest('[data-reward-learn]'))showLearn();if(e.target.closest('[data-reward-album]'))showHonors();if(e.target.closest('[data-reward-wenchuang]'))parent.postMessage({type:'yingji-wenchuang'},location.origin);if(e.target.closest('[data-reward-result]')){screen='result';paintResult();window.scrollTo(0,0);}});
+document.addEventListener('click',e=>{if(e.target.closest('[data-replay-reward]'))showReward();if(e.target.closest('[data-reward-wenchuang]'))parent.postMessage({type:'yingji-wenchuang'},location.origin);});
 async function showHonors() {
   screen = 'honors';
   setTab('learn');
@@ -281,7 +295,8 @@ tabs.forEach(button => button.addEventListener('click', () => {
   otherModule('我的', '成员3');
 }));
 const savedAttempt = sessionStorage.getItem('yingji:attempt');
-if (savedAttempt && !focusGroup) {
+if (new URLSearchParams(location.search).get('view')==='honors') showHonors();
+else if (savedAttempt && !focusGroup) {
   api(`/api/attempts/${savedAttempt}`).then(data => {
     attempt = data;
     earned = sessionStorage.getItem('yingji:earned-attempt')===data.id?JSON.parse(sessionStorage.getItem('yingji:earned')||'[]'):[];
@@ -303,3 +318,5 @@ document.addEventListener('click',e=>{
 });
 
 document.addEventListener('click',e=>{const b=e.target.closest('[data-learning-group]');if(!b)return;const group=b.dataset.learningGroup;if(!/^(QQB|LYS|SZZ|LDY|JZY)$/.test(group))return;focusGroup=group;hallFilter='all';paintLearn();window.scrollTo(0,0);});
+
+document.addEventListener('click',e=>{const b=e.target.closest('[data-discussion]');if(b)parent.postMessage({type:'yingji-discussion',topicId:b.dataset.discussion},location.origin)});

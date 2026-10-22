@@ -2,7 +2,7 @@
 <script setup>
 import {ref,computed,onMounted,onBeforeUnmount} from 'vue';import {onLoad,onShow} from '@dcloudio/uni-app';import AppShell from '../../components/AppShell.vue';import StatePanel from '../../components/StatePanel.vue';import {allRecords as people} from '../../lib/全国收录.js';import {go} from '../../lib/navigation.js'
 const person=ref(null),url=computed(()=>{const u=person.value?.regionEvidence?.url||person.value?.sourceEvidence?.url||person.value?.detailUrl||'';return /^https?:\/\//.test(u)?u:''})
-function loadRecord(id){person.value=people.find(p=>p.id===id||p.rawIds?.includes(id))||null}
+function loadRecord(id){person.value=people.find(p=>p.id===id||p.rawIds?.includes(id))||null;const group=({'江竹筠':'JZY','江姐':'JZY','马宝玉':'LYS','葛振林':'LYS','宋学义':'LYS','胡德林':'LYS','胡福才':'LYS'})[person.value?.name];if(group)go('ip',{group})}
 onLoad(o=>loadRecord(o.id))
 // #ifdef H5
 function syncRecord(){if(!location.hash.includes('/pages/registry/index'))return;loadRecord(new URLSearchParams(location.hash.split('?')[1]||'').get('id'))}

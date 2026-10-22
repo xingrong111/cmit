@@ -81,11 +81,11 @@ const visibleIds = computed(() => new Set(visibleNodes.value.map(node => node.id
 const visibleEdges = computed(() => filteredEdges.value.filter(edge => visibleIds.value.has(edge.from_id) && visibleIds.value.has(edge.to_id)))
 const inkColors=['#587459','#557c8a','#983f38','#a58a48','#82718f','#ae7245']
 const layout = computed(() => {
-  const count=visibleNodes.value.length,width=860,height=650,positions={}
+  const count=visibleNodes.value.length,width=860,height=820,positions={}
   visibleNodes.value.forEach((node,index)=>{
     if(index===0){positions[node.id]={x:width/2,y:height/2};return}
     const angle=-Math.PI/2+(index-1)*Math.PI*2/Math.max(1,count-1)
-    positions[node.id]={x:width/2+Math.cos(angle)*300,y:height/2+Math.sin(angle)*210}
+    positions[node.id]={x:width/2+Math.cos(angle)*300,y:height/2+Math.sin(angle)*290}
   })
   return {width,height,positions}
 })
