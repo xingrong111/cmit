@@ -11,7 +11,7 @@ const webOriginal = {assistant, radar, route, place, nav, go};
 const webLabels = {assistant:'小迹导览',radar:'历史足迹',route:'文化路线'};
 nav = function webNav() {
   const active=state.page==='place'?'radar':state.page;
-  if(['assistant','radar'].includes(state.page))screen.querySelectorAll('.hero .motion-toggle').forEach(button=>button.remove());
+  if(['assistant','radar','route'].includes(state.page))screen.querySelectorAll('.hero .motion-toggle').forEach(button=>button.remove());
   try{if(parent!==window){const back=parent.document.querySelector('.page-return');if(back)back.style.display=state.page==='place'?'none':'';}}catch{}
   if(state.page==='place'&&!screen.querySelector('.venue-return'))screen.insertAdjacentHTML('afterbegin','<button class="venue-return" data-venue-back>‹ 返回上一页</button>');
   const links=Object.entries(webLabels).map(([id,name])=>`<button data-action="page" data-value="${id}" class="${id===active?'active':''}" ${id===active?'aria-current="page"':''}>${name}${id==='route'?'<span class="route-count">'+state.stops.length+'</span>':''}</button>`).join('');
