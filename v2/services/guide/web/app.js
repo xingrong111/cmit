@@ -64,7 +64,7 @@ function webRouteLayout(){
   const clear=screen.querySelector('[data-action="clear-route"]');
   const layout=panel('web-route-layout',[panel('web-map-column',[map,budget]),panel('web-route-column',[clear,stops])]);screen.append(layout);
   const start=stops.querySelector('[data-action="plan"]')?.previousElementSibling;
-  if(start)start.textContent=state.routeOrigin?'已选择地图起点；可重新点选地图调整。':'在真实地图点选起点，再计算场馆地图位置间的步行路线。';
+  syncOriginStatus();
 }
 route=async function(){await webOriginal.route();webRouteLayout();nav();};
 
