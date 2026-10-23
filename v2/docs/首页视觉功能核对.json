@@ -1,0 +1,10 @@
+{
+  "baseline": "e5d8afa",
+  "checked": 1073,
+  "authorized_static_heading_changes": [
+    "v2\\网页端\\页面\\assets\\pages-home-index.C9C2i8Nq.js",
+    "v2\\网页端\\源码\\src\\components\\山河地图.vue",
+    "v2\\frontend\\src\\components\\山河地图.vue"
+  ],
+  "unexpected_functional_changes": []
+}

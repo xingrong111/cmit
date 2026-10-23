@@ -1,6 +1,6 @@
 const api = require('../../utils/api');
 Page({
-  data: { preferencesOpen:false,waitSeconds:0,showLatest:false,guideCities:['无锡市','常州市'],guideCityIndex:0,timeOptions:['1小时','2小时','半天'],timeIndex:1,walkingOptions:['尽量少步行','可正常步行'],walkingIndex:0,motionOff:false, keyboardHeight:0,scene:'guide', followUps:[], guideContext: {}, preferenceLabel: '', personIndex: 0, people: [{name:'全部已接入资料',id:''},{name:'瞿秋白',id:'IP-QC'},{name:'狼牙山五壮士',id:'IP-LYS'},{name:'宋振中',id:'IP-SZZ'},{name:'陆定一',id:'IP-LDY'},{name:'江竹筠',id:'IP-JZY'}], mode: 'auto', question: '', messages: [], busy: false, label: '', contextName: '', personId: '', eventId: '', quick: ['这个小程序怎么使用？', '无锡文化路线怎么安排？', '瞿秋白有哪些求学经历？'] },
+  data: { preferencesOpen:false,waitSeconds:0,showLatest:false,scrollInto:'',guideCities:['无锡市','常州市'],guideCityIndex:0,timeOptions:['1小时','2小时','半天'],timeIndex:1,walkingOptions:['尽量少步行','可正常步行'],walkingIndex:0,motionOff:false, keyboardHeight:0,scene:'guide', followUps:[], guideContext: {}, preferenceLabel: '', personIndex: 0, people: [{name:'全部已接入资料',id:''},{name:'瞿秋白',id:'IP-QC'},{name:'狼牙山五壮士',id:'IP-LYS'},{name:'宋振中',id:'IP-SZZ'},{name:'陆定一',id:'IP-LDY'},{name:'江竹筠',id:'IP-JZY'}], mode: 'auto', question: '', messages: [], busy: false, label: '', contextName: '', personId: '', eventId: '', quick: ['这个小程序怎么使用？', '无锡文化路线怎么安排？', '瞿秋白有哪些求学经历？'] },
   onLoad(options) {options={...options,...(getApp().globalData.pendingGuideContext||{})};getApp().globalData.pendingGuideContext=null;
     this.setData({scene:options.placeId?'guide':'guide'});
     this.setData({ personId: options.personId || '', eventId: options.eventId || '', contextName: options.name || '', mode:options.placeId?'guide':'auto' });
@@ -11,11 +11,12 @@ Page({
     this.sequence = 0;
     if(wx.onKeyboardHeightChange){this.keyboardListener=e=>{if(!this.destroyed)this.setData({keyboardHeight:e.height||0});};wx.onKeyboardHeightChange(this.keyboardListener);}
   },
+  onReady(){wx.createSelectorQuery().in(this).select('.chat-thread').boundingClientRect(r=>{if(r)this.threadView=r.height}).exec();},
   onShow(){const person=wx.getStorageSync('yingji:guide-person');if(person){wx.removeStorageSync('yingji:guide-person');const map=Object.fromEntries(require('../../utils/人物关联.json').filter(x=>x.readingId).map(x=>[x.readingId,x.guideId]));this.setData({personIndex:Math.max(0,this.data.people.findIndex(p=>p.id===map[person.id])),contextName:person.name||'',personId:map[person.id]||'',scene:map[person.id]?'history':'guide',mode:map[person.id]?'history':'auto',guideContext:{personName:person.name||''}});}const o=getApp().globalData.pendingGuideContext;if(o){this.placeId=o.placeId;this.setData({scene:'guide',personId:o.personId||'',guideContext:{city:o.city},preferenceLabel:o.city});getApp().globalData.pendingGuideContext=null;}},
   togglePreferences(){this.setData({preferencesOpen:!this.data.preferencesOpen})},
   toggleMotion() { this.setData({motionOff:!this.data.motionOff}); },
- onPageScroll(e) { if(this.data.busy&&this.previousScroll!==undefined&&e.scrollTop<this.previousScroll-15)this.readingEarlier=true;this.previousScroll=e.scrollTop; },
- latest() { this.readingEarlier=false;this.setData({showLatest:false});wx.pageScrollTo({selector:'#reply-'+(this.data.messages.length-1),duration:this.data.motionOff?0:180}); },
+ onThreadScroll(e) { const top=e.detail.scrollTop,height=e.detail.scrollHeight,view=this.threadView||400;this.nearBottom=(height-top-view)<96;this.readingEarlier=!this.nearBottom;this.previousScroll=top;const patch={};if(this.readingEarlier&&this.data.scrollInto)patch.scrollInto='';const show=this.readingEarlier&&!this.data.busy;if(!!this.data.showLatest!==show)patch.showLatest=show;if(Object.keys(patch).length)this.setData(patch); },
+ latest() { this.readingEarlier=false;this.setData({showLatest:false,scrollInto:''});this.setData({scrollInto:'reply-end'}); },
  copy(e) { const m=this.data.messages[e.currentTarget.dataset.index];if(m)wx.setClipboardData({data:m.text}); },
  editQuestion(e) { if(this.data.busy)return;const m=this.data.messages[e.currentTarget.dataset.index];if(m)this.setData({question:m.text}); },
  onUnload() { clearInterval(this.waitTimer); if(this.keyboardListener&&wx.offKeyboardHeightChange)wx.offKeyboardHeightChange(this.keyboardListener);this.destroyed = true; this.sequence++; if (this.pending) this.pending.abort(); },
@@ -37,7 +38,7 @@ Page({
     const history=previous.filter(m=>!m.failed&&['user','assistant'].includes(m.role)).slice(-8).map(m=>({role:m.role,content:m.text.slice(0,600)}));
     const seq = ++this.sequence;
     this.lastQuestion = question;this.readingEarlier=false;clearInterval(this.waitTimer);this.setData({waitSeconds:0,showLatest:false});this.waitTimer=setInterval(()=>{if(!this.destroyed)this.setData({waitSeconds:this.data.waitSeconds+1});},1000);
-    this.setData({ busy: true, question: '', messages: previous.concat([{ role: 'user', text: question,requestContext }]).slice(-20) });
+    this.setData({ busy: true, question: '', scrollInto:'reply-end', messages: previous.concat([{ role: 'user', text: question,requestContext }]).slice(-20) });
     this.pending = api.request('/api/chat', { method: 'POST', data: { question, history, mode: this.data.mode, personId: this.data.personId, eventId: this.data.eventId, guideContext:this.data.guideContext, placeId:this.placeId } });
     try {
       const result = await this.pending.promise; if (seq !== this.sequence) return;
@@ -49,7 +50,7 @@ Page({
       if (seq !== this.sequence) return;
       if(e.cancelled)this.setData({question});
       this.setData({ messages: this.data.messages.concat([{ role: 'assistant', text: e.cancelled?'本次回答已停止，原提问已保留。':e.message, retryQuestion:question,failed: !e.cancelled }]) });
-    } finally { if (seq === this.sequence){clearInterval(this.waitTimer);this.setData({ busy: false,showLatest:!!this.readingEarlier });if(!this.readingEarlier&&wx.pageScrollTo)this.latest();} }
+    } finally { if (seq === this.sequence){clearInterval(this.waitTimer);if(this.readingEarlier)this.setData({ busy: false,showLatest:true,scrollInto:'' });else{this.setData({ busy: false,showLatest:false });this.latest();}} }
   },
   stop() { if (this.pending) this.pending.abort(); },
   retry(e) { const m=this.data.messages[e?.currentTarget?.dataset?.index];this.setData({ question: m?.retryQuestion || this.lastQuestion || '' }); this.send(Number(e?.currentTarget?.dataset?.index)); },

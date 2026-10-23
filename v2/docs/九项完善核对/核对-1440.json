@@ -1,0 +1,161 @@
+[
+  {
+    "route": "home/index",
+    "normal": {
+      "size": 17,
+      "text": "按人物、年份与阶段，展开有史料依据的阅读长卷。",
+      "overflow": false,
+      "large": false
+    },
+    "large": {
+      "size": 20.06,
+      "text": "按人物、年份与阶段，展开有史料依据的阅读长卷。",
+      "overflow": false,
+      "large": true
+    }
+  },
+  {
+    "route": "people/index",
+    "normal": {
+      "size": 48,
+      "text": "循山河，读人物",
+      "overflow": false,
+      "large": false
+    },
+    "large": {
+      "size": 56.64,
+      "text": "循山河，读人物",
+      "overflow": false,
+      "large": true
+    }
+  },
+  {
+    "route": "registry/index?id=P0034",
+    "normal": {
+      "size": 18,
+      "text": "出生日期",
+      "overflow": false,
+      "large": false
+    },
+    "large": {
+      "size": 21.24,
+      "text": "出生日期",
+      "overflow": false,
+      "large": true
+    }
+  },
+  {
+    "route": "person/index?id=P003",
+    "normal": {
+      "size": 18,
+      "text": "出生省份",
+      "overflow": false,
+      "large": false
+    },
+    "large": {
+      "size": 21.24,
+      "text": "出生省份",
+      "overflow": false,
+      "large": true
+    }
+  },
+  {
+    "route": "timeline/index",
+    "normal": {
+      "size": 38,
+      "text": "史砚芬",
+      "overflow": false,
+      "large": false
+    },
+    "large": {
+      "size": 44.84,
+      "text": "史砚芬",
+      "overflow": false,
+      "large": true
+    }
+  },
+  {
+    "route": "assistant/index",
+    "normal": {
+      "size": 28,
+      "text": "小迹陪你循迹",
+      "overflow": false,
+      "large": false
+    },
+    "large": {
+      "size": 33.04,
+      "text": "小迹陪你循迹",
+      "overflow": false,
+      "large": true
+    }
+  },
+  {
+    "route": "radar/index",
+    "normal": {
+      "size": 48,
+      "text": "历史足迹雷达",
+      "overflow": false,
+      "large": false
+    },
+    "large": {
+      "size": 56.64,
+      "text": "历史足迹雷达",
+      "overflow": false,
+      "large": true
+    }
+  },
+  {
+    "route": "learning/index",
+    "normal": {
+      "size": 48,
+      "text": "学习挑战",
+      "overflow": false,
+      "large": false
+    },
+    "large": {
+      "size": 56.64,
+      "text": "学习挑战",
+      "overflow": false,
+      "large": true
+    }
+  },
+  {
+    "route": "wenchuang/index",
+    "normal": {
+      "size": 48,
+      "text": "把学过的故事，带走一份纪念",
+      "overflow": false,
+      "large": false
+    },
+    "large": {
+      "size": 56.64,
+      "text": "把学过的故事，带走一份纪念",
+      "overflow": false,
+      "large": true
+    }
+  },
+  {
+    "route": "account/index",
+    "normal": {
+      "size": 20,
+      "text": "我的",
+      "overflow": false,
+      "large": false
+    },
+    "large": {
+      "size": 23.6,
+      "text": "我的",
+      "overflow": false,
+      "large": true
+    }
+  },
+  {
+    "scroll": {
+      "inner": 200,
+      "outer": 416,
+      "frameHeight": 1239,
+      "innerPage": 1239,
+      "innerViewport": 1239
+    }
+  }
+]

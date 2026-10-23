@@ -1,0 +1,23 @@
+[
+  {
+    "font": "20px",
+    "overflow": false
+  },
+  {
+    "widths": [
+      343,
+      343,
+      343
+    ],
+    "photoTop": 377.25,
+    "storyTop": 805.25,
+    "photoBottom": 789.25,
+    "storyBottom": 1447.5,
+    "buttonFont": "19px",
+    "overflow": false
+  },
+  {
+    "register": true,
+    "overflow": false
+  }
+]

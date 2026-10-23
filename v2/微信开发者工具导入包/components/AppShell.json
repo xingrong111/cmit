@@ -1,4 +1,7 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "page-companion": "./页面小人物",
+    "page-tip": "./页面提示"
+  }
 }

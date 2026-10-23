@@ -1,0 +1,57 @@
+[
+  {
+    "page": "people/index",
+    "titleSize": 38.88,
+    "overflow": false,
+    "visibleEyebrows": 0
+  },
+  {
+    "page": "timeline/index?person_id=P003",
+    "titleSize": 38.88,
+    "overflow": false,
+    "visibleEyebrows": 0
+  },
+  {
+    "page": "assistant/index",
+    "titleSize": 38.88,
+    "overflow": false,
+    "visibleEyebrows": 0
+  },
+  {
+    "page": "me/index",
+    "titleSize": 38.88,
+    "overflow": false,
+    "visibleEyebrows": 0
+  },
+  {
+    "page": "wenchuang/index",
+    "titleSize": 38.88,
+    "overflow": false,
+    "visibleEyebrows": 0
+  },
+  {
+    "mapHeight": 620,
+    "cardHeight": 406,
+    "overflow": false
+  },
+  {
+    "photos": 3,
+    "loaded": true,
+    "overflow": false
+  },
+  {
+    "largeFont": "person/index?id=P003",
+    "normal": 22,
+    "large": 25.96
+  },
+  {
+    "largeFont": "timeline/index?person_id=P003",
+    "normal": 12,
+    "large": 14.16
+  },
+  {
+    "largeFont": "wenchuang/index",
+    "normal": 38.88,
+    "large": 45.88
+  }
+]

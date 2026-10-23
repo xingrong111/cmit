@@ -1,0 +1,20 @@
+{
+  "roleGuards": true,
+  "reviewApproveRejectHideResubmit": true,
+  "versionConflict": true,
+  "accurateCountsAndHistory": true,
+  "views": [
+    {
+      "metrics": 4,
+      "overflow": false,
+      "height": 1179.09375,
+      "frame": 1181
+    },
+    {
+      "metrics": 4,
+      "overflow": false,
+      "height": 1558.390625,
+      "frame": 1561
+    }
+  ]
+}

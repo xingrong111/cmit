@@ -1,0 +1,60 @@
+[
+  {
+    "page": "首页地图",
+    "wheelZoom": true,
+    "drag": true,
+    "reset": true,
+    "fullscreen": true,
+    "escapeExit": true
+  },
+  {
+    "page": "陆定一祖居",
+    "name": "循迹\n访馆\n山河有迹 · 循迹访馆\n陆定一\n祖居陈列馆\n\n无锡市惠山区 · 老陆巷 4 号",
+    "height": 300,
+    "image": "/web/venue-covers/lu-dingyi.png",
+    "imageWidth": 2408,
+    "overflow": false,
+    "maskOpacity": "1",
+    "fontLoaded": true
+  },
+  {
+    "page": "秦邦宪故居",
+    "name": "循迹\n访馆\n山河有迹 · 循迹访馆\n秦邦宪\n故居\n\n无锡市梁溪区 · 崇安寺街道",
+    "height": 300,
+    "image": "/web/venue-covers/qin-bangxian.png",
+    "imageWidth": 2562,
+    "overflow": false,
+    "maskOpacity": "1",
+    "fontLoaded": true
+  },
+  {
+    "page": "瞿秋白纪念馆",
+    "name": "循迹\n访馆\n山河有迹 · 循迹访馆\n瞿秋白\n纪念馆\n\n常州市天宁区 · 延陵西路 188 号",
+    "height": 300,
+    "image": "/web/venue-covers/qu-qiubai.png",
+    "imageWidth": 2371,
+    "overflow": false,
+    "maskOpacity": "1",
+    "fontLoaded": true
+  },
+  {
+    "page": "张太雷纪念馆",
+    "name": "循迹\n访馆\n山河有迹 · 循迹访馆\n张太雷\n纪念馆\n\n常州市天宁区 · 延陵西路",
+    "height": 300,
+    "image": "/web/venue-covers/zhang-tailei.png",
+    "imageWidth": 925,
+    "overflow": false,
+    "maskOpacity": "1",
+    "fontLoaded": true
+  },
+  {
+    "page": "张闻天旧居",
+    "name": "山河有迹 · 循迹访馆\n张闻天旧居\n\n无锡市梁溪区 · 崇安寺街道汤巷 45 号\n\n循迹\n访馆",
+    "height": 317.390625,
+    "image": "/web/venue-covers/zhang-wentian.png",
+    "imageWidth": 2510,
+    "overflow": false,
+    "maskOpacity": "1",
+    "fontLoaded": true
+  }
+]

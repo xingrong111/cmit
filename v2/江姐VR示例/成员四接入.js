@@ -1,7 +1,7 @@
 import {createStoryVoice} from './剧情配音.js';
 import {story} from './剧情配置.mjs';
 import {StoryController} from './剧情控制.mjs';
-import {createPanorama,isPanoramaSupported} from './全景模块.js';
+import {createPanorama,isPanoramaSupported} from './全景模块.js?v=vr-load-20261022';
 import {scenes,closeups} from './场景配置.js';
 import {ReadingUI as ui} from './ui.js';
 const $=id=>document.getElementById(id),host=$('storyScene');
@@ -118,7 +118,7 @@ async function mount(){
  ui.init({onAction:action,names:story.speakers,aboutHtml:story.notice,helpHtml:'<p>点击继续阅读；长文字先滚动到底部或点击“已读完本段”。窗边入口开启第一幕，幕末入口进入下一幕。</p><p>48段原始配音随对应台词播放；点击“重听当前句”重新播放，故事菜单可关闭配音。首次进入若未出声，请点击重听。切换台词会停止上一段配音。</p><p>点击人物头像或上半身可查看角色简介，也可从故事菜单打开；查看不会推进剧情。</p><p>全景可拖动、缩放、复位和全屏。前三幕已补充AI艺术化全景；物件仍不提供缺失的独立放大图。</p><p>跳过停在本幕末或待选分支；重播清除本账户当前故事进度。进度只保存到当前设备。</p>'});
  const voiceToggle=document.createElement('button');voiceToggle.textContent='配音：开';voiceToggle.setAttribute('aria-pressed','true');voiceToggle.onclick=()=>{const on=voice.toggle();voiceToggle.textContent='配音：'+(on?'开':'关');voiceToggle.setAttribute('aria-pressed',String(on));};document.querySelector('.tools').append(voiceToggle);
  const bar=document.querySelector('.rui-bar');layoutObserver=new ResizeObserver(()=>document.documentElement.style.setProperty('--reading-bar-height',bar.getBoundingClientRect().height+'px'));layoutObserver.observe(bar);
- if(isPanoramaSupported())try{pano=createPanorama(host,{scenes,closeups,onEvent(type,d){if(type==='hotspot')controller?.hotspot(d.id);}});}catch{sceneMessage='全景初始化失败，使用文字阅读';}
+ if(isPanoramaSupported())try{pano=createPanorama(host,{scenes,closeups,onEvent(type,d){if(type==='sceneloading'){$('sceneStatus').textContent='正在加载全景图片，请稍候…';}if(type==='hotspot')controller?.hotspot(d.id);}});}catch{sceneMessage='全景初始化失败，使用文字阅读';}
  installPersonActions();
  unframe=pano?.onFrame(()=>{const rect=host.getBoundingClientRect(),anchors={};for(const id of ['JJ','YOUNG','ELDER']){const a=pano.getAnchor(id);if(a){const fov=pano.getState().fov;const scale=rect.height/(2*Math.tan(fov*Math.PI/360));const edge=1+Math.min(1,Math.abs(a.x-rect.width/2)/(rect.width/2))*.25;anchors[id]={...a,x:a.x+rect.left,y:a.y+rect.top,visible:a.inView,r:Math.max(38,scale*Math.tan(10*Math.PI/180)*edge)};}}ui.updateAnchors(anchors);avoidHotspotOverlap();});
  accountId=(await getAccount())||'guest';controller=new StoryController({story,view,reader,account:accountId,storage:{getItem:k=>localStorage.getItem(k),setItem:(k,v)=>localStorage.setItem(k,v)}});

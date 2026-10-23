@@ -28,3 +28,14 @@ test('新近暂停开放地点不能进入路线，过远拒绝', async () => { 
 async function withServer(config, fn, opts = {}) { const s = createApp({ config, ...opts }); await new Promise(resolve => s.listen(0, '127.0.0.1', resolve)); try { await fn('http://127.0.0.1:' + s.address().port); } finally { s.closeAllConnections(); await new Promise(resolve => s.close(resolve)); } }
 test('HTTP接口：密钥不外露；未核坐标不出现在附近；参数明确报错', async () => { await withServer({ ...local, modelKey: 'SECRET-MODEL', mapKey: 'SECRET-MAP' }, async base => { const r = await fetch(base + '/api/config'); assert(!(await r.text()).includes('SECRET')); const places = await (await fetch(base + '/api/places?city=' + encodeURIComponent('无锡市'))).json(); assert.equal(places.total, 3); assert(places.items.every(p => p.coordinate === null)); const nearby = await (await fetch(base + '/api/places?lat=31.5&lng=120.3&coordinateType=gcj02')).json(); assert(nearby.total>0);assert(nearby.items.every(p=>p.routeReady&&!p.navigationReady)); assert.equal((await fetch(base + '/api/places?lat=31')).status, 400); assert.equal((await fetch(base + '/api/chat', { method: 'POST', body: '{' })).status, 400); }); });
 test('HTTP公开模式不泄露未发布详情，频率限制生效', async () => { await withServer({ ...local, publicMode: true }, async base => { assert.equal((await (await fetch(base + '/api/places')).json()).total, 0); assert.equal((await fetch(base + '/api/places/PLACE-WX-LDY')).status, 404); }); await withServer(local, async base => { await fetch(base + '/api/config'); assert.equal((await fetch(base + '/api/config')).status, 429); }, { maxRequests: 1 }); });
+
+test('四种交通方式使用各自接口，公交解析线路与上下车站',async()=>{
+ const d=pointData();const points=[31.5,120.3,1000,0];
+ for(const transport of ['walking','driving','transit','bicycling']){
+  const r=await walking({origin,placeIds:[d.places[0].id],transport},d,{...local,mapKey:'test'},undefined,async u=>{
+   assert.equal(u.pathname,`/ws/direction/v1/${transport}/`);
+   return {ok:true,json:async()=>({status:0,result:{routes:[{distance:1000,duration:12,...(transport==='transit'?{steps:[{mode:'WALKING',polyline:points,steps:[{instruction:'步行至车站'}]},{mode:'TRANSIT',lines:[{title:'地铁1号线',polyline:points,geton:{title:'甲站'},getoff:{title:'乙站'},station_count:3}]}]}:{polyline:points,steps:[{instruction:'前往目的地'}]})}]}})};
+  });assert.equal(r.transport,transport);assert.equal(r.durationMinutes,12);assert(r.legs[0].points.length>=2);if(transport==='transit')assert(r.legs[0].steps.some(s=>s.instruction.includes('甲站至乙站')));
+ }
+ await assert.rejects(walking({origin,placeIds:[d.places[0].id],transport:'__proto__'},d,local),{code:'INVALID_TRANSPORT'});
+});

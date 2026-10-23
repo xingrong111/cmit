@@ -1,0 +1,231 @@
+[
+  {
+    "width": 1440,
+    "province": {
+      "overflow": false,
+      "cards": [
+        {
+          "text": "张建生",
+          "width": 86,
+          "height": 41
+        },
+        {
+          "text": "高云",
+          "width": 57,
+          "height": 41
+        },
+        {
+          "text": "恽代英",
+          "width": 86,
+          "height": 41
+        },
+        {
+          "text": "陈三才",
+          "width": 86,
+          "height": 41
+        },
+        {
+          "text": "朱廉",
+          "width": 57,
+          "height": 41
+        },
+        {
+          "text": "徐佳标",
+          "width": 86,
+          "height": 41
+        },
+        {
+          "text": "史砚芬",
+          "width": 86,
+          "height": 41
+        },
+        {
+          "text": "史良",
+          "width": 57,
+          "height": 41
+        },
+        {
+          "text": "宋振中",
+          "width": 86,
+          "height": 41
+        },
+        {
+          "text": "张太雷",
+          "width": 86,
+          "height": 41
+        },
+        {
+          "text": "张应春",
+          "width": 86,
+          "height": 41
+        },
+        {
+          "text": "李公朴",
+          "width": 86,
+          "height": 41
+        },
+        {
+          "text": "瞿秋白",
+          "width": 86,
+          "height": 41
+        },
+        {
+          "text": "秦邦宪",
+          "width": 86,
+          "height": 41
+        },
+        {
+          "text": "许晓轩",
+          "width": 86,
+          "height": 41
+        },
+        {
+          "text": "郭纲琳",
+          "width": 86,
+          "height": 41
+        },
+        {
+          "text": "陆定一",
+          "width": 86,
+          "height": 41
+        },
+        {
+          "text": "顾正红",
+          "width": 86,
+          "height": 41
+        }
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "province": {
+      "overflow": false,
+      "cards": [
+        {
+          "text": "张建生",
+          "width": 76,
+          "height": 36
+        },
+        {
+          "text": "高云",
+          "width": 51,
+          "height": 36
+        },
+        {
+          "text": "恽代英",
+          "width": 76,
+          "height": 36
+        },
+        {
+          "text": "陈三才",
+          "width": 76,
+          "height": 36
+        },
+        {
+          "text": "朱廉",
+          "width": 51,
+          "height": 36
+        },
+        {
+          "text": "徐佳标",
+          "width": 76,
+          "height": 36
+        },
+        {
+          "text": "史砚芬",
+          "width": 76,
+          "height": 36
+        },
+        {
+          "text": "史良",
+          "width": 51,
+          "height": 36
+        },
+        {
+          "text": "宋振中",
+          "width": 76,
+          "height": 36
+        },
+        {
+          "text": "张太雷",
+          "width": 76,
+          "height": 36
+        },
+        {
+          "text": "张应春",
+          "width": 76,
+          "height": 36
+        },
+        {
+          "text": "李公朴",
+          "width": 76,
+          "height": 36
+        },
+        {
+          "text": "瞿秋白",
+          "width": 76,
+          "height": 36
+        },
+        {
+          "text": "秦邦宪",
+          "width": 76,
+          "height": 36
+        },
+        {
+          "text": "许晓轩",
+          "width": 76,
+          "height": 36
+        },
+        {
+          "text": "郭纲琳",
+          "width": 76,
+          "height": 36
+        },
+        {
+          "text": "陆定一",
+          "width": 76,
+          "height": 36
+        },
+        {
+          "text": "顾正红",
+          "width": 76,
+          "height": 36
+        }
+      ]
+    }
+  },
+  {
+    "group": "QQB",
+    "text": "瞿秋白，江苏常州人，曾在无锡江溪桥杨氏小学任教。现有年谱收录其担任校长兼教员的回忆。1934年到瑞金，福建民政文章将抵达日期记为2月5日。",
+    "scene": "/panorama/qqb/场景.html?scene=QQB",
+    "facts": 3
+  },
+  {
+    "group": "LYS",
+    "text": "狼牙山五壮士是一组由五位战士组成的集体称谓。先在场景中了解掩护任务，再回到文字资料认识五位成员与他们各自的经历。",
+    "scene": "/panorama/qqb/场景.html?scene=LYS",
+    "facts": 3
+  },
+  {
+    "group": "SZZ",
+    "text": "宋振中，江苏徐州人，是宋绮云、徐林侠夫妇的幼子。红岩博物馆记载，他在狱中曾由罗世文、黄显声教读书。出生日期及出生地仍需继续核实。",
+    "scene": "/panorama/qqb/场景.html?scene=SZZ",
+    "facts": 3
+  },
+  {
+    "group": "LDY",
+    "text": "陆定一，1906年6月9日出生于江苏无锡，1925年秋入团，同年冬入党。1934年10月参加长征；1942年8月任《解放日报》总编辑。",
+    "scene": "/panorama/ldy/场景.html",
+    "facts": 3
+  },
+  {
+    "group": "JZY",
+    "text": "江竹筠，人们熟悉的江姐。以下选取现有来源记载的求学与地下工作片段；顶部互动场景属于艺术化叙事。",
+    "scene": "/vr/互动故事.html",
+    "facts": 3
+  },
+  {
+    "learningCommentNavigation": true
+  }
+]

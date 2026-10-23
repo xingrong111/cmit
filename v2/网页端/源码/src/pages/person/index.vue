@@ -4,7 +4,7 @@ import PersonPanorama from '../../components/PersonPanorama.vue';import PersonPo
 const person=ref(null),loading=ref(true),error=ref(''),sourceId=ref(''),saved=ref(false),expanded=ref(false),large=ref(false);let id='P009'
 let requestSequence=0
 async function load(){const sequence=++requestSequence,requestedId=id;loading.value=true;error.value='';try{const data=await api('people/'+requestedId);if(sequence!==requestSequence)return;person.value=data;remember('person',requestedId,data.name);saved.value=isSaved('person',requestedId)}catch(e){if(sequence===requestSequence)error.value=e.message}finally{if(sequence===requestSequence)loading.value=false}}
-function section(id){uni.pageScrollTo({selector:'#'+id,duration:220})}
+function section(id){uni.pageScrollTo({selector:'#'+id,offsetTop:-120,duration:220})}
 function save(){saved.value=toggleBookmark('person',id,person.value.name);uni.showToast({title:saved.value?'本机书签已添加':'书签已移除',icon:'none'})}
 onLoad(options=>{id=options.id||'P009';load()});onShow(()=>{large.value=prefs().size==='large';saved.value=isSaved('person',id)});onShareAppMessage(()=>({title:'走近'+(person.value?.name||'人物')+' · 山河有迹',path:'/pages/person/index?id='+id}))
 let readingScroll=0;onPageScroll(e=>{readingScroll=e.scrollTop});onShow(()=>{if(readingScroll>0){const target=readingScroll;setTimeout(()=>uni.pageScrollTo({scrollTop:target,duration:0}),250)}});

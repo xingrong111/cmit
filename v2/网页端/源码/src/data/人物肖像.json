@@ -11,14 +11,14 @@
     "identityVerified": true,
     "rightsApproved": false,
     "status": "已按用户要求展示；图片使用条件待确认",
-    "shortCaption": "人物配图 · 原件性质待核",
+    "shortCaption": "人物配图",
     "sourceAgency": "雨花台烈士陵园",
     "originalImageUrl": "https://yht.nanjing.gov.cn/rednanjing/hsbb/zt/yhyl/202504/W020250410592688870770.jpg",
     "identityEvidence": "按本轮已读页面及明确配图标识匹配，原件与性质仍以图注边界为准。",
     "displayApproved": true,
     "displayApprovalNote": "用户明确要求将当前搜集图片放入系统，并对群体像作标注。",
     "displayApprovalDate": "2026-10-16",
-    "creditLabel": "来源配图 · 使用待确认 ↗"
+    "creditLabel": "来源配图 ↗"
   },
   "P002": {
     "personId": "P002",
@@ -101,7 +101,7 @@
     "displayApproved": true,
     "displayApprovalNote": "用户明确要求将当前搜集图片放入系统，并对群体像作标注。",
     "displayApprovalDate": "2026-10-16",
-    "creditLabel": "来源配图 · 使用待确认 ↗"
+    "creditLabel": "来源配图 ↗"
   },
   "P007": {
     "personId": "P007",
@@ -182,7 +182,7 @@
     "displayApproved": true,
     "displayApprovalNote": "用户明确要求将当前搜集图片放入系统，并对群体像作标注。",
     "displayApprovalDate": "2026-10-16",
-    "creditLabel": "来源配图 · 使用待确认 ↗"
+    "creditLabel": "来源配图 ↗"
   },
   "P012": {
     "personId": "P012",
@@ -203,7 +203,7 @@
     "displayApproved": true,
     "displayApprovalNote": "用户明确要求将当前搜集图片放入系统，并对群体像作标注。",
     "displayApprovalDate": "2026-10-16",
-    "creditLabel": "来源配图 · 使用待确认 ↗"
+    "creditLabel": "来源配图 ↗"
   },
   "P013": {
     "personId": "P013",
@@ -217,14 +217,14 @@
     "identityVerified": true,
     "rightsApproved": false,
     "status": "已按用户要求展示；图片使用条件待确认",
-    "shortCaption": "钱振标遗像 · 原件待核",
+    "shortCaption": "钱振标遗像",
     "sourceAgency": "中红网；仅作补充线索，非官方名录证据",
     "originalImageUrl": "http://www.crt.com.cn/2017images/10/hs1782.jpg",
     "identityEvidence": "按本轮已读页面及明确配图标识匹配，原件与性质仍以图注边界为准。",
     "displayApproved": true,
     "displayApprovalNote": "用户明确要求将当前搜集图片放入系统，并对群体像作标注。",
     "displayApprovalDate": "2026-10-16",
-    "creditLabel": "来源配图 · 使用待确认 ↗"
+    "creditLabel": "来源配图 ↗"
   },
   "P014": {
     "personId": "P014",

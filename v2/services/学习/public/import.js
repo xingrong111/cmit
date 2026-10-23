@@ -30,11 +30,11 @@ check.onclick = async () => {
   const counts = body.counts ? Object.entries(body.counts).filter(([, count]) => count).map(([key, count]) => `${key} ${count}`).join('、') : '';
   const errors = lastErrors.map(error => `<p><span class="tag">${escape(error.kind)}</span> ${escape(error.message)}</p>`).join('');
   if (!body.ok) {
-    show(`<div class="card"><p class="eyebrow">待核验</p><p>未通过，没有保存。</p>${errors}<button class="secondary" id="download" type="button">下载错误列表</button></div>`, '检查这份文件');
+    show(`<div class="card"><p class="eyebrow"></p><p>未通过，没有保存。</p>${errors}<button class="secondary" id="download" type="button">下载错误列表</button></div>`, '检查这份文件');
     document.querySelector('#download').onclick = downloadErrors;
     return;
   }
-  show(`<div class="card"><p class="eyebrow">待核验</p><p>可以存为草稿。未发布。</p><p class="aux">${escape(counts || '没有条目')}</p></div>`, '确认存为草稿');
+  show(`<div class="card"><p class="eyebrow"></p><p>可以存为草稿。未发布。</p><p class="aux">${escape(counts || '没有条目')}</p></div>`, '确认存为草稿');
 };
 function downloadErrors() {
   const lines = lastErrors.map(error => `${error.kind}\t${error.message}`);

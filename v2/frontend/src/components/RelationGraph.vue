@@ -24,13 +24,13 @@
     </view>
     <view v-if="!filteredEdges.length" class="graph-sparse-note">{{mode==='network'?'本批资料尚未记载这一范围的人物联系，可切换“时代关联”阅读现有片段。':'此筛选下暂无记录，可切换其他主题。'}}</view>
     <view v-if="pageCount>1" class="graph-pages"><button :disabled="page===0" @tap="page--">上一组</button><text>{{page+1}} / {{pageCount}} · 分组展示防止重叠</text><button :disabled="page===pageCount-1" @tap="page++">下一组</button></view>
-    <view v-if="focusedEdge" class="graph-evidence"><view><text class="graph-evidence-title">{{nodeById[focusedEdge.from_id]?.name}} · {{nodeById[focusedEdge.to_id]?.name}}</text><text class="graph-evidence-description">{{relationLabel(focusedEdge.type)}}</text><text v-if="focusedEdge.boundary" class="graph-evidence-description">{{focusedEdge.boundary}}</text></view><button v-if="focusedEdge.source_id" class="source-button" @tap="selectSource(focusedEdge.source_id)">查看关系出处 ↗</button><button class="zoom-button" aria-label="关闭关系说明" @tap="focusedEdge=null">×</button></view>
+    <view v-if="focusedEdge" class="graph-evidence"><view><text class="graph-evidence-title">{{nodeById[focusedEdge.from_id]?.name}} · {{nodeById[focusedEdge.to_id]?.name}}</text><text class="graph-evidence-description">{{relationLabel(focusedEdge.type)}}</text></view><button v-if="focusedEdge.source_id" class="source-button" @tap="selectSource(focusedEdge.source_id)">查看关系出处 ↗</button><button class="zoom-button" aria-label="关闭关系说明" @tap="focusedEdge=null">×</button></view>
     <view class="graph-controls">
-      <text class="graph-hint">拖动探索 · 滚轮或双指缩放 · 点节点阅读联系</text>
+
       <view class="zoom-controls"><button class="zoom-button" aria-label="缩小关系图" @tap="zoomBy(0.8)">−</button><text class="zoom-value">{{ Math.round(scale * 100) }}%</text><button class="zoom-button" aria-label="放大关系图" @tap="zoomBy(1.25)">+</button><button class="reset-button" @tap="resetView">复位</button></view>
     </view>
     <view class="relation-list">
-      <view class="list-heading"><text>全部联系索引</text><text class="list-caption">当前分类下的完整记录 · 不受图谱分页影响</text></view>
+      <view class="list-heading"><text>全部联系索引</text></view>
       <view v-if="!filteredEdges.length" class="list-empty">此筛选下没有已收录的联系。可切换“全部”查看。</view>
       <view v-for="edge in filteredEdges" :key="edge.id" class="relation-row">
         <view class="relation-description"><text class="relation-name" @tap="selectNode(nodeById[edge.from_id])">{{ nodeById[edge.from_id]?.name }}</text><text class="relation-type">{{ relationLabel(edge.type) }}</text><text class="relation-name" @tap="selectNode(nodeById[edge.to_id])">{{ nodeById[edge.to_id]?.name }}</text></view>

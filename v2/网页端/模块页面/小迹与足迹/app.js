@@ -64,7 +64,7 @@ function webRouteLayout(){
   const clear=screen.querySelector('[data-action="clear-route"]');
   const layout=panel('web-route-layout',[panel('web-map-column',[map,budget]),panel('web-route-column',[clear,stops])]);screen.append(layout);
   const start=stops.querySelector('[data-action="plan"]')?.previousElementSibling;
-  if(start)start.textContent=state.routeOrigin?'已选择地图起点；可重新点选地图调整。':'在真实地图点选起点，再计算场馆地图位置间的步行路线。';
+  syncOriginStatus();
 }
 route=async function(){await webOriginal.route();webRouteLayout();nav();};
 
@@ -108,6 +108,12 @@ function decorateVenueCover(){
 function arrangeVenueDetail(layout){
  decorateVenueCover();
  const service=layout.querySelector('.venue-service'),highlights=layout.querySelector('.venue-highlights');
+ if(state.current?.id==='PLACE-WX-LDY'&&service){
+  layout.querySelectorAll('.venue-candidate p').forEach(el=>{if(el.textContent.includes('（未独立确认）'))el.textContent=el.textContent.replaceAll('（未独立确认）','');});
+  service.querySelectorAll(':scope > .hint,:scope > p.small,:scope > .venue-contacts').forEach(el=>el.remove());
+  service.querySelectorAll('.venue-service-row').forEach(row=>{if(row.querySelector('strong')?.textContent.trim()==='门票记录')row.remove();});
+ }
+
  const related=layout.querySelector('[data-action="person"]')?.closest('.card');
  if(related){related.classList.add('venue-related');related.querySelectorAll('p.small').forEach(p=>{if(p.textContent.includes('团队主工程'))p.remove()});related.querySelectorAll('[data-action="person"]').forEach(b=>{b.classList.add('venue-person-link');b.textContent=b.textContent.replace(' · 人物档案','');b.insertAdjacentHTML('beforeend','<span aria-hidden="true"> ↗</span>')});}
  const reading=panel('venue-reading-columns',[panel('venue-reading-left',[highlights,related]),panel('venue-reading-right',[service])]);

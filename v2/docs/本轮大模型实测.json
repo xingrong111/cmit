@@ -1,0 +1,71 @@
+[
+  {
+    "question": "你好，请用一句话介绍你能帮我做什么。",
+    "seconds": 1.42,
+    "response": {
+      "citations": [],
+      "factIds": [],
+      "actions": [],
+      "placeCards": [],
+      "followUps": [
+        "你能帮我做什么？",
+        "无锡文化路线怎么安排？"
+      ],
+      "status": "answered",
+      "contentLabel": "小迹 · AI对话",
+      "mode": "model_chat",
+      "modelStatus": "available",
+      "answer": "我是“英迹·山河英雄谱”的AI导览助手小迹，可以陪你聊历史英雄故事、介绍文化路线和场馆信息，也能帮你解答一般知识问题。",
+      "modelNotice": "AI辅助回答",
+      "reviewNotice": "",
+      "presentation": {
+        "kind": "chat",
+        "title": "小迹",
+        "paragraphs": [
+          "我是“英迹·山河英雄谱”的AI导览助手小迹，可以陪你聊历史英雄故事、介绍文化路线和场馆信息，也能帮你解答一般知识问题。"
+        ]
+      },
+      "retryable": false
+    }
+  },
+  {
+    "question": "瞿秋白的求学经历有哪些资料记载？",
+    "seconds": 0.68,
+    "response": {
+      "answer": "以下是与问题相关的资料记载：\n\n1. 新华社介绍记载，瞿秋白1917年考入北京俄文专修馆，1920年以《晨报》特约记者身份赴苏俄采访。",
+      "mode": "model_selected_sources",
+      "citations": [
+        {
+          "id": "SRC-QQB-XH2018",
+          "title": "中国共产党早期领导人之一——瞿秋白",
+          "institution": "新华社；记者邱冰清",
+          "publishedAt": "2018-09-27",
+          "accessedAt": "2026-10-10",
+          "url": "https://www.xinhuanet.com/politics/2018-09/27/c_1123489520.htm",
+          "finalUrl": "https://www.xinhuanet.com/politics/2018-09/27/c_1123489520.htm",
+          "position": "正文人物身份、求学采访段；八七会议段；瑞金段",
+          "excerpt": "中国共产党早期领导人之一",
+          "relation": "新华社原始电讯；国防部同稿转载不另算独立证据"
+        }
+      ],
+      "factIds": [
+        "FACT-QQB-STUDY"
+      ],
+      "actions": [],
+      "status": "answered",
+      "contentLabel": "资料试读 · 待独立复核",
+      "modelStatus": "available",
+      "modelNotice": "AI辅助回答",
+      "reviewNotice": "资料状态请查看出处",
+      "presentation": {
+        "kind": "history",
+        "title": "资料如何记载",
+        "paragraphs": [
+          "以下是与问题相关的资料记载：",
+          "1. 新华社介绍记载，瞿秋白1917年考入北京俄文专修馆，1920年以《晨报》特约记者身份赴苏俄采访。"
+        ]
+      },
+      "retryable": false
+    }
+  }
+]

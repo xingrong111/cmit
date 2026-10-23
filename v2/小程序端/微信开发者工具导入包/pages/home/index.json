@@ -1,7 +1,7 @@
 {
   "navigationBarTitleText": "山河有迹",
   "usingComponents": {
-    "first-guide": "../../components/首次导览",
+    "onboard-card": "../../components/新手任务卡",
     "home-carousel": "../../components/首页轮播",
     "national-map": "../../components/山河地图",
     "app-shell": "../../components/AppShell",

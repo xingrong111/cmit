@@ -1,0 +1,1 @@
+<view wx:if="{{a}}" class="page-tip" role="note"><text class="page-tip-tag">小提示</text><text class="page-tip-text">{{b}}</text><button class="page-tip-close" aria-label="关闭提示" bindtap="{{c}}">知道了</button></view>

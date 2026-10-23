@@ -2,7 +2,7 @@
  <view class="atlas-panel">
   <view class="atlas-top"><view><text class="eyebrow">山河有迹 / NATIONAL ARCHIVE</text><text class="section-title">以山河为卷，循足迹读人</text></view><button class="text-button" @tap="go('statistics')">收录说明 ↗</button></view>
 
-  <view class="scope-metrics"><view><text class="count-number">{{summary.total}}</text><text>合并收录人物</text></view><view><text class="count-number">{{summary.assigned}}</text><text>已归属省份</text></view><view @tap="go('province',{code:'unknown'})"><text class="count-number">{{summary.unassigned}}</text><text>未分省人物 ↗</text></view></view><text class="small">全国原始{{summary.nationalRaw}}条＋{{summary.dossiers}}份详细档案＋{{summary.ipGroups}}组IP（{{summary.ipPeople}}人），跨名单去重后计数。</text><view class="atlas-layout"><view class="atlas-stage" :class="{'atlas-preparing':!ready,'atlas-fallback-full':full}" @touchstart="touchStart" @touchmove.stop.prevent="touchMove" @touchend="touchEnd" @touchcancel="finish">
+  <view class="scope-metrics"><view><text class="count-number">{{summary.total}}</text><text>合并收录人物</text></view><view><text class="count-number">{{summary.assigned}}</text><text>已归属省份</text></view><view @tap="go('province',{code:'unknown'})"><text class="count-number">{{summary.unassigned}}</text><text>未分省人物 ↗</text></view></view><view class="atlas-layout"><view class="atlas-stage" :class="{'atlas-preparing':!ready,'atlas-fallback-full':full}" @touchstart="touchStart" @touchmove.stop.prevent="touchMove" @touchend="touchEnd" @touchcancel="finish">
    <!-- #ifdef H5 -->
    <view class="atlas-mouse">
    <!-- #endif -->

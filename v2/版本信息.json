@@ -1,16 +1,10 @@
 {
-  "version": "v2.3",
-  "date": "2026-10-22",
-  "baseCommit": "8c29180b05af7f6eab201d751c0980375b967501",
-  "acceptedPreview": "http://127.0.0.1:3131",
-  "url": "http://127.0.0.1:3210",
-  "originalPreserved": "E:/CMIT/V1",
-  "backgroundSha256": "064b3cf8903262d9eeb621c89e30480f83032b4cd21ddc3a60f9a68ed185b21c",
-  "changes": [
-    "确认背景与中间衬底",
-    "专题真人照片",
-    "照片放大填充",
-    "姓氏朱章金字"
-  ],
-  "releaseNotes": "docs/v2.3更新说明.md"
+  "version": "v3.0",
+  "date": "2026-10-23",
+  "baseVersion": "v2.3",
+  "baseCommit": "18d0cac02f1824e198d6f6218bad20e3dc6b4d36",
+  "url": "https://1.92.99.71:8443/",
+  "localUrl": "http://127.0.0.1:3210/",
+  "sourceDirectory": "v2",
+  "releaseNotes": "docs/v3.0更新说明.md"
 }

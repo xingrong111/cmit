@@ -1,0 +1,7 @@
+[
+  {
+    "width": 390,
+    "route": "person/index?id=P001",
+    "passed": true
+  }
+]

@@ -46,7 +46,8 @@ async function writeDb(db) { const temp=DATA_FILE+'.tmp';await fs.writeFile(temp
 async function audit(db, actorId, action, targetType, targetId, detail = {}) {
   db.audit.push({ id: id('audit'), actorId, action, targetType, targetId, detail, createdAt: now() });
 }
-function publicUser(user) { return { id: user.id, nickname: user.nickname, role: user.role, email:user.email, emailVerified:Boolean(user.emailVerifiedAt), createdAt: user.createdAt }; }
+const avatarKey=id=>crypto.createHash('sha256').update('shanhe-avatar:'+String(id)).digest('hex').slice(0,16);
+function publicUser(user) { return { id: user.id, avatarKey:avatarKey(user.id), nickname: user.nickname, role: user.role, email:user.email, emailVerified:Boolean(user.emailVerifiedAt), createdAt: user.createdAt }; }
 function tokenFrom(req) { return (req.headers.authorization || '').replace(/^Bearer\s+/i, ''); }
 function currentUser(req, db) {
   const session = sessions.get(sessionKey(tokenFrom(req)));
@@ -75,8 +76,8 @@ function commentView(comment, user) {
     content: comment.content, status: comment.status, submittedAt: comment.submittedAt,
     updatedAt: comment.updatedAt, version: comment.version
   };
-  if (comment.status === 'approved' && !(user && (user.role==='admin'||user.id===comment.authorId))) return { ...base, author: { nickname: comment.authorNickname } };
-  if (user && (user.id === comment.authorId || user.role === 'admin')) return { ...base, reviewReason: comment.reviewReason || '', author: { id: comment.authorId, nickname: comment.authorNickname }, ...(user.role === 'admin' ? { history: comment.history } : {}) };
+  if (comment.status === 'approved' && !(user && (user.role==='admin'||user.id===comment.authorId))) return { ...base, author: { avatarKey:avatarKey(comment.authorId), nickname: comment.authorNickname } };
+  if (user && (user.id === comment.authorId || user.role === 'admin')) return { ...base, reviewReason: comment.reviewReason || '', author: { id: comment.authorId, avatarKey:avatarKey(comment.authorId), nickname: comment.authorNickname }, ...(user.role === 'admin' ? { history: comment.history } : {}) };
   return null;
 }
 async function initialize() {

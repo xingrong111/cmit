@@ -1,0 +1,12 @@
+{
+  "sessionSurvivesRestart": true,
+  "logoutRevokesSession": true,
+  "tokensStoredHashed": true,
+  "missingCodeRejected": true,
+  "wrongCodeRejected": true,
+  "emailVerified": true,
+  "cooldownEnforced": true,
+  "roleInjectionRejected": true,
+  "userAdminDenied": true,
+  "designatedVerifiedAdminAccepted": true
+}

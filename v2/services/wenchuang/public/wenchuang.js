@@ -368,7 +368,7 @@
         '<div class="wc-block"><h2>获取条件</h2><p>' + esc(describeCondition(p.condition)) + '</p>' +
         (p.required ? '<div class="wc-meter" style="max-width:380px"><span style="width:' + percent(p) + '%"></span></div><span class="small">' + esc(progressText(p)) + '</span>' : '') + '</div>' +
         '<div class="wc-actions">' + actions + '</div><span class="wc-hint" id="wc-hint" role="alert"></span>' +
-        '<p class="wc-note">称号永久保留，领取不会消耗称号；同一作品每个账户只能领取一次。</p></div></section>'
+        '</div></section>'
     }).catch(function (e) { if (token_ === routeToken) app.innerHTML = failPanel(e, id) })
   }
 
@@ -451,7 +451,7 @@
     else if (act === 'login') goLogin(arg)
     else if (act === 'learning') location.href = CONFIG.learningUrl
     else if (act === 'back') { if (history.length > 1 && document.referrer.indexOf(location.host) >= 0) history.back(); else location.hash = '#/' }
-    else if (act === 'zoom') openPreview(art(arg, true), '示意占位图，正式图稿上架后替换')
+    else if (act === 'zoom') openPreview(art(arg, true), '')
     else if (act === 'closePreview') closePreview()
     else if (act === 'claim') {
       if (busy) return

@@ -75,12 +75,16 @@ export function createPanorama(container, { scenes, closeups = {}, onEvent = () 
   function loadTexture(path) {
     if (!textureCache.has(path)) {
       const promise = new Promise((resolve, reject) => {
+        let settled=false;
+        const deadline=setTimeout(()=>{if(settled)return;settled=true;reject(new Error('全景图片加载超时，请重试或使用文字阅读。'));},20000);
         loader.load(path, texture => {
+          if(settled){texture.dispose();return;}
+          settled=true;clearTimeout(deadline);
           texture.colorSpace = THREE.SRGBColorSpace;
           texture.minFilter = THREE.LinearFilter;
           texture.generateMipmaps = false;
           resolve(texture);
-        }, undefined, () => reject(new Error('图片加载失败：' + path)));
+        }, undefined, () => {if(settled)return;settled=true;clearTimeout(deadline);reject(new Error('图片加载失败：' + path));});
       });
       promise.catch(() => textureCache.delete(path));
       textureCache.set(path, promise);
@@ -88,9 +92,12 @@ export function createPanorama(container, { scenes, closeups = {}, onEvent = () 
     return textureCache.get(path);
   }
 
+  let lastWidth=0,lastHeight=0;
   function resize() {
     const w = container.clientWidth || 1, h = container.clientHeight || 1;
-    renderer.setSize(w, h);
+    if(w===lastWidth&&h===lastHeight)return;
+    lastWidth=w;lastHeight=h;
+    renderer.setSize(w, h, false);
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
   }

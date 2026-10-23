@@ -56,3 +56,15 @@ body:has(.phone.web-shell[data-page=route]){overflow-x:clip}
 .phone.web-shell[data-page=route]{box-sizing:border-box;max-width:100%}
 
 .phone.web-shell[data-page=route] #stops>.card{box-sizing:border-box!important;max-width:100%!important;margin-left:0!important;margin-right:0!important}
+
+.transport-switch{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 22px;padding:6px;background:#f3ecdc;border:1px solid #e2ceb0;border-radius:14px}.transport-switch button{min-width:0;padding:12px 8px;border:1px solid transparent;border-radius:10px;background:transparent;color:#315249;font:inherit;font-size:19px;cursor:pointer}.transport-switch button.active{background:#315249;color:#fffaf0;box-shadow:0 3px 9px #23403922}.transport-switch button:focus-visible{outline:2px solid #ac302b;outline-offset:2px}
+
+@media(min-width:801px){
+html[data-appearance=b] body .phone.web-shell[data-page=route] #screen #route-map-slot .live-map-canvas,
+html[data-appearance=b] body .phone.web-shell[data-page=route] #screen #route-map-slot .ink-map-stage{height:820px!important;min-height:820px!important}
+.phone.web-shell[data-page=route] .transport-switch{margin-top:22px;gap:16px;padding:10px;background:transparent;border:0}
+.phone.web-shell[data-page=route] .transport-switch button{background:#f3ecdc;border:1px solid #dfcba9;box-shadow:none}
+.phone.web-shell[data-page=route] .transport-switch button.active{background:#315249;color:#fffaf0;border-color:#315249}
+.phone.web-shell[data-page=route] .arrival-overview{padding:15px 18px;margin:16px 0 20px;border-left:3px solid #b58b52;background:#f5eedf;color:#315249;font-size:18px;line-height:1.8}
+.phone.web-shell[data-page=route] .arrival-time{display:inline-block;margin-left:12px;font-size:18px;color:#315249}
+}

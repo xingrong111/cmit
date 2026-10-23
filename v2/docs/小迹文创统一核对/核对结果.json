@@ -1,0 +1,132 @@
+[
+  {
+    "route": "people",
+    "width": 1440,
+    "title": "循山河，读人物",
+    "size": "48px",
+    "weight": "900",
+    "background": "linear-gradient(90deg, rgba(255, 252, 245, 0.9), rgba(255, 252, 245, 0.26) 70%, rgba(255, 252, 245, 0.24)), url(\"http://127.0.0.1:3210/static/%E4%B8%93%E9%A2%98%E8%83%8C%E6%99%AF/%E4%BA%BA%E7%89%A9%E5%B1%B1%E6%B2%B3.png\")",
+    "overflow": false
+  },
+  {
+    "route": "radar",
+    "width": 1440,
+    "title": "历史足迹雷达",
+    "size": "48px",
+    "weight": "900",
+    "background": "linear-gradient(90deg, rgba(255, 250, 240, 0.95) 0%, rgba(255, 250, 240, 0.7) 42%, rgba(255, 250, 240, 0.08) 78%), url(\"http://127.0.0.1:3210/static/%E4%B8%93%E9%A2%98%E8%83%8C%E6%99%AF/%E8%B6%B3%E8%BF%B9%E5%9F%8E%E5%B8%82%E5%9C%B0%E5%9B%BE.webp\")",
+    "overflow": false
+  },
+  {
+    "route": "assistant",
+    "width": 1440,
+    "title": "小迹 · 你的山河导览员",
+    "size": "48px",
+    "weight": "900",
+    "background": "linear-gradient(90deg, rgba(255, 250, 240, 0.933) 0%, rgba(255, 250, 240, 0.7) 42%, rgba(255, 250, 240, 0.1) 80%), url(\"http://127.0.0.1:3210/static/%E4%B8%93%E9%A2%98%E8%83%8C%E6%99%AF/%E5%B0%8F%E8%BF%B9%E4%B9%A6%E5%8D%B7%E9%97%AE%E7%AD%94.webp\")",
+    "overflow": false
+  },
+  {
+    "route": "chat",
+    "width": 1440,
+    "font": "19px",
+    "input": "18px",
+    "enabled": true,
+    "mask": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M12 20V4m-6 6 6-6 6 6'/%3E%3C/svg%3E\")",
+    "button": {
+      "x": 1183,
+      "y": 699.8125,
+      "width": 48,
+      "height": 48,
+      "top": 699.8125,
+      "right": 1231,
+      "bottom": 747.8125,
+      "left": 1183
+    },
+    "overlap": false,
+    "overflow": false
+  },
+  {
+    "route": "learning",
+    "width": 1440,
+    "title": "学习挑战",
+    "size": "48px",
+    "weight": "900",
+    "background": "linear-gradient(90deg, rgba(255, 250, 240, 0.94) 0%, rgba(255, 250, 240, 0.65) 43%, rgba(255, 250, 240, 0.05) 80%), url(\"http://127.0.0.1:3210/static/%E4%B8%93%E9%A2%98%E8%83%8C%E6%99%AF/%E5%AD%A6%E4%B9%A0%E6%A1%A3%E6%A1%88%E6%88%90%E9%95%BF.webp\")",
+    "overflow": false
+  },
+  {
+    "route": "wenchuang",
+    "width": 1440,
+    "title": "把学过的故事，带走一份纪念",
+    "size": "48px",
+    "weight": "900",
+    "background": "linear-gradient(90deg, rgba(255, 252, 245, 0.95), rgba(255, 252, 245, 0.29) 75%), url(\"http://127.0.0.1:3210/modules/wenchuang/images/cultural-collection.webp\")",
+    "overflow": false
+  },
+  {
+    "route": "people",
+    "width": 390,
+    "title": "循山河，读人物",
+    "size": "29px",
+    "weight": "900",
+    "background": "linear-gradient(105deg, rgba(255, 253, 246, 0.97), rgba(255, 250, 239, 0.91))",
+    "overflow": false
+  },
+  {
+    "route": "radar",
+    "width": 390,
+    "title": "历史足迹雷达",
+    "size": "29px",
+    "weight": "900",
+    "background": "linear-gradient(90deg, rgba(255, 250, 240, 0.95) 0%, rgba(255, 250, 240, 0.7) 42%, rgba(255, 250, 240, 0.08) 78%), url(\"http://127.0.0.1:3210/static/%E4%B8%93%E9%A2%98%E8%83%8C%E6%99%AF/%E8%B6%B3%E8%BF%B9%E5%9F%8E%E5%B8%82%E5%9C%B0%E5%9B%BE.webp\")",
+    "overflow": false
+  },
+  {
+    "route": "assistant",
+    "width": 390,
+    "title": "小迹 · 你的山河导览员",
+    "size": "29px",
+    "weight": "900",
+    "background": "linear-gradient(90deg, rgba(255, 250, 240, 0.933) 0%, rgba(255, 250, 240, 0.7) 42%, rgba(255, 250, 240, 0.1) 80%), url(\"http://127.0.0.1:3210/static/%E4%B8%93%E9%A2%98%E8%83%8C%E6%99%AF/%E5%B0%8F%E8%BF%B9%E4%B9%A6%E5%8D%B7%E9%97%AE%E7%AD%94.webp\")",
+    "overflow": false
+  },
+  {
+    "route": "chat",
+    "width": 390,
+    "font": "18px",
+    "input": "18px",
+    "enabled": true,
+    "mask": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M12 20V4m-6 6 6-6 6 6'/%3E%3C/svg%3E\")",
+    "button": {
+      "x": 285,
+      "y": 912.8125,
+      "width": 48,
+      "height": 48,
+      "top": 912.8125,
+      "right": 333,
+      "bottom": 960.8125,
+      "left": 285
+    },
+    "overlap": false,
+    "overflow": false
+  },
+  {
+    "route": "learning",
+    "width": 390,
+    "title": "学习挑战",
+    "size": "29px",
+    "weight": "900",
+    "background": "linear-gradient(90deg, rgba(255, 250, 240, 0.94) 0%, rgba(255, 250, 240, 0.65) 43%, rgba(255, 250, 240, 0.05) 80%), url(\"http://127.0.0.1:3210/static/%E4%B8%93%E9%A2%98%E8%83%8C%E6%99%AF/%E5%AD%A6%E4%B9%A0%E6%A1%A3%E6%A1%88%E6%88%90%E9%95%BF.webp\")",
+    "overflow": false
+  },
+  {
+    "route": "wenchuang",
+    "width": 390,
+    "title": "把学过的故事，带走一份纪念",
+    "size": "29px",
+    "weight": "900",
+    "background": "linear-gradient(90deg, rgba(255, 252, 245, 0.95), rgba(255, 252, 245, 0.29) 75%), url(\"http://127.0.0.1:3210/modules/wenchuang/images/cultural-collection.webp\")",
+    "overflow": false
+  }
+]

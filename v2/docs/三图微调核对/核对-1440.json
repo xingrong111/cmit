@@ -1,0 +1,27 @@
+[
+  {
+    "route": "radar",
+    "width": 1440,
+    "logo": true,
+    "weight": "900",
+    "font": "28px",
+    "overflow": false
+  },
+  {
+    "route": "assistant",
+    "width": 1440,
+    "height": 1038,
+    "scrolls": true,
+    "scrollHeight": 3895,
+    "clientHeight": 833,
+    "overflow": false,
+    "font": "21px"
+  },
+  {
+    "route": "learning",
+    "width": 1440,
+    "font": "21px",
+    "statusFont": "19px",
+    "overflow": false
+  }
+]

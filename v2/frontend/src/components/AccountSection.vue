@@ -2,7 +2,7 @@
  <view id="my-account" class="my-account-section">
   <view v-if="!entry" class="section-heading"><view><text class="eyebrow">ACCOUNT / 我的账户</text><text class="section-title">{{user?'你好，'+user.nickname:'让每次学习，都留下印记'}}</text></view><text v-if="user" class="account-role" :class="user.role==='admin'?'admin':'reader'">{{user.role==='admin'?'小迹管理员':'山河读者'}}</text></view>
   <template v-if="user">
-   <view class="account-identity"><view class="account-avatar">{{user.nickname.slice(0,1)}}</view><view class="account-identity-copy"><text class="muted">{{user.email}}</text><text class="account-permission-note">{{user.role==='admin'?'管理评论审核、处理反馈，维护有据可循的交流空间。':'发表评论、查看审核反馈，继续你的阅读与学习之旅。'}}</text></view></view><view v-if="metrics.length" class="account-metrics"><view v-for="item in metrics" :key="item.label" class="account-metric"><text class="account-metric-number">{{item.value}}</text><text class="account-metric-label">{{item.label}}</text></view></view>
+   <view class="account-identity"><ThemedAvatar class="account-avatar account-landscape-avatar" :avatar-key="user.avatarKey||user.nickname"/><view class="account-identity-copy"><text class="muted">{{user.email}}</text><text class="account-permission-note">{{user.role==='admin'?'管理评论审核、处理反馈，维护有据可循的交流空间。':'发表评论、查看审核反馈，继续你的阅读与学习之旅。'}}</text></view></view><view v-if="metrics.length" class="account-metrics"><view v-for="item in metrics" :key="item.label" class="account-metric"><text class="account-metric-number">{{item.value}}</text><text class="account-metric-label">{{item.label}}</text></view></view>
    <view class="my-account-actions"><button v-if="user.role==='admin'" class="primary" @tap="go('admin')">进入评论审核工作台</button><button class="outline" @tap="go('my-comments')">我的评论</button><button class="outline" @tap="logout">退出登录</button></view>
   </template>
   <template v-else>
@@ -26,6 +26,7 @@
 import {ref,reactive,watch,onBeforeUnmount} from 'vue';
 import {onShow} from '@dcloudio/uni-app';
 import {go} from '../lib/navigation.js';
+import ThemedAvatar from './ThemedAvatar.vue';
 defineProps({entry:{type:Boolean,default:false}});
 const emit=defineEmits(['change','authenticated']);
 const metrics=ref([]);
@@ -44,8 +45,8 @@ async function refresh(){
 }
 async function refreshMetrics(){
  metrics.value=[];if(!user.value)return;
- try{if(user.value.role==='admin'){const d=await request('/admin/dashboard');metrics.value=[{label:'待审核评论',value:d.commentCounts.pending},{label:'已公开评论',value:d.commentCounts.approved},{label:'退回修改',value:d.commentCounts.rejected},{label:'已隐藏评论',value:d.commentCounts.hidden}];}
- else{const d=await request('/my/comments');metrics.value=[{label:'我的评论',value:d.items.length},{label:'待审核',value:d.items.filter(x=>x.status==='pending').length},{label:'已公开',value:d.items.filter(x=>x.status==='approved').length},{label:'需要修改',value:d.items.filter(x=>['rejected','hidden'].includes(x.status)).length}];}}catch{metrics.value=[];}
+ try{if(user.value.role==='admin'){const d=await request('/admin/dashboard');metrics.value=[{label:'处理中评论',value:d.commentCounts.pending},{label:'已公开评论',value:d.commentCounts.approved},{label:'退回修改',value:d.commentCounts.rejected},{label:'已隐藏评论',value:d.commentCounts.hidden}];}
+ else{const d=await request('/my/comments');metrics.value=[{label:'我的评论',value:d.items.length},{label:'处理中',value:d.items.filter(x=>x.status==='pending').length},{label:'已公开',value:d.items.filter(x=>x.status==='approved').length},{label:'需要修改',value:d.items.filter(x=>['rejected','hidden'].includes(x.status)).length}];}}catch{metrics.value=[];}
 }
 function normalizedEmail(){return form.email.trim().toLowerCase();}
 async function sendCode(){

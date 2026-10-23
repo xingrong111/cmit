@@ -30,7 +30,7 @@
       <view class="zoom-controls"><button class="zoom-button" aria-label="缩小关系图" @tap="zoomBy(0.8)">−</button><text class="zoom-value">{{ Math.round(scale * 100) }}%</text><button class="zoom-button" aria-label="放大关系图" @tap="zoomBy(1.25)">+</button><button class="reset-button" @tap="resetView">复位</button></view>
     </view>
     <view class="relation-list">
-      <view class="list-heading"><text>全部联系索引</text><text class="list-caption">当前分类下的完整记录 · 不受图谱分页影响</text></view>
+      <view class="list-heading"><text>全部联系索引</text></view>
       <view v-if="!filteredEdges.length" class="list-empty">此筛选下没有已收录的联系。可切换“全部”查看。</view>
       <view v-for="edge in filteredEdges" :key="edge.id" class="relation-row">
         <view class="relation-description"><text class="relation-name" @tap="selectNode(nodeById[edge.from_id])">{{ nodeById[edge.from_id]?.name }}</text><text class="relation-type">{{ relationLabel(edge.type) }}</text><text class="relation-name" @tap="selectNode(nodeById[edge.to_id])">{{ nodeById[edge.to_id]?.name }}</text></view>

@@ -1,0 +1,105 @@
+{
+  "sourceCommit": "46f10ea8a30eabf1133cf0216c0c12348af1a4de",
+  "files": [
+    {
+      "path": "docs/2026-10-20-首页视觉修改汇总.md",
+      "status": "added"
+    },
+    {
+      "path": "docs/首页视觉功能核对.json",
+      "status": "added"
+    },
+    {
+      "path": "docs/首页视觉调整截图/七个入口.png",
+      "status": "added"
+    },
+    {
+      "path": "docs/首页视觉调整截图/史料文字.png",
+      "status": "added"
+    },
+    {
+      "path": "docs/首页视觉调整截图/地图文字及按钮.png",
+      "status": "added"
+    },
+    {
+      "path": "frontend/src/components/山河地图.vue",
+      "status": "modified"
+    },
+    {
+      "path": "frontend/src/static/v2-视觉.css",
+      "status": "modified"
+    },
+    {
+      "path": "frontend/src/static/首页轮播/人物档案.png",
+      "status": "added"
+    },
+    {
+      "path": "frontend/src/static/首页轮播/山河总览.png",
+      "status": "added"
+    },
+    {
+      "path": "frontend/src/static/首页轮播/沉浸故事.png",
+      "status": "added"
+    },
+    {
+      "path": "frontend/src/static/首页轮播/长卷山水.png",
+      "status": "added"
+    },
+    {
+      "path": "services/wenchuang/public/wenchuang.css",
+      "status": "modified"
+    },
+    {
+      "path": "网页端/模块页面/数字文创/wenchuang.css",
+      "status": "modified"
+    },
+    {
+      "path": "网页端/源码/src/components/山河地图.vue",
+      "status": "modified"
+    },
+    {
+      "path": "网页端/源码/src/static/v2-视觉.css",
+      "status": "modified"
+    },
+    {
+      "path": "网页端/源码/src/static/首页轮播/人物档案.png",
+      "status": "added"
+    },
+    {
+      "path": "网页端/源码/src/static/首页轮播/山河总览.png",
+      "status": "added"
+    },
+    {
+      "path": "网页端/源码/src/static/首页轮播/沉浸故事.png",
+      "status": "added"
+    },
+    {
+      "path": "网页端/源码/src/static/首页轮播/长卷山水.png",
+      "status": "added"
+    },
+    {
+      "path": "网页端/页面/assets/pages-home-index.C9C2i8Nq.js",
+      "status": "modified"
+    },
+    {
+      "path": "网页端/页面/static/v2-视觉.css",
+      "status": "modified"
+    },
+    {
+      "path": "网页端/页面/static/首页轮播/人物档案.png",
+      "status": "added"
+    },
+    {
+      "path": "网页端/页面/static/首页轮播/山河总览.png",
+      "status": "added"
+    },
+    {
+      "path": "网页端/页面/static/首页轮播/沉浸故事.png",
+      "status": "added"
+    },
+    {
+      "path": "网页端/页面/static/首页轮播/长卷山水.png",
+      "status": "added"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "page": "人物索引",
+    "large": false,
+    "regionSize": "19px",
+    "nameSize": "19px",
+    "regionWeight": "700",
+    "nameWeight": "700",
+    "regionColor": "rgb(136, 118, 94)",
+    "nameColor": "rgb(41, 71, 60)",
+    "songRegion": "江苏"
+  },
+  {
+    "page": "人物索引",
+    "large": true,
+    "regionSize": "22px",
+    "nameSize": "22px",
+    "regionWeight": "700",
+    "nameWeight": "700",
+    "regionColor": "rgb(136, 118, 94)",
+    "nameColor": "rgb(41, 71, 60)",
+    "songRegion": "江苏"
+  },
+  {
+    "page": "小迹",
+    "large": false,
+    "background": "linear-gradient(90deg, rgba(255, 250, 240, 0.933) 0%, rgba(255, 250, 240, 0.7) 42%, rgba(255, 250, 240, 0.1) 80%), url(\"http://127.0.0.1:3210/static/%E4%B8%93%E9%A2%98%E8%83%8C%E6%99%AF/%E5%B0%8F%E8%BF%B9%E4%B9%A6%E5%8D%B7%E9%97%AE%E7%AD%94.webp\")",
+    "motionButtons": 0,
+    "textOverlap": false,
+    "imageOverlap": false,
+    "overflow": false
+  },
+  {
+    "page": "小迹",
+    "large": true,
+    "background": "linear-gradient(90deg, rgba(255, 250, 240, 0.933) 0%, rgba(255, 250, 240, 0.7) 42%, rgba(255, 250, 240, 0.1) 80%), url(\"http://127.0.0.1:3210/static/%E4%B8%93%E9%A2%98%E8%83%8C%E6%99%AF/%E5%B0%8F%E8%BF%B9%E4%B9%A6%E5%8D%B7%E9%97%AE%E7%AD%94.webp\")",
+    "motionButtons": 0,
+    "textOverlap": false,
+    "imageOverlap": false,
+    "overflow": false
+  },
+  {
+    "page": "足迹",
+    "background": "linear-gradient(90deg, rgba(255, 250, 240, 0.95) 0%, rgba(255, 250, 240, 0.7) 42%, rgba(255, 250, 240, 0.08) 78%), url(\"http://127.0.0.1:3210/static/%E4%B8%93%E9%A2%98%E8%83%8C%E6%99%AF/%E8%B6%B3%E8%BF%B9%E5%9F%8E%E5%B8%82%E5%9C%B0%E5%9B%BE.webp\")",
+    "motionButtons": 0,
+    "requestFailed": false,
+    "overflow": false
+  },
+  {
+    "page": "学习挑战",
+    "background": "linear-gradient(90deg, rgba(255, 250, 240, 0.94) 0%, rgba(255, 250, 240, 0.65) 43%, rgba(255, 250, 240, 0.05) 80%), url(\"http://127.0.0.1:3210/static/%E4%B8%93%E9%A2%98%E8%83%8C%E6%99%AF/%E5%AD%A6%E4%B9%A0%E6%A1%A3%E6%A1%88%E6%88%90%E9%95%BF.webp\")",
+    "motionButtons": 0,
+    "requestFailed": false,
+    "overflow": false
+  }
+]

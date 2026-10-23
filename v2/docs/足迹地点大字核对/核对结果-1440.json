@@ -1,0 +1,50 @@
+[
+  {
+    "width": 1440,
+    "page": "list",
+    "name": {
+      "size": "27px",
+      "weight": "900"
+    },
+    "address": {
+      "size": "18px",
+      "weight": "700"
+    },
+    "overflow": false
+  },
+  {
+    "width": 1440,
+    "place": "PLACE-WX-LDY",
+    "font": "20px",
+    "weight": "700",
+    "overflow": false
+  },
+  {
+    "width": 1440,
+    "place": "PLACE-WX-QBC",
+    "font": "20px",
+    "weight": "700",
+    "overflow": false
+  },
+  {
+    "width": 1440,
+    "place": "PLACE-CZ-QQB",
+    "font": "20px",
+    "weight": "700",
+    "overflow": false
+  },
+  {
+    "width": 1440,
+    "place": "PLACE-CZ-ZTL",
+    "font": "20px",
+    "weight": "700",
+    "overflow": false
+  },
+  {
+    "width": 1440,
+    "place": "PLACE-WX-ZWT",
+    "font": "20px",
+    "weight": "700",
+    "overflow": false
+  }
+]
